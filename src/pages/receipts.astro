@@ -3,15 +3,215 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 const title = "Receipts — Proof of work";
 const description = "Zero receipts are scored pieces of real work reviewed by top-1% professionals. Recruiters see them before resumes.";
 const canonical = "https://learn.joinzero.ai/receipts";
-const schemas = [{"@context": "https://schema.org", "@type": "Article", "headline": "Receipts — Proof of work", "url": "https://learn.joinzero.ai/receipts", "dateModified": "2026-05-17", "author": {"@type": "Organization", "name": "Zero"}, "publisher": {"@type": "Organization", "name": "Zero", "url": "https://learn.joinzero.ai"}}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://learn.joinzero.ai/"}, {"@type": "ListItem", "position": 2, "name": "Receipts", "item": "https://learn.joinzero.ai/receipts"}]}];
+const schemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "headline": "Receipts — Proof of work",
+    "url": canonical,
+    "dateModified": "2026-05-17",
+    "author": {"@type": "Organization", "name": "zero"},
+    "publisher": {"@type": "Organization", "name": "zero", "url": "https://www.joinzero.ai"},
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "url": "https://learn.joinzero.ai/receipts#pilot-01"},
+        {"@type": "ListItem", "position": 2, "url": "https://learn.joinzero.ai/receipts#pilot-02"},
+        {"@type": "ListItem", "position": 3, "url": "https://learn.joinzero.ai/receipts#pilot-03"},
+        {"@type": "ListItem", "position": 4, "url": "https://learn.joinzero.ai/receipts#pilot-04"},
+        {"@type": "ListItem", "position": 5, "url": "https://learn.joinzero.ai/receipts#pilot-05"},
+        {"@type": "ListItem", "position": 6, "url": "https://learn.joinzero.ai/receipts#pilot-06"}
+      ]
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Receipts — Proof of work",
+    "url": canonical,
+    "dateModified": "2026-05-17",
+    "author": {"@type": "Organization", "name": "zero"},
+    "publisher": {"@type": "Organization", "name": "zero", "url": "https://www.joinzero.ai"},
+    "mainEntityOfPage": {"@type": "WebPage", "@id": canonical}
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://learn.joinzero.ai/"},
+      {"@type": "ListItem", "position": 2, "name": "Receipts", "item": canonical}
+    ]
+  }
+];
+
+const receipts = [
+  {
+    id: "pilot-01",
+    handle: "Marketing student, year 2",
+    brand: "Major EV company",
+    task: "Campaign positioning brief for a new product launch",
+    score: "Top-quartile against professional benchmark",
+    note: "Preferred real feedback over reading another article about marketing.",
+    quote: "I'd rather submit something rough and get real feedback than read another article about marketing."
+  },
+  {
+    id: "pilot-02",
+    handle: "Data student, year 3",
+    brand: "Major payments company",
+    task: "Metrics analysis and funnel diagnostic",
+    score: "Top-quartile against professional benchmark",
+    note: "First time working on a real company dataset outside of coursework.",
+    quote: "I didn't know I could do this kind of work without a job."
+  },
+  {
+    id: "pilot-03",
+    handle: "Product student, year 2",
+    brand: "Major e-commerce platform",
+    task: "Feature prioritization under resource constraints",
+    score: "Top-quartile against professional benchmark",
+    note: "Scoring drove repeat engagement. Returned specifically to see feedback.",
+    quote: "The scoring is the part that makes me come back."
+  },
+  {
+    id: "pilot-04",
+    handle: "Design student, year 3",
+    brand: "Major AI company",
+    task: "Mobile onboarding flow redesign",
+    score: "Professional benchmark: strong reasoning section",
+    note: "Completed within 90 seconds of first interaction after we cut the heavy onboarding.",
+    quote: "I wanted to do something real immediately."
+  },
+  {
+    id: "pilot-05",
+    handle: "Engineering student, year 2",
+    brand: "Major EV company",
+    task: "System architecture memo for a scale challenge",
+    score: "Professional benchmark: clear trade-off documentation",
+    note: "Personalized feedback on the specific submission outperformed generic career advice.",
+    quote: "I want to know what I did right and what to fix."
+  },
+  {
+    id: "pilot-06",
+    handle: "Growth student, year 3",
+    brand: "Major retail platform",
+    task: "Growth strategy for a new market entry",
+    score: "Professional benchmark: well-structured hypothesis",
+    note: "Per-submission feedback became the core engagement loop. Generic skill assessments were ignored.",
+    quote: "Tell me what to fix on this piece, not what to learn next in general."
+  }
+];
 ---
 <BaseLayout title={title} description={description} canonical={canonical} schemas={schemas}>
   <nav class="breadcrumb"><a href="/">Home</a> / Receipts</nav>
   <h1>What is a Zero receipt?</h1>
   <p class="answer-capsule">A receipt is a scored piece of real work reviewed by a top-1% professional. Recruiters see receipts before resumes.</p>
 
-  <div class="empty-state">
-    <p style="font-size:1.2rem; margin-bottom:0.5rem;">First receipts dropping soon.</p>
-    <p>Recruiters will see them before resumes.</p>
+  <section class="pilot-meta">
+    <p class="mono-label">SOURCE: MIDDLE EAST UNIVERSITY PILOT, SPRING 2026</p>
+    <p>These six pilot moments are anonymized extracts from the first university deployment. Scores are benchmarked against working professionals in each field, not against other students.</p>
+  </section>
+
+  <div class="receipt-grid">
+    {receipts.map((r) => (
+      <article class="receipt-card" id={r.id}>
+        <header>
+          <span class="mono-label">{r.handle.toUpperCase()}</span>
+          <h3>{r.brand}</h3>
+          <p class="task">{r.task}</p>
+        </header>
+        <div class="score-block">
+          <span class="mono-label">SCORE</span>
+          <p>{r.score}</p>
+        </div>
+        <div class="note-block">
+          <span class="mono-label">OBSERVATION</span>
+          <p>{r.note}</p>
+        </div>
+        <blockquote>
+          <p>"{r.quote}"</p>
+        </blockquote>
+      </article>
+    ))}
   </div>
+
+  <section class="how-it-works">
+    <h2>How receipts become your hiring signal</h2>
+    <ol>
+      <li>Pick a real task from a real company scenario.</li>
+      <li>Submit your work.</li>
+      <li>A top-1% professional scores it and leaves specific feedback.</li>
+      <li>The receipt (score + feedback + work sample) is visible to recruiters.</li>
+      <li>Recruiters evaluate the receipt in 60 seconds. No resume required.</li>
+    </ol>
+  </section>
+
+  <section class="last-updated">Last updated: 2026-05-17</section>
 </BaseLayout>
+
+<style>
+  .receipt-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+  .receipt-card {
+    background: var(--ink-100, rgb(246, 245, 243));
+    border: 1px solid rgba(31, 29, 30, 0.08);
+    border-radius: 32px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .receipt-card header h3 {
+    margin: 0.25rem 0 0;
+    color: var(--green-800, rgb(24, 67, 47));
+    font-size: 1.25rem;
+  }
+  .receipt-card .task {
+    margin: 0.25rem 0 0;
+    font-size: 0.95rem;
+    opacity: 0.85;
+  }
+  .score-block, .note-block {
+    border-top: 1px solid rgba(31, 29, 30, 0.06);
+    padding-top: 0.75rem;
+  }
+  .score-block p, .note-block p {
+    margin: 0.25rem 0 0;
+  }
+  .receipt-card blockquote {
+    margin: 0;
+    padding: 0.75rem 1rem;
+    border-left: 2px solid var(--green-500, rgb(73, 186, 97));
+    background: rgba(73, 186, 97, 0.06);
+    border-radius: 0 12px 12px 0;
+  }
+  .receipt-card blockquote p {
+    margin: 0;
+    font-style: italic;
+    font-size: 0.95rem;
+  }
+  .pilot-meta {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border: 1px solid rgba(31, 29, 30, 0.06);
+    border-radius: 16px;
+    background: rgba(31, 29, 30, 0.02);
+  }
+  .pilot-meta p {
+    margin: 0.25rem 0 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+  .how-it-works {
+    margin: 2rem 0;
+  }
+  .how-it-works ol {
+    padding-left: 1.25rem;
+  }
+  .how-it-works li {
+    margin: 0.5rem 0;
+  }
+</style>
