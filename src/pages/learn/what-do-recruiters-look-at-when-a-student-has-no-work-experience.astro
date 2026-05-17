@@ -7,8 +7,8 @@ const schemas = [
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": title,
-    "url": canonical,
+    "headline": "What Do Recruiters Look At When A Student Has No Work Experience",
+    "url": "https://learn.joinzero.ai/learn/what-do-recruiters-look-at-when-a-student-has-no-work-experience",
     "dateModified": "2026-05-17",
     "author": {
       "@type": "Person",
@@ -34,15 +34,79 @@ const schemas = [
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://learn.joinzero.ai/"},
-      {"@type": "ListItem", "position": 2, "name": "Learn", "item": "https://learn.joinzero.ai/learn"},
-      {"@type": "ListItem", "position": 3, "name": "What recruiters look at", "item": canonical}
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://learn.joinzero.ai/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Learn",
+        "item": "https://learn.joinzero.ai/learn"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "What Do Recruiters Look At When A Student Has No Work Experience",
+        "item": "https://learn.joinzero.ai/learn/what-do-recruiters-look-at-when-a-student-has-no-work-experience"
+      }
     ]
   },
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [{"@type": "Question", "name": "Do recruiters actually read resumes for students?", "acceptedAnswer": {"@type": "Answer", "text": "Most do not read them carefully. ATS software filters first. A recruiter spends 6 to 10 seconds on a resume that makes it through. Without a signal that stands out, you do not get those seconds."}}, {"@type": "Question", "name": "What is a skills-based signal?", "acceptedAnswer": {"@type": "Answer", "text": "Any piece of evidence that shows you can do the work: a portfolio, a GitHub repo, a design file, a case study, or a scored receipt. The signal must be evaluable by a human in under two minutes."}}, {"@type": "Question", "name": "Why do students get filtered out before a human sees them?", "acceptedAnswer": {"@type": "Answer", "text": "Most companies receive hundreds of applications per role. ATS filters by keywords, GPA, school, or completion of a specific program. If you do not match the filter, no human evaluates you."}}, {"@type": "Question", "name": "How does zero change what recruiters see?", "acceptedAnswer": {"@type": "Answer", "text": "Recruiters on zero see your scored receipts before they see your resume. The receipt contains the task, your submission, the rubric score, and written feedback. The recruiter evaluates your work, not your pedigree."}}, {"@type": "Question", "name": "Is this only for tech roles?", "acceptedAnswer": {"@type": "Answer", "text": "No. zero runs marketing, design, product, data, and operations scenarios. Any role where output can be evaluated by a rubric works."}}, {"@type": "Question", "name": "What if I go to a small or non-target school?", "acceptedAnswer": {"@type": "Answer", "text": "That does not matter on zero. The receipt is scored by quality, not by where you studied. Recruiters filter by percentile, not by institution."}}]
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do recruiters actually read resumes for students?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most do not read them carefully. ATS software filters first. A recruiter spends 6 to 10 seconds on a resume that makes it through. Without a signal that stands out, you do not get those seconds."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a skills-based signal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Any piece of evidence that shows you can do the work: a portfolio, a GitHub repo, a design file, a case study, or a scored receipt. The signal must be evaluable by a human in under two minutes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why do students get filtered out before a human sees them?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most companies receive hundreds of applications per role. ATS filters by keywords, GPA, school, or completion of a specific program. If you do not match the filter, no human evaluates you."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does zero change what recruiters see?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Recruiters on zero see your scored receipts before they see your resume. The receipt contains the task, your submission, the rubric score, and written feedback. The recruiter evaluates your work, not your pedigree."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this only for tech roles?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. zero runs marketing, design, product, data, and operations scenarios. Any role where output can be evaluated by a rubric works."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if I go to a small or non-target school?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "That does not matter on zero. The receipt is scored by quality, not by where you studied. Recruiters filter by percentile, not by institution."
+        }
+      }
+    ]
   }
 ];
 ---

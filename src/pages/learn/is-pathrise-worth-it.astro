@@ -7,13 +7,22 @@ const schemas = [
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": title,
-    "url": canonical,
+    "headline": "Is Pathrise Worth It",
+    "url": "https://learn.joinzero.ai/learn/is-pathrise-worth-it",
     "dateModified": "2026-05-17",
     "author": {
-      "@type": "Organization",
-      "name": "zero",
-      "url": "https://www.joinzero.ai"
+      "@type": "Person",
+      "name": "Atul Khola",
+      "jobTitle": "Head of Experience at zero",
+      "url": "https://learn.joinzero.ai/about",
+      "sameAs": [
+        "https://www.linkedin.com/in/atulkhola/",
+        "https://twitter.com/pixelandpump",
+        "https://dribbble.com/atulkhola",
+        "https://www.behance.net/atulkhola",
+        "https://medium.com/@atulkhola",
+        "https://www.instagram.com/pixelandpump"
+      ]
     },
     "publisher": {
       "@type": "Organization",
@@ -25,21 +34,78 @@ const schemas = [
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://learn.joinzero.ai/"},
-      {"@type": "ListItem", "position": 2, "name": "Learn", "item": "https://learn.joinzero.ai/learn"},
-      {"@type": "ListItem", "position": 3, "name": "Pathrise worth it", "item": canonical}
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://learn.joinzero.ai/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Learn",
+        "item": "https://learn.joinzero.ai/learn"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Is Pathrise Worth It",
+        "item": "https://learn.joinzero.ai/learn/is-pathrise-worth-it"
+      }
     ]
   },
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type": "Question", "name": "How much does Pathrise cost?", "acceptedAnswer": {"@type": "Answer", "text": "Pathrise typically charges 7 to 10% of your first-year salary, payable over time. For a 70K starting salary, that is 4,900 to 7,000 dollars."}},
-      {"@type": "Question", "name": "Is Pathrise free until you get hired?", "acceptedAnswer": {"@type": "Answer", "text": "Pathrise does not charge upfront, but the income-share agreement binds you to payments once you are employed. The total cost depends on your starting salary."}},
-      {"@type": "Question", "name": "What does Pathrise actually do?", "acceptedAnswer": {"@type": "Answer", "text": "Pathrise provides coaching, resume reviews, interview prep, and referral networks. It is a mentorship and placement service, not a work simulator."}},
-      {"@type": "Question", "name": "How is zero different from Pathrise?", "acceptedAnswer": {"@type": "Answer", "text": "zero is a work simulator. You complete real tasks, get scored by professionals, and build receipts. It is free for students and recruiter-paid. There is no income-share agreement."}},
-      {"@type": "Question", "name": "Should I use Pathrise and zero together?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, if you can afford the Pathrise commitment. Use zero to build receipts that prove your capability. Use Pathrise for networking and interview coaching."}},
-      {"@type": "Question", "name": "Which is better for students with no budget?", "acceptedAnswer": {"@type": "Answer", "text": "zero. It is free with no future payment obligation. Pathrise is technically free upfront but becomes expensive once you are hired."}}
+      {
+        "@type": "Question",
+        "name": "How much does Pathrise cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pathrise typically charges 7 to 10% of your first-year salary, payable over time. For a 70K starting salary, that is 4,900 to 7,000 dollars."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Pathrise free until you get hired?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pathrise does not charge upfront, but the income-share agreement binds you to payments once you are employed. The total cost depends on your starting salary."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does Pathrise actually do?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pathrise provides coaching, resume reviews, interview prep, and referral networks. It is a mentorship and placement service, not a work simulator."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is zero different from Pathrise?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "zero is a work simulator. You complete real tasks, get scored by professionals, and build receipts. It is free for students and recruiter-paid. There is no income-share agreement."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I use Pathrise and zero together?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, if you can afford the Pathrise commitment. Use zero to build receipts that prove your capability. Use Pathrise for networking and interview coaching."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which is better for students with no budget?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "zero. It is free with no future payment obligation. Pathrise is technically free upfront but becomes expensive once you are hired."
+        }
+      }
     ]
   }
 ];

@@ -3,7 +3,134 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 const title = "Trust — How Zero scores, handles data, and keeps the system honest";
 const description = "Zero scoring is calibrated against top-1% professionals, data is anonymized, and every receipt is traceable to a verified reviewer.";
 const canonical = "https://learn.joinzero.ai/trust";
-const schemas = [{"@context": "https://schema.org", "@type": "Article", "headline": "Trust — How Zero scores, handles data, and keeps the system honest", "url": "https://learn.joinzero.ai/trust", "dateModified": "2026-05-17", "author": {"@type": "Organization", "name": "Zero"}, "publisher": {"@type": "Organization", "name": "Zero", "url": "https://learn.joinzero.ai"}}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://learn.joinzero.ai/"}, {"@type": "ListItem", "position": 2, "name": "Trust", "item": "https://learn.joinzero.ai/trust"}]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Who scores the submissions?", "acceptedAnswer": {"@type": "Answer", "text": "Verified professionals ranked in the top 1% by performance data in their field. Each reviewer must demonstrate current or recent senior-level output in the same domain as the task."}}, {"@type": "Question", "name": "How is scoring calibrated?", "acceptedAnswer": {"@type": "Answer", "text": "The rubric for each task is built from internal evaluation frameworks used by the company that sourced the task. We do not use generic rubrics."}}, {"@type": "Question", "name": "What data does Zero collect?", "acceptedAnswer": {"@type": "Answer", "text": "Task submissions, rubric scores, reviewer feedback, and basic profile data (name, email, education). We do not track browsing behavior across the web."}}, {"@type": "Question", "name": "How is data anonymized for public materials?", "acceptedAnswer": {"@type": "Answer", "text": "Students are never named in public case studies. Universities are anonymized until explicit written clearance is given. Aggregated data is reported in ranges, not exact counts, until cleared."}}, {"@type": "Question", "name": "Can students dispute a score?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Each receipt includes a dispute channel. A second reviewer evaluates the dispute within 5 business days."}}, {"@type": "Question", "name": "How are reviewers verified?", "acceptedAnswer": {"@type": "Answer", "text": "Reviewers submit proof of performance (senior role, notable output, or verified industry ranking). Zero audits a random sample of reviews weekly."}}]}];
+const schemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Trust",
+    "url": "https://learn.joinzero.ai/trust",
+    "dateModified": "2026-05-17",
+    "author": {
+      "@type": "Person",
+      "name": "Atul Khola",
+      "jobTitle": "Head of Experience at zero",
+      "url": "https://learn.joinzero.ai/about",
+      "sameAs": [
+        "https://www.linkedin.com/in/atulkhola/",
+        "https://twitter.com/pixelandpump",
+        "https://dribbble.com/atulkhola",
+        "https://www.behance.net/atulkhola",
+        "https://medium.com/@atulkhola",
+        "https://www.instagram.com/pixelandpump"
+      ]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "zero",
+      "url": "https://www.joinzero.ai"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://learn.joinzero.ai/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Trust",
+        "item": "https://learn.joinzero.ai/trust"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Who scores the submissions?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Verified professionals ranked in the top 1% by performance data in their field. Each reviewer must demonstrate current or recent senior-level output in the same domain as the task."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is scoring calibrated?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The rubric for each task is built from internal evaluation frameworks used by the company that sourced the task. We do not use generic rubrics."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What data does Zero collect?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Task submissions, rubric scores, reviewer feedback, and basic profile data (name, email, education). We do not track browsing behavior across the web."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is data anonymized for public materials?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Students are never named in public case studies. Universities are anonymized until explicit written clearance is given. Aggregated data is reported in ranges, not exact counts, until cleared."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can students dispute a score?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Each receipt includes a dispute channel. A second reviewer evaluates the dispute within 5 business days."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How are reviewers verified?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Reviewers submit proof of performance (senior role, notable output, or verified industry ranking). Zero audits a random sample of reviews weekly."
+        }
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "zero",
+    "url": "https://www.joinzero.ai",
+    "founder": [
+      {
+        "@type": "Person",
+        "name": "Navid Nathoo",
+        "sameAs": [
+          "https://www.linkedin.com/in/navidnathoo/",
+          "https://x.com/navidnathoo",
+          "https://www.xprize.org/about/people/navid-nathoo",
+          "https://www.crunchbase.com/person/navid-nathoo-2"
+        ]
+      },
+      {
+        "@type": "Person",
+        "name": "Nadeem Nathoo",
+        "sameAs": [
+          "https://www.linkedin.com/in/nadeemnathoo/",
+          "https://www.wise-qatar.org/biography/nadeem-nathoo/",
+          "https://www.asugsvsummit.com/speakers/nadeem-nathoo",
+          "https://theorg.com/org/the-knowledge-society/org-chart/nadeem-nathoo"
+        ]
+      }
+    ]
+  }
+];
 ---
 <BaseLayout title={title} description={description} canonical={canonical} schemas={schemas}>
   <nav class="breadcrumb"><a href="/">Home</a> / Trust</nav>

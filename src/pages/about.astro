@@ -5,73 +5,75 @@ const description = "zero is co-founded by Navid Nathoo and Nadeem Nathoo, the b
 const canonical = "https://learn.joinzero.ai/about";
 const schemas = [
   {
-    "@context":"https://schema.org",
-    "@type":"AboutPage",
-    "name": title,
-    "url": canonical,
-    "description": description
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "About",
+    "url": "https://learn.joinzero.ai/about",
+    "dateModified": "2026-05-17",
+    "author": {
+      "@type": "Person",
+      "name": "Atul Khola",
+      "jobTitle": "Head of Experience at zero",
+      "url": "https://learn.joinzero.ai/about",
+      "sameAs": [
+        "https://www.linkedin.com/in/atulkhola/",
+        "https://twitter.com/pixelandpump",
+        "https://dribbble.com/atulkhola",
+        "https://www.behance.net/atulkhola",
+        "https://medium.com/@atulkhola",
+        "https://www.instagram.com/pixelandpump"
+      ]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "zero",
+      "url": "https://www.joinzero.ai"
+    }
   },
   {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Navid Nathoo",
-    "jobTitle":"Co-Founder, zero",
-    "worksFor":{"@type":"Organization","name":"zero","url":"https://www.joinzero.ai"},
-    "alumniOf":[
-      {"@type":"Organization","name":"Ivey Business School, Western University"},
-      {"@type":"Organization","name":"Airpost (acquired by Box, 2015)"}
-    ],
-    "sameAs":[
-      "https://www.linkedin.com/in/navidnathoo/",
-      "https://x.com/navidnathoo",
-      "https://www.xprize.org/about/people/navid-nathoo",
-      "https://www.crunchbase.com/person/navid-nathoo-2",
-      "https://www.xneducation.com/"
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://learn.joinzero.ai/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About",
+        "item": "https://learn.joinzero.ai/about"
+      }
     ]
   },
   {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Nadeem Nathoo",
-    "jobTitle":"Co-Founder, zero",
-    "worksFor":{"@type":"Organization","name":"zero","url":"https://www.joinzero.ai"},
-    "alumniOf":[
-      {"@type":"Organization","name":"Ivey Business School, Western University"},
-      {"@type":"Organization","name":"McKinsey & Company"},
-      {"@type":"Organization","name":"Grameen Bank"}
-    ],
-    "sameAs":[
-      "https://www.linkedin.com/in/nadeemnathoo/",
-      "https://www.wise-qatar.org/biography/nadeem-nathoo/",
-      "https://www.asugsvsummit.com/speakers/nadeem-nathoo",
-      "https://theorg.com/org/the-knowledge-society/org-chart/nadeem-nathoo"
-    ]
-  },
-  {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Atul Khola",
-    "jobTitle":"Head of Experience, zero",
-    "worksFor":{"@type":"Organization","name":"zero","url":"https://www.joinzero.ai"},
-    "alumniOf":[
-      {"@type":"Organization","name":"NIFT Mumbai"},
-      {"@type":"Organization","name":"CRED"}
-    ],
-    "sameAs":[
-      "https://www.linkedin.com/in/atulkhola/",
-      "https://twitter.com/pixelandpump",
-      "https://dribbble.com/atulkhola",
-      "https://www.behance.net/atulkhola",
-      "https://medium.com/@atulkhola",
-      "https://www.instagram.com/pixelandpump"
-    ]
-  },
-  {
-    "@context":"https://schema.org",
-    "@type":"BreadcrumbList",
-    "itemListElement":[
-      {"@type":"ListItem","position":1,"name":"Home","item":"https://learn.joinzero.ai/"},
-      {"@type":"ListItem","position":2,"name":"About","item":"https://learn.joinzero.ai/about"}
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "zero",
+    "url": "https://www.joinzero.ai",
+    "founder": [
+      {
+        "@type": "Person",
+        "name": "Navid Nathoo",
+        "sameAs": [
+          "https://www.linkedin.com/in/navidnathoo/",
+          "https://x.com/navidnathoo",
+          "https://www.xprize.org/about/people/navid-nathoo",
+          "https://www.crunchbase.com/person/navid-nathoo-2"
+        ]
+      },
+      {
+        "@type": "Person",
+        "name": "Nadeem Nathoo",
+        "sameAs": [
+          "https://www.linkedin.com/in/nadeemnathoo/",
+          "https://www.wise-qatar.org/biography/nadeem-nathoo/",
+          "https://www.asugsvsummit.com/speakers/nadeem-nathoo",
+          "https://theorg.com/org/the-knowledge-society/org-chart/nadeem-nathoo"
+        ]
+      }
     ]
   }
 ];

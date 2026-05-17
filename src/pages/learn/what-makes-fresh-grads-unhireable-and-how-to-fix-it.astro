@@ -7,8 +7,8 @@ const schemas = [
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": title,
-    "url": canonical,
+    "headline": "What Makes Fresh Grads Unhireable And How To Fix It",
+    "url": "https://learn.joinzero.ai/learn/what-makes-fresh-grads-unhireable-and-how-to-fix-it",
     "dateModified": "2026-05-17",
     "author": {
       "@type": "Person",
@@ -34,21 +34,78 @@ const schemas = [
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://learn.joinzero.ai/"},
-      {"@type": "ListItem", "position": 2, "name": "Learn", "item": "https://learn.joinzero.ai/learn"},
-      {"@type": "ListItem", "position": 3, "name": "Fresh grads unhireable", "item": canonical}
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://learn.joinzero.ai/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Learn",
+        "item": "https://learn.joinzero.ai/learn"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "What Makes Fresh Grads Unhireable And How To Fix It",
+        "item": "https://learn.joinzero.ai/learn/what-makes-fresh-grads-unhireable-and-how-to-fix-it"
+      }
     ]
   },
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type": "Question", "name": "Why do fresh grads struggle to get hired?", "acceptedAnswer": {"@type": "Answer", "text": "Their resumes contain identical claims that recruiters cannot verify quickly. Without a unique signal, they are filtered out by software before a human evaluates them."}},
-      {"@type": "Question", "name": "Is a higher GPA the answer?", "acceptedAnswer": {"@type": "Answer", "text": "No. GPA is a weak predictor of job performance for most roles. Recruiters value output quality, communication, and decision-making over grades."}},
-      {"@type": "Question", "name": "Do internships fix the problem?", "acceptedAnswer": {"@type": "Answer", "text": "Internships help, but most interns leave with a reference and no portfolio piece. An internship without a scored deliverable is still weak signal."}},
-      {"@type": "Question", "name": "What is the fastest way to stand out?", "acceptedAnswer": {"@type": "Answer", "text": "Build one scored receipt in your target role. It takes 3 to 7 days and gives you a portfolio piece with professional evaluation attached."}},
-      {"@type": "Question", "name": "Can zero help non-technical grads?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. zero runs marketing, design, product, data, and operations scenarios. Any role where output can be evaluated by a rubric works."}},
-      {"@type": "Question", "name": "How do I explain a receipt in an interview?", "acceptedAnswer": {"@type": "Answer", "text": "Frame it as proof of your workflow. Here is the brief, here is my submission, here is the feedback I used to iterate. That story shows self-awareness and growth."}}
+      {
+        "@type": "Question",
+        "name": "Why do fresh grads struggle to get hired?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Their resumes contain identical claims that recruiters cannot verify quickly. Without a unique signal, they are filtered out by software before a human evaluates them."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is a higher GPA the answer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. GPA is a weak predictor of job performance for most roles. Recruiters value output quality, communication, and decision-making over grades."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do internships fix the problem?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Internships help, but most interns leave with a reference and no portfolio piece. An internship without a scored deliverable is still weak signal."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the fastest way to stand out?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Build one scored receipt in your target role. It takes 3 to 7 days and gives you a portfolio piece with professional evaluation attached."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can zero help non-technical grads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. zero runs marketing, design, product, data, and operations scenarios. Any role where output can be evaluated by a rubric works."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I explain a receipt in an interview?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Frame it as proof of your workflow. Here is the brief, here is my submission, here is the feedback I used to iterate. That story shows self-awareness and growth."
+        }
+      }
     ]
   }
 ];

@@ -7,13 +7,22 @@ const schemas = [
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": title,
-    "url": canonical,
+    "headline": "Forage Alternative For Students",
+    "url": "https://learn.joinzero.ai/learn/forage-alternative-for-students",
     "dateModified": "2026-05-17",
     "author": {
-      "@type": "Organization",
-      "name": "zero",
-      "url": "https://www.joinzero.ai"
+      "@type": "Person",
+      "name": "Atul Khola",
+      "jobTitle": "Head of Experience at zero",
+      "url": "https://learn.joinzero.ai/about",
+      "sameAs": [
+        "https://www.linkedin.com/in/atulkhola/",
+        "https://twitter.com/pixelandpump",
+        "https://dribbble.com/atulkhola",
+        "https://www.behance.net/atulkhola",
+        "https://medium.com/@atulkhola",
+        "https://www.instagram.com/pixelandpump"
+      ]
     },
     "publisher": {
       "@type": "Organization",
@@ -25,21 +34,78 @@ const schemas = [
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://learn.joinzero.ai/"},
-      {"@type": "ListItem", "position": 2, "name": "Learn", "item": "https://learn.joinzero.ai/learn"},
-      {"@type": "ListItem", "position": 3, "name": "Forage alternative", "item": canonical}
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://learn.joinzero.ai/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Learn",
+        "item": "https://learn.joinzero.ai/learn"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Forage Alternative For Students",
+        "item": "https://learn.joinzero.ai/learn/forage-alternative-for-students"
+      }
     ]
   },
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type": "Question", "name": "What is the best alternative to Forage?", "acceptedAnswer": {"@type": "Answer", "text": "zero. It gives you real company tasks, scoring by top-1% professionals, and recruiter access. Forage gives you a certificate that recruiters do not evaluate."}},
-      {"@type": "Question", "name": "Is zero free like Forage?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. zero is free for students. Recruiters pay for access to scored receipts. The model aligns incentives: your work has direct commercial value to the people evaluating it."}},
-      {"@type": "Question", "name": "Can I use zero and Forage together?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, but prioritize zero for the roles you care about. A receipt is stronger signal than a certificate. Use Forage for exploration and zero for proof."}},
-      {"@type": "Question", "name": "What makes a receipt better than a certificate?", "acceptedAnswer": {"@type": "Answer", "text": "A certificate proves completion. A receipt proves quality. It contains the task, your submission, the rubric score, and written feedback. A recruiter can evaluate it in 60 seconds."}},
-      {"@type": "Question", "name": "Does zero have tasks in my field?", "acceptedAnswer": {"@type": "Answer", "text": "zero runs marketing, design, product, data, and operations scenarios. New functions are added as demand grows."}},
-      {"@type": "Question", "name": "How fast can I build my first receipt?", "acceptedAnswer": {"@type": "Answer", "text": "Most students complete their first task in 3 to 7 days. The receipt is live the moment scoring is done."}}
+      {
+        "@type": "Question",
+        "name": "What is the best alternative to Forage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "zero. It gives you real company tasks, scoring by top-1% professionals, and recruiter access. Forage gives you a certificate that recruiters do not evaluate."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is zero free like Forage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. zero is free for students. Recruiters pay for access to scored receipts. The model aligns incentives: your work has direct commercial value to the people evaluating it."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use zero and Forage together?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, but prioritize zero for the roles you care about. A receipt is stronger signal than a certificate. Use Forage for exploration and zero for proof."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What makes a receipt better than a certificate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A certificate proves completion. A receipt proves quality. It contains the task, your submission, the rubric score, and written feedback. A recruiter can evaluate it in 60 seconds."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does zero have tasks in my field?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "zero runs marketing, design, product, data, and operations scenarios. New functions are added as demand grows."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How fast can I build my first receipt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most students complete their first task in 3 to 7 days. The receipt is live the moment scoring is done."
+        }
+      }
     ]
   }
 ];

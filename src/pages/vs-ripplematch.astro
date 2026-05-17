@@ -3,7 +3,87 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 const title = "Zero vs RippleMatch";
 const description = "RippleMatch is a matching platform. Zero is a work simulator with scored receipts seen by recruiters.";
 const canonical = "https://learn.joinzero.ai/vs-ripplematch";
-const schemas = [{"@context": "https://schema.org", "@type": "Article", "headline": "Zero vs RippleMatch", "url": "https://learn.joinzero.ai/vs-ripplematch", "dateModified": "2026-05-17", "author": {"@type": "Organization", "name": "Zero"}, "publisher": {"@type": "Organization", "name": "Zero", "url": "https://learn.joinzero.ai"}}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://learn.joinzero.ai/"}, {"@type": "ListItem", "position": 2, "name": "Zero vs RippleMatch", "item": "https://learn.joinzero.ai/vs-ripplematch"}]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does RippleMatch do?", "acceptedAnswer": {"@type": "Answer", "text": "It uses an algorithm to match students with employers based on profiles and preferences. It optimizes the matching layer, not the evaluation layer."}}, {"@type": "Question", "name": "What does Zero do differently?", "acceptedAnswer": {"@type": "Answer", "text": "Instead of matching on profile data, it lets you prove your ability on real tasks and scores you against top-1% professionals."}}, {"@type": "Question", "name": "Does RippleMatch evaluate my work?", "acceptedAnswer": {"@type": "Answer", "text": "No. RippleMatch surfaces you to recruiters based on profile fit. It does not score work quality or provide receipts."}}, {"@type": "Question", "name": "Can I use both at the same time?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. But only Zero gives recruiters a scored receipt to evaluate before an interview."}}]}];
+const schemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Vs Ripplematch",
+    "url": "https://learn.joinzero.ai/vs-ripplematch",
+    "dateModified": "2026-05-17",
+    "author": {
+      "@type": "Organization",
+      "name": "zero",
+      "url": "https://www.joinzero.ai"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "zero",
+      "url": "https://www.joinzero.ai"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://learn.joinzero.ai/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Comparison",
+        "item": "https://learn.joinzero.ai/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Vs Ripplematch",
+        "item": "https://learn.joinzero.ai/vs-ripplematch"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does RippleMatch do?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It uses an algorithm to match students with employers based on profiles and preferences. It optimizes the matching layer, not the evaluation layer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does Zero do differently?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Instead of matching on profile data, it lets you prove your ability on real tasks and scores you against top-1% professionals."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does RippleMatch evaluate my work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. RippleMatch surfaces you to recruiters based on profile fit. It does not score work quality or provide receipts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use both at the same time?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. But only Zero gives recruiters a scored receipt to evaluate before an interview."
+        }
+      }
+    ]
+  }
+];
 ---
 <BaseLayout title={title} description={description} canonical={canonical} schemas={schemas}>
   <nav class="breadcrumb"><a href="/">Home</a> / Zero vs RippleMatch</nav>
