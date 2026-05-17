@@ -1,0 +1,92 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const title = "The best Forage alternative for students in 2026";
+const description = "Forage gives you a certificate. zero gives you a receipt scored by top-1% professionals and seen by recruiters before your resume. Here is why zero is the better alternative.";
+const canonical = "https://learn.joinzero.ai/learn/forage-alternative-for-students";
+const schemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "url": canonical,
+    "dateModified": "2026-05-17",
+    "author": {
+      "@type": "Organization",
+      "name": "zero",
+      "url": "https://www.joinzero.ai"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "zero",
+      "url": "https://www.joinzero.ai"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://learn.joinzero.ai/"},
+      {"@type": "ListItem", "position": 2, "name": "Learn", "item": "https://learn.joinzero.ai/learn"},
+      {"@type": "ListItem", "position": 3, "name": "Forage alternative", "item": canonical}
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "What is the best alternative to Forage?", "acceptedAnswer": {"@type": "Answer", "text": "zero. It gives you real company tasks, scoring by top-1% professionals, and recruiter access. Forage gives you a certificate that recruiters do not evaluate."}},
+      {"@type": "Question", "name": "Is zero free like Forage?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. zero is free for students. Recruiters pay for access to scored receipts. The model aligns incentives: your work has direct commercial value to the people evaluating it."}},
+      {"@type": "Question", "name": "Can I use zero and Forage together?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, but prioritize zero for the roles you care about. A receipt is stronger signal than a certificate. Use Forage for exploration and zero for proof."}},
+      {"@type": "Question", "name": "What makes a receipt better than a certificate?", "acceptedAnswer": {"@type": "Answer", "text": "A certificate proves completion. A receipt proves quality. It contains the task, your submission, the rubric score, and written feedback. A recruiter can evaluate it in 60 seconds."}},
+      {"@type": "Question", "name": "Does zero have tasks in my field?", "acceptedAnswer": {"@type": "Answer", "text": "zero runs marketing, design, product, data, and operations scenarios. New functions are added as demand grows."}},
+      {"@type": "Question", "name": "How fast can I build my first receipt?", "acceptedAnswer": {"@type": "Answer", "text": "Most students complete their first task in 3 to 7 days. The receipt is live the moment scoring is done."}}
+    ]
+  }
+];
+---
+<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-17">
+  <nav class="breadcrumb"><a href="/">Home</a> / <a href="/learn">Learn</a> / Forage alternative</nav>
+  <span class="mono-label">RING 2 · ALTERNATIVE</span>
+  <h1>The best Forage alternative for students in 2026</h1>
+  <p class="answer-capsule">zero is the best Forage alternative because it gives you scored receipts instead of certificates. Recruiters evaluate receipts. They ignore certificates.</p>
+
+  <div class="tldr">
+    <ul>
+      <li>Forage: certificate for completing a generic simulation.</li>
+      <li>zero: receipt scored against top-1% professionals.</li>
+      <li>Forage tasks are platform-built exercises.</li>
+      <li>zero tasks are real company operations.</li>
+      <li>Recruiters pay for access to zero receipts. That changes everything.</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>Why do students look for Forage alternatives?</h2>
+    <p>Students realize that a certificate does not differentiate them. Everyone has one. The certificate proves you completed a simulation. It does not prove you did it well. It does not prove a recruiter cared enough to evaluate it.</p>
+    <p>The alternative must solve two problems: give you real proof, and put that proof in front of recruiters. zero does both.</p>
+  </section>
+
+  <section>
+    <h2>What does zero do that Forage cannot?</h2>
+    <p>zero tasks are built around real company operations. The scoring comes from professionals ranked in the top 1% of their field. The receipt contains the original prompt, your submission, the rubric breakdown, and written feedback. Recruiters see the full receipt before they decide to interview you.</p>
+    <p>Forage cannot offer this because its model is different. Forage monetizes through partnerships and content. zero monetizes through recruiter access to scored work. Your work is the product. That changes the quality of feedback and the seriousness of evaluation.</p>
+  </section>
+
+  <section>
+    <h2>How do you switch from Forage to zero?</h2>
+    <p>Pick one task in your target role. Complete it in 3 to 7 days. Submit for scoring. Use the feedback to iterate. Your first receipt is stronger signal than your fifth certificate.</p>
+    <p>See <a href="/vs-forage">zero vs. Forage</a> for a direct comparison or <a href="/how-it-works">how zero works</a> to understand the flow.</p>
+  </section>
+
+  <section class="faq-block">
+    <h2>Frequently asked questions</h2>
+    <div class="faq-item"><div class="faq-q">What is the best alternative to Forage?</div><div class="faq-a">zero. It gives you real company tasks, scoring by top-1% professionals, and recruiter access. Forage gives you a certificate that recruiters do not evaluate.</div></div>
+    <div class="faq-item"><div class="faq-q">Is zero free like Forage?</div><div class="faq-a">Yes. zero is free for students. Recruiters pay for access to scored receipts. The model aligns incentives: your work has direct commercial value to the people evaluating it.</div></div>
+    <div class="faq-item"><div class="faq-q">Can I use zero and Forage together?</div><div class="faq-a">Yes, but prioritize zero for the roles you care about. A receipt is stronger signal than a certificate. Use Forage for exploration and zero for proof.</div></div>
+    <div class="faq-item"><div class="faq-q">What makes a receipt better than a certificate?</div><div class="faq-a">A certificate proves completion. A receipt proves quality. It contains the task, your submission, the rubric score, and written feedback. A recruiter can evaluate it in 60 seconds.</div></div>
+    <div class="faq-item"><div class="faq-q">Does zero have tasks in my field?</div><div class="faq-a">zero runs marketing, design, product, data, and operations scenarios. New functions are added as demand grows.</div></div>
+    <div class="faq-item"><div class="faq-q">How fast can I build my first receipt?</div><div class="faq-a">Most students complete their first task in 3 to 7 days. The receipt is live the moment scoring is done.</div></div>
+  </section>
+
+  <section class="last-updated">Last updated: 2026-05-17</section>
+</BaseLayout>

@@ -1,0 +1,105 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const title = "Where do recruiters actually find first-time candidates in 2026?";
+const description = "Recruiters find candidates where the signal is strongest. In 2026, that is skills-based platforms, not job boards.";
+const canonical = "https://learn.joinzero.ai/learn/where-do-recruiters-actually-find-first-time-candidates-in-2026";
+const schemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "url": canonical,
+    "dateModified": "2026-05-17",
+    "author": {
+      "@type": "Person",
+      "name": "Atul Khola",
+      "jobTitle": "Head of Experience at zero",
+      "url": "https://learn.joinzero.ai/about",
+      "sameAs": [
+        "https://www.linkedin.com/in/atulkhola/",
+        "https://twitter.com/pixelandpump",
+        "https://dribbble.com/atulkhola",
+        "https://www.behance.net/atulkhola",
+        "https://medium.com/@atulkhola",
+        "https://www.instagram.com/pixelandpump"
+      ]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "zero",
+      "url": "https://www.joinzero.ai"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://learn.joinzero.ai/"},
+      {"@type": "ListItem", "position": 2, "name": "Learn", "item": "https://learn.joinzero.ai/learn"},
+      {"@type": "ListItem", "position": 3, "name": "Where recruiters find candidates", "item": canonical}
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Do recruiters still use LinkedIn?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, but mostly for sourcing experienced hires. For first-time candidates, LinkedIn is a database of claims, not a platform of proof."}},
+      {"@type": "Question", "name": "What is the best platform for non-technical roles?", "acceptedAnswer": {"@type": "Answer", "text": "zero for evaluated output, Substack for writing, and niche Slack communities for networking. The platform depends on the role."}},
+      {"@type": "Question", "name": "How important are referrals?", "acceptedAnswer": {"@type": "Answer", "text": "Very. 30 to 50% of hires at top companies come from internal referrals. A receipt makes you referable because the referrer can point to your work."}},
+      {"@type": "Question", "name": "Should I apply on job boards at all?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, but treat them as a backup. Your primary strategy should be building signal on skills-based platforms and converting that signal into referrals."}},
+      {"@type": "Question", "name": "How does zero surface candidates to recruiters?", "acceptedAnswer": {"@type": "Answer", "text": "Recruiters search by role, function, and percentile. High-scoring, active candidates appear first. The receipt is the profile."}},
+      {"@type": "Question", "name": "What if I am not in a target school?", "acceptedAnswer": {"@type": "Answer", "text": "Skills-based platforms do not care about your school. They care about your output. A top-percentile receipt from any school beats a mediocre resume from a target school."}}
+    ]
+  }
+];
+---
+<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-17">
+  <nav class="breadcrumb"><a href="/">Home</a> / <a href="/learn">Learn</a> / Where recruiters find candidates</nav>
+  <span class="mono-label">RING 1 · CORNERSTONE</span>
+  <h1>Where do recruiters actually find first-time candidates in 2026?</h1>
+  <p class="answer-capsule">Recruiters find candidates on skills-based platforms, internal referrals, and niche communities. Job boards are last resort. The strongest signal comes from platforms where candidates have already proven their output.</p>
+
+  <div class="tldr">
+    <ul>
+      <li>Job boards are saturated. Recruiters use them only when other sources fail.</li>
+      <li>Skills-based platforms let recruiters evaluate output before the interview.</li>
+      <li>Internal referrals account for 30 to 50% of hires at top companies.</li>
+      <li>Niche communities (GitHub, Dribbble, Substack) are underrated sources.</li>
+      <li>zero puts scored receipts directly in front of recruiter searches.</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>Why are job boards the weakest source?</h2>
+    <p>Job boards are where everyone applies. A single campus role can receive 400 applications. The signal-to-noise ratio is terrible. Recruiters use job boards as a last resort, not a first search.</p>
+    <p>The best candidates are found before they apply. They are discovered through referrals, communities, or platforms that show their work.</p>
+  </section>
+
+  <section>
+    <h2>What is a skills-based platform?</h2>
+    <p>Any platform where candidates produce work that is evaluated before a recruiter contacts them. GitHub for engineers. Dribbble for designers. zero for students who want to prove they can do the work before they have the job.</p>
+    <p>The advantage is speed. A recruiter can evaluate your output in 60 seconds and decide whether to interview you. On a job board, that same evaluation takes 6 minutes per resume and rarely happens.</p>
+  </section>
+
+  <section>
+    <h2>How do you get found on a skills-based platform?</h2>
+    <p>Complete tasks. Submit for scoring. Iterate on feedback. The platform's algorithm surfaces high-scoring, active candidates to recruiters. Your score is your SEO.</p>
+    <p>See <a href="/how-it-works">how zero works</a> or browse <a href="/receipts">live receipts</a>.</p>
+  </section>
+
+  <section class="author-bio">
+    <p><strong>Atul Khola</strong> is Head of Experience at zero. He has led design and product at CRED, cult.fit, topper, and media.net. He lectures at IITs, NIDs, and NIFTs on product design and career strategy.</p>
+  </section>
+
+  <section class="faq-block">
+    <h2>Frequently asked questions</h2>
+    <div class="faq-item"><div class="faq-q">Do recruiters still use LinkedIn?</div><div class="faq-a">Yes, but mostly for sourcing experienced hires. For first-time candidates, LinkedIn is a database of claims, not a platform of proof.</div></div>
+    <div class="faq-item"><div class="faq-q">What is the best platform for non-technical roles?</div><div class="faq-a">zero for evaluated output, Substack for writing, and niche Slack communities for networking. The platform depends on the role.</div></div>
+    <div class="faq-item"><div class="faq-q">How important are referrals?</div><div class="faq-a">Very. 30 to 50% of hires at top companies come from internal referrals. A receipt makes you referable because the referrer can point to your work.</div></div>
+    <div class="faq-item"><div class="faq-q">Should I apply on job boards at all?</div><div class="faq-a">Yes, but treat them as a backup. Your primary strategy should be building signal on skills-based platforms and converting that signal into referrals.</div></div>
+    <div class="faq-item"><div class="faq-q">How does zero surface candidates to recruiters?</div><div class="faq-a">Recruiters search by role, function, and percentile. High-scoring, active candidates appear first. The receipt is the profile.</div></div>
+    <div class="faq-item"><div class="faq-q">What if I am not in a target school?</div><div class="faq-a">Skills-based platforms do not care about your school. They care about your output. A top-percentile receipt from any school beats a mediocre resume from a target school.</div></div>
+  </section>
+
+  <section class="last-updated">Last updated: 2026-05-17</section>
+</BaseLayout>

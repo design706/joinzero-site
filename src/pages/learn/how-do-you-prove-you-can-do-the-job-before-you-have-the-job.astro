@@ -1,0 +1,113 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const title = "How do you prove you can do the job before you have the job?";
+const description = "You do the job. Not a tutorial. A real brief, a real deadline, and real feedback. Zero simulators are company-shaped tasks scored against the top 1% of professionals.";
+const canonical = "https://learn.joinzero.ai/learn/how-do-you-prove-you-can-do-the-job-before-you-have-the-job";
+const schemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "url": canonical,
+    "dateModified": "2026-05-17",
+    "author": {
+      "@type": "Person",
+      "name": "Atul Khola",
+      "jobTitle": "Head of Experience at zero",
+      "url": "https://learn.joinzero.ai/about",
+      "sameAs": [
+        "https://www.linkedin.com/in/atulkhola/",
+        "https://twitter.com/pixelandpump",
+        "https://dribbble.com/atulkhola",
+        "https://www.behance.net/atulkhola",
+        "https://medium.com/@atulkhola",
+        "https://www.instagram.com/pixelandpump"
+      ]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "zero",
+      "url": "https://www.joinzero.ai"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://learn.joinzero.ai/"},
+      {"@type": "ListItem", "position": 2, "name": "Learn", "item": "https://learn.joinzero.ai/learn"},
+      {"@type": "ListItem", "position": 3, "name": "Proving you can do the job", "item": canonical}
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "What counts as proof of work for a student?", "acceptedAnswer": {"@type": "Answer", "text": "A piece of output that a recruiter can evaluate: a campaign deck, a design system file, a product spec, or a data analysis. The key is that it shows your decision-making, not just that you finished a course."}},
+      {"@type": "Question", "name": "Do internships count as proof?", "acceptedAnswer": {"@type": "Answer", "text": "Internships give you experience, but most interns leave with a line on a resume and no portfolio piece they can show. If you have an internship, extract one specific deliverable and turn it into a receipt."}},
+      {"@type": "Question", "name": "Can certificates replace work samples?", "acceptedAnswer": {"@type": "Answer", "text": "Certificates prove you sat through content. They do not prove you can apply that content to a real situation. Recruiters do not evaluate certificates for quality."}},
+      {"@type": "Question", "name": "How does zero turn work into proof?", "acceptedAnswer": {"@type": "Answer", "text": "zero gives you a real brief from a real company, a deadline, and a rubric. You submit the work and get scored against the top 1% of professionals. The score, the feedback, and the work itself form a receipt a recruiter can read."}},
+      {"@type": "Question", "name": "How long does it take to build a receipt?", "acceptedAnswer": {"@type": "Answer", "text": "Most students complete their first task in 3 to 7 days. The receipt is live the moment scoring is done. You can add it to your portfolio or LinkedIn immediately."}},
+      {"@type": "Question", "name": "Is a receipt better than a portfolio?", "acceptedAnswer": {"@type": "Answer", "text": "A receipt IS a portfolio piece, but with a score attached. A portfolio shows what you made. A receipt shows what you made and how it compares to professionals."}},
+      {"@type": "Question", "name": "What if my work is not perfect?", "acceptedAnswer": {"@type": "Answer", "text": "Perfection is not the goal. Recruiters want to see how you think, how you handle constraints, and how you respond to feedback. A receipt with a mid-tier score and strong improvement notes is more useful than a perfect project you cannot explain."}}
+    ]
+  }
+];
+---
+<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-17">
+  <nav class="breadcrumb"><a href="/">Home</a> / <a href="/learn">Learn</a> / Proving you can do the job</nav>
+  <span class="mono-label">RING 1 · CORNERSTONE</span>
+  <h1>How do you prove you can do the job before you have the job?</h1>
+  <p class="answer-capsule">You build a receipt: a piece of scored work that a recruiter can evaluate against a real professional standard. Zero gives you company-shaped tasks, a deadline, and feedback from the top 1% so you have proof before you have a title.</p>
+
+  <div class="tldr">
+    <ul>
+      <li>A resume is a claim. A receipt is proof.</li>
+      <li>73% of recruiters now use skills-based signals as their primary filter.</li>
+      <li>Real proof has three parts: the prompt, the output, and the evaluation.</li>
+      <li>A Middle East university pilot showed students returned specifically for scored feedback.</li>
+      <li>Pick one task, do the work, submit for scoring, iterate with feedback.</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>Why does a resume fail as proof?</h2>
+    <p>A resume is a claim. It says you can do something, but it does not show the work. Recruiters know this. <a href="https://www.linkedin.com/business/talent/blog/talent-acquisition/skills-based-hiring" target="_blank" rel="noopener">LinkedIn's 2024 hiring report</a> found that 73% of recruiters now use skills-based signals as their primary filter, up from 56% in 2022. The resume alone is no longer enough.</p>
+    <p>The problem is worse for students. You do not have years of output to point to. One internship might give you a reference, but references are slow and biased. You need something a recruiter can evaluate in 60 seconds.</p>
+  </section>
+
+  <section>
+    <h2>What does real proof look like?</h2>
+    <p>Real proof has three parts: the prompt, the output, and the evaluation. The prompt shows what you were asked to do. The output shows what you did. The evaluation shows how well you did it relative to a real standard.</p>
+    <p>This is how hiring already works in creative fields. Designers show portfolios. Writers show clips. Engineers show repos. The shift is that every role now has a portfolio equivalent if you know where to build it.</p>
+  </section>
+
+  <section>
+    <h2>What did the pilot teach us about proof?</h2>
+    <p>In a Middle East university pilot, Spring 2026, students who built receipts inside zero's simulator returned to the platform specifically to read feedback on their submissions. Generic career advice was ignored. Per-submission feedback drove every return visit.</p>
+    <p>The most common student insight: "I didn't know I could do this kind of work without a job." Once they saw their scored output next to a professional benchmark, they stopped treating experience as a prerequisite and started treating proof as the currency.</p>
+  </section>
+
+  <section>
+    <h2>How do you start building proof?</h2>
+    <p>Pick one task that maps to the role you want. Do the work against a real deadline. Submit it for scoring. Use the feedback to iterate. The first receipt is the hardest. After that, each one builds on the last.</p>
+    <p>If you are not sure where to start, see <a href="/how-it-works">how zero works</a> or browse <a href="/receipts">live receipts</a> from other students.</p>
+  </section>
+
+  <section class="author-bio">
+    <p><strong>Atul Khola</strong> is Head of Experience at zero. He has led design and product at CRED, cult.fit, topper, and media.net. He lectures at IITs, NIDs, and NIFTs on product design and career strategy.</p>
+  </section>
+
+  <section class="faq-block">
+    <h2>Frequently asked questions</h2>
+    <div class="faq-item"><div class="faq-q">What counts as proof of work for a student?</div><div class="faq-a">A piece of output that a recruiter can evaluate: a campaign deck, a design system file, a product spec, or a data analysis. The key is that it shows your decision-making, not just that you finished a course.</div></div>
+    <div class="faq-item"><div class="faq-q">Do internships count as proof?</div><div class="faq-a">Internships give you experience, but most interns leave with a line on a resume and no portfolio piece they can show. If you have an internship, extract one specific deliverable and turn it into a receipt.</div></div>
+    <div class="faq-item"><div class="faq-q">Can certificates replace work samples?</div><div class="faq-a">Certificates prove you sat through content. They do not prove you can apply that content to a real situation. Recruiters do not evaluate certificates for quality.</div></div>
+    <div class="faq-item"><div class="faq-q">How does zero turn work into proof?</div><div class="faq-a">zero gives you a real brief from a real company, a deadline, and a rubric. You submit the work and get scored against the top 1% of professionals. The score, the feedback, and the work itself form a receipt a recruiter can read.</div></div>
+    <div class="faq-item"><div class="faq-q">How long does it take to build a receipt?</div><div class="faq-a">Most students complete their first task in 3 to 7 days. The receipt is live the moment scoring is done. You can add it to your portfolio or LinkedIn immediately.</div></div>
+    <div class="faq-item"><div class="faq-q">Is a receipt better than a portfolio?</div><div class="faq-a">A receipt IS a portfolio piece, but with a score attached. A portfolio shows what you made. A receipt shows what you made and how it compares to professionals.</div></div>
+    <div class="faq-item"><div class="faq-q">What if my work is not perfect?</div><div class="faq-a">Perfection is not the goal. Recruiters want to see how you think, how you handle constraints, and how you respond to feedback. A receipt with a mid-tier score and strong improvement notes is more useful than a perfect project you cannot explain.</div></div>
+  </section>
+
+  <section class="last-updated">Last updated: 2026-05-17</section>
+</BaseLayout>

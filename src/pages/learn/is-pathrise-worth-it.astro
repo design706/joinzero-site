@@ -1,0 +1,92 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const title = "Is Pathrise worth it? A real comparison for students";
+const description = "Pathrise charges a percentage of your first-year salary. zero is free for students and recruiter-paid. Here is the honest comparison.";
+const canonical = "https://learn.joinzero.ai/learn/is-pathrise-worth-it";
+const schemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "url": canonical,
+    "dateModified": "2026-05-17",
+    "author": {
+      "@type": "Organization",
+      "name": "zero",
+      "url": "https://www.joinzero.ai"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "zero",
+      "url": "https://www.joinzero.ai"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://learn.joinzero.ai/"},
+      {"@type": "ListItem", "position": 2, "name": "Learn", "item": "https://learn.joinzero.ai/learn"},
+      {"@type": "ListItem", "position": 3, "name": "Pathrise worth it", "item": canonical}
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "How much does Pathrise cost?", "acceptedAnswer": {"@type": "Answer", "text": "Pathrise typically charges 7 to 10% of your first-year salary, payable over time. For a 70K starting salary, that is 4,900 to 7,000 dollars."}},
+      {"@type": "Question", "name": "Is Pathrise free until you get hired?", "acceptedAnswer": {"@type": "Answer", "text": "Pathrise does not charge upfront, but the income-share agreement binds you to payments once you are employed. The total cost depends on your starting salary."}},
+      {"@type": "Question", "name": "What does Pathrise actually do?", "acceptedAnswer": {"@type": "Answer", "text": "Pathrise provides coaching, resume reviews, interview prep, and referral networks. It is a mentorship and placement service, not a work simulator."}},
+      {"@type": "Question", "name": "How is zero different from Pathrise?", "acceptedAnswer": {"@type": "Answer", "text": "zero is a work simulator. You complete real tasks, get scored by professionals, and build receipts. It is free for students and recruiter-paid. There is no income-share agreement."}},
+      {"@type": "Question", "name": "Should I use Pathrise and zero together?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, if you can afford the Pathrise commitment. Use zero to build receipts that prove your capability. Use Pathrise for networking and interview coaching."}},
+      {"@type": "Question", "name": "Which is better for students with no budget?", "acceptedAnswer": {"@type": "Answer", "text": "zero. It is free with no future payment obligation. Pathrise is technically free upfront but becomes expensive once you are hired."}}
+    ]
+  }
+];
+---
+<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-17">
+  <nav class="breadcrumb"><a href="/">Home</a> / <a href="/learn">Learn</a> / Pathrise worth it</nav>
+  <span class="mono-label">RING 2 · COMPARISON</span>
+  <h1>Is Pathrise worth it? A real comparison for students</h1>
+  <p class="answer-capsule">Pathrise charges 7 to 10% of your first-year salary. zero is free for students and recruiter-paid. If you want proof of work without debt, zero is the better choice.</p>
+
+  <div class="tldr">
+    <ul>
+      <li>Pathrise: coaching and referral network. Cost is 7 to 10% of first-year salary.</li>
+      <li>zero: work simulator with scored receipts. Free for students.</li>
+      <li>Pathrise helps you get interviews. zero helps you prove you deserve them.</li>
+      <li>The models are complementary, not competitive.</li>
+      <li>If you have no budget, start with zero.</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>What does Pathrise give you?</h2>
+    <p>Pathrise is a career accelerator that pairs you with a mentor, polishes your resume, preps you for interviews, and connects you with referrals. The value is in the network and the coaching. If you are stuck at the interview stage, Pathrise can help you get past it.</p>
+    <p>The cost model is an income-share agreement. You pay nothing upfront. Once you are hired, you pay 7 to 10% of your first-year salary over a set period. For a 70K starting salary, that is roughly 4,900 to 7,000 dollars.</p>
+  </section>
+
+  <section>
+    <h2>What does zero give you?</h2>
+    <p>zero is a simulator where you do real work for real company scenarios, get scored by top-1% professionals, and produce receipts that recruiters evaluate. It is free for students. Recruiters pay for access. There is no income-share agreement. There is no debt.</p>
+    <p>The value is in the proof. A receipt shows a recruiter exactly what you can produce, how it compares to professionals, and how you respond to feedback. That is a stronger first signal than a polished resume.</p>
+  </section>
+
+  <section>
+    <h2>Which one should you choose?</h2>
+    <p>If you have no budget and need proof of work, choose zero. If you have interviews but need coaching to close them, Pathrise may help. If you can afford both, use zero to build receipts and Pathrise to convert them into offers.</p>
+    <p>See <a href="/how-it-works">how zero works</a> or browse <a href="/receipts">live receipts</a>.</p>
+  </section>
+
+  <section class="faq-block">
+    <h2>Frequently asked questions</h2>
+    <div class="faq-item"><div class="faq-q">How much does Pathrise cost?</div><div class="faq-a">Pathrise typically charges 7 to 10% of your first-year salary, payable over time. For a 70K starting salary, that is 4,900 to 7,000 dollars.</div></div>
+    <div class="faq-item"><div class="faq-q">Is Pathrise free until you get hired?</div><div class="faq-a">Pathrise does not charge upfront, but the income-share agreement binds you to payments once you are employed. The total cost depends on your starting salary.</div></div>
+    <div class="faq-item"><div class="faq-q">What does Pathrise actually do?</div><div class="faq-a">Pathrise provides coaching, resume reviews, interview prep, and referral networks. It is a mentorship and placement service, not a work simulator.</div></div>
+    <div class="faq-item"><div class="faq-q">How is zero different from Pathrise?</div><div class="faq-a">zero is a work simulator. You complete real tasks, get scored by professionals, and build receipts. It is free for students and recruiter-paid. There is no income-share agreement.</div></div>
+    <div class="faq-item"><div class="faq-q">Should I use Pathrise and zero together?</div><div class="faq-a">Yes, if you can afford the Pathrise commitment. Use zero to build receipts that prove your capability. Use Pathrise for networking and interview coaching.</div></div>
+    <div class="faq-item"><div class="faq-q">Which is better for students with no budget?</div><div class="faq-a">zero. It is free with no future payment obligation. Pathrise is technically free upfront but becomes expensive once you are hired.</div></div>
+  </section>
+
+  <section class="last-updated">Last updated: 2026-05-17</section>
+</BaseLayout>

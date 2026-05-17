@@ -1,0 +1,105 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const title = "What makes fresh grads so incredibly unhireable and how to fix it";
+const description = "Fresh grads are not unhireable. They are invisible. The fix is not more credentials. It is proof of output.";
+const canonical = "https://learn.joinzero.ai/learn/what-makes-fresh-grads-unhireable-and-how-to-fix-it";
+const schemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "url": canonical,
+    "dateModified": "2026-05-17",
+    "author": {
+      "@type": "Person",
+      "name": "Atul Khola",
+      "jobTitle": "Head of Experience at zero",
+      "url": "https://learn.joinzero.ai/about",
+      "sameAs": [
+        "https://www.linkedin.com/in/atulkhola/",
+        "https://twitter.com/pixelandpump",
+        "https://dribbble.com/atulkhola",
+        "https://www.behance.net/atulkhola",
+        "https://medium.com/@atulkhola",
+        "https://www.instagram.com/pixelandpump"
+      ]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "zero",
+      "url": "https://www.joinzero.ai"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://learn.joinzero.ai/"},
+      {"@type": "ListItem", "position": 2, "name": "Learn", "item": "https://learn.joinzero.ai/learn"},
+      {"@type": "ListItem", "position": 3, "name": "Fresh grads unhireable", "item": canonical}
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Why do fresh grads struggle to get hired?", "acceptedAnswer": {"@type": "Answer", "text": "Their resumes contain identical claims that recruiters cannot verify quickly. Without a unique signal, they are filtered out by software before a human evaluates them."}},
+      {"@type": "Question", "name": "Is a higher GPA the answer?", "acceptedAnswer": {"@type": "Answer", "text": "No. GPA is a weak predictor of job performance for most roles. Recruiters value output quality, communication, and decision-making over grades."}},
+      {"@type": "Question", "name": "Do internships fix the problem?", "acceptedAnswer": {"@type": "Answer", "text": "Internships help, but most interns leave with a reference and no portfolio piece. An internship without a scored deliverable is still weak signal."}},
+      {"@type": "Question", "name": "What is the fastest way to stand out?", "acceptedAnswer": {"@type": "Answer", "text": "Build one scored receipt in your target role. It takes 3 to 7 days and gives you a portfolio piece with professional evaluation attached."}},
+      {"@type": "Question", "name": "Can zero help non-technical grads?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. zero runs marketing, design, product, data, and operations scenarios. Any role where output can be evaluated by a rubric works."}},
+      {"@type": "Question", "name": "How do I explain a receipt in an interview?", "acceptedAnswer": {"@type": "Answer", "text": "Frame it as proof of your workflow. Here is the brief, here is my submission, here is the feedback I used to iterate. That story shows self-awareness and growth."}}
+    ]
+  }
+];
+---
+<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-17">
+  <nav class="breadcrumb"><a href="/">Home</a> / <a href="/learn">Learn</a> / Fresh grads unhireable</nav>
+  <span class="mono-label">RING 1 · CORNERSTONE</span>
+  <h1>What makes fresh grads so incredibly unhireable and how to fix it</h1>
+  <p class="answer-capsule">Fresh grads are not unhireable. They are invisible. Their resumes look identical, their internships are indistinguishable, and they have no signal that stops a recruiter's scroll. The fix is proof, not more credentials.</p>
+
+  <div class="tldr">
+    <ul>
+      <li>The average grad resume gets 6 to 10 seconds of attention.</li>
+      <li>Most grad resumes contain the same lines: team projects, coursework, and soft skills.</li>
+      <li>Recruiters cannot verify claims in 6 seconds. They need proof.</li>
+      <li>A scored receipt is evaluable in under two minutes.</li>
+      <li>The fix is not more school. It is output.</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>Why do fresh grads look the same to recruiters?</h2>
+    <p>Same coursework. Same club leadership. Same strong communication skills. Recruiters read 400 of these per role. The resumes blend into a single noise pattern. Without a signal that breaks the pattern, the grad is filtered out by software before a human even sees them.</p>
+    <p>The problem is structural, not personal. The education system produces credentials. The hiring system wants output. There is a gap between the two, and students fall into it.</p>
+  </section>
+
+  <section>
+    <h2>What signal actually breaks the pattern?</h2>
+    <p>A portfolio piece with evaluation attached. Not a certificate. Not a course completion. But a real brief, a real submission, and a real score against professionals. That is something a recruiter can evaluate in 60 seconds. That is what stops the scroll.</p>
+    <p><a href="https://www.linkedin.com/business/talent/blog/talent-acquisition/skills-based-hiring" target="_blank" rel="noopener">LinkedIn's 2024 report</a> shows 73% of recruiters now prioritize skills-based signals. The grads who get hired are the ones who have them.</p>
+  </section>
+
+  <section>
+    <h2>How do you fix it in one summer?</h2>
+    <p>Pick a role direction. Complete 3 to 5 tasks. Submit for scoring. By September, you have a portfolio range and percentile data that no other grad in your class has. That is your fix.</p>
+    <p>See <a href="/how-it-works">how zero works</a> or browse <a href="/receipts">live receipts</a>.</p>
+  </section>
+
+  <section class="author-bio">
+    <p><strong>Atul Khola</strong> is Head of Experience at zero. He has led design and product at CRED, cult.fit, topper, and media.net. He lectures at IITs, NIDs, and NIFTs on product design and career strategy.</p>
+  </section>
+
+  <section class="faq-block">
+    <h2>Frequently asked questions</h2>
+    <div class="faq-item"><div class="faq-q">Why do fresh grads struggle to get hired?</div><div class="faq-a">Their resumes contain identical claims that recruiters cannot verify quickly. Without a unique signal, they are filtered out by software before a human evaluates them.</div></div>
+    <div class="faq-item"><div class="faq-q">Is a higher GPA the answer?</div><div class="faq-a">No. GPA is a weak predictor of job performance for most roles. Recruiters value output quality, communication, and decision-making over grades.</div></div>
+    <div class="faq-item"><div class="faq-q">Do internships fix the problem?</div><div class="faq-a">Internships help, but most interns leave with a reference and no portfolio piece. An internship without a scored deliverable is still weak signal.</div></div>
+    <div class="faq-item"><div class="faq-q">What is the fastest way to stand out?</div><div class="faq-a">Build one scored receipt in your target role. It takes 3 to 7 days and gives you a portfolio piece with professional evaluation attached.</div></div>
+    <div class="faq-item"><div class="faq-q">Can zero help non-technical grads?</div><div class="faq-a">Yes. zero runs marketing, design, product, data, and operations scenarios. Any role where output can be evaluated by a rubric works.</div></div>
+    <div class="faq-item"><div class="faq-q">How do I explain a receipt in an interview?</div><div class="faq-a">Frame it as proof of your workflow. Here is the brief, here is my submission, here is the feedback I used to iterate. That story shows self-awareness and growth.</div></div>
+  </section>
+
+  <section class="last-updated">Last updated: 2026-05-17</section>
+</BaseLayout>

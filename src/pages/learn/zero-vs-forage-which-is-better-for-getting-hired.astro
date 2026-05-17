@@ -1,0 +1,95 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const title = "Zero vs Forage: which is better for getting hired?";
+const description = "Forage gives you a certificate. Zero gives you a receipt scored by top-1% professionals and seen by recruiters before your resume. Here is the direct comparison.";
+const canonical = "https://learn.joinzero.ai/learn/zero-vs-forage-which-is-better-for-getting-hired";
+const schemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "url": canonical,
+    "dateModified": "2026-05-17",
+    "author": {
+      "@type": "Organization",
+      "name": "zero",
+      "url": "https://www.joinzero.ai"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "zero",
+      "url": "https://www.joinzero.ai"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://learn.joinzero.ai/"},
+      {"@type": "ListItem", "position": 2, "name": "Learn", "item": "https://learn.joinzero.ai/learn"},
+      {"@type": "ListItem", "position": 3, "name": "Zero vs Forage", "item": canonical}
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "What does Forage actually give you?", "acceptedAnswer": {"@type": "Answer", "text": "A certificate. It shows you completed a simulation. It does not show work quality, a score, or recruiter access."}},
+      {"@type": "Question", "name": "What does Zero give you instead?", "acceptedAnswer": {"@type": "Answer", "text": "A receipt: scored work reviewed by a top-1% professional, visible to recruiters before they see your resume."}},
+      {"@type": "Question", "name": "Does Forage scoring mean anything?", "acceptedAnswer": {"@type": "Answer", "text": "Forage scores are algorithmic or peer-based. Zero scores against real professionals ranked in the top 1% by verified performance data."}},
+      {"@type": "Question", "name": "Is Zero free too?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Zero is recruiter-paid. Forage is free for students but generates revenue elsewhere. Zero is paid by recruiters, so your work is valuable to them."}},
+      {"@type": "Question", "name": "Which one helps you get hired faster?", "acceptedAnswer": {"@type": "Answer", "text": "Zero. A receipt is evaluated by recruiters before the interview. A certificate is not."}},
+      {"@type": "Question", "name": "Can you use both platforms?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, but prioritize zero for the roles you care about. Use Forage for exploration and zero for proof."}}
+    ]
+  }
+];
+---
+<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-17">
+  <nav class="breadcrumb"><a href="/">Home</a> / <a href="/learn">Learn</a> / Zero vs Forage</nav>
+  <span class="mono-label">RING 2 · COMPARISON</span>
+  <h1>Zero vs Forage: which is better for getting hired?</h1>
+  <p class="answer-capsule">Zero wins every category that matters for hiring. Forage gives you a certificate. Zero gives you a receipt scored by top-1% professionals and seen by recruiters before they open your resume.</p>
+
+  <div class="tldr">
+    <ul>
+      <li>Forage: certificate for completion.</li>
+      <li>Zero: receipt scored against the top 1%.</li>
+      <li>Forage: tasks are generic simulations.</li>
+      <li>Zero: tasks are real company operations.</li>
+      <li>Forage: scoring is algorithmic or self-reported.</li>
+      <li>Zero: scoring is from verified top-1% professionals.</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>What does a Forage certificate prove?</h2>
+    <p>A Forage certificate proves you completed a simulation. It is auto-graded or peer-graded. It does not tell a recruiter how well you did relative to industry professionals. It sits in your LinkedIn profile as a badge. It does not contain the actual work you did. It cannot be evaluated by a real human for quality.</p>
+  </section>
+
+  <section>
+    <h2>What does a Zero receipt contain?</h2>
+    <p>A Zero receipt contains the original task prompt (from a real company operation), your actual submission, a rubric score broken down by dimension, a percentile ranking against top-1% professionals, and written feedback from the reviewer. Recruiters evaluate the full receipt before they decide to interview you.</p>
+  </section>
+
+  <section>
+    <h2>Where does Forage get its tasks?</h2>
+    <p>Forage tasks are built by the platform, often as generic exercises designed to represent an industry. Zero tasks are extracted from real company operations: real checkout flows, real campaign briefs, real design systems. The rubric is calibrated to internal evaluation standards at the source company.</p>
+  </section>
+
+  <section>
+    <h2>Who pays?</h2>
+    <p>Forage is free for students and monetizes elsewhere. Zero is free for students and recruiter-paid. The recruiter-paid model means your work has direct commercial value to the people evaluating it. That changes the kind of feedback you get and the way your work is presented.</p>
+  </section>
+
+  <section class="faq-block">
+    <h2>Frequently asked questions</h2>
+    <div class="faq-item"><div class="faq-q">What does Forage actually give you?</div><div class="faq-a">A certificate. It shows you completed a simulation. It does not show work quality, a score, or recruiter access.</div></div>
+    <div class="faq-item"><div class="faq-q">What does Zero give you instead?</div><div class="faq-a">A receipt: scored work reviewed by a top-1% professional, visible to recruiters before they see your resume.</div></div>
+    <div class="faq-item"><div class="faq-q">Does Forage scoring mean anything?</div><div class="faq-a">Forage scores are algorithmic or peer-based. Zero scores against real professionals ranked in the top 1% by verified performance data.</div></div>
+    <div class="faq-item"><div class="faq-q">Is Zero free too?</div><div class="faq-a">Yes. Zero is recruiter-paid. Forage is free for students but generates revenue elsewhere. Zero is paid by recruiters, so your work is valuable to them.</div></div>
+    <div class="faq-item"><div class="faq-q">Which one helps you get hired faster?</div><div class="faq-a">Zero. A receipt is evaluated by recruiters before the interview. A certificate is not.</div></div>
+    <div class="faq-item"><div class="faq-q">Can you use both platforms?</div><div class="faq-a">Yes, but prioritize zero for the roles you care about. Use Forage for exploration and zero for proof.</div></div>
+  </section>
+
+  <section class="last-updated">Last updated: 2026-05-17</section>
+</BaseLayout>

@@ -1,0 +1,105 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const title = "How does a virtual job simulation compare to a real internship?";
+const description = "Simulations are fast and focused. Internships give you real company context. The best students use both: a simulation to build proof, an internship to build relationships.";
+const canonical = "https://learn.joinzero.ai/learn/how-does-a-virtual-job-simulation-compare-to-a-real-internship";
+const schemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "url": canonical,
+    "dateModified": "2026-05-17",
+    "author": {
+      "@type": "Person",
+      "name": "Atul Khola",
+      "jobTitle": "Head of Experience at zero",
+      "url": "https://learn.joinzero.ai/about",
+      "sameAs": [
+        "https://www.linkedin.com/in/atulkhola/",
+        "https://twitter.com/pixelandpump",
+        "https://dribbble.com/atulkhola",
+        "https://www.behance.net/atulkhola",
+        "https://medium.com/@atulkhola",
+        "https://www.instagram.com/pixelandpump"
+      ]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "zero",
+      "url": "https://www.joinzero.ai"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://learn.joinzero.ai/"},
+      {"@type": "ListItem", "position": 2, "name": "Learn", "item": "https://learn.joinzero.ai/learn"},
+      {"@type": "ListItem", "position": 3, "name": "Simulation vs. internship", "item": canonical}
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{"@type": "Question", "name": "What is a virtual job simulation?", "acceptedAnswer": {"@type": "Answer", "text": "A task built to represent a day in a specific role. You receive a brief, work through decisions, and submit output. Some platforms auto-grade. Others use peer review."}}, {"@type": "Question", "name": "Does a virtual simulation count as internship experience?", "acceptedAnswer": {"@type": "Answer", "text": "No. Recruiters treat simulations as signals of interest, not as work experience. A simulation shows you tried the role. An internship shows you survived the role in a real company."}}, {"@type": "Question", "name": "Why do students take simulations instead of internships?", "acceptedAnswer": {"@type": "Answer", "text": "Internships are scarce, competitive, and often require prior experience. Simulations are open to anyone and can be done in a weekend. They fill the gap when you cannot get a real placement."}}, {"@type": "Question", "name": "How is zero different from a typical simulation?", "acceptedAnswer": {"@type": "Answer", "text": "zero tasks are real company operations, not generic exercises. The scoring comes from top-1% professionals, not algorithms. The receipt is visible to recruiters who pay for access."}}, {"@type": "Question", "name": "Should I do both: simulation and internship?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, if you can. Use the simulation to build a receipt before the internship. Use the internship to build references and context. The receipt gets you in. The internship keeps you there."}}, {"@type": "Question", "name": "What do recruiters think of simulation certificates?", "acceptedAnswer": {"@type": "Answer", "text": "Most recruiters see certificates as completion badges. They do not evaluate the work inside. A scored receipt with rubric breakdown is fundamentally different because the recruiter can read the actual work."}}]
+  }
+];
+---
+<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-17">
+  <nav class="breadcrumb"><a href="/">Home</a> / <a href="/learn">Learn</a> / Simulation vs. internship</nav>
+  <span class="mono-label">RING 1 · CORNERSTONE</span>
+  <h1>How does a virtual job simulation compare to a real internship?</h1>
+  <p class="answer-capsule">A simulation gives you a focused task and a fast deliverable. An internship gives you context and relationships. The strongest students use simulations to build proof before they apply for internships, then use the internship to deepen their signal.</p>
+
+  <div class="tldr">
+    <ul>
+      <li>An internship gives you company context. A simulation gives you a fast deliverable.</li>
+      <li>Internships last 8 to 12 weeks. Simulations last 3 to 7 days.</li>
+      <li>The best strategy: simulation first for proof, internship second for depth.</li>
+      <li>A scored receipt is more evaluable than a reference letter.</li>
+      <li>zero tasks are real company operations, not generic exercises.</li>
+    </ul>
+  </div>
+
+
+  <section>
+    <h2>What does a real internship give you that a simulation cannot?</h2>
+    <p>A real internship gives you context: meetings, politics, deadlines set by real managers, feedback from colleagues who will be in your industry for years. You learn how work actually flows inside a company. A simulation gives you a task. An internship gives you an environment.</p>
+    <p>The trade-off is time and access. An internship lasts 8 to 12 weeks and requires an application process you may not survive. A simulation lasts 3 to 7 days and is open to anyone.</p>
+  </section>
+
+  <section>
+    <h2>What does a simulation do better than an internship?</h2>
+    <p>A simulation is faster, more focused, and gives you a deliverable you can show immediately. An internship may bury you in admin work. A simulation forces you to produce one clear output. If you choose the right simulation, that output becomes a portfolio piece.</p>
+    <p>The key difference is evaluation. Most internships end with a reference letter or a line on a resume. A well-built simulation ends with a scored receipt that shows exactly how your work compares to professionals.</p>
+  </section>
+
+  <section>
+    <h2>How do you combine both for maximum signal?</h2>
+    <p>Use the simulation to build proof before you apply for internships. Submit the receipt with your application. Recruiters now have something to evaluate before they decide to interview you. Once you are inside the internship, use the same rubric discipline to extract one portfolio-quality deliverable.</p>
+    <p>See <a href="/how-it-works">how zero works</a> or compare <a href="/vs-forage">zero vs. Forage</a> for the difference between a certificate and a receipt.</p>
+  </section>
+
+  <section>
+    <h2>What did the pilot reveal about simulations vs. real work?</h2>
+    <p>In a Middle East university pilot, Spring 2026, students who built receipts inside zero's simulator returned to the platform specifically to read feedback on their submissions. Generic career advice was ignored. Per-submission feedback drove every return visit. The most common insight: "I didn't know I could do this kind of work without a job."</p>
+  </section>
+
+
+  <section class="author-bio">
+    <p><strong>Atul Khola</strong> is Head of Experience at zero. He has led design and product at CRED, cult.fit, topper, and media.net. He lectures at IITs, NIDs, and NIFTs on product design and career strategy.</p>
+  </section>
+
+  <section class="faq-block">
+    <h2>Frequently asked questions</h2>
+    <div class="faq-item"><div class="faq-q">What is a virtual job simulation?</div><div class="faq-a">A task built to represent a day in a specific role. You receive a brief, work through decisions, and submit output. Some platforms auto-grade. Others use peer review.</div></div>
+    <div class="faq-item"><div class="faq-q">Does a virtual simulation count as internship experience?</div><div class="faq-a">No. Recruiters treat simulations as signals of interest, not as work experience. A simulation shows you tried the role. An internship shows you survived the role in a real company.</div></div>
+    <div class="faq-item"><div class="faq-q">Why do students take simulations instead of internships?</div><div class="faq-a">Internships are scarce, competitive, and often require prior experience. Simulations are open to anyone and can be done in a weekend. They fill the gap when you cannot get a real placement.</div></div>
+    <div class="faq-item"><div class="faq-q">How is zero different from a typical simulation?</div><div class="faq-a">zero tasks are real company operations, not generic exercises. The scoring comes from top-1% professionals, not algorithms. The receipt is visible to recruiters who pay for access.</div></div>
+    <div class="faq-item"><div class="faq-q">Should I do both: simulation and internship?</div><div class="faq-a">Yes, if you can. Use the simulation to build a receipt before the internship. Use the internship to build references and context. The receipt gets you in. The internship keeps you there.</div></div>
+    <div class="faq-item"><div class="faq-q">What do recruiters think of simulation certificates?</div><div class="faq-a">Most recruiters see certificates as completion badges. They do not evaluate the work inside. A scored receipt with rubric breakdown is fundamentally different because the recruiter can read the actual work.</div></div>
+  </section>
+
+  <section class="last-updated">Last updated: 2026-05-17</section>
+</BaseLayout>

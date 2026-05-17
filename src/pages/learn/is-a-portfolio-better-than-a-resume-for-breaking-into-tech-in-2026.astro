@@ -1,0 +1,105 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const title = "Is a portfolio better than a resume for breaking into tech in 2026?";
+const description = "Resumes blend together. Portfolios stop the scroll. In 2026, 73% of recruiters prioritize skills-based signals. A scored receipt is the strongest portfolio piece you can build as a student.";
+const canonical = "https://learn.joinzero.ai/learn/is-a-portfolio-better-than-a-resume-for-breaking-into-tech-in-2026";
+const schemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "url": canonical,
+    "dateModified": "2026-05-17",
+    "author": {
+      "@type": "Person",
+      "name": "Atul Khola",
+      "jobTitle": "Head of Experience at zero",
+      "url": "https://learn.joinzero.ai/about",
+      "sameAs": [
+        "https://www.linkedin.com/in/atulkhola/",
+        "https://twitter.com/pixelandpump",
+        "https://dribbble.com/atulkhola",
+        "https://www.behance.net/atulkhola",
+        "https://medium.com/@atulkhola",
+        "https://www.instagram.com/pixelandpump"
+      ]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "zero",
+      "url": "https://www.joinzero.ai"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://learn.joinzero.ai/"},
+      {"@type": "ListItem", "position": 2, "name": "Learn", "item": "https://learn.joinzero.ai/learn"},
+      {"@type": "ListItem", "position": 3, "name": "Portfolio vs. resume", "item": canonical}
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "What is a portfolio in the context of job hunting?", "acceptedAnswer": {"@type": "Answer", "text": "A collection of work samples that show what you can produce. For designers it is mockups and case studies. For engineers it is repos and demos. For marketers it is campaigns and metrics."}},
+      {"@type": "Question", "name": "Why do portfolios beat resumes for entry-level hiring?", "acceptedAnswer": {"@type": "Answer", "text": "A resume tells a recruiter you might be capable. A portfolio shows them you are. In a stack of 400 applications, the portfolio forces a second look. The resume does not."}},
+      {"@type": "Question", "name": "What goes in a student portfolio?", "acceptedAnswer": {"@type": "Answer", "text": "One strong piece is better than ten weak ones. Pick a project that maps to your target role. Document the problem, your process, the output, and one lesson. That is a portfolio piece."}},
+      {"@type": "Question", "name": "How is a receipt different from a portfolio piece?", "acceptedAnswer": {"@type": "Answer", "text": "A portfolio piece shows what you made. A receipt shows what you made and how it scores against professionals. The score and feedback are the parts a recruiter trusts most."}},
+      {"@type": "Question", "name": "Do I need a website to have a portfolio?", "acceptedAnswer": {"@type": "Answer", "text": "No. A Notion doc, a Figma file, a GitHub repo, or a zero receipt link all work. The format matters less than the content. The recruiter needs to evaluate your work in under two minutes."}},
+      {"@type": "Question", "name": "What if I only have class projects?", "acceptedAnswer": {"@type": "Answer", "text": "Class projects are valid if you treat them like real work. Redesign the brief as if it came from a company. Add constraints. Add metrics. Show how you would ship it. That turns a class project into a portfolio piece."}}
+    ]
+  }
+];
+---
+<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-17">
+  <nav class="breadcrumb"><a href="/">Home</a> / <a href="/learn">Learn</a> / Portfolio vs. resume</nav>
+  <span class="mono-label">RING 1 · CORNERSTONE</span>
+  <h1>Is a portfolio better than a resume for breaking into tech in 2026?</h1>
+  <p class="answer-capsule">Yes. A resume is a claim. A portfolio is proof. In 2026, 73% of recruiters use skills-based signals as their primary filter. A single strong portfolio piece beats a page of resume bullets.</p>
+
+  <div class="tldr">
+    <ul>
+      <li>Resumes are lists of claims that every student writes the same way.</li>
+      <li>73% of recruiters now prioritize skills-based signals.</li>
+      <li>A strong portfolio piece answers four questions in under two minutes.</li>
+      <li>One strong piece is better than ten weak ones.</li>
+      <li>A scored receipt is a portfolio piece with evaluation built in.</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>Why does the resume fail for students?</h2>
+    <p>A resume is a list of claims. "Proficient in Python." "Led a team project." "Strong communication skills." Every student writes the same lines. Recruiters cannot verify any of it in 6 seconds. The result is that resumes blend together and most students never get an interview.</p>
+    <p><a href="https://www.linkedin.com/business/talent/blog/talent-acquisition/skills-based-hiring" target="_blank" rel="noopener">LinkedIn's 2024 report</a> confirms the shift: 73% of recruiters now prioritize skills-based signals. The resume is becoming a formality. The signal is what matters.</p>
+  </section>
+
+  <section>
+    <h2>What makes a portfolio piece strong?</h2>
+    <p>A strong portfolio piece answers four questions in under two minutes: What was the problem? What did you do? What was the output? What did you learn? If a recruiter can answer those four questions without scrolling, you have a strong piece.</p>
+    <p>The mistake most students make is showing too much process and too little result. Recruiters do not need your brainstorm board. They need to see the output and understand why it matters.</p>
+  </section>
+
+  <section>
+    <h2>How do you build your first portfolio piece?</h2>
+    <p>Start with one zero task that maps to your target role. Complete it against the rubric. Submit for scoring. The scored submission becomes your first portfolio piece: it has the prompt, the output, and the evaluation built in.</p>
+    <p>See <a href="/how-it-works">how zero works</a> or browse <a href="/receipts">live receipts</a>.</p>
+  </section>
+
+  <section class="author-bio">
+    <p><strong>Atul Khola</strong> is Head of Experience at zero. He has led design and product at CRED, cult.fit, topper, and media.net. He lectures at IITs, NIDs, and NIFTs on product design and career strategy.</p>
+  </section>
+
+  <section class="faq-block">
+    <h2>Frequently asked questions</h2>
+    <div class="faq-item"><div class="faq-q">What is a portfolio in the context of job hunting?</div><div class="faq-a">A collection of work samples that show what you can produce. For designers it is mockups and case studies. For engineers it is repos and demos. For marketers it is campaigns and metrics.</div></div>
+    <div class="faq-item"><div class="faq-q">Why do portfolios beat resumes for entry-level hiring?</div><div class="faq-a">A resume tells a recruiter you might be capable. A portfolio shows them you are. In a stack of 400 applications, the portfolio forces a second look. The resume does not.</div></div>
+    <div class="faq-item"><div class="faq-q">What goes in a student portfolio?</div><div class="faq-a">One strong piece is better than ten weak ones. Pick a project that maps to your target role. Document the problem, your process, the output, and one lesson. That is a portfolio piece.</div></div>
+    <div class="faq-item"><div class="faq-q">How is a receipt different from a portfolio piece?</div><div class="faq-a">A portfolio piece shows what you made. A receipt shows what you made and how it scores against professionals. The score and feedback are the parts a recruiter trusts most.</div></div>
+    <div class="faq-item"><div class="faq-q">Do I need a website to have a portfolio?</div><div class="faq-a">No. A Notion doc, a Figma file, a GitHub repo, or a zero receipt link all work. The format matters less than the content. The recruiter needs to evaluate your work in under two minutes.</div></div>
+    <div class="faq-item"><div class="faq-q">What if I only have class projects?</div><div class="faq-a">Class projects are valid if you treat them like real work. Redesign the brief as if it came from a company. Add constraints. Add metrics. Show how you would ship it. That turns a class project into a portfolio piece.</div></div>
+  </section>
+
+  <section class="last-updated">Last updated: 2026-05-17</section>
+</BaseLayout>
