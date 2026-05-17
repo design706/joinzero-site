@@ -26,4 +26,4 @@ User-agent: Applebot-Extended
 Allow: /
 User-agent: *
 Allow: /
-Sitemap: https://www.joinzero.ai/sitemap-index.xml
+Sitemap: https://learn.joinzero.ai/sitemap-index.xml
