@@ -1,0 +1,55 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "zero for students: how to break in without an internship";
+const description = "If you're a student or recent grad without work experience, zero gives you a way to do real work for real companies and prove yourself to recruiters before you have a job.";
+const canonical = "https://learn.joinzero.ai/for-students";
+const schemas = [
+  {"@context":"https://schema.org","@type":"Article","headline":title,"url":canonical,"description":description,"dateModified":"2026-05-17","author":{"@type":"Organization","name":"zero"}},
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://learn.joinzero.ai/"},{"@type":"ListItem","position":2,"name":"For Students","item":canonical}]}
+];
+---
+<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-17">
+  <div class="breadcrumb"><a href="/">zero learn</a> / for students</div>
+  <span class="mono-label">FOR STUDENTS</span>
+  <h1>If you don't have experience yet, build a receipt.</h1>
+  <p>The student playbook in 2026 is broken. You apply to 200 internships, get ghosted on 197, get rejected by 3. Then you spend the summer on a portfolio that nobody scores against anything. zero replaces that loop with one move: pick a real task from a real company, do the work, get scored against the top 1%, let recruiters find you.</p>
+
+  <div class="tldr">
+    <ul>
+      <li>Pick a real scenario from a real company. Tesla, Shopify, Stripe, and more.</li>
+      <li>Do the work. Submit the receipt.</li>
+      <li>Get scored against top-1% practitioners in your function.</li>
+      <li>Recruiters see your scored receipt before they see your resume.</li>
+      <li>Free for students. Always.</li>
+    </ul>
+  </div>
+
+  <h2>What's wrong with the current student playbook?</h2>
+  <p>Three things break it. The resume can't differentiate you from 200 other applicants who all listed Excel and Canva. The internship gatekeeping is brutal and increasingly automated. The advice you get tells you to build a portfolio, but never tells you how to make sure that portfolio is good.</p>
+  <p>zero attacks all three. The receipt replaces the resume as the primary evaluation surface. You don't need an internship to get the experience: the scenario IS the experience. And the scoring tells you exactly how good your work is, against people doing this for a living.</p>
+
+  <h2>What is a receipt and why does it work?</h2>
+  <p>A receipt is a piece of work you submitted on a real-world task, scored against the top 1% of practitioners in that function. It's not a certificate. It's not a profile. It's a verifiable artifact recruiters can read in 90 seconds and make a hiring decision on.</p>
+  <p>Receipts work because they invert the trust problem. Resumes ask recruiters to trust your claims. Receipts hand them the evidence directly. A recruiter at Tesla looking at 500 marketing-intern resumes can spot one top-scoring zero receipt in a second.</p>
+
+  <h2>How do I get started?</h2>
+  <p>Sign up at <a href="https://www.joinzero.ai">joinzero.ai</a>, pick a scenario in your function, start the work. The first session is structured so you submit something within the first 90 minutes. We do not believe in tutorials that delay the actual work.</p>
+
+  <h2>Frequently asked questions</h2>
+  <div class="faq-item">
+    <div class="faq-q">Do I need a degree?</div>
+    <div class="faq-a">No. zero scores the work, not the resume. Students without degrees who score well move to the top of recruiter lists.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Can I do this alongside a real internship?</div>
+    <div class="faq-a">Yes. Most active zero students are also applying to internships. The receipt makes those applications stronger.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">What if my receipt scores low?</div>
+    <div class="faq-a">You see why, you get specific feedback, and you submit again. The score history is private until you choose to share. Nobody sees your worst attempt.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">How long does a scenario take?</div>
+    <div class="faq-a">First receipt in a single 90-minute session is the target. Full mastery across multiple scenarios is closer to a summer's worth of weekend work.</div>
+  </div>
+</BaseLayout>

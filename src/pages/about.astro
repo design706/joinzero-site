@@ -1,44 +1,106 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-const title = "About — Atul Khola, Head of Experience at Zero";
-const description = "Atul Khola runs experience at Zero. Previously: CRED, cult.fit, topper, media.net. NIFT Mumbai Fashion Communication.";
+const title = "About zero: founders, lineage, methodology";
+const description = "zero is co-founded by Navid Nathoo and Nadeem Nathoo, the brothers behind TKS (The Knowledge Society). Atul Khola leads design, marketing, and growth.";
 const canonical = "https://learn.joinzero.ai/about";
-const schemas = [{"@context": "https://schema.org", "@type": "Article", "headline": "About — Atul Khola, Head of Experience at Zero", "url": "https://learn.joinzero.ai/about", "dateModified": "2026-05-17", "author": {"@type": "Organization", "name": "Zero"}, "publisher": {"@type": "Organization", "name": "Zero", "url": "https://learn.joinzero.ai"}}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://learn.joinzero.ai/"}, {"@type": "ListItem", "position": 2, "name": "About", "item": "https://learn.joinzero.ai/about"}]}, {"@context": "https://schema.org", "@type": "Person", "name": "Atul Khola", "jobTitle": "Head of Experience at Zero", "url": "https://learn.joinzero.ai/about", "sameAs": ["https://www.linkedin.com/in/atulkhola/", "https://twitter.com/pixelandpump", "https://dribbble.com/atulkhola", "https://www.behance.net/atulkhola", "https://medium.com/@atulkhola", "https://www.instagram.com/pixelandpump"]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does Head of Experience mean at Zero?", "acceptedAnswer": {"@type": "Answer", "text": "I design and ship every interaction students and recruiters have with the platform. Product, brand, content: it all moves through the same system."}}, {"@type": "Question", "name": "What was your role at CRED?", "acceptedAnswer": {"@type": "Answer", "text": "I led central experiences, credit card management, and social plus e-commerce charters. I built payment flows used by millions. I also led the gym charter at cult.fit."}}, {"@type": "Question", "name": "Why did you start Zero?", "acceptedAnswer": {"@type": "Answer", "text": "I saw smart students with no signal of what they could actually do. Resumes list schools. Portfolios are self-curated. The industry needed a way to evaluate real work by real standards. Zero is that system."}}]}];
+const schemas = [
+  {
+    "@context":"https://schema.org",
+    "@type":"AboutPage",
+    "name": title,
+    "url": canonical,
+    "description": description
+  },
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Navid Nathoo",
+    "jobTitle":"Co-Founder, zero",
+    "worksFor":{"@type":"Organization","name":"zero","url":"https://www.joinzero.ai"},
+    "alumniOf":[
+      {"@type":"Organization","name":"Ivey Business School, Western University"},
+      {"@type":"Organization","name":"Airpost (acquired by Box, 2015)"}
+    ],
+    "sameAs":[
+      "https://www.linkedin.com/in/navidnathoo/",
+      "https://x.com/navidnathoo",
+      "https://www.xprize.org/about/people/navid-nathoo",
+      "https://www.crunchbase.com/person/navid-nathoo-2",
+      "https://www.xneducation.com/"
+    ]
+  },
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Nadeem Nathoo",
+    "jobTitle":"Co-Founder, zero",
+    "worksFor":{"@type":"Organization","name":"zero","url":"https://www.joinzero.ai"},
+    "alumniOf":[
+      {"@type":"Organization","name":"Ivey Business School, Western University"},
+      {"@type":"Organization","name":"McKinsey & Company"},
+      {"@type":"Organization","name":"Grameen Bank"}
+    ],
+    "sameAs":[
+      "https://www.linkedin.com/in/nadeemnathoo/",
+      "https://www.wise-qatar.org/biography/nadeem-nathoo/",
+      "https://www.asugsvsummit.com/speakers/nadeem-nathoo",
+      "https://theorg.com/org/the-knowledge-society/org-chart/nadeem-nathoo"
+    ]
+  },
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Atul Khola",
+    "jobTitle":"Head of Experience, zero",
+    "worksFor":{"@type":"Organization","name":"zero","url":"https://www.joinzero.ai"},
+    "alumniOf":[
+      {"@type":"Organization","name":"NIFT Mumbai"},
+      {"@type":"Organization","name":"CRED"}
+    ],
+    "sameAs":[
+      "https://www.linkedin.com/in/atulkhola/",
+      "https://twitter.com/pixelandpump",
+      "https://dribbble.com/atulkhola",
+      "https://www.behance.net/atulkhola",
+      "https://medium.com/@atulkhola",
+      "https://www.instagram.com/pixelandpump"
+    ]
+  },
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://learn.joinzero.ai/"},
+      {"@type":"ListItem","position":2,"name":"About","item":"https://learn.joinzero.ai/about"}
+    ]
+  }
+];
 ---
-<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas}>
-  <nav class="breadcrumb"><a href="/">Home</a> / About</nav>
-  <h1>Who runs Zero?</h1>
-  <p class="answer-capsule">Atul Khola is Head of Experience at Zero. He ran central experiences and credit card management at CRED, led the gym charter at cult.fit, and studied Fashion Communication at NIFT Mumbai. He speaks regularly at IIT, NID, and NIFT.</p>
+<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-17">
+  <div class="breadcrumb"><a href="/">zero learn</a> / about</div>
+  <span class="mono-label">ABOUT</span>
+  <h1>The people behind zero.</h1>
+  <p>zero is co-founded by Navid Nathoo and Nadeem Nathoo, the brothers who built TKS (The Knowledge Society) and Nth Order. Atul Khola leads design, marketing, and growth as Head of Experience. The lineage runs from human-read applications at TKS, to data-driven performance at zero.</p>
 
-  <div class="tldr">
-    <ul>
-      <li>4 years at CRED: central experiences, credit card management, social and e-commerce charters.</li>
-      <li>cult.fit: led the gym charter.</li>
-      <li>Earlier: topper, media.net.</li>
-      <li>Education: NIFT Mumbai, Fashion Communication.</li>
-      <li>Lectures and podcasts at IIT, NID, NIFT.</li>
-    </ul>
-  </div>
+  <h2>Navid Nathoo</h2>
+  <p><span class="mono-label">CO-FOUNDER</span></p>
+  <p>Navid founded Airpost, a Silicon Valley cloud-security company that was acquired by Box (NYSE: BOX) in 2015. After the acquisition, he led product across machine learning, big data, and advanced security at Box. In 2016, he co-founded TKS with his brother Nadeem. He sits on the Advisory Board at the XPRIZE Foundation. Currently he is a co-founder of Nth Order (xⁿ). Ivey Business School, Western University.</p>
+  <p>You can read more about Navid at <a href="https://www.linkedin.com/in/navidnathoo/">LinkedIn</a>, <a href="https://x.com/navidnathoo">X</a>, <a href="https://www.xprize.org/about/people/navid-nathoo">XPRIZE</a>, and <a href="https://www.crunchbase.com/person/navid-nathoo-2">Crunchbase</a>.</p>
 
-  <section>
-    <h2>What did you do at CRED?</h2>
-    <p>I led central experiences and credit card management for one of India's most respected fintech products. I shipped payment flows used by millions. I also built the social and e-commerce charters from the ground up. Later, I led the gym charter at cult.fit, designing the end-to-end member experience.</p>
-  </section>
+  <h2>Nadeem Nathoo</h2>
+  <p><span class="mono-label">CO-FOUNDER</span></p>
+  <p>Nadeem co-founded TKS in 2016 with his brother Navid, and serves as Executive Director. He is also a Limited Partner at Meta4 Capital, an a16z-backed NFT and Web3 fund. Before TKS, Nadeem was a Senior Business Analyst at McKinsey & Company across banking, telecommunications, and aerospace. Earlier, he interned at Grameen Bank in Bangladesh under Muhammad Yunus, taught business in Mombasa, ran a university incubator, scaled early childhood centres in Tajikistan, and built mobility aids in rural Honduras. Ivey Business School (Honors BBA). WISE Qatar and ASU GSV Summit speaker.</p>
+  <p>You can read more about Nadeem at <a href="https://www.linkedin.com/in/nadeemnathoo/">LinkedIn</a>, <a href="https://www.wise-qatar.org/biography/nadeem-nathoo/">WISE</a>, and <a href="https://theorg.com/org/the-knowledge-society/org-chart/nadeem-nathoo">TheOrg</a>.</p>
 
-  <section>
-    <h2>What is your background?</h2>
-    <p>I studied Fashion Communication at NIFT Mumbai. Before CRED, I worked at topper and media.net. I teach and speak regularly at IIT, NID, and NIFT on product design, experience systems, and the future of skills-based hiring.</p>
-  </section>
+  <h2>The TKS lineage</h2>
+  <p>The Knowledge Society is the world's top accelerator program for ambitious teens. Founded in 2016, TKS alumni are among the youngest employees at SpaceX, Tesla, NVIDIA, Google, Apple, Neuralink, and Microsoft. Alumni have raised over $250M for their own companies. TKS operates in 60+ countries.</p>
+  <p>TKS is the human selection model: spot a kid with bias for action, get out of the way, watch them build. zero is the data-driven performance model: every student gets a chance to prove it on a real scenario, every submission gets scored, every recruiter sees the work. zero is the technological fulfillment of the TKS thesis.</p>
 
-  <section>
-    <h2>Where can I find your work?</h2>
-    <p>I write on <a href="https://medium.com/@atulkhola" target="_blank" rel="noopener">Medium</a>, post design work on <a href="https://dribbble.com/atulkhola" target="_blank" rel="noopener">Dribbble</a> and <a href="https://www.behance.net/atulkhola" target="_blank" rel="noopener">Behance</a>, and share thoughts on <a href="https://twitter.com/pixelandpump" target="_blank" rel="noopener">X/Twitter</a> and <a href="https://www.instagram.com/pixelandpump" target="_blank" rel="noopener">Instagram</a>. My full career is on <a href="https://www.linkedin.com/in/atulkhola/" target="_blank" rel="noopener">LinkedIn</a>.</p>
-  </section>
+  <h2>Atul Khola</h2>
+  <p><span class="mono-label">HEAD OF EXPERIENCE</span></p>
+  <p>Atul leads design, marketing, and growth at zero. Before zero, he was a lead product designer at CRED for four years across central experiences, credit card management, and the social and e-commerce charters. Earlier, he led the gym charter as a designer at cult.fit, and earlier still he was at topper and media.net. Atul is a graduate of NIFT Mumbai (Fashion Communication) and lectures on design at IITs, NIDs, and NIFTs across India.</p>
+  <p>You can read more about Atul at <a href="https://www.linkedin.com/in/atulkhola/">LinkedIn</a>, <a href="https://twitter.com/pixelandpump">X</a>, <a href="https://dribbble.com/atulkhola">Dribbble</a>, <a href="https://www.behance.net/atulkhola">Behance</a>, and <a href="https://medium.com/@atulkhola">Medium</a>.</p>
 
-  <section class="faq-block">
-    <h2>Frequently asked questions</h2>
-    <div class="faq-item"><div class="faq-q">What does Head of Experience mean at Zero?</div><div class="faq-a">I design and ship every interaction students and recruiters have with the platform. Product, brand, content: it all moves through the same system.</div></div><div class="faq-item"><div class="faq-q">What was your role at CRED?</div><div class="faq-a">I led central experiences, credit card management, and social plus e-commerce charters. I built payment flows used by millions. I also led the gym charter at cult.fit.</div></div><div class="faq-item"><div class="faq-q">Why did you start Zero?</div><div class="faq-a">I saw smart students with no signal of what they could actually do. Resumes list schools. Portfolios are self-curated. The industry needed a way to evaluate real work by real standards. Zero is that system.</div></div>
-  </section>
-
-  <section class="last-updated">Last updated: 2026-05-17</section>
+  <h2>Want the product?</h2>
+  <p>This is zero's learn hub. The actual product lives at <a href="https://www.joinzero.ai">joinzero.ai</a>.</p>
 </BaseLayout>

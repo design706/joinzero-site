@@ -1,64 +1,59 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-const title = "Zero Learn: Cornerstones, Comparisons, and Methodology";
-const description = "Zero's learn hub: how-to-break-in cornerstones, honest competitor comparisons, scoring methodology, and the receipts that prove real student work.";
+const title = "zero learn: how to break into work without experience";
+const description = "zero is the simulator where students do real work for real companies, get scored against the top 1% of professionals, and get recruited based on receipts. Free for students. Recruiter-paid.";
 const canonical = "https://learn.joinzero.ai/";
 const schemas = [
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Zero Learn",
-    "url": "https://learn.joinzero.ai/",
-    "description": description,
-    "publisher": {"@type": "Organization", "name": "Zero", "url": "https://learn.joinzero.ai"}
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Zero",
-    "url": "https://learn.joinzero.ai",
-    "logo": "https://learn.joinzero.ai/og-default.png",
-    "sameAs": ["https://www.linkedin.com/company/110372181/"]
-  }
+  {"@context":"https://schema.org","@type":"WebSite","name":"zero learn","url":canonical,"description":description,"publisher":{"@type":"Organization","name":"zero","url":"https://www.joinzero.ai"}},
+  {"@context":"https://schema.org","@type":"Organization","name":"zero","url":"https://www.joinzero.ai","alternateName":"joinzero","founder":[{"@type":"Person","name":"Navid Nathoo"},{"@type":"Person","name":"Nadeem Nathoo"}],"foundingDate":"2025","sameAs":["https://www.linkedin.com/company/110372181/"]}
 ];
 ---
-<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas}>
-  <section style="padding: 2rem 0;">
-    <h1 style="font-size:2.2rem; margin-bottom:1rem;">This is Zero's learn hub.</h1>
-    <p style="font-size:1.1rem; color:var(--color-text-secondary); max-width:680px; margin-bottom:1.5rem;">
-      You probably arrived here from a search. Good. This is where Zero answers the questions a student or recruiter actually asks: how to break in, what real work looks like, how Zero scores against the top 1%, and how we stack up against every alternative on the market.
-    </p>
-    <p style="font-size:1.1rem; max-width:680px;">
-      If you want to start working on real tasks from real companies right now, head to the main site:
-      <a href="https://learn.joinzero.ai">joinzero.ai</a>.
-    </p>
-  </section>
+<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-17">
+  <span class="mono-label">ZERO · LEARN HUB</span>
+  <h1>Do real work. Get recruited.</h1>
+  <p>zero is the simulator where students do real work for real companies, get scored against the top 1% of professionals, and get recruited based on receipts. Free for students. Recruiters pay for access.</p>
 
-  <section style="margin-top: 3rem;">
-    <h2>What's in here</h2>
-    <ul style="line-height:1.9;">
-      <li><a href="/learn">Cornerstones</a>: in-depth answers to the questions students keep searching for.</li>
-      <li><a href="/vs-forage">Zero vs. Forage</a>: receipts beat certificates. Here is why.</li>
-      <li><a href="/vs-ripplematch">Zero vs. RippleMatch</a>: outbound signal beats inbound matchmaking.</li>
-      <li><a href="/vs-handshake">Zero vs. Handshake</a>: scored work beats a profile that nobody scores.</li>
-      <li><a href="/receipts">Receipts</a>: live examples of student work and how recruiters read them.</li>
-      <li><a href="/trust">Trust and methodology</a>: how scoring works, who evaluates, how data is handled.</li>
-      <li><a href="/about">About Atul Khola</a>: who runs the place.</li>
+  <div class="tldr">
+    <ul>
+      <li>Free for students. Recruiters pay for access to scored receipts.</li>
+      <li>Tasks built around real company operations, not generic case studies.</li>
+      <li>Every submission is scored against top-1% professionals, not peer averages.</li>
     </ul>
-  </section>
+  </div>
 
-  <section style="margin-top: 3rem;">
-    <h2>The one-line wedge</h2>
-    <p style="font-size:1.15rem;">
-      Forage gives you a certificate. Zero gives you a receipt: a piece of work a real recruiter can evaluate against the top 1% of the industry. Companies use the receipt to decide who to interview. The certificate just sits in your LinkedIn profile.
-    </p>
-  </section>
+  <p style="margin-top:var(--s-7);"><a href="https://www.joinzero.ai" class="btn btn-brand">Start your first task</a></p>
 
-  <section style="margin-top: 3rem;">
-    <h2>Frequently asked questions</h2>
-    <p><strong>Is Zero free for students?</strong> Yes. Recruiters pay for access to scored receipts. Students never do.</p>
-    <p><strong>What companies are involved?</strong> Tasks are built around real operations at Tesla, Shopify, Stripe, and other top hiring brands. New scenarios get added as we expand.</p>
-    <p><strong>Who actually scores my work?</strong> Top-1% practitioners in each function evaluate submissions against the bar they would apply to a junior hire. See <a href="/trust">trust and methodology</a> for the full mechanism.</p>
-    <p><strong>How is this different from a bootcamp?</strong> Bootcamps teach skills. Zero gives you something to show. The work itself is the credential.</p>
-  </section>
+  <h2>What is the wedge between zero and the alternatives?</h2>
+  <p>Forage gives you a certificate. zero gives you a receipt: a piece of work a real recruiter can evaluate against the top 1% of the industry. Companies use the receipt to decide who to interview. The certificate just sits in your LinkedIn profile.</p>
+
+  <h2>What's in this learn hub?</h2>
+  <ul>
+    <li><a href="/learn">Cornerstones</a>: deep answers to the questions students keep searching.</li>
+    <li><a href="/how-it-works">How it works</a>: the 4-step flow from task to receipt to recruiter.</li>
+    <li><a href="/for-students">For students</a>: why this beats internships, simulations, and bootcamps.</li>
+    <li><a href="/for-recruiters">For recruiters</a>: how to evaluate students by receipts, not resumes.</li>
+    <li><a href="/for-companies">For companies</a>: B2B talent identification at scale.</li>
+    <li><a href="/vs-forage">zero vs. forage</a>, <a href="/vs-ripplematch">vs. RippleMatch</a>, <a href="/vs-handshake">vs. Handshake</a>.</li>
+    <li><a href="/receipts">Receipts</a>: live examples of student work.</li>
+    <li><a href="/trust">Trust and methodology</a>: how scoring works.</li>
+    <li><a href="/about">About</a>: the people behind zero.</li>
+  </ul>
+
+  <h2>Frequently asked questions</h2>
+  <div class="faq-item">
+    <div class="faq-q">Is zero free for students?</div>
+    <div class="faq-a">Yes. Recruiters pay for access to scored receipts. Students never do.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">What companies are involved?</div>
+    <div class="faq-a">Tasks are built around real operations at Tesla, Shopify, Stripe, and other top hiring brands. New scenarios get added as we expand.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Who scores my work?</div>
+    <div class="faq-a">Top-1% practitioners in each function evaluate submissions against the bar they would apply to a junior hire. See <a href="/trust">trust and methodology</a>.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">How is this different from a bootcamp?</div>
+    <div class="faq-a">Bootcamps teach skills. zero gives you something to show. The work itself is the credential.</div>
+  </div>
 </BaseLayout>

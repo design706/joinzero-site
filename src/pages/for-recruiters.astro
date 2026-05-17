@@ -1,0 +1,50 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "zero for recruiters: hire by receipts, not resumes";
+const description = "zero gives recruiters a faster way to evaluate junior talent. Every candidate submits scored work on real-company scenarios. You see the evidence before the resume.";
+const canonical = "https://learn.joinzero.ai/for-recruiters";
+const schemas = [
+  {"@context":"https://schema.org","@type":"Article","headline":title,"url":canonical,"description":description,"dateModified":"2026-05-17","author":{"@type":"Organization","name":"zero"}},
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://learn.joinzero.ai/"},{"@type":"ListItem","position":2,"name":"For Recruiters","item":canonical}]}
+];
+---
+<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-17">
+  <div class="breadcrumb"><a href="/">zero learn</a> / for recruiters</div>
+  <span class="mono-label">FOR RECRUITERS</span>
+  <h1>Hire by receipts, not resumes.</h1>
+  <p>You spend more time on the resume pile than on the actual hires. Most resumes don't predict anything that matters. zero replaces the noise with signal: every candidate on the platform has submitted scored work on a real-company scenario. You see the receipt before you see the resume, and you decide who to interview based on the work itself.</p>
+
+  <div class="tldr">
+    <ul>
+      <li>Every candidate has a scored receipt on a real-company scenario.</li>
+      <li>Scoring is benchmarked against the top 1% of practitioners in each function.</li>
+      <li>Filter, search, and shortlist by percentile, function, scenario, and intent signals.</li>
+      <li>Reach out directly to candidates who scored above your bar.</li>
+      <li>Recruiter-paid model. Students never pay.</li>
+    </ul>
+  </div>
+
+  <h2>What is a zero receipt?</h2>
+  <p>A receipt is a candidate's submission on a real-world scenario built around a hiring brand's actual operating context. Each scenario has a defined rubric scored by top-1% practitioners. The receipt includes the candidate's work, the score breakdown, the feedback they received, and the percentile against everyone who has attempted the same scenario.</p>
+  <p>Reading a receipt is faster than reading a resume. Decision quality is higher because you're evaluating the work directly, not a claim about it.</p>
+
+  <h2>Why is the scoring trustworthy?</h2>
+  <p>Top-1% practitioners in each function build and grade the rubrics. Scenarios are versioned: when the company context evolves, the rubric updates. Cross-scenario percentiles are normalized so a top-10% marketing receipt compares meaningfully to a top-10% product receipt. <a href="/trust">Full methodology here.</a></p>
+
+  <h2>How do I get access?</h2>
+  <p>Reach out through <a href="https://www.joinzero.ai">joinzero.ai</a> with your hiring function and the seniority you're looking for. We onboard recruiters by company first.</p>
+
+  <h2>Frequently asked questions</h2>
+  <div class="faq-item">
+    <div class="faq-q">How much does access cost?</div>
+    <div class="faq-a">Pricing depends on hiring volume and function. Recruiter-paid model is the only monetization layer. Students never pay.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Can I see receipts before I commit?</div>
+    <div class="faq-a">Yes. We share anonymized sample receipts during onboarding so you can validate the signal quality against your own hiring bar.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">How is this different from a coding screen or HackerRank?</div>
+    <div class="faq-a">Coding screens test puzzle-solving. zero scenarios test real-company operating decisions, on functions broader than engineering. Marketing, product, design, ops, analytics are all in scope.</div>
+  </div>
+</BaseLayout>

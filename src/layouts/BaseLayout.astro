@@ -1,43 +1,51 @@
 ---
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import JsonLd from "../components/JsonLd.astro";
-import "../styles/global.css";
-
-export interface Props {
-  title: string;
-  description: string;
-  canonical?: string;
-  ogImage?: string;
-  schemas?: object[];
-}
-
-const { title, description, canonical, ogImage = "/og-default.png", schemas = [] } = Astro.props;
-const canonicalUrl = canonical ?? new URL(Astro.url.pathname, Astro.site).href;
+const { title, description, canonical, schemas = [], lastUpdated } = Astro.props;
+const ogImage = "https://learn.joinzero.ai/og-default.png";
 ---
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{title}</title>
   <meta name="description" content={description} />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href={canonicalUrl} />
+  <link rel="canonical" href={canonical} />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content={canonicalUrl} />
+  <meta property="og:url" content={canonical} />
   <meta property="og:image" content={ogImage} />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="sitemap" href="/sitemap-index.xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Google+Sans+Code:wght@300..800&family=Google+Sans:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="/global.css" />
+  {schemas.map((s) => (
+    <script type="application/ld+json" set:html={JSON.stringify(s)} />
+  ))}
 </head>
 <body>
-  <JsonLd schemas={schemas} />
-  <Header />
+  <header>
+    <div class="container" style="padding-top: var(--s-7); padding-bottom: var(--s-4); display:flex; justify-content:space-between; align-items:center;">
+      <a href="/" style="font-family:var(--font-display); font-size:24px; color:var(--green-800); text-decoration:none; letter-spacing:-0.025em;">zero <span class="mono-label" style="font-size:12px; margin-left:6px; color:var(--fg-3);">LEARN</span></a>
+      <nav style="display:flex; gap:var(--s-6); font-size:14px;">
+        <a href="/learn" style="color:var(--fg-2);">Library</a>
+        <a href="/vs-forage" style="color:var(--fg-2);">Compare</a>
+        <a href="/about" style="color:var(--fg-2);">About</a>
+        <a href="https://www.joinzero.ai" style="color:var(--green-800);">joinzero.ai</a>
+      </nav>
+    </div>
+  </header>
   <main class="container">
     <slot />
+    {lastUpdated && (
+      <div class="last-updated">Last updated: {lastUpdated}.</div>
+    )}
   </main>
-  <Footer />
+  <footer class="container" style="padding-top:var(--s-7); padding-bottom:var(--s-9); color:var(--fg-3); font-size:14px; border-top:1px solid var(--border-hair); margin-top:var(--s-11);">
+    <p>zero. real work, real recruiters, real receipts. <a href="https://www.joinzero.ai" style="color:var(--fg-3);">joinzero.ai</a></p>
+  </footer>
 </body>
 </html>

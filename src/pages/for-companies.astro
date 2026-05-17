@@ -1,0 +1,49 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "zero for companies: talent identification, scored on real work";
+const description = "zero offers companies a scored talent pipeline of students and early-career candidates evaluated on real-company scenarios. Identify and recruit by demonstrated work, not resumes.";
+const canonical = "https://learn.joinzero.ai/for-companies";
+const schemas = [
+  {"@context":"https://schema.org","@type":"Article","headline":title,"url":canonical,"description":description,"dateModified":"2026-05-17","author":{"@type":"Organization","name":"zero"}},
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://learn.joinzero.ai/"},{"@type":"ListItem","position":2,"name":"For Companies","item":canonical}]}
+];
+---
+<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-17">
+  <div class="breadcrumb"><a href="/">zero learn</a> / for companies</div>
+  <span class="mono-label">FOR COMPANIES · B2B</span>
+  <h1>Identify talent on real work, before they're on your resume pile.</h1>
+  <p>zero gives companies a structured way to identify, evaluate, and recruit early-career talent through scored performance on real scenarios, not credentials. Build a custom scenario, watch students attempt it, see the percentiles, reach out to the top of the curve.</p>
+
+  <div class="tldr">
+    <ul>
+      <li>Custom scenarios built around your actual hiring brief.</li>
+      <li>Top-1% practitioners grade every submission against a rubric you co-design.</li>
+      <li>Percentile rankings let you filter candidates by demonstrated performance.</li>
+      <li>Direct outreach to top-tier candidates with full receipt context.</li>
+      <li>Recruiter-paid model. Students never pay.</li>
+    </ul>
+  </div>
+
+  <h2>How does this work for a company?</h2>
+  <p>You co-design a scenario with the zero team. The scenario reflects a real decision-making moment your team faces: a campaign brief, a product spec, a customer-ops incident. Students attempt it. Top-1% practitioners grade the work. You see the rankings, read the receipts, and reach out to the candidates you want to interview.</p>
+
+  <h2>Who is this for?</h2>
+  <p>Companies hiring at scale into early-career roles where demonstrated performance matters more than pedigree. Functions: product, marketing, design, ops, analytics, customer success. Industries: technology, consumer brands, finance, healthcare.</p>
+
+  <h2>What does it cost?</h2>
+  <p>Pricing scales with the number of scenarios you operate and the number of receipts you access. Custom-scenario design is included in the partner tier. <a href="https://www.joinzero.ai">Reach out</a> for a partnership conversation.</p>
+
+  <h2>Frequently asked questions</h2>
+  <div class="faq-item">
+    <div class="faq-q">How long does it take to launch a custom scenario?</div>
+    <div class="faq-a">Two to four weeks from kickoff to first student submissions. Faster if the brief is close to an existing scenario template.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Can we use this for diversity hiring goals?</div>
+    <div class="faq-a">Yes. Because zero scores the work, not the resume, you see strong candidates from non-traditional backgrounds you'd never reach through campus recruiting alone.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Do candidates know they're being evaluated for our roles?</div>
+    <div class="faq-a">They know their receipt is scored and visible to recruiters. Specific recruiter identities are surfaced only when there's mutual interest. Candidate consent is the default.</div>
+  </div>
+</BaseLayout>

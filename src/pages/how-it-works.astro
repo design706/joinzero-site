@@ -1,0 +1,50 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "How zero works: from real task to scored receipt to recruiter";
+const description = "Four steps: pick a real-company scenario, do the work, get scored against the top 1%, get found by recruiters. The full zero flow explained.";
+const canonical = "https://learn.joinzero.ai/how-it-works";
+const schemas = [
+  {"@context":"https://schema.org","@type":"HowTo","name":title,"description":description,"url":canonical,"step":[
+    {"@type":"HowToStep","name":"Pick a real-company scenario","text":"Choose a scenario built around an actual operating moment at Tesla, Shopify, Stripe, or another hiring brand."},
+    {"@type":"HowToStep","name":"Do the work","text":"Submit your response. First receipt typically lands in a 90-minute session."},
+    {"@type":"HowToStep","name":"Get scored against top-1% practitioners","text":"Senior practitioners grade your submission against a rubric. You get a percentile and specific feedback."},
+    {"@type":"HowToStep","name":"Get found by recruiters","text":"Top-scoring receipts surface in recruiter dashboards. They reach out to you."}
+  ]},
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://learn.joinzero.ai/"},{"@type":"ListItem","position":2,"name":"How It Works","item":canonical}]}
+];
+---
+<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-17">
+  <div class="breadcrumb"><a href="/">zero learn</a> / how it works</div>
+  <span class="mono-label">HOW IT WORKS</span>
+  <h1>From real task to scored receipt to recruiter.</h1>
+  <p>Four steps. No tutorials that delay the work. No course you have to finish before you're allowed to submit. You start with the task.</p>
+
+  <h2>Step 1 · Pick a real-company scenario</h2>
+  <p>Scenarios are built around actual operating moments at Tesla, Shopify, Stripe, and other hiring brands. Each one mirrors a decision a real team would make. You pick the function you want to be evaluated in, you pick the scenario inside that function.</p>
+
+  <h2>Step 2 · Do the work</h2>
+  <p>You submit a response. The first session is structured so you produce a complete receipt in about 90 minutes. No mandatory pre-reading, no tutorial, no scaffolding that gets in the way.</p>
+
+  <h2>Step 3 · Get scored against the top 1%</h2>
+  <p>Senior practitioners in each function grade your submission against a rubric the function team has built. You get a percentile against everyone who has attempted the same scenario, plus specific feedback on what worked and what to fix.</p>
+
+  <h2>Step 4 · Get found by recruiters</h2>
+  <p>Recruiters who pay for access to zero filter the candidate pool by percentile, function, and scenario. Top-scoring receipts surface in their dashboards. They reach out to you. You decide whether to engage.</p>
+
+  <h2>What you don't have to do</h2>
+  <p>You don't have to write a resume. You don't have to memorize STAR-method interview answers. You don't have to maintain a portfolio. You don't have to do unpaid free work to "build credentials." The receipt is the credential.</p>
+
+  <h2>Frequently asked questions</h2>
+  <div class="faq-item">
+    <div class="faq-q">Can I submit multiple times on the same scenario?</div>
+    <div class="faq-a">Yes. Your best score is what recruiters see. Earlier attempts stay private.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Are scenarios timed?</div>
+    <div class="faq-a">No hard timer. Most scenarios are sized so the first complete submission takes under 90 minutes.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">What tools can I use?</div>
+    <div class="faq-a">Whatever a working professional in that function would use. Excel, Figma, Notion, code, slides. The output matters, not the tool you used.</div>
+  </div>
+</BaseLayout>
