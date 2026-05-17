@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "Zero vs Handshake";
+const description = "Handshake is a job board with school integrations. Zero is a simulator that scores real work for recruiters.";
+const canonical = "https://www.joinzero.ai/vs-handshake";
+const schemas = [{"@context": "https://schema.org", "@type": "Article", "headline": "Zero vs Handshake", "url": "https://www.joinzero.ai/vs-handshake", "dateModified": "2026-05-17", "author": {"@type": "Organization", "name": "Zero"}, "publisher": {"@type": "Organization", "name": "Zero", "url": "https://www.joinzero.ai"}}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.joinzero.ai/"}, {"@type": "ListItem", "position": 2, "name": "Zero vs Handshake", "item": "https://www.joinzero.ai/vs-handshake"}]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is Handshake?", "acceptedAnswer": {"@type": "Answer", "text": "A job board and career fair platform integrated with universities. It helps students find listings and employers post roles."}}, {"@type": "Question", "name": "How is Zero different?", "acceptedAnswer": {"@type": "Answer", "text": "Zero is not a job board. It is a simulator where you do real work, get scored against the top 1%, and receive receipts recruiters evaluate."}}, {"@type": "Question", "name": "Does Handshake score my work?", "acceptedAnswer": {"@type": "Answer", "text": "No. Handshake facilitates applications and events. It does not evaluate work quality or provide scored receipts."}}, {"@type": "Question", "name": "Who pays on Zero vs Handshake?", "acceptedAnswer": {"@type": "Answer", "text": "Both are free for students. Recruiters pay on Zero for access to receipts. Handshake charges employers for listings."}}]}];
+---
+<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas}>
+  <nav class="breadcrumb"><a href="/">Home</a> / Zero vs Handshake</nav>
+  <h1>Why is Zero better than Handshake?</h1>
+  <p class="answer-capsule">Handshake is a job board with school integrations. Zero is a simulator where students do real work, get scored against the top 1%, and receive receipts that recruiters see before resumes.</p>
+
+  <div class="tldr">
+    <ul>
+      <li>Handshake: job board plus career fairs.</li>
+      <li>Zero: work simulator with scored receipts.</li>
+      <li>Handshake: recruiters filter by school and keywords.</li>
+      <li>Zero: recruiters evaluate actual work output.</li>
+      <li>Handshake: no evaluation layer.</li>
+      <li>Zero: every candidate has a scored receipt from a top-1% reviewer.</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>What does Handshake actually evaluate?</h2>
+    <p>Nothing about work quality. Handshake evaluates a candidate by school, GPA, and keywords on a resume. It is a distribution channel, not an assessment platform. The recruiter still has to screen every applicant manually.</p>
+  </section>
+
+  <section>
+    <h2>What does Zero evaluate?</h2>
+    <p>Zero evaluates the actual work a candidate produces on a real company task. The rubric is built from the source company's internal evaluation framework. The reviewer is a verified top-1% professional. The result is a receipt with a score, percentile, and written feedback.</p>
+  </section>
+
+  <section>
+    <h2>What does the recruiter experience look like on each platform?</h2>
+    <p>On Handshake, a recruiter posts a job and receives resumes. They screen by school, degree, and keywords. On Zero, a recruiter browses a pool of candidates and sees receipts first. The receipt contains the task, the submission, and the score. The recruiter decides to interview based on work quality, not the school listed on a resume.</p>
+  </section>
+
+  <section class="faq-block">
+    <h2>Frequently asked questions</h2>
+    <div class="faq-item"><div class="faq-q">What is Handshake?</div><div class="faq-a">A job board and career fair platform integrated with universities. It helps students find listings and employers post roles.</div></div><div class="faq-item"><div class="faq-q">How is Zero different?</div><div class="faq-a">Zero is not a job board. It is a simulator where you do real work, get scored against the top 1%, and receive receipts recruiters evaluate.</div></div><div class="faq-item"><div class="faq-q">Does Handscore score my work?</div><div class="faq-a">No. Handshake facilitates applications and events. It does not evaluate work quality or provide scored receipts.</div></div><div class="faq-item"><div class="faq-q">Who pays on Zero vs Handshake?</div><div class="faq-a">Both are free for students. Recruiters pay on Zero for access to receipts. Handshake charges employers for listings.</div></div>
+  </section>
+
+  <section class="last-updated">Last updated: 2026-05-17</section>
+</BaseLayout>

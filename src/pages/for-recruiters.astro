@@ -1,0 +1,43 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "For Recruiters — Evaluate candidates by what they can do, not where they studied";
+const description = "Recruiters use Zero to evaluate receipts: scored pieces of real work reviewed by top-1% professionals.";
+const canonical = "https://www.joinzero.ai/for-recruiters";
+const schemas = [{"@context": "https://schema.org", "@type": "Article", "headline": "For Recruiters — Evaluate candidates by what they can do, not where they studied", "url": "https://www.joinzero.ai/for-recruiters", "dateModified": "2026-05-17", "author": {"@type": "Organization", "name": "Zero"}, "publisher": {"@type": "Organization", "name": "Zero", "url": "https://www.joinzero.ai"}}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.joinzero.ai/"}, {"@type": "ListItem", "position": 2, "name": "For recruiters", "item": "https://www.joinzero.ai/for-recruiters"}]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I access candidate receipts?", "acceptedAnswer": {"@type": "Answer", "text": "Recruiters pay a subscription fee for access to the Zero platform. Once inside, you can filter by role, skill, score band, and recency."}}, {"@type": "Question", "name": "What does a receipt include?", "acceptedAnswer": {"@type": "Answer", "text": "Each receipt contains the original task prompt, the candidate submission, a rubric score, percentile ranking, and written feedback from a top-1% reviewer."}}, {"@type": "Question", "name": "How is scoring calibrated?", "acceptedAnswer": {"@type": "Answer", "text": "The rubric is built from internal evaluation frameworks at the company that sourced the task. Reviewers are verified professionals ranked in the top 1% by performance data."}}, {"@type": "Question", "name": "What is the cost model?", "acceptedAnswer": {"@type": "Answer", "text": "Recruiter-paid. Students never pay. Pricing is per-seat for teams and enterprise."}}]}];
+---
+<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas}>
+  <nav class="breadcrumb"><a href="/">Home</a> / For recruiters</nav>
+  <h1>Why should recruiters use Zero?</h1>
+  <p class="answer-capsule">Zero lets you evaluate candidates by their scored receipts: real work reviewed by top-1% professionals. You see what they can do before you spend time on a resume screen.</p>
+
+  <div class="tldr">
+    <ul>
+      <li>Receipts show real work quality, not school brand.</li>
+      <li>Scoring is calibrated against real internal evaluation frameworks.</li>
+      <li>Recruiter-paid model. Students never pay.</li>
+      <li>Filter by role, skill, score band, and recency.</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>How does receipt evaluation work?</h2>
+    <p>Each receipt contains four pieces of data: the task prompt (the exact problem the candidate solved), the candidate submission (their actual work), the rubric score broken down by dimension, and written feedback from a reviewer in the top 1% of the field. You can compare two candidates side by side on the same task.</p>
+  </section>
+
+  <section>
+    <h2>What does "top-1% scoring" mean?</h2>
+    <p>Zero does not score against peer averages or instructor curves. Every submission is compared to the output of verified top-1% professionals. The percentile tells you exactly where the candidate sits relative to the best in the industry, not relative to other students.</p>
+  </section>
+
+  <section>
+    <h2>How is this different from a portfolio?</h2>
+    <p>A portfolio is self-curated and self-graded. A receipt is scored by an independent professional on a rubric built from internal company standards. A portfolio shows what the candidate wants you to see. A receipt shows what they can actually do under constraints.</p>
+  </section>
+
+  <section class="faq-block">
+    <h2>Frequently asked questions</h2>
+    <div class="faq-item"><div class="faq-q">How do I access candidate receipts?</div><div class="faq-a">Recruiters pay a subscription fee for access to the Zero platform. Once inside, you can filter by role, skill, score band, and recency.</div></div><div class="faq-item"><div class="faq-q">What does a receipt include?</div><div class="faq-a">Each receipt contains the original task prompt, the candidate submission, a rubric score, percentile ranking, and written feedback from a top-1% reviewer.</div></div><div class="faq-item"><div class="faq-q">How is scoring calibrated?</div><div class="faq-a">The rubric is built from internal evaluation frameworks at the company that sourced the task. Reviewers are verified professionals ranked in the top 1% by performance data.</div></div><div class="faq-item"><div class="faq-q">What is the cost model?</div><div class="faq-a">Recruiter-paid. Students never pay. Pricing is per-seat for teams and enterprise.</div></div>
+  </section>
+
+  <section class="last-updated">Last updated: 2026-05-17</section>
+</BaseLayout>

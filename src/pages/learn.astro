@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "Learn — The Zero knowledge base";
+const description = "The Zero library of cornerstones, guides, and deep dives on skills-based hiring, career simulation, and real work.";
+const canonical = "https://www.joinzero.ai/learn";
+const schemas = [{"@context": "https://schema.org", "@type": "Article", "headline": "Learn — The Zero knowledge base", "url": "https://www.joinzero.ai/learn", "dateModified": "2026-05-17", "author": {"@type": "Organization", "name": "Zero"}, "publisher": {"@type": "Organization", "name": "Zero", "url": "https://www.joinzero.ai"}}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.joinzero.ai/"}, {"@type": "ListItem", "position": 2, "name": "Learn", "item": "https://www.joinzero.ai/learn"}]}];
+---
+<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas}>
+  <nav class="breadcrumb"><a href="/">Home</a> / Learn</nav>
+  <h1>What is the Zero library?</h1>
+  <p class="answer-capsule">The Learn section is where Zero publishes deep guides, research, and cornerstones on skills-based hiring, career simulation, and how to break into work without experience.</p>
+
+  <div class="tldr">
+    <ul>
+      <li>Ring 1 cornerstones: deep, authoritative guides.</li>
+      <li>Ring 2 clusters: topic-based collections.</li>
+      <li>Ring 3 programmatic pages: data-driven entry points.</li>
+    </ul>
+  </div>
+
+  <div class="empty-state">
+    <p style="font-size:1.2rem; margin-bottom:0.5rem;">Library coming online.</p>
+    <p>Content is being drafted as Hermes builds the cornerstones.</p>
+  </div>
+
+  <section class="last-updated">Last updated: 2026-05-17</section>
+</BaseLayout>

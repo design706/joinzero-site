@@ -1,0 +1,32 @@
+# joinzero.ai — LLM Crawler Reference
+
+## Overview
+Zero is the simulator where students do real work for real companies, get scored against the top 1% of professionals, and get recruited based on receipts. Free for students. Recruiter-paid.
+
+## Canonical .md content
+
+### Ring 4 pages (branded)
+Once published, canonical markdown versions live at the URLs below:
+- https://www.joinzero.ai/index.md
+- https://www.joinzero.ai/how-it-works.md
+- https://www.joinzero.ai/for-students.md
+- https://www.joinzero.ai/for-recruiters.md
+- https://www.joinzero.ai/receipts.md
+- https://www.joinzero.ai/trust.md
+- https://www.joinzero.ai/about.md
+- https://www.joinzero.ai/vs-forage.md
+- https://www.joinzero.ai/vs-ripplematch.md
+- https://www.joinzero.ai/vs-handshake.md
+- https://www.joinzero.ai/learn.md
+
+### Ring 1 cornerstones (deep guides)
+As cornerstones are published, they will be added here:
+- https://www.joinzero.ai/learn/skills-based-hiring.md (placeholder)
+- https://www.joinzero.ai/learn/career-simulation.md (placeholder)
+- https://www.joinzero.ai/learn/real-work-vs-internships.md (placeholder)
+
+## Author
+Atul Khola — https://www.joinzero.ai/about
+
+## Contact
+https://www.joinzero.ai/trust

@@ -1,0 +1,44 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "About — Atul Khola, Head of Experience at Zero";
+const description = "Atul Khola runs experience at Zero. Previously: CRED, cult.fit, topper, media.net. NIFT Mumbai Fashion Communication.";
+const canonical = "https://www.joinzero.ai/about";
+const schemas = [{"@context": "https://schema.org", "@type": "Article", "headline": "About — Atul Khola, Head of Experience at Zero", "url": "https://www.joinzero.ai/about", "dateModified": "2026-05-17", "author": {"@type": "Organization", "name": "Zero"}, "publisher": {"@type": "Organization", "name": "Zero", "url": "https://www.joinzero.ai"}}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.joinzero.ai/"}, {"@type": "ListItem", "position": 2, "name": "About", "item": "https://www.joinzero.ai/about"}]}, {"@context": "https://schema.org", "@type": "Person", "name": "Atul Khola", "jobTitle": "Head of Experience at Zero", "url": "https://www.joinzero.ai/about", "sameAs": ["https://www.linkedin.com/in/atulkhola/", "https://twitter.com/pixelandpump", "https://dribbble.com/atulkhola", "https://www.behance.net/atulkhola", "https://medium.com/@atulkhola", "https://www.instagram.com/pixelandpump"]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does Head of Experience mean at Zero?", "acceptedAnswer": {"@type": "Answer", "text": "I design and ship every interaction students and recruiters have with the platform. Product, brand, content: it all moves through the same system."}}, {"@type": "Question", "name": "What was your role at CRED?", "acceptedAnswer": {"@type": "Answer", "text": "I led central experiences, credit card management, and social plus e-commerce charters. I built payment flows used by millions. I also led the gym charter at cult.fit."}}, {"@type": "Question", "name": "Why did you start Zero?", "acceptedAnswer": {"@type": "Answer", "text": "I saw smart students with no signal of what they could actually do. Resumes list schools. Portfolios are self-curated. The industry needed a way to evaluate real work by real standards. Zero is that system."}}]}];
+---
+<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas}>
+  <nav class="breadcrumb"><a href="/">Home</a> / About</nav>
+  <h1>Who runs Zero?</h1>
+  <p class="answer-capsule">Atul Khola is Head of Experience at Zero. He ran central experiences and credit card management at CRED, led the gym charter at cult.fit, and studied Fashion Communication at NIFT Mumbai. He speaks regularly at IIT, NID, and NIFT.</p>
+
+  <div class="tldr">
+    <ul>
+      <li>4 years at CRED: central experiences, credit card management, social and e-commerce charters.</li>
+      <li>cult.fit: led the gym charter.</li>
+      <li>Earlier: topper, media.net.</li>
+      <li>Education: NIFT Mumbai, Fashion Communication.</li>
+      <li>Lectures and podcasts at IIT, NID, NIFT.</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>What did you do at CRED?</h2>
+    <p>I led central experiences and credit card management for one of India's most respected fintech products. I shipped payment flows used by millions. I also built the social and e-commerce charters from the ground up. Later, I led the gym charter at cult.fit, designing the end-to-end member experience.</p>
+  </section>
+
+  <section>
+    <h2>What is your background?</h2>
+    <p>I studied Fashion Communication at NIFT Mumbai. Before CRED, I worked at topper and media.net. I teach and speak regularly at IIT, NID, and NIFT on product design, experience systems, and the future of skills-based hiring.</p>
+  </section>
+
+  <section>
+    <h2>Where can I find your work?</h2>
+    <p>I write on <a href="https://medium.com/@atulkhola" target="_blank" rel="noopener">Medium</a>, post design work on <a href="https://dribbble.com/atulkhola" target="_blank" rel="noopener">Dribbble</a> and <a href="https://www.behance.net/atulkhola" target="_blank" rel="noopener">Behance</a>, and share thoughts on <a href="https://twitter.com/pixelandpump" target="_blank" rel="noopener">X/Twitter</a> and <a href="https://www.instagram.com/pixelandpump" target="_blank" rel="noopener">Instagram</a>. My full career is on <a href="https://www.linkedin.com/in/atulkhola/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+  </section>
+
+  <section class="faq-block">
+    <h2>Frequently asked questions</h2>
+    <div class="faq-item"><div class="faq-q">What does Head of Experience mean at Zero?</div><div class="faq-a">I design and ship every interaction students and recruiters have with the platform. Product, brand, content: it all moves through the same system.</div></div><div class="faq-item"><div class="faq-q">What was your role at CRED?</div><div class="faq-a">I led central experiences, credit card management, and social plus e-commerce charters. I built payment flows used by millions. I also led the gym charter at cult.fit.</div></div><div class="faq-item"><div class="faq-q">Why did you start Zero?</div><div class="faq-a">I saw smart students with no signal of what they could actually do. Resumes list schools. Portfolios are self-curated. The industry needed a way to evaluate real work by real standards. Zero is that system.</div></div>
+  </section>
+
+  <section class="last-updated">Last updated: 2026-05-17</section>
+</BaseLayout>

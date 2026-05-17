@@ -1,0 +1,17 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const title = "Receipts — Proof of work";
+const description = "Zero receipts are scored pieces of real work reviewed by top-1% professionals. Recruiters see them before resumes.";
+const canonical = "https://www.joinzero.ai/receipts";
+const schemas = [{"@context": "https://schema.org", "@type": "Article", "headline": "Receipts — Proof of work", "url": "https://www.joinzero.ai/receipts", "dateModified": "2026-05-17", "author": {"@type": "Organization", "name": "Zero"}, "publisher": {"@type": "Organization", "name": "Zero", "url": "https://www.joinzero.ai"}}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.joinzero.ai/"}, {"@type": "ListItem", "position": 2, "name": "Receipts", "item": "https://www.joinzero.ai/receipts"}]}];
+---
+<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas}>
+  <nav class="breadcrumb"><a href="/">Home</a> / Receipts</nav>
+  <h1>What is a Zero receipt?</h1>
+  <p class="answer-capsule">A receipt is a scored piece of real work reviewed by a top-1% professional. Recruiters see receipts before resumes.</p>
+
+  <div class="empty-state">
+    <p style="font-size:1.2rem; margin-bottom:0.5rem;">First receipts dropping soon.</p>
+    <p>Recruiters will see them before resumes.</p>
+  </div>
+</BaseLayout>
