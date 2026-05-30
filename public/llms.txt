@@ -58,6 +58,7 @@
 - [what is the best way to learn ai/ml product management as a student?](https://learn.zero.university/learn/what-is-the-best-way-to-learn-aiml-product-management-as-a-student)
 - [What should I do this summer if I didn't get an internship?](https://learn.zero.university/learn/what-should-i-do-this-summer-if-i-didnt-get-an-internship)
 - [Why isn't my resume getting callbacks?](https://learn.zero.university/learn/why-isnt-my-resume-getting-callbacks)
+- [Will AI replace junior marketers, designers, and PMs?](https://learn.zero.university/learn/will-ai-replace-junior-marketers-designers-pms)
 
 ## Compare the alternatives: courses, simulations, bootcamps, accelerators
 - [Best ways to get hired: courses vs simulations vs bootcamps vs zero](https://learn.zero.university/learn/best-ways-to-get-hired-courses-vs-simulations-vs-bootcamps-vs-zero)
