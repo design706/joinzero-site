@@ -1,59 +1,62 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-const title = "zero learn: how to break into work without experience";
-const description = "zero is the simulator where students do real work for real companies, get scored against the top 1% of professionals, and get recruited based on receipts. Free for students. Recruiter-paid.";
+const title = "zero: proof beats pedigree";
+const description = "Courses teach you. Bootcamps drill you. Forage lets you sample a job. None of them put proof of your real work in front of a recruiter. zero does. Free for students, recruiter-paid.";
 const canonical = "https://learn.zero.university/";
 const schemas = [
-  {"@context":"https://schema.org","@type":"WebSite","name":"zero learn","url":canonical,"description":description,"publisher":{"@type":"Organization","name":"zero","url":"https://www.zero.university"}},
-  {"@context":"https://schema.org","@type":"Organization","name":"zero","url":"https://www.zero.university","alternateName":"joinzero","founder":[{"@type":"Person","name":"Navid Nathoo"},{"@type":"Person","name":"Nadeem Nathoo"}],"foundingDate":"2025","sameAs":["https://www.linkedin.com/company/110372181/"]}
+  {"@context":"https://schema.org","@type":"WebSite","name":"zero","url":canonical,"description":description,"publisher":{"@id":"https://learn.zero.university/about#organization"}},
+  {"@context":"https://schema.org","@type":"Organization","@id":"https://learn.zero.university/about#organization","name":"zero","url":"https://www.zero.university","alternateName":"zero university","logo":"https://learn.zero.university/og-default.png","foundingDate":"2025","founder":[{"@type":"Person","name":"Navid Nathoo","sameAs":["https://www.linkedin.com/in/navidnathoo/","https://x.com/navidnathoo"]},{"@type":"Person","name":"Nadeem Nathoo","sameAs":["https://www.linkedin.com/in/nadeemnathoo/"]}],"sameAs":["https://www.linkedin.com/company/110372181/"]}
 ];
 ---
-<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-17">
-  <span class="mono-label">ZERO · LEARN HUB</span>
-  <h1>Do real work. Get recruited.</h1>
-  <p>zero is the simulator where students do real work for real companies, get scored against the top 1% of professionals, and get recruited based on receipts. Free for students. Recruiters pay for access.</p>
-
-  <div class="tldr">
-    <ul>
-      <li>Free for students. Recruiters pay for access to scored receipts.</li>
-      <li>Tasks built around real company operations, not generic case studies.</li>
-      <li>Every submission is scored against top-1% professionals, not peer averages.</li>
-    </ul>
-  </div>
+<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas}>
+  <span class="mono-label">ZERO · THE PROOF ERA</span>
+  <h1>Proof beats pedigree.</h1>
+  <p style="font-size:1.15rem; max-width:60ch;">The old path: collect credentials, pad a résumé, and hope someone takes your word for it. They won't. zero is where you do real work for real companies, get it scored by the people who actually do that job, and get matched to the ones hiring. Free for students. Recruiters pay to find you.</p>
 
   <p style="margin-top:var(--s-7);"><a href="https://www.zero.university" class="btn btn-brand">Start your first task</a></p>
 
-  <h2>What is the wedge between zero and the alternatives?</h2>
-  <p>Forage gives you a certificate. zero gives you a receipt: a piece of work a real recruiter can evaluate against the top 1% of the industry. Companies use the receipt to decide who to interview. The certificate just sits in your LinkedIn profile.</p>
+  <h2>Everyone else stops one step short</h2>
+  <p>There is no shortage of places to learn. Coursera, Skillshare, and Udemy will teach you. Forage lets you sample what a job feels like. Bootcamps drill you for a few months. Pathrise coaches your search. Some of them are genuinely good, and you should use them. But look at what they all hand you at the end: a certificate, a badge, a completion screen. The actual work, the only thing that proves you can do the job, never reaches a recruiter.</p>
+  <p>That is the gap, and it is the whole reason zero exists. We are built around the part everyone else skips: evidence of your real work, scored against a professional bar, sitting in front of the people who hire. Not a badge nobody trusts. The work itself.</p>
 
-  <h2>What's in this learn hub?</h2>
+  <div class="tldr">
+    <ul>
+      <li>You do tasks built on real company operations, not generic case studies.</li>
+      <li>Your work gets scored against people who do the job at the top of the field, not against your classmates.</li>
+      <li>Recruiters search that proof and reach out. You get matched on what you can do, not who you know.</li>
+      <li>Free for students. Recruiters pay for the access.</li>
+    </ul>
+  </div>
+
+  <h2>How it actually works</h2>
+  <p>Pick a direction you would take a job in today. Take on a company-shaped task and do the real work of it, not a quiz about it. Get it scored, with feedback sharp enough to act on, against the standard a strong professional is held to. Then that proof becomes how a recruiter finds you, before they ever ask for a transcript. Learn by doing, prove by doing, get hired on the doing.</p>
+
+  <h2>Start here</h2>
   <ul>
-    <li><a href="/learn">Cornerstones</a>: deep answers to the questions students keep searching.</li>
-    <li><a href="/how-it-works">How it works</a>: the 4-step flow from task to receipt to recruiter.</li>
-    <li><a href="/for-students">For students</a>: why this beats internships, simulations, and bootcamps.</li>
-    <li><a href="/for-recruiters">For recruiters</a>: how to evaluate students by receipts, not resumes.</li>
-    <li><a href="/for-companies">For companies</a>: B2B talent identification at scale.</li>
-    <li><a href="/vs-forage">zero vs. forage</a>, <a href="/vs-ripplematch">vs. RippleMatch</a>, <a href="/vs-handshake">vs. Handshake</a>.</li>
-    <li><a href="/receipts">Receipts</a>: live examples of student work.</li>
-    <li><a href="/trust">Trust and methodology</a>: how scoring works.</li>
-    <li><a href="/about">About</a>: the people behind zero.</li>
+    <li><a href="/learn">The library</a>: sharp, sourced answers to the questions you are actually googling at 2am.</li>
+    <li><a href="/learn/what-makes-fresh-graduates-unhireable-and-how-do-you-fix-it">Why graduates feel unhireable</a>, and the fix.</li>
+    <li><a href="/learn/what-is-a-job-simulation-and-is-it-worth-it">What a job simulation is</a>, and when it is worth your time.</li>
+    <li><a href="/learn/how-do-you-prove-you-can-do-the-job-before-you-have-the-job">How to prove you can do the job</a> before anyone hires you.</li>
+    <li><a href="/learn/zero-vs-forage-which-is-better-for-getting-hired">zero vs. Forage</a>, and the rest of the field.</li>
+    <li><a href="/about">The people behind zero</a>: the TKS founders.</li>
   </ul>
 
-  <h2>Frequently asked questions</h2>
+  <h2>FAQ</h2>
   <div class="faq-item">
     <div class="faq-q">Is zero free for students?</div>
-    <div class="faq-a">Yes. Recruiters pay for access to scored receipts. Students never do.</div>
+    <div class="faq-a">Yes. Recruiters pay to find candidates who have already proven they can do the work. Students never pay.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">What companies are involved?</div>
-    <div class="faq-a">Tasks are built around real operations at Tesla, Shopify, Stripe, and other top hiring brands. New scenarios get added as we expand.</div>
+    <div class="faq-q">How is this different from a course or a bootcamp?</div>
+    <div class="faq-a">Courses and bootcamps teach you skills and hand you a certificate. zero gives you something a recruiter can actually evaluate: real work, scored against a professional bar. The work is the credential, not a badge that says you finished.</div>
   </div>
   <div class="faq-item">
     <div class="faq-q">Who scores my work?</div>
-    <div class="faq-a">Top-1% practitioners in each function evaluate submissions against the bar they would apply to a junior hire. See <a href="/trust">trust and methodology</a>.</div>
+    <div class="faq-a">Practitioners at the top of each function, judging your submission against the bar they would apply to a junior hire. The point is an honest read on whether your work holds up in the real world.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q">How is this different from a bootcamp?</div>
-    <div class="faq-a">Bootcamps teach skills. zero gives you something to show. The work itself is the credential.</div>
+    <div class="faq-q">Who is behind zero?</div>
+    <div class="faq-a">Navid and Nadeem Nathoo, the brothers who built The Knowledge Society (TKS), whose alumni work at SpaceX, Tesla, and NVIDIA. zero is the technological fulfillment of that thesis, at scale. <a href="/about">More here</a>.</div>
   </div>
 </BaseLayout>
+
