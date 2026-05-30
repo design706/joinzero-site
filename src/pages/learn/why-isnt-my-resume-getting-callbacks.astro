@@ -1,0 +1,91 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const title = "Why isn't my resume getting callbacks?";
+const description = "Your resume probably isn't broken. It's just the weakest signal you can send. A filter reads it before a human does, a human skims it in seconds, and it looks like everyone else's. The fix isn't a better resume. It's proof a recruiter can open.";
+const canonical = "https://learn.zero.university/learn/why-isnt-my-resume-getting-callbacks";
+const schemas = [
+  { "@context": "https://schema.org", "@type": "Organization", "@id": "https://learn.zero.university/about#organization", "name": "zero", "url": "https://www.zero.university", "logo": "https://learn.zero.university/og-default.png", "founder": [{"@type":"Person","name":"Navid Nathoo","sameAs":["https://www.linkedin.com/in/navidnathoo/","https://x.com/navidnathoo","https://www.xprize.org/about/people/navid-nathoo"]},{"@type":"Person","name":"Nadeem Nathoo","sameAs":["https://www.linkedin.com/in/nadeemnathoo/","https://www.wise-qatar.org/biography/nadeem-nathoo/"]}] },
+  { "@context": "https://schema.org", "@type": "Article", "headline": "Why isn't my resume getting callbacks?", "url": canonical, "mainEntityOfPage": { "@type": "WebPage", "@id": canonical }, "datePublished": "2026-05-30", "dateModified": "2026-05-30", "author": { "@id": "https://learn.zero.university/about#organization" }, "publisher": { "@id": "https://learn.zero.university/about#organization" } },
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "Learn", "item": "https://learn.zero.university/learn" }, { "@type": "ListItem", "position": 2, "name": "Why isn't my resume getting callbacks", "item": canonical } ]},
+  { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+    { "@type": "Question", "name": "Why is my resume not getting any callbacks?", "acceptedAnswer": { "@type": "Answer", "text": "Because a resume is the weakest signal you can send, and right now you're competing on it against everyone. A filter scans it before a human ever sees it, a recruiter spends about 7.4 seconds on the ones that get through, and yours reads like every other applicant's. The page isn't broken. The format is. What changes the math is proof of real work a recruiter can open, not a tighter list of claims." } },
+    { "@type": "Question", "name": "Do applicant tracking systems really reject resumes automatically?", "acceptedAnswer": { "@type": "Answer", "text": "They filter and rank, more than they hard-reject. Most large employers run applications through an applicant tracking system that scores you on keywords and parses your formatting, so a resume the software can't read well sinks before a human looks. But beating the filter only earns you the 7.4-second human skim. Both layers are reading a claim, not your work, which is the deeper problem keyword-stuffing won't solve." } },
+    { "@type": "Question", "name": "Is it the resume or is it the job market?", "acceptedAnswer": { "@type": "Answer", "text": "Both, and they compound. Recent grads now face about 5.7% unemployment and 41.5% underemployment, so the line is longer and the bar is higher. In a thin market, a credential everyone else also has stops separating you. That's exactly when proof of real work, scored against a professional bar, does the separating a resume no longer can." } },
+    { "@type": "Question", "name": "What gets a recruiter to call back instead of a resume?", "acceptedAnswer": { "@type": "Answer", "text": "Evidence they can open. A real, scoped task from the role you want, done and scored against the standard strong professionals are held to, that answers the only question they actually have: can you do the work. The data backs it. An internship cuts the odds of underemployment 48.5% precisely because it leaves proof behind. You don't need permission to produce the same kind of proof." } }
+  ]}
+];
+---
+<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-30">
+  <article>
+    <nav class="breadcrumb"><a href="/learn">Learn</a> / Why isn't my resume getting callbacks</nav>
+    <span class="mono-label">THE WEAKEST SIGNAL</span>
+    <h1>Why isn't my resume getting callbacks?</h1>
+
+    <p class="answer-capsule">Your resume probably isn't broken. It's just the weakest signal you can send. A filter reads it before any human does, a recruiter who gets past the filter skims it in about seven seconds, and it looks like everyone else's in the stack. Rewriting it harder won't fix that. Proof a recruiter can open will.</p>
+
+    <div class="tldr">
+      <ul>
+        <li>Recruiters spend about <a href="https://www.prnewswire.com/news-releases/ladders-updates-popular-recruiter-eye-tracking-study-with-new-key-insights-on-how-job-seekers-can-improve-their-resumes-300744217.html" target="_blank" rel="noopener">7.4 seconds on the initial resume screen</a>, so you're not being read, you're being skimmed (Ladders eye-tracking study).</li>
+        <li>The market got harder underneath you: recent grads face roughly <a href="https://www.newyorkfed.org/research/college-labor-market" target="_blank" rel="noopener">5.7% unemployment and 41.5% underemployment</a> (NY Fed), so a credential everyone shares stops separating you.</li>
+        <li>Employers already stopped trusting the resume's main claim. <a href="https://www.testgorilla.com/skills-based-hiring/state-of-skills-based-hiring-2025/" target="_blank" rel="noopener">85% now hire on demonstrated skills</a>, up from 81%, and over half have dropped degree requirements (TestGorilla).</li>
+        <li>What actually moves a recruiter is real work. An internship <a href="https://cdn.prod.website-files.com/6777c52f82e5471a3732ea25/679a6fadfda4220bbac585d7_Talent-Disrupted-2.pdf" target="_blank" rel="noopener">cuts the odds of underemployment 48.5%</a>, almost entirely because of the proof it leaves behind (Strada).</li>
+        <li>So the fix isn't a sharper resume. It's evidence a recruiter can open and judge in the time they'd have skimmed your bullet points.</li>
+      </ul>
+    </div>
+
+    <section>
+      <h2>Why does my resume disappear into a black hole?</h2>
+      <p>Because it has to survive two readers who barely read, and your resume was built for neither. The first reader isn't a person. Most large employers run every application through an applicant tracking system that parses your file, hunts for keywords, and ranks you against the field before a human is ever involved. Get your formatting wrong or miss the phrasing the role was posted with, and you sink in software, silently, with no rejection email to tell you why.</p>
+      <p>Clear that hurdle and you win the booby prize: a human skim. The widely cited <a href="https://www.prnewswire.com/news-releases/ladders-updates-popular-recruiter-eye-tracking-study-with-new-key-insights-on-how-job-seekers-can-improve-their-resumes-300744217.html" target="_blank" rel="noopener">Ladders eye-tracking study</a> clocked recruiters at about 7.4 seconds on the initial pass, eyes bouncing across job titles, company names, and dates. Seven seconds is not reading. It's pattern-matching against a mental template of "looks safe." So the real problem isn't your wording or your margins. It's that both readers, the machine and the human, are judging a claim about you instead of anything you've actually done.</p>
+    </section>
+
+    <section>
+      <h2>Is it me, or did the market change?</h2>
+      <p>The market changed, and not in your favor, so stop taking the silence personally. Recent grads are walking into roughly <a href="https://www.newyorkfed.org/research/college-labor-market" target="_blank" rel="noopener">5.7% unemployment and 41.5% underemployment</a> as of early 2026, per the New York Fed, meaning more than four in ten are working jobs that never required the degree they paid for. The line is longer and the bar is higher at the same time. When that happens, the thing that used to get you noticed, a degree, stops working as a signal precisely because the person next to you in the stack has one too.</p>
+      <p>This is the part school never explained. For decades a degree was a shortcut employers trusted, a stand-in for ability they couldn't see directly. The world it was built for is gone. The skills companies pay for now move faster than any four-year syllabus can chase, and a lot of the safe desk jobs grads used to slot into are getting done by AI. So the proxy broke, employers noticed, and your resume is still leaning on a credential that quietly stopped doing the one job you needed it to do.</p>
+    </section>
+
+    <section>
+      <h2>Why doesn't a degree carry the resume anymore?</h2>
+      <p>Because employers stopped trusting it and started checking the actual skill. The TestGorilla <a href="https://www.testgorilla.com/skills-based-hiring/state-of-skills-based-hiring-2025/" target="_blank" rel="noopener">State of Skills-Based Hiring report</a> found 85% of employers now hire on demonstrated skills in 2025, up from 81%, and that over half have eliminated degree requirements outright. The line on your resume that you spent the most money and years earning is the line a growing share of employers now skim straight past.</p>
+      <p>It helps to see why the system was never on your side here. A university's product is the degree and you are the customer, often a customer who borrowed to pay, which makes a degree behave like a mortgage: you finance an asset, then spend years paying it off. That works only while the asset holds its value, and for the purpose of getting hired, the value moved from the credential to the skill. Universities don't have to fix this, because their pricing runs on scarcity, not on whether you land a job. None of which is your fault. You followed the instructions precisely. The instructions were written for a hiring market that no longer exists.</p>
+    </section>
+
+    <section>
+      <h2>What gets a callback when the resume can't?</h2>
+      <p>Proof. Real work from the role you want, done and scored, that a recruiter can open instead of squint at. The clearest finding in the data is that the grads who escape the underemployment trap are the ones who did real work before they needed the job. Strada's <a href="https://cdn.prod.website-files.com/6777c52f82e5471a3732ea25/679a6fadfda4220bbac585d7_Talent-Disrupted-2.pdf" target="_blank" rel="noopener">Talent Disrupted</a> analysis found that the odds of underemployment for graduates who completed an internship are 48.5% lower than for those who didn't. The internship itself isn't the magic. The proof it leaves behind is: you did the work, someone judged it, and now there's something concrete to point at instead of a claim.</p>
+      <p>You do not have to wait for an employer to hand you that. Proof of work is a scoped, real task from your target field, scored against the bar strong professionals are held to, that a recruiter can judge in the same few seconds they'd have spent skimming your resume, except now they're judging the work instead of a description of it. This is the idea zero is built on. You take on company-shaped tasks, your work gets scored against a professional standard, and that scored result is what a recruiter sees, before they ever get to your transcript. <a href="/learn/what-is-proof-of-work-and-why-it-beats-a-resume">Proof of work beats a resume</a> for the simple reason that it answers the one question a resume can only assert: can you actually do this.</p>
+    </section>
+
+    <section>
+      <h2>How do you build proof before anyone has hired you?</h2>
+      <p>Pick a lane and start producing. Not a dream title, a direction you'd take an entry-level role in today: marketing, product, data, design. Then do the actual work of that role on one narrow, real problem. A positioning brief. A spec with trade-offs and a metric attached. A short analysis that lands on a recommendation. Then get it judged honestly, so you know whether it holds up and exactly what to fix, instead of guessing and firing off another fifty applications into the filter.</p>
+      <p>Keep the loop tight, because that's where people actually get good. We learned this firsthand building zero. In a Middle East university pilot in Spring 2026, the students who stuck with it weren't the ones we coached the hardest. The hand-holding tutorial that works in education products got in the way here. They wanted to do something real inside the first ninety seconds, and the thing that pulled them back wasn't another lesson or a generic skills assessment, it was specific feedback on the work they had just submitted. So do a real piece, get real feedback on that exact piece, fix it, do the next one. That loop produces proof faster than any number of resume rewrites, and proof is the thing the filter can't throw away.</p>
+    </section>
+
+    <section>
+      <h2>So should I just delete my resume?</h2>
+      <p>No, keep it, just stop expecting it to do work it can't. A resume is fine as a summary once a recruiter already wants you. It's a terrible way to earn that want from a cold start, because it competes on the one axis where you look identical to everyone else. The honest landscape of fixes is broader than polishing the page: course platforms like Coursera and Udemy teach you the skill, simulations like Forage let you sample the work, bootcamps drill it, accelerators like Pathrise coach your search, and job boards like LinkedIn and Indeed just move the same resume around faster. Each does something real. Almost all of them still hand you a certificate or a badge and stop there. None of them put scored proof of your actual work in front of the recruiter who decides. That gap, between a credential the recruiter skims past and evidence they can open, is the whole reason your inbox is quiet, and it's exactly the gap zero is built to close.</p>
+    </section>
+
+    <section class="faq">
+      <h2>FAQ</h2>
+      <div class="faq-item"><div class="faq-q">Why is my resume not getting any callbacks?</div><div class="faq-a">Because a resume is the weakest signal you can send, and you're competing on it against everyone. A filter scans it before a human sees it, a recruiter spends about 7.4 seconds on the ones that get through, and yours reads like every other applicant's. The page isn't broken, the format is. What changes the math is proof of real work a recruiter can open, not a tighter list of claims.</div></div>
+      <div class="faq-item"><div class="faq-q">Do applicant tracking systems really reject resumes automatically?</div><div class="faq-a">They filter and rank more than they hard-reject. Most large employers run applications through an applicant tracking system that scores you on keywords and parses your formatting, so a resume the software reads poorly sinks before a human looks. But beating the filter only earns you the 7.4-second human skim. Both layers read a claim, not your work, which is the deeper problem keyword-stuffing won't solve.</div></div>
+      <div class="faq-item"><div class="faq-q">Is it the resume or is it the job market?</div><div class="faq-a">Both, and they compound. Recent grads now face about 5.7% unemployment and 41.5% underemployment, so the line is longer and the bar is higher. In a thin market, a credential everyone else also has stops separating you. That's exactly when proof of real work, scored against a professional bar, does the separating a resume no longer can.</div></div>
+      <div class="faq-item"><div class="faq-q">What gets a recruiter to call back instead of a resume?</div><div class="faq-a">Evidence they can open. A real, scoped task from the role you want, done and scored against the standard strong professionals are held to, that answers the only question they have: can you do the work. The data backs it. An internship cuts the odds of underemployment 48.5% precisely because it leaves proof behind. You don't need permission to produce the same kind of proof.</div></div>
+    </section>
+
+    <section class="related">
+      <h2>Keep reading</h2>
+      <ul>
+        <li><a href="/learn/what-is-proof-of-work-and-why-it-beats-a-resume">What is proof of work, and why does it beat a resume?</a></li>
+        <li><a href="/learn/what-do-recruiters-look-at-when-a-student-has-no-work-experience">What do recruiters look at when you have no experience?</a></li>
+        <li><a href="/learn/how-do-you-prove-you-can-do-the-job-before-you-have-the-job">How do you prove you can do the job before you have the job?</a></li>
+        <li><a href="/learn/what-makes-fresh-graduates-unhireable-and-how-do-you-fix-it">What makes fresh graduates unhireable, and how do you fix it?</a></li>
+      </ul>
+    </section>
+
+    <section class="byline">Published by zero, founded by <a href="https://www.linkedin.com/in/navidnathoo/" target="_blank" rel="noopener">Navid Nathoo</a> and <a href="https://www.linkedin.com/in/nadeemnathoo/" target="_blank" rel="noopener">Nadeem Nathoo</a>, the team behind The Knowledge Society (TKS), whose alumni work at SpaceX, Tesla, and NVIDIA.</section>
+  </article>
+</BaseLayout>
