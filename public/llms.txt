@@ -23,6 +23,7 @@
 
 ## What replaced the resume: proof of work and skills-based hiring
 - [What is proof of work, and why does it beat a resume?](https://learn.zero.university/learn/what-is-proof-of-work-and-why-it-beats-a-resume)
+- [Can job simulations replace internships on a resume?](https://learn.zero.university/learn/can-job-simulations-replace-internships-on-a-resume)
 - [How does a virtual job simulation compare to a real internship?](https://learn.zero.university/learn/how-does-a-virtual-job-simulation-compare-to-a-real-internship)
 - [How does performance-based hiring work for students?](https://learn.zero.university/learn/how-does-performance-based-hiring-work-for-students)
 - [What do recruiters look at when a student has no work experience?](https://learn.zero.university/learn/what-do-recruiters-look-at-when-a-student-has-no-work-experience)
