@@ -1,44 +1,55 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-const title = "Learn — The Zero knowledge base";
-const description = "The Zero library of cornerstones, guides, and deep dives on skills-based hiring, career simulation, and real work.";
+const title = "Learn — zero";
+const description = "The university-to-job pipeline is broken. These are clear, honest, data-backed answers on how to actually get hired when the degree is no longer enough.";
 const canonical = "https://learn.zero.university/learn";
-const schemas = [{"@context": "https://schema.org", "@type": "Article", "headline": "Learn — The Zero knowledge base", "url": "https://learn.zero.university/learn", "dateModified": "2026-05-17", "author": {"@type": "Organization", "name": "Zero"}, "publisher": {"@type": "Organization", "name": "Zero", "url": "https://learn.zero.university"}}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://learn.zero.university/"}, {"@type": "ListItem", "position": 2, "name": "Learn", "item": "https://learn.zero.university/learn"}]}];
+const schemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "zero Learn",
+    "url": canonical,
+    "description": description,
+    "isPartOf": { "@type": "WebSite", "name": "zero", "url": "https://www.zero.university" }
+  }
+];
 ---
 <BaseLayout title={title} description={description} canonical={canonical} schemas={schemas}>
   <nav class="breadcrumb"><a href="/">Home</a> / Learn</nav>
-  <h1>What is the Zero library?</h1>
-  <p class="answer-capsule">The Learn section is where Zero publishes deep guides, research, and cornerstones on skills-based hiring, career simulation, and how to break into work without experience.</p>
+  <span class="mono-label">LIBRARY</span>
+  <h1>Learn</h1>
+  <p class="answer-capsule">The path from school to a real job is broken, and most advice pretends it isn't. These guides take the honest view: a degree certifies that you passed a filter, not that you can do the work. Each one is researched, sourced, and written to help you get hired on proof of skill, which is what employers actually buy now.</p>
 
-  <div class="tldr">
+  <section>
+    <h2>Start here</h2>
     <ul>
-      <li>Ring 1 cornerstones: deep, authoritative guides.</li>
-      <li>Ring 2 clusters: topic-based collections.</li>
-      <li>Ring 3 programmatic pages: data-driven entry points.</li>
+      <li><a href="/learn/what-makes-fresh-graduates-unhireable-and-how-do-you-fix-it">What makes fresh graduates unhireable, and how do you fix it?</a> <span class="mono-label">PILLAR</span></li>
+      <li><a href="/learn/what-is-a-job-simulation-and-is-it-worth-it">What is a job simulation, and is it worth it?</a> <span class="mono-label">PILLAR</span></li>
     </ul>
-  </div>
+  </section>
 
-  <h2>Ring 1 cornerstones</h2>
-  <ul>
-    <li><a href="/learn/how-do-you-prove-you-can-do-the-job-before-you-have-the-job">How do you prove you can do the job before you have the job?</a></li>
-    <li><a href="/learn/how-does-a-virtual-job-simulation-compare-to-a-real-internship">How does a virtual job simulation compare to a real internship?</a></li>
-    <li><a href="/learn/how-does-performance-based-hiring-work-for-students">How does performance-based hiring work for students?</a></li>
-    <li><a href="/learn/how-do-top-1-percent-junior-marketers-designers-pms-actually-work">How do top 1% junior marketers, designers, and PMs actually work?</a></li>
-    <li><a href="/learn/how-to-get-a-product-internship-at-stripe-as-a-first-time-applicant">How to get a product internship at Stripe as a first-time applicant</a></li>
-    <li><a href="/learn/how-to-get-a-marketing-internship-at-tesla-with-no-experience">How to get a marketing internship at Tesla with no experience</a></li>
-    <li><a href="/learn/is-a-portfolio-better-than-a-resume-for-breaking-into-tech-in-2026">Is a portfolio better than a resume for breaking into tech in 2026?</a></li>
-    <li><a href="/learn/what-do-recruiters-look-at-when-a-student-has-no-work-experience">What do recruiters look at when a student has no work experience?</a></li>
-    <li><a href="/learn/what-makes-fresh-grads-unhireable-and-how-to-fix-it">What makes fresh grads so incredibly unhireable and how to fix it</a></li>
-    <li><a href="/learn/what-should-i-do-this-summer-if-i-didnt-get-an-internship">What should I do this summer if I didn't get an internship?</a></li>
-    <li><a href="/learn/where-do-recruiters-actually-find-first-time-candidates-in-2026">Where do recruiters actually find first-time candidates in 2026?</a></li>
-  </ul>
+  <section>
+    <h2>Getting hired without experience</h2>
+    <ul>
+      <li><a href="/learn/how-do-you-prove-you-can-do-the-job-before-you-have-the-job">How do you prove you can do the job before you have the job?</a></li>
+      <li><a href="/learn/what-do-recruiters-look-at-when-a-student-has-no-work-experience">What do recruiters look at when a student has no work experience?</a></li>
+      <li><a href="/learn/how-does-performance-based-hiring-work-for-students">How does performance-based hiring work for students?</a></li>
+      <li><a href="/learn/is-a-portfolio-better-than-a-resume-for-breaking-into-tech-in-2026">Is a portfolio better than a résumé for breaking into tech?</a></li>
+      <li><a href="/learn/how-to-break-into-tech-without-a-cs-degree">How to break into tech without a CS degree</a></li>
+      <li><a href="/learn/what-should-i-do-this-summer-if-i-didnt-get-an-internship">What should I do this summer if I didn't get an internship?</a></li>
+      <li><a href="/learn/where-do-recruiters-actually-find-first-time-candidates-in-2026">Where do recruiters actually find first-time candidates?</a></li>
+      <li><a href="/learn/how-does-a-virtual-job-simulation-compare-to-a-real-internship">How does a virtual job simulation compare to a real internship?</a></li>
+      <li><a href="/learn/how-do-top-1-percent-junior-marketers-designers-pms-actually-work">How do the top 1% of junior marketers, designers, and PMs actually work?</a></li>
+    </ul>
+  </section>
 
-  <h2>Ring 2 comparisons and alternatives</h2>
-  <ul>
-    <li><a href="/learn/forage-alternative-for-students">The best Forage alternative for students in 2026</a></li>
-    <li><a href="/learn/is-pathrise-worth-it">Is Pathrise worth it? A real comparison for students</a></li>
-    <li><a href="/learn/zero-vs-forage-which-is-better-for-getting-hired">Zero vs Forage: which is better for getting hired?</a></li>
-  </ul>
-
-  <section class="last-updated">Last updated: 2026-05-17</section>
+  <section>
+    <h2>Compare the alternatives</h2>
+    <ul>
+      <li><a href="/learn/zero-vs-forage-which-is-better-for-getting-hired">zero vs. Forage: which is better for getting hired?</a></li>
+      <li><a href="/learn/forage-alternative-for-students">The best Forage alternative for students</a></li>
+      <li><a href="/learn/is-pathrise-worth-it">Is Pathrise worth it? An honest comparison</a></li>
+    </ul>
+  </section>
 </BaseLayout>
+

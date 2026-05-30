@@ -1,8 +1,15 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-const title = "What makes fresh graduates unhireable and how do you fix it?";
-const description = "Fresh graduates become unhireable when they have no proof of output. A résumé lists potential. Courses list theory. Neither shows an employer you can do the actual job.";
+const title = "What makes fresh graduates unhireable, and how do you fix it?";
+const description = "Graduates aren't unhireable, they're unproven. A degree certifies you passed a filter; it doesn't show an employer you can do the job. The fix is proof of work, and the data backs it.";
 const canonical = "https://learn.zero.university/learn/what-makes-fresh-graduates-unhireable-and-how-do-you-fix-it";
+const authorSameAs = [
+  "https://www.linkedin.com/in/atulkhola/",
+  "https://twitter.com/pixelandpump",
+  "https://dribbble.com/atulkhola",
+  "https://www.behance.net/atulkhola",
+  "https://medium.com/@atulkhola"
+];
 const schemas = [
   {
     "@context": "https://schema.org",
@@ -10,213 +17,113 @@ const schemas = [
     "@id": "https://learn.zero.university/about#organization",
     "name": "zero",
     "url": "https://www.zero.university",
-    "logo": "https://learn.zero.university/logo.png"
+    "logo": "https://learn.zero.university/og-default.png"
   },
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "What Makes Fresh Graduates Unhireable and How Do You Fix It",
-    "url": "https://learn.zero.university/learn/what-makes-fresh-graduates-unhireable-and-how-do-you-fix-it",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://learn.zero.university/learn/what-makes-fresh-graduates-unhireable-and-how-do-you-fix-it"
-    },
-    "dateModified": "2026-05-18",
+    "headline": "What makes fresh graduates unhireable, and how do you fix it?",
+    "url": canonical,
+    "mainEntityOfPage": { "@type": "WebPage", "@id": canonical },
+    "datePublished": "2026-05-30",
+    "dateModified": "2026-05-30",
     "author": {
       "@type": "Person",
       "name": "Atul Khola",
       "jobTitle": "Head of Experience at zero",
       "url": "https://learn.zero.university/about",
-      "sameAs": [
-        "https://www.linkedin.com/in/atulkhola/",
-        "https://twitter.com/pixelandpump",
-        "https://dribbble.com/atulkhola",
-        "https://www.behance.net/atulkhola",
-        "https://medium.com/@atulkhola",
-        "https://www.instagram.com/pixelandpump"
-      ]
+      "sameAs": authorSameAs
     },
-    "publisher": {
-      "@type": "Organization",
-      "name": "zero",
-      "url": "https://www.zero.university"
-    }
+    "publisher": { "@id": "https://learn.zero.university/about#organization" }
   },
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://learn.zero.university/"},
-      {"@type": "ListItem", "position": 2, "name": "Learn", "item": "https://learn.zero.university/learn"},
-      {"@type": "ListItem", "position": 3, "name": "What Makes Fresh Graduates Unhireable and How Do You Fix It"}
+      { "@type": "ListItem", "position": 1, "name": "Learn", "item": "https://learn.zero.university/learn" },
+      { "@type": "ListItem", "position": 2, "name": "What makes fresh graduates unhireable", "item": canonical }
     ]
   },
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Why are fresh graduates considered unhireable by many employers?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Fresh graduates are considered unhireable when they lack demonstrated output. Employers in a 2024 SHRM survey reported that 72% of entry-level candidates lack applied skills. The issue is not the degree itself. It is the absence of proof that the candidate can execute the day-to-day work without extensive training."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does an internship guarantee you will get hired full-time?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. Internships improve your chances but an internship only helps if you exit with a measurable artifact and a reference who can describe your specific contribution. Many internships are low-signal: photocopying, coffee runs, and shadowing. If your internship produced no artifact, it barely registers."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do scored work samples compare to traditional job assessments?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Work-sample tests predict job performance at a correlation of about 0.54 according to Schmidt and Hunter's validity research, confirmed by Sackett et al. 2022. That means they predict success about 40% better than unstructured interviews. Traditional job assessments are often generic multiple-choice tests that measure familiarity, not capability."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I fix being unhireable without going back to school?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. The fix is building recruiter-visible work samples that demonstrate your capability. No additional degree is required. A scored simulator task that produces a real deliverable signals more to recruiters than another academic credential. You can do this alongside your current job or studies."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How long does it take to build enough proof to become hireable?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A Middle East university pilot, Spring 2026, showed that students who completed scored tasks with per-submission feedback generated evidence of capability within one academic term. They completed marketing briefs, product requirements, and design sprints. Each submission received specific evaluation of what worked and what needed revision."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is an outbound signal and why does it matter?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "An outbound signal is proof that travels to recruiters without you sending it. A résumé is inbound: you apply and hope it gets read. A scored work sample on a recruiter-visible platform is outbound: recruiters see your percentile and contact you. The signal finds the employer."
-        }
-      }
+      { "@type": "Question", "name": "Does this mean a degree is worthless?", "acceptedAnswer": { "@type": "Answer", "text": "No. A degree still opens doors and some employers screen for it. But it is no longer enough on its own. It tells an employer you finished a program, not that you can do their job. The graduates who get hired pair the degree with proof of real work." } },
+      { "@type": "Question", "name": "What counts as proof of work?", "acceptedAnswer": { "@type": "Answer", "text": "A real, scoped task from the kind of work you want to do, completed and evaluated against a professional standard. A marketing brief, a product spec, a data analysis, a design. Something a recruiter can open and judge in minutes, not a line on a résumé they have to take on faith." } },
+      { "@type": "Question", "name": "How fast can I become hireable?", "acceptedAnswer": { "@type": "Answer", "text": "Faster than you think, because you are not adding another multi-year credential. You are producing evidence. A focused student can complete and get feedback on several pieces of real work in a few weeks, which is enough to change how a recruiter reads their application." } },
+      { "@type": "Question", "name": "What if I cannot get an internship?", "acceptedAnswer": { "@type": "Answer", "text": "An internship is one way to get proof of work, and the data shows it cuts underemployment risk by nearly half. But it is not the only way. You can build the same evidence by doing real, scored work directly, which is exactly what zero is for. The internship matters because of the proof it produces, and you can produce that proof on your own." } },
+      { "@type": "Question", "name": "Is zero free for students?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. zero is free for students and paid for by the recruiters who hire from it. You build scored work, recruiters see candidates who have already proven they can do the job, and they pay for that access. You never do." } }
     ]
   }
 ];
 ---
-<nav class="breadcrumb"><a href="/">Home</a> / <a href="/learn">Learn</a> / What makes fresh graduates unhireable</nav>
-  <span class="mono-label">RING 1 · CORNERSTONE</span>
-  <h1>What makes fresh graduates unhireable and how do you fix it?</h1>
-  <p class="answer-capsule">Fresh graduates are unhireable when they have zero proof of output: no artifact a recruiter can open, inspect, and forward to a hiring manager. A scored work sample that demonstrates actual capability before anyone asks for a transcript is the most reliable way to bridge that gap.</p>
+<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-30">
+  <article>
+    <nav class="breadcrumb"><a href="/learn">Learn</a> / What makes fresh graduates unhireable</nav>
+    <span class="mono-label">PILLAR</span>
+    <h1>What makes fresh graduates unhireable, and how do you fix it?</h1>
 
-  <div class="tldr">
-    <ul>
-      <li><a href="https://www.shrm.org/topics-tools/news/talent-acquisition/skills-gap-college-graduates" target="_blank">72% of employers say new graduates lack practical skills</a>, per 2024 SHRM data.</li>
-      <li><a href="https://www.apa.org/pubs/journals/features/bul-124-2-262.pdf" target="_blank">Work-sample tests predict job performance better than unstructured interviews</a>, according to Schmidt and Hunter's landmark validity research, confirmed by <a href="https://psycnet.apa.org/record/2023-38400-001" target="_blank">Sackett et al. 2022 meta-analysis in Personnel Psychology</a>.</li>
-      <li>A Middle East university pilot, Spring 2026, showed per-submission feedback drove repeat engagement over generic career advice.</li>
-      <li>Most recruiters already have 200 applications per junior role. A scored work sample is the thing that makes them open yours rather than someone else's, and the difference shows up in who gets called back first.</li>
-    </ul>
-  </div>
+    <p class="answer-capsule">Fresh graduates aren't unhireable. They're unproven. A degree certifies that you passed through an education system built to filter people, not to show an employer you can do the job. With <a href="https://www.newyorkfed.org/research/college-labor-market" target="_blank" rel="noopener">41.5% of recent graduates underemployed</a>, the fix is not another credential. It is proof of work: a real task an employer can evaluate before they hire you.</p>
 
-  <section>
-    <h2>Why do recruiters say fresh graduates are unhireable?</h2>
-    <p>A single junior role pulls <a href="https://www.jobvite.com/resources/blog/recruiting-metrics-benchmark-report/" target="_blank">between 100 and 300 applications on average</a>, and the first cut is measured in seconds, not minutes. A <a href="https://www.theladders.com/static/images/basicSite/pdfs/TheLadders-EyeTracking-StudyC2.pdf" target="_blank">2018 eye-tracking study by TheLadders</a> clocked the median résumé review at roughly 7.4 seconds. University name, last job title, maybe a company logo if the formatting makes it easy to spot. That is the full evaluation you get before someone decides whether to scroll further or hit the archive button.</p>
-    <p>A degree from a name-brand school gets you into the maybe pile, and once you are there, the credential has done its job and has nothing left to offer.</p>
-    <p>The trouble really surfaces during screening interviews, where graduates lean on coursework or group projects that split credit four ways with no way to isolate individual contribution. There is nothing the recruiter can click on, download, or forward to a hiring manager. SHRM labelled this the <a href="https://www.shrm.org/topics-tools/news/talent-acquisition/skills-gap-college-graduates" target="_blank">skills gap</a>, and their 2024 survey puts it at 72% of HR professionals saying entry-level candidates lack applied abilities. That number has held steady through three survey cycles now, so it is not a blip.</p>
-    <p>I have sat through campus recruiting events across the Gulf where this disconnect plays out in real time. Students walk in certain their transcript is the differentiator. The recruiter across the table just wants a deliverable, any kind of work sample they can attach to an email with a note that says "look at this." Neither side gets what they came for. The student walks away feeling dismissed for a GPA that took four years to build. The recruiter leaves with a stack of paper and no signal.</p>
-  </section>
-
-  <section>
-    <h2>How does the skills gap data actually look?</h2>
-    <p>NACE (National Association of Colleges and Employers) surveys employers every hiring cycle. Their <a href="https://www.naceweb.org/talent-acquisition/benchmarks/" target="_blank">2024 data shows only 53% of entry-level hires met all stated competency expectations</a> on day one, and the competencies were not exotic: written communication, problem solving, teamwork. What employers got instead was theoretical knowledge that had never been applied to anything resembling real output. Half the new hires showed up knowing the textbook and none of the context.</p>
-    <p>BLS numbers tell the same story from the other direction. <a href="https://www.bls.gov/news.release/pdf/youth.pdf" target="_blank">Youth unemployment for 20-24 year-olds in early 2025 ran at roughly 7.9%</a>, more than double the <a href="https://www.bls.gov/news.release/empsit.nr0.htm" target="_blank">national average of roughly 4.1%</a>. These are people who did fine in school, some of them quite well, and they are graduating into a market that has been punishing the credentials-versus-capability mismatch since before they started university. The evaluation system is selecting for something that nobody on the hiring side actually trusts.</p>
-  </section>
-
-  <section>
-    <h2>What did a real pilot reveal about fixing this?</h2>
-    <p>Earlier this year we ran a pilot at a Middle East university that tested something different: students skipped assessments entirely and went straight into scored tasks. Marketing briefs, product requirements, design sprints. Each submission got per-submission feedback on the actual work they produced.</p>
-    <p>We got a couple things badly wrong at the start, and the pilot made them obvious fast. We had built a gradual onboarding flow with scaffolded steps and explanations because that is what works in most ed-tech products. Within the first few sessions it was clear that none of it was landing. Students wanted real work inside 90 seconds. They were not curious about the methodology or the scoring system. They wanted to do something tangible and then see if it was any good. Collapsing the introduction to a single "pick your first task" screen immediately increased the number of students who reached their first scored submission, which makes sense in hindsight: we had been asking people to sit through a manual when they came to build.</p>
-    <p>The thing that genuinely surprised me was what drove repeat visits. Per-submission feedback turned out to be the entire product. Students told us, without prompting, that they came back specifically to read what someone had written about their work. The generic skill assessments sat untouched. The sidebar with career tips might as well not have existed. We spent weeks trying to figure out why engagement was so lopsided across features, and eventually had to accept that the feedback loop was doing all the heavy lifting while every other module collected dust.</p>
-    <p>One student told us she would rather submit something rough and get honest feedback than read another article about how marketing works. Another said he did not realize he could do this kind of work without already holding a job. We heard versions of this repeated across different cohorts, from students whose only common trait was being tired of getting talked at when they wanted to actually produce something.</p>
-  </section>
-
-  <section>
-    <h2>How do scored work samples change hiring?</h2>
-    <p>Schmidt and Hunter's foundational research on personnel selection validity found that <a href="https://www.apa.org/pubs/journals/features/bul-124-2-262.pdf" target="_blank">work-sample tests correlate at about 0.54 with job performance</a>. Sackett et al. confirmed in a <a href="https://psycnet.apa.org/record/2023-38400-001" target="_blank">2022 Personnel Psychology meta-analysis</a> that work samples remain among the top predictors of job performance. Put concretely: work samples predict success about 40% better than unstructured interviews, which come in at 0.38. Both handily beat years of education as a predictor, which sits at 0.10. The research has been pointing in this direction for decades and hiring processes have mostly shrugged at it.</p>
-    <p>The reason companies defaulted to interviews anyway is boring and practical: administering work samples at scale was expensive. Someone had to design the test, proctor it, grade it, and that someone was usually a hiring manager who was already underwater. The idea made sense in theory; the logistics made it impossible in practice, so the industry settled for résumés and interviews and learned to live with the noise.</p>
-    <p>Simulators change the unit economics. Instead of a recruiter building a one-off evaluation for every open role, students complete calibrated tasks scored against a rubric. Output is assessed automatically. The recruiter gets a sortable signal. The student gets something better than a pass/fail result: a portfolio artifact produced under real conditions, from a real brief.</p>
-    <table>
-      <thead>
-        <tr><th>Stage</th><th>Signal quality</th><th>Time invested</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Résumé screen</td><td>Low: self-reported</td><td>Under a minute total</td></tr>
-        <tr><td>Phone screen</td><td>Medium: verbal claim</td><td>30 minutes</td></tr>
-        <tr><td>Assessment test</td><td>High: but generic</td><td>2-3 hours</td></tr>
-        <tr><td>Scored simulator task</td><td>High: job-identical output</td><td>4-6 hours</td></tr>
-      </tbody>
-    </table>
-    <p>A simulator task asks more of your time than a résumé screen, and that is the point. You finish with a marketing brief or a product spec or a design file, and recruiters evaluate it the same way they would evaluate work from someone who has been employed for three years because the artifact type is identical. A line on a résumé cannot replicate that. Those hours buy you evidence that compounds across every application and every recruiter search, and it does not expire.</p>
-  </section>
-
-  <section>
-    <h2>How do you actually become hireable instead of just credentialed?</h2>
-    <p>Do real work and put it somewhere public. Do not reach for a class project or a tutorial clone. Pick something that looks like what you would actually do on day one of the job you want. If you want a marketing role, write a campaign brief for a real company. If you want product, write a PRD for an existing product you use daily and know well enough to argue about. Then find someone to score it, collect the feedback, revise, and do it again. Two or three cycles of this will teach you more about what hiring managers actually look for than anything else you can do as a student.</p>
-    <p>Chase the kind of feedback that names your specific gaps. Generic encouragement is cheap and priced accordingly. Someone telling you "good effort" does nothing. Someone telling you "your competitive analysis section ignores pricing data and you assumed a market share without checking the S-1" is giving you gold that most people do not get until their first performance review. When I have watched students go through this loop at the pilot, the jump from "I have no idea if this is good" to making revisions that an experienced reviewer would flag took weeks, not months.</p>
-    <p>Then make the evidence discoverable. A portfolio is helpful but passive: it sits there waiting for a visitor. What you want is a signal that travels on its own, one that recruiters encounter when they are actively searching for candidates. In a scored platform, recruiters sort by performance percentile and reach out directly. You stop submitting applications into a queue and start having your work speak for you before anyone asks for a résumé.</p>
-    <p><a href="https://www.zero.university">zero is built for exactly this</a>. Students complete real tasks for real companies. Their scored output is visible to recruiters. It is free for students.</p>
-  </section>
-
-  <section>
-    <h2>What makes someone unhireable even with internships?</h2>
-    <p>Internships help, but a surprising number of them produce nothing you can actually show anyone later. Photocopying, coffee runs, sitting in on meetings. If that was your day-to-day, the internship exists on your résumé but carries almost no weight, because a recruiter cannot tell from a company name and a title whether you built anything or spent the summer in a room nobody entered. Two candidates with identical internship lines on paper can be worlds apart in capability, and the résumé format is not equipped to expose the difference.</p>
-    <p>Graduates who get offers consistently leave every experience with something demonstrable. When I ask hiring managers what separates one junior candidate from another when both have similar internships listed, the answer is never GPA. It is always some variation of "she showed me what she actually built, and I could tell it was real." You want to be the candidate who can say "I built Y feature, it shipped to users, here is the PR link and here is what the metrics did after." That sentence requires evidence, and having the evidence is precisely what makes you credible.</p>
-    <p>See how <a href="/learn/how-does-performance-based-hiring-work-for-students">performance-based hiring works for students</a> for the full mechanics.</p>
-  </section>
-
-  <section class="author-bio">
-    <p><strong>Atul Khola</strong> is Head of Experience at zero. He has led design and product at CRED, cult.fit, topper, and media.net. He lectures at IITs, NIDs, and NIFTs on product design and career strategy.</p>
-  </section>
-
-  <section class="faq-block">
-    <h2>What do people ask about graduate hireability?</h2>
-    <div class="faq-item">
-      <div class="faq-q">Why are fresh graduates considered unhireable by many employers?</div>
-      <div class="faq-a">Because they arrive with coursework and credentials but nothing a hiring manager can independently verify. Employers in a <a href="https://www.shrm.org/topics-tools/news/talent-acquisition/skills-gap-college-graduates" target="_blank">2024 SHRM survey reported that 72% of entry-level candidates lack applied skills</a>. The degree itself checks a box. It does not tell anyone whether you can sit down on day one and produce usable work, and that gap between a credential and demonstrated capability is what the 72% number has been measuring across multiple survey cycles now.</div>
+    <div class="tldr">
+      <ul>
+        <li>About <a href="https://www.newyorkfed.org/research/college-labor-market" target="_blank" rel="noopener">41.5% of recent graduates are underemployed</a>, working jobs that do not require their degree, per the New York Fed (Q1 2026).</li>
+        <li><a href="https://www.burningglassinstitute.org/research/underemployment" target="_blank" rel="noopener">52% are underemployed a year after graduating</a>, and starting out underemployed makes you 3.5 times more likely to still be underemployed a decade later (Strada and Burning Glass, <em>Talent Disrupted</em>).</li>
+        <li>The single biggest protective factor is doing real work: completing an internship <a href="https://www.strada.org/reports/talent-disrupted" target="_blank" rel="noopener">lowers the chance of underemployment by 48.5%</a>.</li>
+        <li>A degree proves you attended. It no longer proves you can do the job. Employers increasingly hire on demonstrated skill.</li>
+        <li>The fix is proof of work: a scored piece of real work a recruiter can judge in minutes.</li>
+      </ul>
     </div>
-    <div class="faq-item">
-      <div class="faq-q">Does an internship guarantee you will get hired full-time?</div>
-      <div class="faq-a">No. Internships raise your odds but only if you exit with a measurable artifact and a reference who can describe your specific contribution, not just confirm your dates of employment. A lot of internships produce nothing: photocopies, coffee runs, shadowing someone too busy to explain what they are doing. If you cannot point to a single thing you built or shipped during that summer, the line on your résumé registers but barely moves the needle on a recruiter's decision.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">How do scored work samples compare to traditional job assessments?</div>
-      <div class="faq-a">Work-sample tests predict job performance at a correlation of about 0.54 according to <a href="https://www.apa.org/pubs/journals/features/bul-124-2-262.pdf" target="_blank">Schmidt and Hunter's validity research</a>, confirmed by <a href="https://psycnet.apa.org/record/2023-38400-001" target="_blank">Sackett et al. 2022</a>. That is roughly 40% stronger than unstructured interviews as a predictor. Traditional job assessments are typically multiple-choice tests that measure whether you recognize terminology, not whether you can sit down with a real brief and produce work under realistic constraints.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">Can I fix being unhireable without going back to school?</div>
-      <div class="faq-a">Yes. Build work samples that are visible to recruiters and demonstrate what you can actually do. A scored simulator task that produces a real deliverable sends a far stronger signal than another credential on your résumé. You can do this alongside your current job or studies on your own schedule, and the whole process can start this week.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">How long does it take to build enough proof to become hireable?</div>
-      <div class="faq-a">A Middle East university pilot, Spring 2026, showed that students who completed scored tasks with per-submission feedback had recruiter-ready evidence within one academic term. They worked through marketing briefs, product requirements, and design sprints, with each submission receiving specific evaluation of what worked and what needed revision. The improvement came from the tight loop between doing work and hearing back from someone who had actually reviewed it, not from studying more or reading career guides.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">What is an outbound signal and why does it matter?</div>
-      <div class="faq-a">An outbound signal is evidence of your capability that reaches recruiters without you having to send it anywhere. A résumé is inbound: you apply and wait. A scored work sample on a recruiter-visible platform is outbound: recruiters encounter your percentile ranking during candidate searches and contact you. The direction of the interaction flips from you chasing employers to your work pulling them toward you, and that changes everything about how a job search plays out.</div>
-    </div>
-  </section>
 
-  <section class="last-updated">Last updated: 2026-05-18</section>
+    <section>
+      <h2>Why are so many graduates unhireable right now?</h2>
+      <p>Start with how the education system actually works, because the answer is not what you were told. School is not really built to teach you. It is built to filter you. You progress by waiting a year and not failing, and the grade you get along the way barely matters, because the purpose of the whole machine is to sort people, not to prepare them. A student in Singapore, a student in India, and a student in Canada move through almost the same syllabus on almost the same timeline. The thing that varies most is the teacher.</p>
+      <p>For decades the degree at the end of that filter worked as a shortcut. An employer could not measure your ability directly, so they used your degree as a proxy for it. That proxy has broken. The work the world needs now, the ability to use AI well, to communicate, to ship something with a team, changes faster than any four-year curriculum can follow, and a lot of the solo desk work that graduates used to be hired into is being absorbed by AI. The New York Fed found that recent graduates now face <a href="https://www.newyorkfed.org/research/college-labor-market" target="_blank" rel="noopener">higher unemployment than the workforce as a whole</a>, reversing the pattern that held for generations. So you are not imagining it. The diploma did its job of getting you through the filter, and then handed you to a market that wants evidence the filter never produced.</p>
+    </section>
 
-  <section class="related-reads">
-    <h2>Related cornerstones</h2>
-    <ul>
-      <li><a href="/learn/how-does-performance-based-hiring-work-for-students">How Does Performance Based Hiring Work For Students</a></li>
-      <li><a href="/learn/what-do-recruiters-look-at-when-a-student-has-no-work-experience">What Do Recruiters Look At When A Student Has No Work Experience</a></li>
-      <li><a href="/learn/where-do-recruiters-actually-find-first-time-candidates-in-2026">Where Do Recruiters Actually Find First Time Candidates In 2026</a></li>
-    </ul>
-  </section>
+    <section>
+      <h2>Is it the graduate's fault, or the system's?</h2>
+      <p>It is the system's, and it helps to be honest about why. A university's product is the degree, and its customers are students and their parents. In the United States that purchase is usually financed, which makes a degree behave a lot like a mortgage: you borrow money to buy an asset, then spend years paying it off. That model only works if the asset holds its value, and for most degrees it has quietly stopped doing so. The value employers pay for has shifted from the credential to the skill.</p>
+      <p>Universities are not set up to fix this, because their pricing depends on scarcity rather than outcomes. A low acceptance rate raises both status and tuition, so the incentive is to stay selective, not to guarantee you can do a job at the end. None of this is a moral failing on your part. You did the thing you were told would work. The problem is that the instructions were written for a job market that no longer exists.</p>
+    </section>
+
+    <section>
+      <h2>What actually makes a graduate hireable?</h2>
+      <p>Evidence. The clearest signal in the data is that the students who avoid the underemployment trap are the ones who did real work before they needed the job. The <em>Talent Disrupted</em> analysis found that completing an internship <a href="https://www.strada.org/reports/talent-disrupted" target="_blank" rel="noopener">cuts the odds of being underemployed by almost half</a>, and that your very first job after graduating predicts where you will be ten years later. The mechanism behind that number is not the internship itself. It is the proof the internship produces: you did the work, someone evaluated it, and now there is something real to point to.</p>
+      <p>That is the thing to optimize for, and you do not have to wait for an employer to grant it to you. Proof of work is a real, scoped task from the field you want to enter, completed and scored against a professional bar. A recruiter can open it and judge it in the time it takes to read a résumé bullet, except they are judging the work instead of a claim about the work. This is the core idea behind zero. You do company-shaped tasks, they get scored against the standard of strong professionals, and the result becomes a receipt a recruiter can evaluate before they ever look at your transcript.</p>
+    </section>
+
+    <section>
+      <h2>How do you build proof before you have the job?</h2>
+      <p>Pick a direction first. Not a dream job, a direction: marketing, product, data, design, whatever you would take an entry-level role in today. Then do the actual work of that role on a real, narrow problem. A positioning brief. A product spec with trade-offs and success metrics. A short analysis that ends in a recommendation. The point is to produce the kind of artifact a working professional produces, then get it evaluated honestly so you know where it stands and what to fix.</p>
+      <p>One thing we learned building zero is worth passing on. In a Middle East university pilot in Spring 2026, the students who stuck with it were not the ones we handed the most guidance to. The heavy, hold-your-hand tutorial that works in education products actively got in the way here. Students wanted to do something real within the first ninety seconds, and the thing that brought them back was specific feedback on the work they had just submitted, not another article telling them what to study. So make your loop short: do a real piece of work, get real feedback on that specific piece, fix it, do the next one. That loop builds proof faster than any amount of reading about the job.</p>
+    </section>
+
+    <section>
+      <h2>Does proof of work replace the degree entirely?</h2>
+      <p>Not yet, and you should be clear-eyed about that. Some employers still screen for a degree, and some prestigious names will keep their pull the way a luxury badge does, regardless of what is objectively better. But the direction is set. As soon as students can show employers they can do the work, and employers can hire on that evidence directly, the degree stops being the gate and becomes one signal among several. You do not have to bet on when that tips. You just have to make sure that on the day a recruiter looks at you, there is proof in front of them and not just a promise.</p>
+    </section>
+
+    <section class="faq">
+      <h2>FAQ</h2>
+      <div class="faq-item"><div class="faq-q">Does this mean a degree is worthless?</div><div class="faq-a">No. A degree still opens doors and some employers screen for it. But it is no longer enough on its own. It tells an employer you finished a program, not that you can do their job. The graduates who get hired pair the degree with proof of real work.</div></div>
+      <div class="faq-item"><div class="faq-q">What counts as proof of work?</div><div class="faq-a">A real, scoped task from the kind of work you want to do, completed and evaluated against a professional standard. A marketing brief, a product spec, a data analysis, a design. Something a recruiter can open and judge in minutes, not a line on a résumé they have to take on faith.</div></div>
+      <div class="faq-item"><div class="faq-q">How fast can I become hireable?</div><div class="faq-a">Faster than you think, because you are not adding another multi-year credential, you are producing evidence. A focused student can complete and get feedback on several pieces of real work in a few weeks, which is enough to change how a recruiter reads their application.</div></div>
+      <div class="faq-item"><div class="faq-q">What if I cannot get an internship?</div><div class="faq-a">An internship is one way to get proof of work, and the data shows it cuts underemployment risk by nearly half. It is not the only way. You can build the same evidence by doing real, scored work directly, which is exactly what zero is for. The internship matters because of the proof it produces, and you can produce that proof on your own.</div></div>
+      <div class="faq-item"><div class="faq-q">Is zero free for students?</div><div class="faq-a">Yes. zero is free for students and paid for by the recruiters who hire from it. You build scored work, recruiters see candidates who have already proven they can do the job, and they pay for that access. You never do.</div></div>
+    </section>
+
+    <section class="related">
+      <h2>Related reads</h2>
+      <ul>
+        <li><a href="/learn/how-does-performance-based-hiring-work-for-students">How does performance-based hiring work for students?</a></li>
+        <li><a href="/learn/is-a-portfolio-better-than-a-resume-for-breaking-into-tech-in-2026">Is a portfolio better than a résumé for breaking into tech?</a></li>
+        <li><a href="/learn/what-should-i-do-this-summer-if-i-didnt-get-an-internship">What should I do this summer if I didn't get an internship?</a></li>
+        <li><a href="/learn/what-do-recruiters-look-at-when-a-student-has-no-work-experience">What do recruiters look at when a student has no work experience?</a></li>
+      </ul>
+    </section>
+
+    <section class="byline">By <a href="https://www.linkedin.com/in/atulkhola/" target="_blank" rel="noopener">Atul Khola</a>, Head of Experience at zero. Previously led design and product at CRED, cult.fit, and Toppr.</section>
+  </article>
 </BaseLayout>
+
