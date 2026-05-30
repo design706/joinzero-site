@@ -1,0 +1,88 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+const title = "What is proof of work, and why does it beat a resume?";
+const description = "A resume is a list of claims. Proof of work is the work itself: a real, scored task a recruiter can open and judge directly. As hiring moves from pedigree to demonstrated skill, proof of work is becoming the signal that actually decides who gets hired.";
+const canonical = "https://learn.zero.university/learn/what-is-proof-of-work-and-why-it-beats-a-resume";
+const schemas = [
+  { "@context": "https://schema.org", "@type": "Organization", "@id": "https://learn.zero.university/about#organization", "name": "zero", "url": "https://www.zero.university", "logo": "https://learn.zero.university/og-default.png", "founder": [{"@type":"Person","name":"Navid Nathoo","sameAs":["https://www.linkedin.com/in/navidnathoo/","https://x.com/navidnathoo","https://www.xprize.org/about/people/navid-nathoo"]},{"@type":"Person","name":"Nadeem Nathoo","sameAs":["https://www.linkedin.com/in/nadeemnathoo/","https://www.wise-qatar.org/biography/nadeem-nathoo/"]}] },
+  { "@context": "https://schema.org", "@type": "Article", "headline": "What is proof of work, and why does it beat a resume?", "url": canonical, "mainEntityOfPage": { "@type": "WebPage", "@id": canonical }, "datePublished": "2026-05-30", "dateModified": "2026-05-30", "author": { "@id": "https://learn.zero.university/about#organization" }, "publisher": { "@id": "https://learn.zero.university/about#organization" } },
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "Learn", "item": "https://learn.zero.university/learn" }, { "@type": "ListItem", "position": 2, "name": "What is proof of work", "item": canonical } ]},
+  { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+    { "@type": "Question", "name": "What is proof of work in hiring?", "acceptedAnswer": { "@type": "Answer", "text": "Proof of work is the actual work, not a description of it: a real, scoped task from the field you want, done and scored against a professional bar, that a recruiter can open and judge directly. A resume claims you can do the job. Proof of work shows the job already done, so the recruiter evaluates evidence instead of taking your word for it." } },
+    { "@type": "Question", "name": "Why does proof of work beat a resume?", "acceptedAnswer": { "@type": "Answer", "text": "Because a resume is a list of claims and proof of work is evidence. Employers have moved to skills-based hiring; 85% now say they hire on demonstrated skills, and the ones who do it well retain non-degree hires at higher rates than degree holders. A recruiter cannot verify a bullet point, but they can read and judge real work in seconds." } },
+    { "@type": "Question", "name": "Is proof of work the same as a portfolio?", "acceptedAnswer": { "@type": "Answer", "text": "Related, but not identical. A portfolio is a collection you assemble and present on your own terms. Proof of work is a specific task done against a known professional standard and scored independently, so its quality is verified rather than self-claimed. A portfolio shows what you chose to show; proof of work shows how your work measures up to the bar." } },
+    { "@type": "Question", "name": "How do I create proof of work with no experience?", "acceptedAnswer": { "@type": "Answer", "text": "You do the real work of the role on a narrow, realistic problem, then get it scored honestly. You do not need an employer to hand you the task first. Pick a direction, complete a company-shaped task in it, and have it judged against the professional bar. That scored work becomes evidence a recruiter can act on before you have any job title at all." } },
+    { "@type": "Question", "name": "Do employers actually trust proof of work over a degree?", "acceptedAnswer": { "@type": "Answer", "text": "Increasingly, yes. Skills-based hiring is now the stated norm, degree requirements are being dropped across a large share of roles, and an internship converts to a full-time offer 63.1% of the time, because the employer already watched the real work happen. Employers trust what they can see you do far more than a credential they have to take on faith." } }
+  ]}
+];
+---
+<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-30">
+  <article>
+    <nav class="breadcrumb"><a href="/learn">Learn</a> / What is proof of work</nav>
+    <span class="mono-label">THE PROOF ERA</span>
+    <h1>What is proof of work, and why does it beat a resume?</h1>
+
+    <p class="answer-capsule">Proof of work is the work itself: a real, scoped task from the field you want, done and scored against a professional bar, that a recruiter can open and judge directly. A resume is a list of claims about you. Proof of work is the evidence. As hiring moves from pedigree to demonstrated skill, the evidence is winning.</p>
+
+    <div class="tldr">
+      <ul>
+        <li>A resume is claims. Proof of work is evidence. One you have to take on faith, the other a recruiter can open and judge in seconds.</li>
+        <li><a href="https://www.testgorilla.com/skills-based-hiring/state-of-skills-based-hiring-2025/" target="_blank" rel="noopener">85% of employers now say they hire on demonstrated skills</a>, and most have stopped leaning on the resume as the deciding signal (TestGorilla).</li>
+        <li>The talk runs ahead of the practice: at firms that publicly dropped degree screens, <a href="https://www.burningglassinstitute.org/research/skills-based-hiring-2024" target="_blank" rel="noopener">fewer than 1 in 700 hires reflected real change</a>, because most still had no way to see skill directly (Burning Glass Institute).</li>
+        <li>Where skills-based hiring is done properly, non-degree hires are retained at a rate <a href="https://www.burningglassinstitute.org/research/skills-based-hiring-2024" target="_blank" rel="noopener">10 percentage points higher</a> than their degree-holding colleagues. Proof predicts performance; pedigree does not (Burning Glass Institute).</li>
+        <li>The work has always been the real signal: an internship <a href="https://www.naceweb.org/talent-acquisition/internships/intern-conversion-rate-hits-highest-mark-in-five-years" target="_blank" rel="noopener">converts to a full-time offer 63.1% of the time</a>, because the employer already watched the work happen (NACE).</li>
+      </ul>
+    </div>
+
+    <section>
+      <h2>What is proof of work, exactly?</h2>
+      <p>Proof of work is the work, not a paragraph about the work. Concretely: a real, scoped task from the role you want, completed by you, and scored against the standard a strong professional would be held to, so anyone hiring can open it and judge the thing itself. Not "led marketing initiatives." The actual positioning brief, with the trade-offs you made and the metric you were aiming at. Not "proficient in data analysis." The analysis, the call it leads to, and a score that says how close to professional it landed.</p>
+      <p>The distinction that matters is verification. A resume is self-reported and unfalsifiable: you write the bullet, and the reader either believes it or doesn't. Proof of work flips the burden. The evidence is right there, it was judged against a known bar, and the recruiter spends their attention evaluating quality instead of guessing at it. That is the whole category in one line: claims ask to be trusted, proof asks to be checked. Hiring is quietly moving from the first to the second, and once you see the shift you cannot unsee it.</p>
+    </section>
+
+    <section>
+      <h2>Why does proof of work beat a resume?</h2>
+      <p>Because the resume was always a proxy, and the proxy broke. For decades employers could not watch you work before hiring you, so they used cheap stand-ins: a degree, a brand-name employer, a tidy list of bullets. None of it proved you could do the job. It just correlated, loosely, with people who could. The moment a recruiter can see the work directly, every proxy becomes what it always was: a guess you are asking them to trust.</p>
+      <p>The market has already turned. <a href="https://www.testgorilla.com/skills-based-hiring/state-of-skills-based-hiring-2025/" target="_blank" rel="noopener">85% of employers report using skills-based hiring</a>, up year over year, and the resume is fading as the thing that decides (TestGorilla). The reason proof wins is not ideology, it is information quality. A bullet point is a compressed, unverified claim. A scored work sample is high-resolution evidence: the recruiter sees your judgment, your craft, and your level, all at once. And it pays off downstream too. At the firms doing skills-based hiring properly, non-degree hires stick around <a href="https://www.burningglassinstitute.org/research/skills-based-hiring-2024" target="_blank" rel="noopener">10 percentage points longer</a> than degree holders, because they were chosen on what they can actually do (Burning Glass Institute). Proof predicts performance. Pedigree predicts who could afford the proxy.</p>
+    </section>
+
+    <section>
+      <h2>How did skills-based hiring make proof the standard?</h2>
+      <p>Three things broke the old system at once. The skills employers pay for now turn over faster than any four-year syllabus can track. A large share of the safe desk roles graduates used to fill are getting absorbed by AI. And degree screens were quietly cutting out capable people for reasons that had nothing to do with capability. So employers started pulling the degree requirement: a Burning Glass Institute analysis found degree requirements fell across <a href="https://www.burningglassinstitute.org/research/the-emerging-degree-reset" target="_blank" rel="noopener">46% of middle-skill and 31% of high-skill roles</a> in just a few years (Burning Glass Institute).</p>
+      <p>Here is the honest catch, and it is the whole reason proof of work matters. Dropping the degree screen is the easy half. At firms that publicly removed it, <a href="https://www.burningglassinstitute.org/research/skills-based-hiring-2024" target="_blank" rel="noopener">fewer than 1 in 700 hires actually reflected the change</a> (Burning Glass Institute). Not because employers were lying, but because they removed the old signal without installing a new one. You cannot hire on skill if you cannot see skill. That gap, the distance between "we want to hire on ability" and "we can actually observe ability," is exactly where proof of work lives. It is the missing instrument. Skills-based hiring is the stated standard; proof of work is the thing that finally makes it real.</p>
+    </section>
+
+    <section>
+      <h2>Proof of work vs a portfolio vs a certificate: what's the difference?</h2>
+      <p>People lump these together, so let's separate them, because the differences are the entire point. A certificate proves attendance: you finished a course, a platform like Coursera or Udemy stamped it, and it says you were present. A portfolio proves output: you assembled work you chose to show, on your own terms, which is genuinely useful but self-curated and self-graded. Proof of work proves level: a specific task, done against a known professional bar, scored independently, so its quality is verified rather than asserted by you.</p>
+      <p>The honest read on the field: every option teaches or showcases something real, and they all stop one step short. Course platforms (Coursera, Skillshare, Udemy, LinkedIn Learning) teach you the material and hand you a badge. Job simulations (Forage) let you try a company-shaped task and finish with a completion certificate. Bootcamps and accelerators (Pathrise) coach you hard on skills and the job hunt. Each ends at a credential or a badge that says you did a thing. None of them put scored proof of your real work in front of a recruiter who is actually hiring. That last step, verified work a recruiter sees and judges, is the gap, and closing it is the entire reason zero exists.</p>
+    </section>
+
+    <section>
+      <h2>How do you build proof of work before anyone hires you?</h2>
+      <p>You stop waiting for permission. The old order was hire first, prove yourself second, which is why "no experience, so no job, so no experience" traps so many capable people. Proof of work breaks the loop by letting you do the work before the job exists. Pick a direction you would take an entry-level role in today: marketing, product, data, design. Do the actual task of that role on one narrow, realistic problem. Then get it scored honestly against the professional bar, so you know where it stands and what to fix, instead of guessing.</p>
+      <p>This is what zero is built to do. You take on company-shaped tasks, your work gets scored against the standard strong professionals are held to, and that scored work becomes evidence a recruiter sees before they ever ask for your transcript. We tested the engine in a Middle East university pilot in Spring 2026. The clearest finding: the students who stuck with it did not want more lessons, they wanted feedback on the exact thing they had just submitted. Generic career advice got ignored; specific feedback on real work pulled people back every time. So keep the loop tight. Do a real piece, get scored, fix it, do the next one. That is how a stack of proof gets built, and it is the version of "experience" you can start producing this week instead of applying for.</p>
+    </section>
+
+    <section class="faq">
+      <h2>FAQ</h2>
+      <div class="faq-item"><div class="faq-q">What is proof of work in hiring?</div><div class="faq-a">Proof of work is the actual work, not a description of it: a real, scoped task from the field you want, done and scored against a professional bar, that a recruiter can open and judge directly. A resume claims you can do the job. Proof of work shows the job already done, so the recruiter evaluates evidence instead of taking your word for it.</div></div>
+      <div class="faq-item"><div class="faq-q">Why does proof of work beat a resume?</div><div class="faq-a">Because a resume is a list of claims and proof of work is evidence. Employers have moved to skills-based hiring; 85% now say they hire on demonstrated skills, and the ones who do it well retain non-degree hires at higher rates than degree holders. A recruiter cannot verify a bullet point, but they can read and judge real work in seconds.</div></div>
+      <div class="faq-item"><div class="faq-q">Is proof of work the same as a portfolio?</div><div class="faq-a">Related, but not identical. A portfolio is a collection you assemble and present on your own terms. Proof of work is a specific task done against a known professional standard and scored independently, so its quality is verified rather than self-claimed. A portfolio shows what you chose to show; proof of work shows how your work measures up to the bar.</div></div>
+      <div class="faq-item"><div class="faq-q">How do I create proof of work with no experience?</div><div class="faq-a">You do the real work of the role on a narrow, realistic problem, then get it scored honestly. You do not need an employer to hand you the task first. Pick a direction, complete a company-shaped task in it, and have it judged against the professional bar. That scored work becomes evidence a recruiter can act on before you have any job title at all.</div></div>
+      <div class="faq-item"><div class="faq-q">Do employers actually trust proof of work over a degree?</div><div class="faq-a">Increasingly, yes. Skills-based hiring is now the stated norm, degree requirements are being dropped across a large share of roles, and an internship converts to a full-time offer 63.1% of the time, because the employer already watched the real work happen. Employers trust what they can see you do far more than a credential they have to take on faith.</div></div>
+    </section>
+
+    <section class="related">
+      <h2>Keep reading</h2>
+      <ul>
+        <li><a href="/learn/what-makes-fresh-graduates-unhireable-and-how-do-you-fix-it">What makes fresh graduates unhireable, and how do you fix it?</a></li>
+        <li><a href="/learn/how-do-you-prove-you-can-do-the-job-before-you-have-the-job">How do you prove you can do the job before you have the job?</a></li>
+        <li><a href="/learn/how-does-performance-based-hiring-work-for-students">How does performance-based hiring work for students?</a></li>
+        <li><a href="/learn/what-do-recruiters-look-at-when-a-student-has-no-work-experience">What do recruiters look at when you have no experience?</a></li>
+      </ul>
+    </section>
+
+    <section class="byline">Published by zero, founded by <a href="https://www.linkedin.com/in/navidnathoo/" target="_blank" rel="noopener">Navid Nathoo</a> and <a href="https://www.linkedin.com/in/nadeemnathoo/" target="_blank" rel="noopener">Nadeem Nathoo</a>, the team behind The Knowledge Society (TKS), whose alumni work at SpaceX, Tesla, and NVIDIA.</section>
+  </article>
+</BaseLayout>
