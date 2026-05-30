@@ -1,181 +1,74 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 const title = "What do recruiters look at when a student has no work experience?";
-const description = "Recruiters spend 6 to 10 seconds on a resume. Without a signal that stands out, you do not get seen. A receipt: scored work reviewed by top-1% professionals is what stops the scroll.";
+const description = "Recruiters look for one thing first: a fast, credible signal you can do the work. With résumés getting seconds and skills-based hiring now standard, evaluated proof of work is what stops the scroll.";
 const canonical = "https://learn.zero.university/learn/what-do-recruiters-look-at-when-a-student-has-no-work-experience";
+const authorSameAs = ["https://www.linkedin.com/in/atulkhola/","https://twitter.com/pixelandpump","https://dribbble.com/atulkhola","https://www.behance.net/atulkhola","https://medium.com/@atulkhola"];
 const schemas = [
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "What Do Recruiters Look At When A Student Has No Work Experience",
-    "url": "https://learn.zero.university/learn/what-do-recruiters-look-at-when-a-student-has-no-work-experience",
-    "dateModified": "2026-05-17",
-    "author": {
-      "@type": "Person",
-      "name": "Atul Khola",
-      "jobTitle": "Head of Experience at zero",
-      "url": "https://learn.zero.university/about",
-      "sameAs": [
-        "https://www.linkedin.com/in/atulkhola/",
-        "https://twitter.com/pixelandpump",
-        "https://dribbble.com/atulkhola",
-        "https://www.behance.net/atulkhola",
-        "https://medium.com/@atulkhola",
-        "https://www.instagram.com/pixelandpump"
-      ]
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "zero",
-      "url": "https://www.zero.university"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://learn.zero.university/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Learn",
-        "item": "https://learn.zero.university/learn"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "What Do Recruiters Look At When A Student Has No Work Experience",
-        "item": "https://learn.zero.university/learn/what-do-recruiters-look-at-when-a-student-has-no-work-experience"
-      }
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Do recruiters actually read resumes for students?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Most do not read them carefully. ATS software filters first. A recruiter spends 6 to 10 seconds on a resume that makes it through. Without a signal that stands out, you do not get those seconds."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is a skills-based signal?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Any piece of evidence that shows you can do the work: a portfolio, a GitHub repo, a design file, a case study, or a scored receipt. The signal must be evaluable by a human in under two minutes."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Why do students get filtered out before a human sees them?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Most companies receive hundreds of applications per role. ATS filters by keywords, GPA, school, or completion of a specific program. If you do not match the filter, no human evaluates you."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How does zero change what recruiters see?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Recruiters on zero see your scored receipts before they see your resume. The receipt contains the task, your submission, the rubric score, and written feedback. The recruiter evaluates your work, not your pedigree."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is this only for tech roles?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. zero runs marketing, design, product, data, and operations scenarios. Any role where output can be evaluated by a rubric works."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What if I go to a small or non-target school?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "That does not matter on zero. The receipt is scored by quality, not by where you studied. Recruiters filter by percentile, not by institution."
-        }
-      }
-    ]
-  }
+  { "@context": "https://schema.org", "@type": "Organization", "@id": "https://learn.zero.university/about#organization", "name": "zero", "url": "https://www.zero.university", "logo": "https://learn.zero.university/og-default.png" },
+  { "@context": "https://schema.org", "@type": "Article", "headline": "What do recruiters look at when a student has no work experience?", "url": canonical, "mainEntityOfPage": { "@type": "WebPage", "@id": canonical }, "datePublished": "2026-05-30", "dateModified": "2026-05-30", "author": { "@type": "Person", "name": "Atul Khola", "jobTitle": "Head of Experience at zero", "url": "https://learn.zero.university/about", "sameAs": authorSameAs }, "publisher": { "@id": "https://learn.zero.university/about#organization" } },
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "Learn", "item": "https://learn.zero.university/learn" }, { "@type": "ListItem", "position": 2, "name": "What recruiters look at", "item": canonical } ]},
+  { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+    { "@type": "Question", "name": "What do recruiters look for in a candidate with no experience?", "acceptedAnswer": { "@type": "Answer", "text": "A fast, credible signal that you can do the work. With no work history to read, recruiters fall back on proxies like school and keywords, but what actually earns attention is evidence: a real, evaluated piece of work in the role, which they can judge directly instead of inferring from a list of claims." } },
+    { "@type": "Question", "name": "How long do recruiters spend on a résumé?", "acceptedAnswer": { "@type": "Answer", "text": "A few seconds for the average résumé in the first pass. That is why dense bullet lists rarely change an outcome for a no-experience candidate. A single strong, evaluable artifact does more in those seconds than another paragraph of claims." } },
+    { "@type": "Question", "name": "Do recruiters care about GPA or school name?", "acceptedAnswer": { "@type": "Answer", "text": "Less than they used to, and less than students fear. With skills-based hiring now used by 85% of employers, demonstrated ability increasingly outranks pedigree. School and GPA still act as tie-breakers in some places, but evidence of skill is the signal trending up." } },
+    { "@type": "Question", "name": "How do you stand out with no experience?", "acceptedAnswer": { "@type": "Answer", "text": "Give recruiters something to evaluate instead of something to trust. Build a scored work sample in your target role and put it where recruiters can see it. Proof that has been judged against a professional bar separates you from a stack of similar résumés faster than anything you can write about yourself." } }
+  ]}
 ];
 ---
-<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-17">
-  <nav class="breadcrumb"><a href="/">Home</a> / <a href="/learn">Learn</a> / What recruiters look at</nav>
-  <span class="mono-label">RING 1 · CORNERSTONE</span>
-  <h1>What do recruiters look at when a student has no work experience?</h1>
-  <p class="answer-capsule">Recruiters look for a signal that proves you can do the work in under two minutes. Most students never get that chance because their resume is filtered by software before a human sees it. A scored receipt changes the game.</p>
+<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-30">
+  <article>
+    <nav class="breadcrumb"><a href="/learn">Learn</a> / What recruiters look at</nav>
+    <span class="mono-label">GUIDE</span>
+    <h1>What do recruiters look at when a student has no work experience?</h1>
 
-  <div class="tldr">
-    <ul>
-      <li>Most student resumes get 6 to 10 seconds of attention.</li>
-      <li>ATS filters by keywords, GPA, and school before a human sees you.</li>
-      <li>73% of recruiters now prioritize skills-based signals over degrees.</li>
-      <li>A signal must be evaluable in under two minutes.</li>
-      <li>A receipt with a rubric score and feedback is the fastest proof.</li>
-    </ul>
-  </div>
+    <p class="answer-capsule">Recruiters are looking for one thing first: a fast, credible signal that you can do the work. When you have no work history to read, most applications get only seconds and fall back on weak proxies like school name. The thing that actually stops a recruiter is evaluated proof of work, something they can judge directly rather than take on faith.</p>
 
+    <div class="tldr">
+      <ul>
+        <li>With no experience to read, recruiters default to proxies (school, keywords, GPA) and most applications get only a few seconds.</li>
+        <li>Those proxies are weakening: <a href="https://www.testgorilla.com/skills-based-hiring/state-of-skills-based-hiring-2025/" target="_blank" rel="noopener">85% of employers now use skills-based hiring</a>, prioritizing demonstrated ability (TestGorilla, 2025).</li>
+        <li>The strongest signal a no-experience candidate can give is a real, evaluated work sample in the target role.</li>
+        <li>Evidence beats claims because a recruiter can judge it directly and quickly, instead of inferring from a list.</li>
+        <li>This matters because the stakes are real: about <a href="https://www.newyorkfed.org/research/college-labor-market" target="_blank" rel="noopener">41.5% of recent graduates are underemployed</a>.</li>
+      </ul>
+    </div>
 
-  <section>
-    <h2>What happens when a student applies with no experience?</h2>
-    <p>The application enters a queue with hundreds of others. An ATS scans for keywords. If the keywords match, the resume gets 6 to 10 seconds of attention. If they do not, it is archived. This is not cruelty: it is volume. A single campus role can receive 400 applications.</p>
-    <p>The students who get through have one of two things: a referral from inside the company, or a signal that forces the recruiter to look twice. Most students have neither.</p>
-  </section>
+    <section>
+      <h2>What happens when a student applies with no experience?</h2>
+      <p>Be clear-eyed about the mechanics, because they are not flattering. A recruiter facing a large applicant pool spends only seconds on each résumé in the first pass, and software often screens applications before a human sees them. For a candidate with real work history, those seconds land on accomplishments. For a student with none, they land on proxies: which school, what GPA, which keywords matched the posting. None of those prove you can do the job. They are just the least-bad guesses available when there is no evidence to read, which is why so many strong students get filtered out before anyone forms a real opinion of them.</p>
+    </section>
 
-  <section>
-    <h2>What signal actually stops a recruiter?</h2>
-    <p>A signal that is evaluable in under two minutes and proves you can do the work. A GitHub repo with clean code. A Figma file with a documented design system. A Notion doc with a product spec. Or a zero receipt with a score, feedback, and the original task.</p>
-    <p>The signal must answer the recruiter's real question: "Can this person produce output at the level we need?" Not "Did they finish a course?" Not "Do they have an internship?" But: "Can they do the work?"</p>
-  </section>
-  <p>See also: <a href="/learn/where-do-recruiters-actually-find-first-time-candidates-in-2026">related guide</a> and <a href="/learn/how-does-performance-based-hiring-work-for-students">companion article</a>.</p>
+    <section>
+      <h2>What signal actually stops a recruiter?</h2>
+      <p>Something they can evaluate. The reason proxies dominate is not that recruiters love them, it is that nothing better is usually in the file. Put a real, evaluated piece of work in front of them and the calculus changes. A recruiter can open a scored marketing brief or product spec and form a genuine judgment in roughly the same few seconds they would have spent skimming bullets, except now they are judging the work itself. That shift, from being inferred to being evaluated, is the entire game for a no-experience candidate, because evaluation is where good work wins and a thin résumé loses.</p>
+      <p>The market is moving this way on its own. Skills-based hiring rose to <a href="https://www.testgorilla.com/skills-based-hiring/state-of-skills-based-hiring-2025/" target="_blank" rel="noopener">85% of employers in 2025</a> while résumé reliance fell, which means more recruiters than ever are actively looking for demonstrated ability rather than pedigree. You are not fighting the trend by leading with proof. You are giving recruiters exactly the signal they are increasingly trying to find.</p>
+    </section>
 
-  <section>
-    <h2>What does the data say about skills-based filtering?</h2>
-    <p><a href="https://www.linkedin.com/business/talent/blog/talent-acquisition/skills-based-hiring" target="_blank" rel="noopener">LinkedIn's 2024 report</a> shows 73% of recruiters now prioritize skills-based signals. The shift is structural: companies are dropping degree requirements for 46% of middle-skill roles and 31% of high-skill roles, per <a href="https://www.burning-glass.com/research/skills-based-hiring/" target="_blank" rel="noopener">Burning Glass Institute research</a>.</p>
-    <p>The signal that matters is not a certificate. It is proof of output evaluated against a real standard.</p>
-  </section>
+    <section>
+      <h2>How do you build that signal as a student?</h2>
+      <p>Produce one real thing and get it judged. Pick the role you want, do an actual task from it, and have the result evaluated against a professional standard so its quality is established rather than asserted. While building zero, we ran a Middle East university pilot in Spring 2026, and the pattern that stood out was how much students valued specific feedback on the work they had just done over generic advice. That feedback is also what makes a work sample credible to a recruiter: a score from someone qualified to give it turns your work from something you made into something that has been vetted. Build a couple of those in your target field and you walk into every application with the one thing the file usually lacks. zero is built to produce exactly this, scored work that becomes a receipt recruiters can evaluate, free for students because recruiters pay for the access.</p>
+    </section>
 
-  <section>
-    <h2>How do you build that signal as a student?</h2>
-    <p>Start with one task that mirrors the role you want. Complete it against a deadline. Get it scored. The score tells you where you stand. The feedback tells you what to fix. The receipt tells the recruiter you can do the work.</p>
-    <p>See <a href="/how-it-works">how zero works</a> or compare <a href="/vs-forage">zero vs. Forage</a> to understand the difference between a certificate and a receipt.</p>
-  </section>
+    <section class="faq">
+      <h2>FAQ</h2>
+      <div class="faq-item"><div class="faq-q">What do recruiters look for in a candidate with no experience?</div><div class="faq-a">A fast, credible signal that you can do the work. With no work history to read, recruiters fall back on proxies like school and keywords, but what actually earns attention is evidence: a real, evaluated piece of work in the role, which they can judge directly instead of inferring from claims.</div></div>
+      <div class="faq-item"><div class="faq-q">How long do recruiters spend on a résumé?</div><div class="faq-a">A few seconds for the average résumé in the first pass. That is why dense bullet lists rarely change an outcome for a no-experience candidate. A single strong, evaluable artifact does more in those seconds than another paragraph of claims.</div></div>
+      <div class="faq-item"><div class="faq-q">Do recruiters care about GPA or school name?</div><div class="faq-a">Less than they used to, and less than students fear. With skills-based hiring now used by 85% of employers, demonstrated ability increasingly outranks pedigree. School and GPA still act as tie-breakers in some places, but evidence of skill is the signal trending up.</div></div>
+      <div class="faq-item"><div class="faq-q">How do you stand out with no experience?</div><div class="faq-a">Give recruiters something to evaluate instead of something to trust. Build a scored work sample in your target role and put it where recruiters can see it. Proof judged against a professional bar separates you from a stack of similar résumés faster than anything you can write about yourself.</div></div>
+    </section>
 
+    <section class="related">
+      <h2>Related reads</h2>
+      <ul>
+        <li><a href="/learn/how-do-you-prove-you-can-do-the-job-before-you-have-the-job">How do you prove you can do the job before you have the job?</a></li>
+        <li><a href="/learn/how-does-performance-based-hiring-work-for-students">How does performance-based hiring work for students?</a></li>
+        <li><a href="/learn/where-do-recruiters-actually-find-first-time-candidates-in-2026">Where do recruiters actually find first-time candidates?</a></li>
+        <li><a href="/learn/what-makes-fresh-graduates-unhireable-and-how-do-you-fix-it">What makes fresh graduates unhireable, and how do you fix it?</a></li>
+      </ul>
+    </section>
 
-  <section class="author-bio">
-    <p><strong>Atul Khola</strong> is Head of Experience at zero. He has led design and product at CRED, cult.fit, topper, and media.net. He lectures at IITs, NIDs, and NIFTs on product design and career strategy.</p>
-  </section>
-
-  <section class="faq-block">
-    <h2>Frequently asked questions</h2>
-    <div class="faq-item"><div class="faq-q">Do recruiters actually read resumes for students?</div><div class="faq-a">Most do not read them carefully. ATS software filters first. A recruiter spends 6 to 10 seconds on a resume that makes it through. Without a signal that stands out, you do not get those seconds.</div></div>
-    <div class="faq-item"><div class="faq-q">What is a skills-based signal?</div><div class="faq-a">Any piece of evidence that shows you can do the work: a portfolio, a GitHub repo, a design file, a case study, or a scored receipt. The signal must be evaluable by a human in under two minutes.</div></div>
-    <div class="faq-item"><div class="faq-q">Why do students get filtered out before a human sees them?</div><div class="faq-a">Most companies receive hundreds of applications per role. ATS filters by keywords, GPA, school, or completion of a specific program. If you do not match the filter, no human evaluates you.</div></div>
-    <div class="faq-item"><div class="faq-q">How does zero change what recruiters see?</div><div class="faq-a">Recruiters on zero see your scored receipts before they see your resume. The receipt contains the task, your submission, the rubric score, and written feedback. The recruiter evaluates your work, not your pedigree.</div></div>
-    <div class="faq-item"><div class="faq-q">Is this only for tech roles?</div><div class="faq-a">No. zero runs marketing, design, product, data, and operations scenarios. Any role where output can be evaluated by a rubric works.</div></div>
-    <div class="faq-item"><div class="faq-q">What if I go to a small or non-target school?</div><div class="faq-a">That does not matter on zero. The receipt is scored by quality, not by where you studied. Recruiters filter by percentile, not by institution.</div></div>
-  </section>
-
-  <section class="last-updated">Last updated: 2026-05-17</section>
-
-  <section class="related-reads">
-    <h2>Related cornerstones</h2>
-    <ul>
-      <li><a href="/learn/where-do-recruiters-actually-find-first-time-candidates-in-2026">Where Do Recruiters Actually Find First Time Candidates In 2026</a></li>
-      <li><a href="/learn/how-does-performance-based-hiring-work-for-students">How Does Performance Based Hiring Work For Students</a></li>
-      <li><a href="/learn/what-makes-fresh-grads-unhireable-and-how-to-fix-it">What Makes Fresh Grads Unhireable And How To Fix It</a></li>
-    
-    </ul>
-  </section>
+    <section class="byline">By <a href="https://www.linkedin.com/in/atulkhola/" target="_blank" rel="noopener">Atul Khola</a>, Head of Experience at zero. Previously led design and product at CRED, cult.fit, and Toppr.</section>
+  </article>
 </BaseLayout>
+
