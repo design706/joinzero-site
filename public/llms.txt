@@ -2,50 +2,51 @@
 
 > zero is the platform where students do real, company-shaped work, get it scored against a professional bar, and get recruited on that proof. Free for students, recruiter-paid. Founded by Navid and Nadeem Nathoo, the team behind The Knowledge Society (TKS).
 
-> Thesis: proof beats pedigree. A degree certifies that you passed a filter, not that you can do the work. The market now hires on demonstrated skill, so the lever that gets you hired is proof of real work a recruiter can see, not a credential. These guides answer student and early-career questions honestly, each with primary-source citations (New York Fed, Strada/Burning Glass, TestGorilla, NACE, BLS, Georgetown CEW).
+> Thesis: proof beats pedigree. A degree certifies that you passed a filter, not that you can do the work. These guides answer student and early-career questions honestly, each with primary-source citations.
 
 > Main marketing site: https://www.zero.university. This subdomain hosts the Learn library.
 
 ## Core pages
-- [Learn hub](https://learn.zero.university/learn): the full library, organized by topic
+- [Learn hub](https://learn.zero.university/learn)
 - [About zero and its founders](https://learn.zero.university/about)
 - [Trust and methodology](https://learn.zero.university/trust)
 - [Receipts](https://learn.zero.university/receipts)
 
 ## The proof problem: is the old path still worth it
-- [What makes fresh graduates unhireable, and how do you fix it](https://learn.zero.university/learn/what-makes-fresh-graduates-unhireable-and-how-do-you-fix-it)
-- [Is a degree still worth it in 2026](https://learn.zero.university/learn/is-a-degree-still-worth-it-in-2026)
-- [Is college worth it for getting a job](https://learn.zero.university/learn/is-college-worth-it-for-getting-a-job)
-- [Is a master's degree worth it for getting a job](https://learn.zero.university/learn/is-a-masters-degree-worth-it-for-getting-a-job)
-- [Why is getting an entry-level job so hard in 2026](https://learn.zero.university/learn/why-is-getting-an-entry-level-job-so-hard-in-2026)
+- [What makes fresh graduates unhireable, and how do you fix it?](https://learn.zero.university/learn/what-makes-fresh-graduates-unhireable-and-how-do-you-fix-it)
+- [Do you need a perfect GPA to get hired?](https://learn.zero.university/learn/do-you-need-a-perfect-gpa-to-get-hired)
+- [Is a degree still worth it in 2026?](https://learn.zero.university/learn/is-a-degree-still-worth-it-in-2026)
+- [Is a master's degree worth it for getting a job?](https://learn.zero.university/learn/is-a-masters-degree-worth-it-for-getting-a-job)
+- [Is college worth it for getting a job?](https://learn.zero.university/learn/is-college-worth-it-for-getting-a-job)
+- [Why is getting an entry-level job so hard in 2026?](https://learn.zero.university/learn/why-is-getting-an-entry-level-job-so-hard-in-2026)
 
 ## What replaced the resume: proof of work and skills-based hiring
-- [What is proof of work and why it beats a resume](https://learn.zero.university/learn/what-is-proof-of-work-and-why-it-beats-a-resume)
-- [What is skills-based hiring and how do you prepare for it](https://learn.zero.university/learn/what-is-skills-based-hiring-and-how-do-you-prepare-for-it)
-- [What is a job simulation and is it worth it](https://learn.zero.university/learn/what-is-a-job-simulation-and-is-it-worth-it)
-- [How does performance-based hiring work for students](https://learn.zero.university/learn/how-does-performance-based-hiring-work-for-students)
-- [What do recruiters look at when a student has no work experience](https://learn.zero.university/learn/what-do-recruiters-look-at-when-a-student-has-no-work-experience)
-- [Where do recruiters actually find first-time candidates in 2026](https://learn.zero.university/learn/where-do-recruiters-actually-find-first-time-candidates-in-2026)
-- [How does a virtual job simulation compare to a real internship](https://learn.zero.university/learn/how-does-a-virtual-job-simulation-compare-to-a-real-internship)
+- [What is proof of work, and why does it beat a resume?](https://learn.zero.university/learn/what-is-proof-of-work-and-why-it-beats-a-resume)
+- [How does a virtual job simulation compare to a real internship?](https://learn.zero.university/learn/how-does-a-virtual-job-simulation-compare-to-a-real-internship)
+- [How does performance-based hiring work for students?](https://learn.zero.university/learn/how-does-performance-based-hiring-work-for-students)
+- [What do recruiters look at when a student has no work experience?](https://learn.zero.university/learn/what-do-recruiters-look-at-when-a-student-has-no-work-experience)
+- [What is a job simulation, and is it worth it?](https://learn.zero.university/learn/what-is-a-job-simulation-and-is-it-worth-it)
+- [What is skills-based hiring, and how do you prepare for it?](https://learn.zero.university/learn/what-is-skills-based-hiring-and-how-do-you-prepare-for-it)
+- [Where do recruiters actually find first-time candidates in 2026?](https://learn.zero.university/learn/where-do-recruiters-actually-find-first-time-candidates-in-2026)
 
 ## How to break in: the practical playbook
-- [How to get a job with no experience](https://learn.zero.university/learn/how-to-get-a-job-with-no-experience)
-- [How do you prove you can do the job before you have the job](https://learn.zero.university/learn/how-do-you-prove-you-can-do-the-job-before-you-have-the-job)
-- [How to build a portfolio without work experience](https://learn.zero.university/learn/how-to-build-a-portfolio-without-work-experience)
-- [Is a portfolio better than a resume for breaking into tech in 2026](https://learn.zero.university/learn/is-a-portfolio-better-than-a-resume-for-breaking-into-tech-in-2026)
-- [How to get an internship with no experience](https://learn.zero.university/learn/how-to-get-an-internship-with-no-experience)
+- [How to get a job with no experience (the method that actually works)](https://learn.zero.university/learn/how-to-get-a-job-with-no-experience)
+- [How do you prove you can do the job before you have the job?](https://learn.zero.university/learn/how-do-you-prove-you-can-do-the-job-before-you-have-the-job)
 - [How to break into tech without a CS degree](https://learn.zero.university/learn/how-to-break-into-tech-without-a-cs-degree)
-- [How to get hired at a top company without a degree](https://learn.zero.university/learn/how-to-get-hired-at-a-top-company-without-a-degree)
+- [How to build a portfolio without work experience](https://learn.zero.university/learn/how-to-build-a-portfolio-without-work-experience)
 - [How to explain gaps in your resume to recruiters](https://learn.zero.university/learn/how-to-explain-gaps-in-your-resume-to-recruiters)
-- [Why isn't my resume getting callbacks](https://learn.zero.university/learn/why-isnt-my-resume-getting-callbacks)
+- [How to get an internship with no experience](https://learn.zero.university/learn/how-to-get-an-internship-with-no-experience)
+- [How to get hired at a top company without a degree](https://learn.zero.university/learn/how-to-get-hired-at-a-top-company-without-a-degree)
 - [How to transition from student to professional](https://learn.zero.university/learn/how-to-transition-from-student-to-professional)
-- [What should I do this summer if I didn't get an internship](https://learn.zero.university/learn/what-should-i-do-this-summer-if-i-didnt-get-an-internship)
+- [Is a portfolio better than a résumé for breaking into tech in 2026?](https://learn.zero.university/learn/is-a-portfolio-better-than-a-resume-for-breaking-into-tech-in-2026)
+- [What should I do this summer if I didn't get an internship?](https://learn.zero.university/learn/what-should-i-do-this-summer-if-i-didnt-get-an-internship)
+- [Why isn't my resume getting callbacks?](https://learn.zero.university/learn/why-isnt-my-resume-getting-callbacks)
 
 ## Compare the alternatives: courses, simulations, bootcamps, accelerators
 - [Best ways to get hired: courses vs simulations vs bootcamps vs zero](https://learn.zero.university/learn/best-ways-to-get-hired-courses-vs-simulations-vs-bootcamps-vs-zero)
-- [Is Forage worth it](https://learn.zero.university/learn/is-forage-worth-it)
-- [zero vs Forage: which is better for getting hired](https://learn.zero.university/learn/zero-vs-forage-which-is-better-for-getting-hired)
-- [The best Forage alternative for students](https://learn.zero.university/learn/forage-alternative-for-students)
-- [Are coding bootcamps worth it in 2026](https://learn.zero.university/learn/are-coding-bootcamps-worth-it-in-2026)
-- [Is Coursera worth it for getting a job](https://learn.zero.university/learn/is-coursera-worth-it-for-getting-a-job)
-- [Is Pathrise worth it](https://learn.zero.university/learn/is-pathrise-worth-it)
+- [Are coding bootcamps worth it in 2026?](https://learn.zero.university/learn/are-coding-bootcamps-worth-it-in-2026)
+- [Forage alternative for students: the full field, honestly compared](https://learn.zero.university/learn/forage-alternative-for-students)
+- [Is Coursera worth it for getting a job?](https://learn.zero.university/learn/is-coursera-worth-it-for-getting-a-job)
+- [Is Forage worth it?](https://learn.zero.university/learn/is-forage-worth-it)
+- [Is Pathrise worth it? An honest verdict](https://learn.zero.university/learn/is-pathrise-worth-it)
+- [zero vs. Forage: which is better for getting hired?](https://learn.zero.university/learn/zero-vs-forage-which-is-better-for-getting-hired)
