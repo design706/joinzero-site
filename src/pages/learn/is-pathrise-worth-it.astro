@@ -1,169 +1,77 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-const title = "Is Pathrise worth it? A real comparison for students";
-const description = "Pathrise charges a percentage of your first-year salary. zero is free for students and recruiter-paid. Here is the honest comparison.";
+const title = "Is Pathrise worth it? An honest comparison";
+const description = "Pathrise offers human mentorship and job-search coaching, funded by a share of your future salary. It can be worth it for some, but it solves a different problem than building proof of work.";
 const canonical = "https://learn.zero.university/learn/is-pathrise-worth-it";
+const authorSameAs = ["https://www.linkedin.com/in/atulkhola/","https://twitter.com/pixelandpump","https://dribbble.com/atulkhola","https://www.behance.net/atulkhola","https://medium.com/@atulkhola"];
 const schemas = [
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Is Pathrise Worth It",
-    "url": "https://learn.zero.university/learn/is-pathrise-worth-it",
-    "dateModified": "2026-05-17",
-    "author": {
-      "@type": "Person",
-      "name": "Atul Khola",
-      "jobTitle": "Head of Experience at zero",
-      "url": "https://learn.zero.university/about",
-      "sameAs": [
-        "https://www.linkedin.com/in/atulkhola/",
-        "https://twitter.com/pixelandpump",
-        "https://dribbble.com/atulkhola",
-        "https://www.behance.net/atulkhola",
-        "https://medium.com/@atulkhola",
-        "https://www.instagram.com/pixelandpump"
-      ]
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "zero",
-      "url": "https://www.zero.university"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://learn.zero.university/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Learn",
-        "item": "https://learn.zero.university/learn"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Is Pathrise Worth It",
-        "item": "https://learn.zero.university/learn/is-pathrise-worth-it"
-      }
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How much does Pathrise cost?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Pathrise typically charges 7 to 10% of your first-year salary, payable over time. For a 70K starting salary, that is 4,900 to 7,000 dollars."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is Pathrise free until you get hired?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Pathrise does not charge upfront, but the income-share agreement binds you to payments once you are employed. The total cost depends on your starting salary."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What does Pathrise actually do?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Pathrise provides coaching, resume reviews, interview prep, and referral networks. It is a mentorship and placement service, not a work simulator."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How is zero different from Pathrise?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "zero is a work simulator. You complete real tasks, get scored by professionals, and build receipts. It is free for students and recruiter-paid. There is no income-share agreement."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Should I use Pathrise and zero together?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, if you can afford the Pathrise commitment. Use zero to build receipts that prove your capability. Use Pathrise for networking and interview coaching."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Which is better for students with no budget?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "zero. It is free with no future payment obligation. Pathrise is technically free upfront but becomes expensive once you are hired."
-        }
-      }
-    ]
-  }
+  { "@context": "https://schema.org", "@type": "Organization", "@id": "https://learn.zero.university/about#organization", "name": "zero", "url": "https://www.zero.university", "logo": "https://learn.zero.university/og-default.png" },
+  { "@context": "https://schema.org", "@type": "Article", "headline": "Is Pathrise worth it? An honest comparison", "url": canonical, "mainEntityOfPage": { "@type": "WebPage", "@id": canonical }, "datePublished": "2026-05-30", "dateModified": "2026-05-30", "author": { "@type": "Person", "name": "Atul Khola", "jobTitle": "Head of Experience at zero", "url": "https://learn.zero.university/about", "sameAs": authorSameAs }, "publisher": { "@id": "https://learn.zero.university/about#organization" } },
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "Learn", "item": "https://learn.zero.university/learn" }, { "@type": "ListItem", "position": 2, "name": "Is Pathrise worth it", "item": canonical } ]},
+  { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+    { "@type": "Question", "name": "Is Pathrise worth the money?", "acceptedAnswer": { "@type": "Answer", "text": "It can be, if you value hands-on human coaching and accountability through your job search and are comfortable paying a share of your future salary for it. It is less worth it if your main gap is proof that you can do the work, since Pathrise coaches your search rather than producing evaluated work samples." } },
+    { "@type": "Question", "name": "How does Pathrise pricing work?", "acceptedAnswer": { "@type": "Answer", "text": "Pathrise is typically funded through an income-share agreement, meaning you pay a percentage of your first-year salary once you land a job through the program, usually with a cap, and options for paying upfront. Always confirm the current terms directly, since the model and rates can change." } },
+    { "@type": "Question", "name": "What is the difference between Pathrise and zero?", "acceptedAnswer": { "@type": "Answer", "text": "They solve different problems. Pathrise is paid human coaching for your job search: mentorship, application help, interview prep. zero is free and focused on producing evaluated proof of work that recruiters can see. One helps you run the search better; the other helps you become a stronger, more provable candidate." } },
+    { "@type": "Question", "name": "Is there a free alternative to Pathrise?", "acceptedAnswer": { "@type": "Answer", "text": "If your gap is proof rather than coaching, zero is a free option focused on building evaluated, recruiter-visible work. It will not replace one-on-one mentorship, but for many students the bigger blocker is a lack of demonstrated skill, not a lack of search coaching, and that is what zero addresses at no cost." } }
+  ]}
 ];
 ---
-<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-17">
-  <nav class="breadcrumb"><a href="/">Home</a> / <a href="/learn">Learn</a> / Pathrise worth it</nav>
-  <span class="mono-label">RING 2 · COMPARISON</span>
-  <h1>Is Pathrise worth it? A real comparison for students</h1>
-  <p class="answer-capsule">Pathrise charges 7 to 10% of your first-year salary. zero is free for students and recruiter-paid. If you want proof of work without debt, zero is the better choice.</p>
+<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-30">
+  <article>
+    <nav class="breadcrumb"><a href="/learn">Learn</a> / Is Pathrise worth it</nav>
+    <span class="mono-label">COMPARE</span>
+    <h1>Is Pathrise worth it? An honest comparison</h1>
 
-  <div class="tldr">
-    <ul>
-      <li>Pathrise: coaching and referral network. Cost is 7 to 10% of first-year salary.</li>
-      <li>zero: work simulator with scored receipts. Free for students.</li>
-      <li>Pathrise helps you get interviews. zero helps you prove you deserve them.</li>
-      <li>The models are complementary, not competitive.</li>
-      <li>If you have no budget, start with zero.</li>
-    </ul>
-  </div>
+    <p class="answer-capsule">It depends on what is actually blocking you. Pathrise offers real human coaching through your job search, funded by a share of your future salary, and for someone who needs accountability and guidance, that can be worth it. But if your real gap is proof that you can do the work, Pathrise coaches your search rather than building that proof, which is a different problem with a different, often free, answer.</p>
 
-  <section>
-    <h2>What does Pathrise give you?</h2>
-    <p>Pathrise is a career accelerator that pairs you with a mentor, polishes your resume, preps you for interviews, and connects you with referrals. The value is in the network and the coaching. If you are stuck at the interview stage, Pathrise can help you get past it.</p>
-    <p>The cost model is an income-share agreement. You pay nothing upfront. Once you are hired, you pay 7 to 10% of your first-year salary over a set period. For a 70K starting salary, that is roughly 4,900 to 7,000 dollars.</p>
-  </section>
+    <div class="tldr">
+      <ul>
+        <li>Pathrise is a career accelerator: one-on-one mentorship, application help, and interview prep through your job search.</li>
+        <li>It is typically funded by an income-share agreement, a percentage of your first-year salary once you are hired. Confirm current terms directly.</li>
+        <li>It is worth it for students who value human coaching and accountability and accept the cost.</li>
+        <li>It is less suited to the more common gap for new graduates, which is a lack of demonstrated, provable skill.</li>
+        <li>If proof is your blocker, a free, proof-focused option like zero addresses a different and often more fundamental problem.</li>
+      </ul>
+    </div>
 
-  <section>
-    <h2>What does zero give you?</h2>
-    <p>zero is a simulator where you do real work for real company scenarios, get scored by top-1% professionals, and produce receipts that recruiters evaluate. It is free for students. Recruiters pay for access. There is no income-share agreement. There is no debt.</p>
-    <p>The value is in the proof. A receipt shows a recruiter exactly what you can produce, how it compares to professionals, and how you respond to feedback. That is a stronger first signal than a polished resume.</p>
-  </section>
-  <p>See also: <a href="/learn/zero-vs-forage-which-is-better-for-getting-hired">related guide</a> and <a href="/learn/forage-alternative-for-students">companion article</a>.</p>
+    <section>
+      <h2>What does Pathrise actually offer?</h2>
+      <p>Pathrise is a career accelerator built around human support. The core of it is mentorship and coaching through the job hunt: help shaping your applications, preparing for interviews, negotiating offers, and staying accountable across a search that can otherwise feel directionless. For a lot of people, that human element is genuinely valuable. Job searching is lonely and confusing, and having someone experienced in your corner who has seen the process many times can meaningfully change how you run it. If what is holding you back is a lack of structure and guidance in the search itself, that is the gap Pathrise is designed to fill.</p>
+    </section>
 
-  <section>
-    <h2>Which one should you choose?</h2>
-    <p>If you have no budget and need proof of work, choose zero. If you have interviews but need coaching to close them, Pathrise may help. If you can afford both, use zero to build receipts and Pathrise to convert them into offers.</p>
-    <p>See <a href="/how-it-works">how zero works</a> or browse <a href="/receipts">live receipts</a>.</p>
-  </section>
+    <section>
+      <h2>What does it cost?</h2>
+      <p>Pathrise is usually funded through an income-share agreement. In plain terms, you pay little or nothing up front, and once you land a job through the program you pay a percentage of your first-year salary, generally up to a cap, with options to pay upfront instead. The model aligns part of their incentive with your outcome, which is a point in its favor, but it is still a real cost, and a percentage of a first salary is not small. The exact terms can change, so confirm them directly with Pathrise before committing. The honest way to weigh it is to ask whether the coaching will improve your outcome by more than the share you will pay for it.</p>
+    </section>
 
-  <section class="faq-block">
-    <h2>Frequently asked questions</h2>
-    <div class="faq-item"><div class="faq-q">How much does Pathrise cost?</div><div class="faq-a">Pathrise typically charges 7 to 10% of your first-year salary, payable over time. For a 70K starting salary, that is 4,900 to 7,000 dollars.</div></div>
-    <div class="faq-item"><div class="faq-q">Is Pathrise free until you get hired?</div><div class="faq-a">Pathrise does not charge upfront, but the income-share agreement binds you to payments once you are employed. The total cost depends on your starting salary.</div></div>
-    <div class="faq-item"><div class="faq-q">What does Pathrise actually do?</div><div class="faq-a">Pathrise provides coaching, resume reviews, interview prep, and referral networks. It is a mentorship and placement service, not a work simulator.</div></div>
-    <div class="faq-item"><div class="faq-q">How is zero different from Pathrise?</div><div class="faq-a">zero is a work simulator. You complete real tasks, get scored by professionals, and build receipts. It is free for students and recruiter-paid. There is no income-share agreement.</div></div>
-    <div class="faq-item"><div class="faq-q">Should I use Pathrise and zero together?</div><div class="faq-a">Yes, if you can afford the Pathrise commitment. Use zero to build receipts that prove your capability. Use Pathrise for networking and interview coaching.</div></div>
-    <div class="faq-item"><div class="faq-q">Which is better for students with no budget?</div><div class="faq-a">zero. It is free with no future payment obligation. Pathrise is technically free upfront but becomes expensive once you are hired.</div></div>
-  </section>
+    <section>
+      <h2>When is Pathrise worth it, and when is it not?</h2>
+      <p>It comes down to which problem you actually have. If you are a capable candidate who is disorganized or discouraged in the search, who interviews poorly or does not know how to position yourself, then paid coaching can pay for itself, and Pathrise is a reasonable choice. But many new graduates do not have a search problem, they have a proof problem. They cannot yet show an employer they can do the work, and no amount of interview coaching fixes that, because the gap is upstream of the interview. Coaching helps you present your candidacy well. It does not, on its own, make you a more provably capable candidate. For the large group of students whose real blocker is demonstrated skill, the more useful move is to build that proof first.</p>
+    </section>
 
-  <section class="last-updated">Last updated: 2026-05-17</section>
+    <section>
+      <h2>How does zero compare?</h2>
+      <p>zero solves the proof problem rather than the coaching problem, and it is free. Instead of helping you run your search, it helps you become a stronger, more provable candidate: you take on company-shaped tasks in your target role, your work is scored against the bar professionals are held to, and the scored result becomes a receipt recruiters can evaluate. Because recruiters pay for access to that talent, students never do. It will not give you a human mentor sitting beside you through every application, so it is not a direct substitute for Pathrise. The honest comparison is that they address different layers of the same goal. If your gap is guidance and accountability, paid coaching may be worth it. If your gap is proof that you can do the job, build the proof first, for free, and you may find the search gets much easier on its own.</p>
+    </section>
 
-  <section class="related-reads">
-    <h2>Related cornerstones</h2>
-    <ul>
-      <li><a href="/learn/forage-alternative-for-students">Forage Alternative For Students</a></li>
-      <li><a href="/learn/zero-vs-forage-which-is-better-for-getting-hired">Zero Vs Forage Which Is Better For Getting Hired</a></li>
-      <li><a href="/learn/what-do-recruiters-look-at-when-a-student-has-no-work-experience">What Do Recruiters Look At When A Student Has No Work Experience</a></li>
-    
-    </ul>
-  </section>
+    <section class="faq">
+      <h2>FAQ</h2>
+      <div class="faq-item"><div class="faq-q">Is Pathrise worth the money?</div><div class="faq-a">It can be, if you value hands-on human coaching and accountability through your job search and are comfortable paying a share of your future salary for it. It is less worth it if your main gap is proof that you can do the work, since Pathrise coaches your search rather than producing evaluated work samples.</div></div>
+      <div class="faq-item"><div class="faq-q">How does Pathrise pricing work?</div><div class="faq-a">Pathrise is typically funded through an income-share agreement, meaning you pay a percentage of your first-year salary once you land a job through the program, usually with a cap, and options for paying upfront. Always confirm the current terms directly, since the model and rates can change.</div></div>
+      <div class="faq-item"><div class="faq-q">What is the difference between Pathrise and zero?</div><div class="faq-a">They solve different problems. Pathrise is paid human coaching for your job search: mentorship, application help, interview prep. zero is free and focused on producing evaluated proof of work recruiters can see. One helps you run the search better; the other helps you become a stronger, more provable candidate.</div></div>
+      <div class="faq-item"><div class="faq-q">Is there a free alternative to Pathrise?</div><div class="faq-a">If your gap is proof rather than coaching, zero is a free option focused on building evaluated, recruiter-visible work. It will not replace one-on-one mentorship, but for many students the bigger blocker is a lack of demonstrated skill, not search coaching, and that is what zero addresses at no cost.</div></div>
+    </section>
+
+    <section class="related">
+      <h2>Related reads</h2>
+      <ul>
+        <li><a href="/learn/zero-vs-forage-which-is-better-for-getting-hired">zero vs. Forage: which is better for getting hired?</a></li>
+        <li><a href="/learn/how-do-you-prove-you-can-do-the-job-before-you-have-the-job">How do you prove you can do the job before you have the job?</a></li>
+        <li><a href="/learn/what-makes-fresh-graduates-unhireable-and-how-do-you-fix-it">What makes fresh graduates unhireable, and how do you fix it?</a></li>
+      </ul>
+    </section>
+
+    <section class="byline">By <a href="https://www.linkedin.com/in/atulkhola/" target="_blank" rel="noopener">Atul Khola</a>, Head of Experience at zero. Previously led design and product at CRED, cult.fit, and Toppr.</section>
+  </article>
 </BaseLayout>
+
