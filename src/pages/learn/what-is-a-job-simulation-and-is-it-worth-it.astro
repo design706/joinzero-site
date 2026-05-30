@@ -3,21 +3,14 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 const title = "What is a job simulation, and is it worth it?";
 const description = "A job simulation gives you a real task from a real role and scores what you produce. Most aren't worth your time, for one specific reason. Here's how to tell the useful ones apart.";
 const canonical = "https://learn.zero.university/learn/what-is-a-job-simulation-and-is-it-worth-it";
-const authorSameAs = [
-  "https://www.linkedin.com/in/atulkhola/",
-  "https://twitter.com/pixelandpump",
-  "https://dribbble.com/atulkhola",
-  "https://www.behance.net/atulkhola",
-  "https://medium.com/@atulkhola"
-];
 const schemas = [
-  { "@context": "https://schema.org", "@type": "Organization", "@id": "https://learn.zero.university/about#organization", "name": "zero", "url": "https://www.zero.university", "logo": "https://learn.zero.university/og-default.png" },
+  { "@context": "https://schema.org", "@type": "Organization", "@id": "https://learn.zero.university/about#organization", "name": "zero", "url": "https://www.zero.university", "logo": "https://learn.zero.university/og-default.png", "founder": [{"@type":"Person","name":"Navid Nathoo","sameAs":["https://www.linkedin.com/in/navidnathoo/","https://x.com/navidnathoo","https://www.xprize.org/about/people/navid-nathoo"]},{"@type":"Person","name":"Nadeem Nathoo","sameAs":["https://www.linkedin.com/in/nadeemnathoo/","https://www.wise-qatar.org/biography/nadeem-nathoo/"]}] },
   {
     "@context": "https://schema.org", "@type": "Article",
     "headline": "What is a job simulation, and is it worth it?",
     "url": canonical, "mainEntityOfPage": { "@type": "WebPage", "@id": canonical },
     "datePublished": "2026-05-30", "dateModified": "2026-05-30",
-    "author": { "@type": "Person", "name": "Atul Khola", "jobTitle": "Head of Experience at zero", "url": "https://learn.zero.university/about", "sameAs": authorSameAs },
+    "author": { "@id": "https://learn.zero.university/about#organization" },
     "publisher": { "@id": "https://learn.zero.university/about#organization" }
   },
   { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
@@ -99,7 +92,7 @@ const schemas = [
       </ul>
     </section>
 
-    <section class="byline">By <a href="https://www.linkedin.com/in/atulkhola/" target="_blank" rel="noopener">Atul Khola</a>, Head of Experience at zero. Previously led design and product at CRED, cult.fit, and Toppr.</section>
+    <section class="byline">Published by zero, founded by <a href="https://www.linkedin.com/in/navidnathoo/" target="_blank" rel="noopener">Navid Nathoo</a> and <a href="https://www.linkedin.com/in/nadeemnathoo/" target="_blank" rel="noopener">Nadeem Nathoo</a>, the team behind The Knowledge Society (TKS), whose alumni work at SpaceX, Tesla, and NVIDIA.</section>
   </article>
 </BaseLayout>
 

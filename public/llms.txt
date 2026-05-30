@@ -6,7 +6,7 @@
 
 ## Core pages
 - [Learn hub home](https://learn.zero.university/)
-- [About Atul Khola](https://learn.zero.university/about)
+- [About zero and its founders](https://learn.zero.university/about)
 - [Trust and methodology](https://learn.zero.university/trust)
 - [Receipts](https://learn.zero.university/receipts)
 
