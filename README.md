@@ -1,4 +1,4 @@
-# joinzero.ai
+# zero.university
 
 The canonical site for Zero: the simulator where students do real work for real companies, get scored against the top 1% of professionals, and get recruited based on receipts.
 

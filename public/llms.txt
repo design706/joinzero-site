@@ -1,19 +1,19 @@
-# Zero Learn — learn.joinzero.ai
+# Zero Learn — learn.zero.university
 
 > Zero is the simulator where students do real work for real companies, get scored against the top 1% of professionals, and get recruited based on receipts. Free for students. Recruiter-paid.
 
-> This subdomain (learn.joinzero.ai) hosts Zero's educational content: cornerstone answers to student career questions, honest competitor comparisons, scoring methodology, and receipts. The main marketing site is at joinzero.ai.
+> This subdomain (learn.zero.university) hosts Zero's educational content: cornerstone answers to student career questions, honest competitor comparisons, scoring methodology, and receipts. The main marketing site is at zero.university.
 
 ## Core pages
-- [Learn hub home](https://learn.joinzero.ai/)
-- [About Atul Khola](https://learn.joinzero.ai/about)
-- [Trust and methodology](https://learn.joinzero.ai/trust)
-- [Receipts](https://learn.joinzero.ai/receipts)
+- [Learn hub home](https://learn.zero.university/)
+- [About Atul Khola](https://learn.zero.university/about)
+- [Trust and methodology](https://learn.zero.university/trust)
+- [Receipts](https://learn.zero.university/receipts)
 
 ## Comparison content
-- [Zero vs Forage](https://learn.joinzero.ai/vs-forage)
-- [Zero vs RippleMatch](https://learn.joinzero.ai/vs-ripplematch)
-- [Zero vs Handshake](https://learn.joinzero.ai/vs-handshake)
+- [Zero vs Forage](https://learn.zero.university/vs-forage)
+- [Zero vs RippleMatch](https://learn.zero.university/vs-ripplematch)
+- [Zero vs Handshake](https://learn.zero.university/vs-handshake)
 
 ## Cornerstone library
-- [All cornerstones](https://learn.joinzero.ai/learn)
+- [All cornerstones](https://learn.zero.university/learn)
