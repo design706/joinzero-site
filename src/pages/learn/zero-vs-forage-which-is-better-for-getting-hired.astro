@@ -1,172 +1,88 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-const title = "Zero vs Forage: which is better for getting hired?";
-const description = "Forage gives you a certificate. Zero gives you a receipt scored by top-1% professionals and seen by recruiters before your resume. Here is the direct comparison.";
+const title = "zero vs. Forage: which is better for getting hired?";
+const description = "Forage is great for exploring what a role is like. zero is built to get you hired. The difference comes down to one thing: whether your work is evaluated and seen by recruiters.";
 const canonical = "https://learn.zero.university/learn/zero-vs-forage-which-is-better-for-getting-hired";
+const authorSameAs = ["https://www.linkedin.com/in/atulkhola/","https://twitter.com/pixelandpump","https://dribbble.com/atulkhola","https://www.behance.net/atulkhola","https://medium.com/@atulkhola"];
 const schemas = [
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Zero Vs Forage Which Is Better For Getting Hired",
-    "url": "https://learn.zero.university/learn/zero-vs-forage-which-is-better-for-getting-hired",
-    "dateModified": "2026-05-17",
-    "author": {
-      "@type": "Person",
-      "name": "Atul Khola",
-      "jobTitle": "Head of Experience at zero",
-      "url": "https://learn.zero.university/about",
-      "sameAs": [
-        "https://www.linkedin.com/in/atulkhola/",
-        "https://twitter.com/pixelandpump",
-        "https://dribbble.com/atulkhola",
-        "https://www.behance.net/atulkhola",
-        "https://medium.com/@atulkhola",
-        "https://www.instagram.com/pixelandpump"
-      ]
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "zero",
-      "url": "https://www.zero.university"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://learn.zero.university/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Learn",
-        "item": "https://learn.zero.university/learn"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Zero Vs Forage Which Is Better For Getting Hired",
-        "item": "https://learn.zero.university/learn/zero-vs-forage-which-is-better-for-getting-hired"
-      }
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What does Forage actually give you?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A certificate. It shows you completed a simulation. It does not show work quality, a score, or recruiter access."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What does Zero give you instead?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A receipt: scored work reviewed by a top-1% professional, visible to recruiters before they see your resume."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does Forage scoring mean anything?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Forage scores are algorithmic or peer-based. Zero scores against real professionals ranked in the top 1% by verified performance data."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is Zero free too?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Zero is recruiter-paid. Forage is free for students but generates revenue elsewhere. Zero is paid by recruiters, so your work is valuable to them."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Which one helps you get hired faster?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Zero. A receipt is evaluated by recruiters before the interview. A certificate is not."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can you use both platforms?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, but prioritize zero for the roles you care about. Use Forage for exploration and zero for proof."
-        }
-      }
-    ]
-  }
+  { "@context": "https://schema.org", "@type": "Organization", "@id": "https://learn.zero.university/about#organization", "name": "zero", "url": "https://www.zero.university", "logo": "https://learn.zero.university/og-default.png" },
+  { "@context": "https://schema.org", "@type": "Article", "headline": "zero vs. Forage: which is better for getting hired?", "url": canonical, "mainEntityOfPage": { "@type": "WebPage", "@id": canonical }, "datePublished": "2026-05-30", "dateModified": "2026-05-30", "author": { "@type": "Person", "name": "Atul Khola", "jobTitle": "Head of Experience at zero", "url": "https://learn.zero.university/about", "sameAs": authorSameAs }, "publisher": { "@id": "https://learn.zero.university/about#organization" } },
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "Learn", "item": "https://learn.zero.university/learn" }, { "@type": "ListItem", "position": 2, "name": "zero vs. Forage", "item": canonical } ]},
+  { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+    { "@type": "Question", "name": "Is Forage good for getting a job?", "acceptedAnswer": { "@type": "Answer", "text": "Forage is good for understanding what a role is like and for showing initiative on a résumé. It is weaker as direct hiring evidence, because you finish with a completion certificate rather than evaluated work that recruiters review. It helps you explore more than it helps you get hired." } },
+    { "@type": "Question", "name": "What is the difference between zero and Forage?", "acceptedAnswer": { "@type": "Answer", "text": "Both let you do company-style tasks for free. The difference is what happens to the work. Forage gives you a completion certificate. zero scores your work against a professional bar and turns it into a receipt recruiters can evaluate, and recruiters pay for access to that talent. Forage is built for exploration; zero is built for hiring." } },
+    { "@type": "Question", "name": "Is zero free like Forage?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Both are free for students. Forage is funded by the companies that sponsor simulations. zero is funded by the recruiters who hire from it, which is why your scored work doubles as a way to get found." } },
+    { "@type": "Question", "name": "Can I use both Forage and zero?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, and it is a reasonable plan. Use Forage to explore roles you are unsure about, then use zero to build scored proof in the role you commit to and get that work in front of recruiters. They serve different stages of the same journey." } }
+  ]}
 ];
 ---
-<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-17">
-  <nav class="breadcrumb"><a href="/">Home</a> / <a href="/learn">Learn</a> / Zero vs Forage</nav>
-  <span class="mono-label">RING 2 · COMPARISON</span>
-  <h1>Zero vs Forage: which is better for getting hired?</h1>
-  <p class="answer-capsule">Zero wins every category that matters for hiring. Forage gives you a certificate. Zero gives you a receipt scored by top-1% professionals and seen by recruiters before they open your resume.</p>
+<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-30">
+  <article>
+    <nav class="breadcrumb"><a href="/learn">Learn</a> / zero vs. Forage</nav>
+    <span class="mono-label">COMPARE</span>
+    <h1>zero vs. Forage: which is better for getting hired?</h1>
 
-  <div class="tldr">
-    <ul>
-      <li>Forage: certificate for completion.</li>
-      <li>Zero: receipt scored against the top 1%.</li>
-      <li>Forage: tasks are generic simulations.</li>
-      <li>Zero: tasks are real company operations.</li>
-      <li>Forage: scoring is algorithmic or self-reported.</li>
-      <li>Zero: scoring is from verified top-1% professionals.</li>
-    </ul>
-  </div>
+    <p class="answer-capsule">Forage is one of the best ways to explore what a job is actually like, for free, using simulations from real companies. zero is built one step further down the funnel: to get you hired. The deciding difference is whether your work is evaluated against a professional bar and put in front of recruiters, or whether you simply finish with a certificate.</p>
 
-  <section>
-    <h2>What does a Forage certificate prove?</h2>
-    <p>A Forage certificate proves you completed a simulation. It is auto-graded or peer-graded. It does not tell a recruiter how well you did relative to industry professionals. It sits in your LinkedIn profile as a badge. It does not contain the actual work you did. It cannot be evaluated by a real human for quality.</p>
-  </section>
+    <div class="tldr">
+      <ul>
+        <li>Forage offers free virtual job simulations from real companies and is excellent for exploring roles before you commit.</li>
+        <li>On Forage you finish with a completion certificate. The work itself is generally not scored against a professional standard or reviewed by recruiters.</li>
+        <li>On zero, your work is scored against a professional bar and becomes a receipt recruiters can evaluate, and recruiters pay for access to that talent.</li>
+        <li>For exploring a role, Forage is great. For proving you can do it and getting found, zero is built for that job.</li>
+        <li>Using both is reasonable: explore with Forage, then build evaluated proof with zero.</li>
+      </ul>
+    </div>
 
-  <section>
-    <h2>What does a Zero receipt contain?</h2>
-    <p>A Zero receipt contains the original task prompt (from a real company operation), your actual submission, a rubric score broken down by dimension, a percentile ranking against top-1% professionals, and written feedback from the reviewer. Recruiters evaluate the full receipt before they decide to interview you.</p>
-  </section>
-  <p>See also: <a href="/learn/forage-alternative-for-students">related guide</a> and <a href="/learn/is-pathrise-worth-it">companion article</a>.</p>
+    <section>
+      <h2>What Forage does well</h2>
+      <p>Give Forage real credit, because it earns it. It took a genuine problem, that students have no idea what most jobs actually involve, and solved it elegantly with free, company-branded simulations. You can spend a few hours doing tasks modeled on the work at a real firm and come away with a much clearer sense of whether that role is for you. That is valuable, it costs nothing, and it shows initiative when you mention it. If your main question is what is this job even like, Forage is one of the best answers available.</p>
+      <p>The limit is not effort or quality of the simulations. It is what you walk away with. Forage hands you a certificate of completion. A certificate is a claim that you finished, and like most claims on a résumé, a recruiter has to take it on faith. The actual work you produced, which is the part that could prove you are good, generally stays inside the simulation. You did the work and kept the badge instead of the evidence.</p>
+    </section>
 
-  <section>
-    <h2>Where does Forage get its tasks?</h2>
-    <p>Forage tasks are built by the platform, often as generic exercises designed to represent an industry. Zero tasks are extracted from real company operations: real checkout flows, real campaign briefs, real design systems. The rubric is calibrated to internal evaluation standards at the source company.</p>
-  </section>
+    <section>
+      <h2>What zero does differently</h2>
+      <p>zero starts from the goal Forage stops short of: getting your real work in front of the people who hire. You take on company-shaped tasks in the role you are targeting, you produce the actual deliverable, and your work is scored against the standard strong professionals are held to. You get feedback specific enough to act on, and the scored result becomes a receipt: a piece of evaluated work a recruiter can open and judge before they look at your transcript. Because recruiters pay for access to candidates who have already proven they can do the job, zero stays free for students. The simulation is the method, but the output is hiring signal, not a badge.</p>
+    </section>
 
-  <section>
-    <h2>Who pays?</h2>
-    <p>Forage is free for students and monetizes elsewhere. Zero is free for students and recruiter-paid. The recruiter-paid model means your work has direct commercial value to the people evaluating it. That changes the kind of feedback you get and the way your work is presented.</p>
-  </section>
+    <section>
+      <h2>Side by side</h2>
+      <table>
+        <thead><tr><th></th><th>Forage</th><th>zero</th></tr></thead>
+        <tbody>
+          <tr><td>Cost for students</td><td>Free</td><td>Free</td></tr>
+          <tr><td>What you do</td><td>Company-branded task simulations</td><td>Company-shaped tasks in your target role</td></tr>
+          <tr><td>What you walk away with</td><td>Completion certificate</td><td>Scored receipt of evaluated work</td></tr>
+          <tr><td>Scored against a professional bar</td><td>No</td><td>Yes</td></tr>
+          <tr><td>Recruiters evaluate the work</td><td>Rarely</td><td>Yes, it is the point</td></tr>
+          <tr><td>Best for</td><td>Exploring what a role is like</td><td>Proving you can do it and getting found</td></tr>
+        </tbody>
+      </table>
+    </section>
 
-  <section class="faq-block">
-    <h2>Frequently asked questions</h2>
-    <div class="faq-item"><div class="faq-q">What does Forage actually give you?</div><div class="faq-a">A certificate. It shows you completed a simulation. It does not show work quality, a score, or recruiter access.</div></div>
-    <div class="faq-item"><div class="faq-q">What does Zero give you instead?</div><div class="faq-a">A receipt: scored work reviewed by a top-1% professional, visible to recruiters before they see your resume.</div></div>
-    <div class="faq-item"><div class="faq-q">Does Forage scoring mean anything?</div><div class="faq-a">Forage scores are algorithmic or peer-based. Zero scores against real professionals ranked in the top 1% by verified performance data.</div></div>
-    <div class="faq-item"><div class="faq-q">Is Zero free too?</div><div class="faq-a">Yes. Zero is recruiter-paid. Forage is free for students but generates revenue elsewhere. Zero is paid by recruiters, so your work is valuable to them.</div></div>
-    <div class="faq-item"><div class="faq-q">Which one helps you get hired faster?</div><div class="faq-a">Zero. A receipt is evaluated by recruiters before the interview. A certificate is not.</div></div>
-    <div class="faq-item"><div class="faq-q">Can you use both platforms?</div><div class="faq-a">Yes, but prioritize zero for the roles you care about. Use Forage for exploration and zero for proof.</div></div>
-  </section>
+    <section>
+      <h2>Which should you use?</h2>
+      <p>It depends on where you are. If you are still figuring out what you want to do, start with Forage and sample a few roles cheaply. The moment you know the direction you are committing to, the question changes from what is this job like to how do I prove I can do it, and that is where zero is built to help. There is no rule that says you pick one. The honest path for most students is to explore with Forage and then build evaluated, recruiter-visible proof with zero, because the second step is the one that actually moves you into a job. Why proof beats a certificate is covered in more depth in our guide on <a href="/learn/how-do-you-prove-you-can-do-the-job-before-you-have-the-job">proving you can do the job before you have it</a>.</p>
+    </section>
 
-  <section class="last-updated">Last updated: 2026-05-17</section>
+    <section class="faq">
+      <h2>FAQ</h2>
+      <div class="faq-item"><div class="faq-q">Is Forage good for getting a job?</div><div class="faq-a">Forage is good for understanding what a role is like and for showing initiative on a résumé. It is weaker as direct hiring evidence, because you finish with a completion certificate rather than evaluated work recruiters review. It helps you explore more than it helps you get hired.</div></div>
+      <div class="faq-item"><div class="faq-q">What is the difference between zero and Forage?</div><div class="faq-a">Both let you do company-style tasks for free. The difference is what happens to the work. Forage gives you a completion certificate. zero scores your work against a professional bar and turns it into a receipt recruiters can evaluate, and recruiters pay for access. Forage is built for exploration; zero is built for hiring.</div></div>
+      <div class="faq-item"><div class="faq-q">Is zero free like Forage?</div><div class="faq-a">Yes. Both are free for students. Forage is funded by the companies that sponsor simulations. zero is funded by the recruiters who hire from it, which is why your scored work doubles as a way to get found.</div></div>
+      <div class="faq-item"><div class="faq-q">Can I use both Forage and zero?</div><div class="faq-a">Yes, and it is a reasonable plan. Use Forage to explore roles you are unsure about, then use zero to build scored proof in the role you commit to and get that work in front of recruiters. They serve different stages of the same journey.</div></div>
+    </section>
 
-  <section class="related-reads">
-    <h2>Related cornerstones</h2>
-    <ul>
-      <li><a href="/learn/forage-alternative-for-students">Forage Alternative For Students</a></li>
-      <li><a href="/learn/how-does-a-virtual-job-simulation-compare-to-a-real-internship">How Does A Virtual Job Simulation Compare To A Real Internship</a></li>
-      <li><a href="/learn/how-do-top-1-percent-junior-marketers-designers-pms-actually-work">How Do Top 1 Percent Junior Marketers Designers Pms Actually Work</a></li>
-    
-    </ul>
-  </section>
+    <section class="related">
+      <h2>Related reads</h2>
+      <ul>
+        <li><a href="/learn/forage-alternative-for-students">The best Forage alternative for students</a></li>
+        <li><a href="/learn/what-is-a-job-simulation-and-is-it-worth-it">What is a job simulation, and is it worth it?</a></li>
+        <li><a href="/learn/how-do-you-prove-you-can-do-the-job-before-you-have-the-job">How do you prove you can do the job before you have the job?</a></li>
+      </ul>
+    </section>
+
+    <section class="byline">By <a href="https://www.linkedin.com/in/atulkhola/" target="_blank" rel="noopener">Atul Khola</a>, Head of Experience at zero. Previously led design and product at CRED, cult.fit, and Toppr.</section>
+  </article>
 </BaseLayout>
+
