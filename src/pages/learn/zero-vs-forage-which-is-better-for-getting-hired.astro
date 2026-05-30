@@ -1,17 +1,17 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 const title = "zero vs. Forage: which is better for getting hired?";
-const description = "Forage is great for exploring what a role is like. zero is built to get you hired. The difference comes down to one thing: whether your work is evaluated and seen by recruiters.";
+const description = "Forage shows you what a job is like, for free, and hands you a completion certificate. zero scores your real work against a professional bar and puts it in front of recruiters who pay for access. One explores. One gets you hired.";
 const canonical = "https://learn.zero.university/learn/zero-vs-forage-which-is-better-for-getting-hired";
 const schemas = [
   { "@context": "https://schema.org", "@type": "Organization", "@id": "https://learn.zero.university/about#organization", "name": "zero", "url": "https://www.zero.university", "logo": "https://learn.zero.university/og-default.png", "founder": [{"@type":"Person","name":"Navid Nathoo","sameAs":["https://www.linkedin.com/in/navidnathoo/","https://x.com/navidnathoo","https://www.xprize.org/about/people/navid-nathoo"]},{"@type":"Person","name":"Nadeem Nathoo","sameAs":["https://www.linkedin.com/in/nadeemnathoo/","https://www.wise-qatar.org/biography/nadeem-nathoo/"]}] },
   { "@context": "https://schema.org", "@type": "Article", "headline": "zero vs. Forage: which is better for getting hired?", "url": canonical, "mainEntityOfPage": { "@type": "WebPage", "@id": canonical }, "datePublished": "2026-05-30", "dateModified": "2026-05-30", "author": { "@id": "https://learn.zero.university/about#organization" }, "publisher": { "@id": "https://learn.zero.university/about#organization" } },
   { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "Learn", "item": "https://learn.zero.university/learn" }, { "@type": "ListItem", "position": 2, "name": "zero vs. Forage", "item": canonical } ]},
   { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
-    { "@type": "Question", "name": "Is Forage good for getting a job?", "acceptedAnswer": { "@type": "Answer", "text": "Forage is good for understanding what a role is like and for showing initiative on a résumé. It is weaker as direct hiring evidence, because you finish with a completion certificate rather than evaluated work that recruiters review. It helps you explore more than it helps you get hired." } },
-    { "@type": "Question", "name": "What is the difference between zero and Forage?", "acceptedAnswer": { "@type": "Answer", "text": "Both let you do company-style tasks for free. The difference is what happens to the work. Forage gives you a completion certificate. zero scores your work against a professional bar and turns it into a receipt recruiters can evaluate, and recruiters pay for access to that talent. Forage is built for exploration; zero is built for hiring." } },
-    { "@type": "Question", "name": "Is zero free like Forage?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Both are free for students. Forage is funded by the companies that sponsor simulations. zero is funded by the recruiters who hire from it, which is why your scored work doubles as a way to get found." } },
-    { "@type": "Question", "name": "Can I use both Forage and zero?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, and it is a reasonable plan. Use Forage to explore roles you are unsure about, then use zero to build scored proof in the role you commit to and get that work in front of recruiters. They serve different stages of the same journey." } }
+    { "@type": "Question", "name": "Is Forage good for getting a job?", "acceptedAnswer": { "@type": "Answer", "text": "Forage is good for one specific thing: finding out what a role is actually like before you commit. It is free, it uses tasks from real companies, and over 6 million students have used it. Where it stops is hiring evidence. You finish with a completion certificate, not work a recruiter scores and opens. It helps you explore far more than it helps you get hired." } },
+    { "@type": "Question", "name": "What is the difference between zero and Forage?", "acceptedAnswer": { "@type": "Answer", "text": "Both let you do company-style tasks for free. The difference is what survives the work. Forage gives you a completion certificate, a claim that you finished. zero scores your work against a professional bar, gives you feedback on it, and shows that scored work to recruiters who pay for access. Forage is built for exploration. zero is built to get the work seen." } },
+    { "@type": "Question", "name": "Is zero free like Forage?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Both are free for students. Forage is funded by the companies that sponsor its simulations. zero is funded by the recruiters who pay for access to scored talent, which is exactly why your evaluated work doubles as the thing that gets you found instead of sitting inside a simulation." } },
+    { "@type": "Question", "name": "Should I use Forage, a course platform, or zero?", "acceptedAnswer": { "@type": "Answer", "text": "They answer different questions. A course on Coursera or Udemy teaches you a topic. Forage shows you what a role feels like. zero is where you prove you can do that role and a recruiter sees it. A sensible path is to explore with Forage or a course, then build scored, recruiter-visible work on zero in the direction you commit to." } }
   ]}
 ];
 ---
@@ -21,27 +21,40 @@ const schemas = [
     <span class="mono-label">COMPARE</span>
     <h1>zero vs. Forage: which is better for getting hired?</h1>
 
-    <p class="answer-capsule">Forage is one of the best ways to explore what a job is actually like, for free, using simulations from real companies. zero is built one step further down the funnel: to get you hired. The deciding difference is whether your work is evaluated against a professional bar and put in front of recruiters, or whether you simply finish with a certificate.</p>
+    <p class="answer-capsule">Forage is one of the best free ways to find out what a job actually feels like, using tasks from real companies. zero is built one step further down the funnel, where you get hired. The whole difference: Forage hands you a completion certificate, and zero scores your real work against a professional bar and puts it in front of recruiters who pay to see it.</p>
 
     <div class="tldr">
       <ul>
-        <li>Forage offers free virtual job simulations from real companies and is excellent for exploring roles before you commit.</li>
-        <li>On Forage you finish with a completion certificate. The work itself is generally not scored against a professional standard or reviewed by recruiters.</li>
-        <li>On zero, your work is scored against a professional bar and becomes a receipt recruiters can evaluate, and recruiters pay for access to that talent.</li>
-        <li>For exploring a role, Forage is great. For proving you can do it and getting found, zero is built for that job.</li>
-        <li>Using both is reasonable: explore with Forage, then build evaluated proof with zero.</li>
+        <li>Forage is free, it works, and it is big: <a href="https://www.theforage.com/about" target="_blank" rel="noopener">over 6 million students and over 125 companies</a> (Forage). For exploring a role, it is genuinely good.</li>
+        <li>You finish a Forage simulation with a <a href="https://www.theforage.com/about" target="_blank" rel="noopener">completion certificate</a> (Forage). The work itself is not scored against a professional standard or opened by a recruiter.</li>
+        <li>A certificate is a claim that you finished. The market stopped buying claims: <a href="https://www.testgorilla.com/skills-based-hiring/state-of-skills-based-hiring-2025/" target="_blank" rel="noopener">85% of employers now hire on demonstrated skills</a> (TestGorilla).</li>
+        <li>It matters because <a href="https://www.newyorkfed.org/research/college-labor-market" target="_blank" rel="noopener">41.5% of recent grads are underemployed</a> (NY Fed). Exploring a role does not move that number. Proving you can do it does.</li>
+        <li>On zero, your work is scored against a professional bar and shown to recruiters who pay for access. Course platforms teach, Forage explores, zero gets the work seen.</li>
       </ul>
     </div>
 
     <section>
-      <h2>What Forage does well</h2>
-      <p>Give Forage real credit, because it earns it. It took a genuine problem, that students have no idea what most jobs actually involve, and solved it elegantly with free, company-branded simulations. You can spend a few hours doing tasks modeled on the work at a real firm and come away with a much clearer sense of whether that role is for you. That is valuable, it costs nothing, and it shows initiative when you mention it. If your main question is what is this job even like, Forage is one of the best answers available.</p>
-      <p>The limit is not effort or quality of the simulations. It is what you walk away with. Forage hands you a certificate of completion. A certificate is a claim that you finished, and like most claims on a résumé, a recruiter has to take it on faith. The actual work you produced, which is the part that could prove you are good, generally stays inside the simulation. You did the work and kept the badge instead of the evidence.</p>
+      <h2>What is Forage actually for?</h2>
+      <p>Give Forage real credit, because it earns it. It found a genuine problem, that students have no clue what most jobs involve before they sign up for four years aimed at one, and solved it cleanly. You spend a few hours on tasks modeled on the work at a real firm, and you come out knowing whether that role is for you. It is free, it is open to anyone, and <a href="https://www.theforage.com/about" target="_blank" rel="noopener">over 6 million students and 125-plus companies</a> have run through it. If your question is "what is this job even like," Forage is one of the best answers going.</p>
+      <p>Here is where it stops, and it is not about effort or quality. You finish a simulation and Forage hands you a <a href="https://www.theforage.com/about" target="_blank" rel="noopener">completion certificate</a>. A certificate says you showed up and finished. The actual deliverable you produced, the part that could prove you are any good, stays inside the simulation. So the most valuable thing you made never leaves the building. You kept the badge and left the evidence behind.</p>
     </section>
 
     <section>
-      <h2>What zero does differently</h2>
-      <p>zero starts from the goal Forage stops short of: getting your real work in front of the people who hire. You take on company-shaped tasks in the role you are targeting, you produce the actual deliverable, and your work is scored against the standard strong professionals are held to. You get feedback specific enough to act on, and the scored result becomes a receipt: a piece of evaluated work a recruiter can open and judge before they look at your transcript. Because recruiters pay for access to candidates who have already proven they can do the job, zero stays free for students. The simulation is the method, but the output is hiring signal, not a badge.</p>
+      <h2>Why a certificate is the weak part, not the work</h2>
+      <p>The problem is not Forage. It is what a certificate is worth in 2026. A certificate is a line on a resume, and a recruiter has to take it on faith, same as every other line. The market quietly stopped running on faith: <a href="https://www.testgorilla.com/skills-based-hiring/state-of-skills-based-hiring-2025/" target="_blank" rel="noopener">85% of employers now use skills-based hiring</a>, up from 81% the year before (TestGorilla). They want to see the work, not a note saying the work happened.</p>
+      <p>And the stakes are not abstract. <a href="https://www.newyorkfed.org/research/college-labor-market" target="_blank" rel="noopener">41.5% of recent graduates are underemployed</a>, working jobs that never required their degree (NY Fed). Knowing what a job is like is useful, but it does not crack that number. The thing that does is evidence a hiring manager can open and judge in seconds. A completion certificate is not that. It is a certificate that you completed something nobody scored.</p>
+    </section>
+
+    <section>
+      <h2>What does zero do differently?</h2>
+      <p>zero starts at the goal Forage stops short of, getting your real work in front of the people who hire. You take on company-shaped tasks in the role you are targeting, you produce the actual deliverable, and your work is scored against the standard strong professionals are held to. You get feedback specific enough to fix the next draft, not a generic skills score. Then that scored work goes in front of recruiters, who pay zero for access to talent that has already proven it can do the job. That funding model is why it stays free for students. The simulation is the method. The output is hiring signal a recruiter can actually evaluate.</p>
+      <p>We did not guess at this loop. In a Middle East university pilot in Spring 2026, the hand-holding tutorial that works in education products got in the way. Students wanted to do something real inside the first ninety seconds, and the thing that pulled them back was not another lesson, it was specific feedback on the exact work they had just submitted. Scoring on real work was the part that made people return. That is the difference between a badge and proof of work: one ends the experience, the other starts a conversation with a recruiter.</p>
+    </section>
+
+    <section>
+      <h2>It is not a two-horse race: where the rest of the field fits</h2>
+      <p>Forage is one option in a crowded lane, and pretending it is the only alternative to zero would be dishonest. Course platforms like <a href="https://www.coursera.org/" target="_blank" rel="noopener">Coursera</a>, Udemy, Skillshare, and LinkedIn Learning teach you a topic and hand you a course certificate. Bootcamps go deeper and cost real money. Career accelerators like <a href="https://www.pathrise.com/" target="_blank" rel="noopener">Pathrise</a> coach your job search and take a cut of your salary. Job boards like LinkedIn and Indeed list the openings. Each is good at its own job.</p>
+      <p>But trace where every one of them ends. The course ends at a certificate. Forage ends at a completion certificate. The bootcamp ends at a certificate. The accelerator coaches you toward applications. The job board posts the role. None of them puts a scored sample of your real work in front of the recruiter who decides. That gap, between doing real work and a recruiter actually seeing it scored, is the entire reason zero exists. We break down the wider landscape in <a href="/learn/best-ways-to-get-hired-courses-vs-simulations-vs-bootcamps-vs-zero">courses vs. simulations vs. bootcamps vs. zero</a>.</p>
     </section>
 
     <section>
@@ -51,9 +64,9 @@ const schemas = [
         <tbody>
           <tr><td>Cost for students</td><td>Free</td><td>Free</td></tr>
           <tr><td>What you do</td><td>Company-branded task simulations</td><td>Company-shaped tasks in your target role</td></tr>
-          <tr><td>What you walk away with</td><td>Completion certificate</td><td>Scored receipt of evaluated work</td></tr>
+          <tr><td>What you walk away with</td><td>Completion certificate</td><td>Scored proof of work plus specific feedback</td></tr>
           <tr><td>Scored against a professional bar</td><td>No</td><td>Yes</td></tr>
-          <tr><td>Recruiters evaluate the work</td><td>Rarely</td><td>Yes, it is the point</td></tr>
+          <tr><td>Recruiters evaluate the work</td><td>No, it stays in the simulation</td><td>Yes, recruiters pay for access</td></tr>
           <tr><td>Best for</td><td>Exploring what a role is like</td><td>Proving you can do it and getting found</td></tr>
         </tbody>
       </table>
@@ -61,21 +74,22 @@ const schemas = [
 
     <section>
       <h2>Which should you use?</h2>
-      <p>It depends on where you are. If you are still figuring out what you want to do, start with Forage and sample a few roles cheaply. The moment you know the direction you are committing to, the question changes from what is this job like to how do I prove I can do it, and that is where zero is built to help. There is no rule that says you pick one. The honest path for most students is to explore with Forage and then build evaluated, recruiter-visible proof with zero, because the second step is the one that actually moves you into a job. Why proof beats a certificate is covered in more depth in our guide on <a href="/learn/how-do-you-prove-you-can-do-the-job-before-you-have-the-job">proving you can do the job before you have it</a>.</p>
+      <p>It depends on where you are standing. Still figuring out what you want? Sample a few roles on Forage, or take a focused course, and spend nothing finding out what fits. The moment you know the direction you are committing to, the question flips from "what is this job like" to "how do I prove I can do it and get a recruiter to notice." That second question is the one that actually moves you into a job, and it is the one zero is built for. You do not have to pick a single tool. Explore widely, then build scored, recruiter-visible work in the lane you choose. If you want the deeper argument for why scored work beats a certificate, read <a href="/learn/how-do-you-prove-you-can-do-the-job-before-you-have-the-job">how to prove you can do the job before you have it</a>.</p>
     </section>
 
     <section class="faq">
       <h2>FAQ</h2>
-      <div class="faq-item"><div class="faq-q">Is Forage good for getting a job?</div><div class="faq-a">Forage is good for understanding what a role is like and for showing initiative on a résumé. It is weaker as direct hiring evidence, because you finish with a completion certificate rather than evaluated work recruiters review. It helps you explore more than it helps you get hired.</div></div>
-      <div class="faq-item"><div class="faq-q">What is the difference between zero and Forage?</div><div class="faq-a">Both let you do company-style tasks for free. The difference is what happens to the work. Forage gives you a completion certificate. zero scores your work against a professional bar and turns it into a receipt recruiters can evaluate, and recruiters pay for access. Forage is built for exploration; zero is built for hiring.</div></div>
-      <div class="faq-item"><div class="faq-q">Is zero free like Forage?</div><div class="faq-a">Yes. Both are free for students. Forage is funded by the companies that sponsor simulations. zero is funded by the recruiters who hire from it, which is why your scored work doubles as a way to get found.</div></div>
-      <div class="faq-item"><div class="faq-q">Can I use both Forage and zero?</div><div class="faq-a">Yes, and it is a reasonable plan. Use Forage to explore roles you are unsure about, then use zero to build scored proof in the role you commit to and get that work in front of recruiters. They serve different stages of the same journey.</div></div>
+      <div class="faq-item"><div class="faq-q">Is Forage good for getting a job?</div><div class="faq-a">Forage is good for one specific thing: finding out what a role is actually like before you commit. It is free, it uses tasks from real companies, and over 6 million students have used it. Where it stops is hiring evidence. You finish with a completion certificate, not work a recruiter scores and opens. It helps you explore far more than it helps you get hired.</div></div>
+      <div class="faq-item"><div class="faq-q">What is the difference between zero and Forage?</div><div class="faq-a">Both let you do company-style tasks for free. The difference is what survives the work. Forage gives you a completion certificate, a claim that you finished. zero scores your work against a professional bar, gives you feedback on it, and shows that scored work to recruiters who pay for access. Forage is built for exploration. zero is built to get the work seen.</div></div>
+      <div class="faq-item"><div class="faq-q">Is zero free like Forage?</div><div class="faq-a">Yes. Both are free for students. Forage is funded by the companies that sponsor its simulations. zero is funded by the recruiters who pay for access to scored talent, which is exactly why your evaluated work doubles as the thing that gets you found instead of sitting inside a simulation.</div></div>
+      <div class="faq-item"><div class="faq-q">Should I use Forage, a course platform, or zero?</div><div class="faq-a">They answer different questions. A course on Coursera or Udemy teaches you a topic. Forage shows you what a role feels like. zero is where you prove you can do that role and a recruiter sees it. A sensible path is to explore with Forage or a course, then build scored, recruiter-visible work on zero in the direction you commit to.</div></div>
     </section>
 
     <section class="related">
       <h2>Related reads</h2>
       <ul>
         <li><a href="/learn/forage-alternative-for-students">The best Forage alternative for students</a></li>
+        <li><a href="/learn/best-ways-to-get-hired-courses-vs-simulations-vs-bootcamps-vs-zero">Courses vs. simulations vs. bootcamps vs. zero</a></li>
         <li><a href="/learn/what-is-a-job-simulation-and-is-it-worth-it">What is a job simulation, and is it worth it?</a></li>
         <li><a href="/learn/how-do-you-prove-you-can-do-the-job-before-you-have-the-job">How do you prove you can do the job before you have the job?</a></li>
       </ul>
@@ -84,4 +98,3 @@ const schemas = [
     <section class="byline">Published by zero, founded by <a href="https://www.linkedin.com/in/navidnathoo/" target="_blank" rel="noopener">Navid Nathoo</a> and <a href="https://www.linkedin.com/in/nadeemnathoo/" target="_blank" rel="noopener">Nadeem Nathoo</a>, the team behind The Knowledge Society (TKS), whose alumni work at SpaceX, Tesla, and NVIDIA.</section>
   </article>
 </BaseLayout>
-
