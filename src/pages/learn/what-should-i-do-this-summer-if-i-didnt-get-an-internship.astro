@@ -1,173 +1,78 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 const title = "What should I do this summer if I didn't get an internship?";
-const description = "A blank summer is a weak signal. Build receipts instead. 3 to 5 scored tasks in your target role gives you a portfolio range most graduates do not have.";
+const description = "Don't spend it waiting. Build proof of work: real, scored tasks in your target role. The data is clear that real work experience is the biggest protective factor, and you can build that evidence yourself.";
 const canonical = "https://learn.zero.university/learn/what-should-i-do-this-summer-if-i-didnt-get-an-internship";
+const authorSameAs = ["https://www.linkedin.com/in/atulkhola/","https://twitter.com/pixelandpump","https://dribbble.com/atulkhola","https://www.behance.net/atulkhola","https://medium.com/@atulkhola"];
 const schemas = [
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "What Should I Do This Summer If I Didnt Get An Internship",
-    "url": "https://learn.zero.university/learn/what-should-i-do-this-summer-if-i-didnt-get-an-internship",
-    "dateModified": "2026-05-17",
-    "author": {
-      "@type": "Person",
-      "name": "Atul Khola",
-      "jobTitle": "Head of Experience at zero",
-      "url": "https://learn.zero.university/about",
-      "sameAs": [
-        "https://www.linkedin.com/in/atulkhola/",
-        "https://twitter.com/pixelandpump",
-        "https://dribbble.com/atulkhola",
-        "https://www.behance.net/atulkhola",
-        "https://medium.com/@atulkhola",
-        "https://www.instagram.com/pixelandpump"
-      ]
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "zero",
-      "url": "https://www.zero.university"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://learn.zero.university/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Learn",
-        "item": "https://learn.zero.university/learn"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "What Should I Do This Summer If I Didnt Get An Internship",
-        "item": "https://learn.zero.university/learn/what-should-i-do-this-summer-if-i-didnt-get-an-internship"
-      }
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What should I do if I did not get an internship?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Build a receipt. Pick a task that maps to your target role, complete it against a deadline, and submit for scoring. A scored receipt is more evaluable than a blank summer."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is a summer course worth it?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Only if it produces output you can show. A course certificate is weak signal. A course project that becomes a portfolio piece is strong signal. Optimize for output, not completion."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Should I do open-source work?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, if you can find a project that maps to your target role. Open-source contributions show collaboration, code quality, and shipping discipline. The best contributions are small, focused, and documented."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do I explain a non-internship summer to recruiters?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Frame it as a project summer. I spent the summer building three scored receipts in marketing, product, and data analysis. That is a stronger answer than I took courses."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What if I have no idea what role I want?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Try three different tasks in different functions. The one that feels hard but engaging is your direction. The one that feels boring is a filter. Use the summer to test, not to commit."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I build a receipt in one summer?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Most zero tasks take 3 to 7 days. You can build 4 to 8 receipts in a 10-week summer. That gives you a portfolio range most graduates do not have."
-        }
-      }
-    ]
-  }
+  { "@context": "https://schema.org", "@type": "Organization", "@id": "https://learn.zero.university/about#organization", "name": "zero", "url": "https://www.zero.university", "logo": "https://learn.zero.university/og-default.png" },
+  { "@context": "https://schema.org", "@type": "Article", "headline": "What should I do this summer if I didn't get an internship?", "url": canonical, "mainEntityOfPage": { "@type": "WebPage", "@id": canonical }, "datePublished": "2026-05-30", "dateModified": "2026-05-30", "author": { "@type": "Person", "name": "Atul Khola", "jobTitle": "Head of Experience at zero", "url": "https://learn.zero.university/about", "sameAs": authorSameAs }, "publisher": { "@id": "https://learn.zero.university/about#organization" } },
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "Learn", "item": "https://learn.zero.university/learn" }, { "@type": "ListItem", "position": 2, "name": "Summer without an internship", "item": canonical } ]},
+  { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+    { "@type": "Question", "name": "What should I do over the summer without an internship?", "acceptedAnswer": { "@type": "Answer", "text": "Build proof of work. Pick the role you want, complete a handful of real, scoped tasks from it, and get them evaluated against a professional standard. A summer of scored work in your target field is a stronger signal to recruiters than a blank line on a résumé, and you do not need an employer to grant it." } },
+    { "@type": "Question", "name": "Does not having an internship hurt your chances?", "acceptedAnswer": { "@type": "Answer", "text": "It can, because real work experience is the strongest protective factor in the data, and the first job after graduation shapes the next decade. But the value of an internship is the proof it produces, and you can produce comparable proof by doing real, evaluated work on your own." } },
+    { "@type": "Question", "name": "Is it better to get any job or build a portfolio over the summer?", "acceptedAnswer": { "@type": "Answer", "text": "Do both if you can, but make sure something you do produces evidence in your target field. A paycheck job keeps you afloat; evaluated work in the role you want moves your career. If you have to choose where your discretionary hours go, put them into building scored proof." } },
+    { "@type": "Question", "name": "How many projects should I do over the summer?", "acceptedAnswer": { "@type": "Answer", "text": "Quality over quantity. Three to five strong, relevant, evaluated pieces in one role beat a dozen scattered projects. The goal is a small body of work that proves you can do a specific job, not a long list that proves you stayed busy." } }
+  ]}
 ];
 ---
-<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-17">
-  <nav class="breadcrumb"><a href="/">Home</a> / <a href="/learn">Learn</a> / Summer without internship</nav>
-  <span class="mono-label">RING 1 · CORNERSTONE</span>
-  <h1>What should I do this summer if I didn't get an internship?</h1>
-  <p class="answer-capsule">Build receipts. Pick 3 to 5 tasks in your target role, complete them against deadlines, and submit for scoring. A summer of scored work is stronger signal than a blank resume line.</p>
+<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-30">
+  <article>
+    <nav class="breadcrumb"><a href="/learn">Learn</a> / Summer without an internship</nav>
+    <span class="mono-label">GUIDE</span>
+    <h1>What should I do this summer if I didn't get an internship?</h1>
 
-  <div class="tldr">
-    <ul>
-      <li>Recruiters evaluate trajectory, not just credentials.</li>
-      <li>A blank summer looks like waiting. A productive summer looks like creating.</li>
-      <li>3 to 5 receipts in one function show commitment and growth.</li>
-      <li>Most zero tasks take 3 to 7 days. You can build 8 in a summer.</li>
-      <li>Optimize for output, not completion.</li>
-    </ul>
-  </div>
+    <p class="answer-capsule">Don't spend it waiting. The best use of a summer without an internship is to build proof of work: pick the role you want, complete a few real tasks from it, and get them evaluated against a professional standard. A summer of scored work in your target field is a stronger signal than a blank line on a résumé, and you do not need an employer's permission to build it.</p>
 
-  <section>
-    <h2>Why does a blank summer hurt your hiring chances?</h2>
-    <p>Recruiters evaluate trajectory. A student who did nothing over the summer looks like a student who waits for opportunities. A student who built four receipts looks like a student who creates them. The difference is not talent: it is signal.</p>
-    <p>You do not need an internship to build signal. You need a task, a deadline, and a rubric. zero gives you all three.</p>
-  </section>
+    <div class="tldr">
+      <ul>
+        <li>An internship matters mostly because of the proof it produces, and you can produce comparable proof on your own.</li>
+        <li>The stakes are real: completing an internship <a href="https://www.strada.org/reports/talent-disrupted" target="_blank" rel="noopener">cuts underemployment risk by 48.5%</a>, and your first job after graduation shapes the next ten years (Strada and Burning Glass).</li>
+        <li>The fix for a missing internship is the same thing that makes internships valuable: real, evaluated work in your target role.</li>
+        <li>Aim for a few strong, relevant, scored pieces, not a pile of scattered projects.</li>
+        <li>Make the work count by getting it in front of recruiters, not leaving it in a folder.</li>
+      </ul>
+    </div>
 
-  <section>
-    <h2>What is the best use of a summer without an internship?</h2>
-    <p>Pick one role direction. Complete 3 to 5 tasks in that direction. Submit each for scoring. Use the feedback to iterate. By the end of the summer, you have a portfolio range and a percentile trajectory that recruiters can evaluate in seconds.</p>
-    <p>The key is consistency. One receipt is interesting. Three receipts in the same function show commitment and growth. Five receipts show you are serious.</p>
-  </section>
-  <p>See also: <a href="/learn/how-does-a-virtual-job-simulation-compare-to-a-real-internship">related guide</a> and <a href="/learn/what-makes-fresh-grads-unhireable-and-how-to-fix-it">companion article</a>.</p>
+    <section>
+      <h2>Why does a blank summer hurt your chances?</h2>
+      <p>Because the market reads gaps as missing evidence, and the timing compounds. The <em>Talent Disrupted</em> research found that students who start their careers underemployed are <a href="https://www.burningglassinstitute.org/research/underemployment" target="_blank" rel="noopener">3.5 times more likely to still be underemployed a decade later</a>, which means the early signals you build matter far beyond the next application. An internship is the traditional way to build those signals, and the data shows it lowers underemployment risk by nearly half. So a summer with no internship is not a catastrophe, but it is a missed chance to produce the one thing recruiters most want from a young candidate, which is evidence. The good news is that the missing piece is reproducible.</p>
+    </section>
 
-  <section>
-    <h2>How do I choose which tasks to do?</h2>
-    <p>Start with the role you want. If you want product, do product tasks. If you want marketing, do marketing tasks. If you are unsure, do one task in each of three functions and see which one you finish fastest and best. That is your signal.</p>
-    <p>See <a href="/how-it-works">how zero works</a> or browse <a href="/receipts">live receipts</a>.</p>
-  </section>
+    <section>
+      <h2>What is the best use of a summer without an internship?</h2>
+      <p>Treat the summer as a production sprint, not a holding pattern. The reason an internship helps is not the title, it is that you did real work, someone evaluated it, and now there is something concrete to point to. You can manufacture that same outcome directly. Spend the summer doing the actual work of the role you want, on real, scoped problems, and get each piece evaluated so its quality is established rather than assumed. By September you would have a small body of scored work in your target field, which is exactly the proof an internship leaves behind, built on your own terms.</p>
+    </section>
 
-  <section class="author-bio">
-    <p><strong>Atul Khola</strong> is Head of Experience at zero. He has led design and product at CRED, cult.fit, topper, and media.net. He lectures at IITs, NIDs, and NIFTs on product design and career strategy.</p>
-  </section>
+    <section>
+      <h2>How do you choose what to work on?</h2>
+      <p>Narrow before you start. Pick one role, the one you would take an entry-level job in today, and do the work of that role rather than sampling five fields. Choose tasks that produce a real artifact: a positioning brief, a product spec, an analysis that ends in a recommendation. Aim for three to five strong pieces, not a dozen weak ones, because a recruiter is trying to answer can this person do this specific job, and a focused body of relevant work answers that far better than a scattered one. While building zero, our Middle East university pilot in Spring 2026 made this concrete: students learned and improved fastest through short loops of doing real work and getting specific feedback on it, not through broad study. Pick the role, do the work, get it scored, repeat.</p>
+    </section>
 
-  <section class="faq-block">
-    <h2>Frequently asked questions</h2>
-    <div class="faq-item"><div class="faq-q">What should I do if I did not get an internship?</div><div class="faq-a">Build a receipt. Pick a task that maps to your target role, complete it against a deadline, and submit for scoring. A scored receipt is more evaluable than a blank summer.</div></div>
-    <div class="faq-item"><div class="faq-q">Is a summer course worth it?</div><div class="faq-a">Only if it produces output you can show. A course certificate is weak signal. A course project that becomes a portfolio piece is strong signal. Optimize for output, not completion.</div></div>
-    <div class="faq-item"><div class="faq-q">Should I do open-source work?</div><div class="faq-a">Yes, if you can find a project that maps to your target role. Open-source contributions show collaboration, code quality, and shipping discipline. The best contributions are small, focused, and documented.</div></div>
-    <div class="faq-item"><div class="faq-q">How do I explain a non-internship summer to recruiters?</div><div class="faq-a">Frame it as a project summer. I spent the summer building three scored receipts in marketing, product, and data analysis. That is a stronger answer than I took courses.</div></div>
-    <div class="faq-item"><div class="faq-q">What if I have no idea what role I want?</div><div class="faq-a">Try three different tasks in different functions. The one that feels hard but engaging is your direction. The one that feels boring is a filter. Use the summer to test, not to commit.</div></div>
-    <div class="faq-item"><div class="faq-q">Can I build a receipt in one summer?</div><div class="faq-a">Yes. Most zero tasks take 3 to 7 days. You can build 4 to 8 receipts in a 10-week summer. That gives you a portfolio range most graduates do not have.</div></div>
-  </section>
+    <section>
+      <h2>How do you make the summer count for hiring?</h2>
+      <p>Get the work seen. A summer of scored work only changes your odds if recruiters can find and evaluate it, so build it somewhere that puts evaluated talent in front of the people who hire. That is what zero is for: you take on company-shaped tasks, your work is scored against a professional bar, and the scored result becomes a receipt recruiters can evaluate, free for students because recruiters pay for the access. Used that way, a summer without an internship can produce more hiring signal than the internship you did not get.</p>
+    </section>
 
-  <section class="last-updated">Last updated: 2026-05-17</section>
+    <section class="faq">
+      <h2>FAQ</h2>
+      <div class="faq-item"><div class="faq-q">What should I do over the summer without an internship?</div><div class="faq-a">Build proof of work. Pick the role you want, complete a handful of real, scoped tasks from it, and get them evaluated against a professional standard. A summer of scored work in your target field is a stronger signal than a blank line on a résumé, and you do not need an employer to grant it.</div></div>
+      <div class="faq-item"><div class="faq-q">Does not having an internship hurt your chances?</div><div class="faq-a">It can, because real work experience is the strongest protective factor in the data, and the first job after graduation shapes the next decade. But the value of an internship is the proof it produces, and you can produce comparable proof by doing real, evaluated work on your own.</div></div>
+      <div class="faq-item"><div class="faq-q">Is it better to get any job or build a portfolio over the summer?</div><div class="faq-a">Do both if you can, but make sure something you do produces evidence in your target field. A paycheck job keeps you afloat; evaluated work in the role you want moves your career. If you have to choose where your discretionary hours go, put them into building scored proof.</div></div>
+      <div class="faq-item"><div class="faq-q">How many projects should I do over the summer?</div><div class="faq-a">Quality over quantity. Three to five strong, relevant, evaluated pieces in one role beat a dozen scattered projects. The goal is a small body of work that proves you can do a specific job, not a long list that proves you stayed busy.</div></div>
+    </section>
 
-  <section class="related-reads">
-    <h2>Related cornerstones</h2>
-    <ul>
-      <li><a href="/learn/how-does-a-virtual-job-simulation-compare-to-a-real-internship">How Does A Virtual Job Simulation Compare To A Real Internship</a></li>
-      <li><a href="/learn/what-makes-fresh-grads-unhireable-and-how-to-fix-it">What Makes Fresh Grads Unhireable And How To Fix It</a></li>
-      <li><a href="/learn/where-do-recruiters-actually-find-first-time-candidates-in-2026">Where Do Recruiters Actually Find First Time Candidates In 2026</a></li>
-    
-    </ul>
-  </section>
+    <section class="related">
+      <h2>Related reads</h2>
+      <ul>
+        <li><a href="/learn/how-do-you-prove-you-can-do-the-job-before-you-have-the-job">How do you prove you can do the job before you have the job?</a></li>
+        <li><a href="/learn/what-makes-fresh-graduates-unhireable-and-how-do-you-fix-it">What makes fresh graduates unhireable, and how do you fix it?</a></li>
+        <li><a href="/learn/what-is-a-job-simulation-and-is-it-worth-it">What is a job simulation, and is it worth it?</a></li>
+        <li><a href="/learn/where-do-recruiters-actually-find-first-time-candidates-in-2026">Where do recruiters actually find first-time candidates?</a></li>
+      </ul>
+    </section>
+
+    <section class="byline">By <a href="https://www.linkedin.com/in/atulkhola/" target="_blank" rel="noopener">Atul Khola</a>, Head of Experience at zero. Previously led design and product at CRED, cult.fit, and Toppr.</section>
+  </article>
 </BaseLayout>
+

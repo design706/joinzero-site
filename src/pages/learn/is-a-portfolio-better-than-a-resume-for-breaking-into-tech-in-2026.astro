@@ -1,173 +1,79 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-const title = "Is a portfolio better than a resume for breaking into tech in 2026?";
-const description = "Resumes blend together. Portfolios stop the scroll. In 2026, 73% of recruiters prioritize skills-based signals. A scored receipt is the strongest portfolio piece you can build as a student.";
+const title = "Is a portfolio better than a résumé for breaking into tech in 2026?";
+const description = "In most cases, yes. A résumé is a list of claims; a portfolio lets an employer judge your work directly. But a portfolio only wins if the work is good, relevant, and seen by the right people.";
 const canonical = "https://learn.zero.university/learn/is-a-portfolio-better-than-a-resume-for-breaking-into-tech-in-2026";
+const authorSameAs = ["https://www.linkedin.com/in/atulkhola/","https://twitter.com/pixelandpump","https://dribbble.com/atulkhola","https://www.behance.net/atulkhola","https://medium.com/@atulkhola"];
 const schemas = [
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Is A Portfolio Better Than A Resume For Breaking Into Tech In 2026",
-    "url": "https://learn.zero.university/learn/is-a-portfolio-better-than-a-resume-for-breaking-into-tech-in-2026",
-    "dateModified": "2026-05-17",
-    "author": {
-      "@type": "Person",
-      "name": "Atul Khola",
-      "jobTitle": "Head of Experience at zero",
-      "url": "https://learn.zero.university/about",
-      "sameAs": [
-        "https://www.linkedin.com/in/atulkhola/",
-        "https://twitter.com/pixelandpump",
-        "https://dribbble.com/atulkhola",
-        "https://www.behance.net/atulkhola",
-        "https://medium.com/@atulkhola",
-        "https://www.instagram.com/pixelandpump"
-      ]
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "zero",
-      "url": "https://www.zero.university"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://learn.zero.university/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Learn",
-        "item": "https://learn.zero.university/learn"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Is A Portfolio Better Than A Resume For Breaking Into Tech In 2026",
-        "item": "https://learn.zero.university/learn/is-a-portfolio-better-than-a-resume-for-breaking-into-tech-in-2026"
-      }
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is a portfolio in the context of job hunting?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A collection of work samples that show what you can produce. For designers it is mockups and case studies. For engineers it is repos and demos. For marketers it is campaigns and metrics."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Why do portfolios beat resumes for entry-level hiring?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A resume tells a recruiter you might be capable. A portfolio shows them you are. In a stack of 400 applications, the portfolio forces a second look. The resume does not."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What goes in a student portfolio?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "One strong piece is better than ten weak ones. Pick a project that maps to your target role. Document the problem, your process, the output, and one lesson. That is a portfolio piece."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How is a receipt different from a portfolio piece?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A portfolio piece shows what you made. A receipt shows what you made and how it scores against professionals. The score and feedback are the parts a recruiter trusts most."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do I need a website to have a portfolio?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. A Notion doc, a Figma file, a GitHub repo, or a zero receipt link all work. The format matters less than the content. The recruiter needs to evaluate your work in under two minutes."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What if I only have class projects?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Class projects are valid if you treat them like real work. Redesign the brief as if it came from a company. Add constraints. Add metrics. Show how you would ship it. That turns a class project into a portfolio piece."
-        }
-      }
-    ]
-  }
+  { "@context": "https://schema.org", "@type": "Organization", "@id": "https://learn.zero.university/about#organization", "name": "zero", "url": "https://www.zero.university", "logo": "https://learn.zero.university/og-default.png" },
+  { "@context": "https://schema.org", "@type": "Article", "headline": "Is a portfolio better than a résumé for breaking into tech in 2026?", "url": canonical, "mainEntityOfPage": { "@type": "WebPage", "@id": canonical }, "datePublished": "2026-05-30", "dateModified": "2026-05-30", "author": { "@type": "Person", "name": "Atul Khola", "jobTitle": "Head of Experience at zero", "url": "https://learn.zero.university/about", "sameAs": authorSameAs }, "publisher": { "@id": "https://learn.zero.university/about#organization" } },
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "Learn", "item": "https://learn.zero.university/learn" }, { "@type": "ListItem", "position": 2, "name": "Portfolio vs. résumé", "item": canonical } ]},
+  { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+    { "@type": "Question", "name": "Is a portfolio better than a résumé?", "acceptedAnswer": { "@type": "Answer", "text": "For showing you can do the work, yes. A résumé lists claims an employer takes on faith; a portfolio lets them judge real work directly. The caveat is that a portfolio only helps if the work is good, relevant to the role, and seen by the right people. A weak or unevaluated portfolio is not better than a clean résumé." } },
+    { "@type": "Question", "name": "Do I still need a résumé in 2026?", "acceptedAnswer": { "@type": "Answer", "text": "Usually yes. Many application systems and recruiters still expect a résumé as the baseline, and automated screening often runs on it. The smarter framing is not portfolio versus résumé, but using the résumé to pass the first filter and the portfolio to actually win the decision." } },
+    { "@type": "Question", "name": "What makes a portfolio strong?", "acceptedAnswer": { "@type": "Answer", "text": "Real work in the target role, evaluated against a professional standard, with your reasoning visible. Quality and relevance beat quantity. One strong, scored piece that matches the job does more than ten unrelated projects, because it proves you can do this work, not just that you stay busy." } },
+    { "@type": "Question", "name": "Do you need a degree if you have a portfolio?", "acceptedAnswer": { "@type": "Answer", "text": "Less than you used to. With 85% of employers now using skills-based hiring, demonstrated work increasingly outweighs the credential, especially in roles like design, product, marketing, and data. A degree can still help, but evidence of skill is the signal trending up." } }
+  ]}
 ];
 ---
-<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-17">
-  <nav class="breadcrumb"><a href="/">Home</a> / <a href="/learn">Learn</a> / Portfolio vs. resume</nav>
-  <span class="mono-label">RING 1 · CORNERSTONE</span>
-  <h1>Is a portfolio better than a resume for breaking into tech in 2026?</h1>
-  <p class="answer-capsule">Yes. A resume is a claim. A portfolio is proof. In 2026, 73% of recruiters use skills-based signals as their primary filter. A single strong portfolio piece beats a page of resume bullets.</p>
+<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-30">
+  <article>
+    <nav class="breadcrumb"><a href="/learn">Learn</a> / Portfolio vs. résumé</nav>
+    <span class="mono-label">GUIDE</span>
+    <h1>Is a portfolio better than a résumé for breaking into tech in 2026?</h1>
 
-  <div class="tldr">
-    <ul>
-      <li>Resumes are lists of claims that every student writes the same way.</li>
-      <li>73% of recruiters now prioritize skills-based signals.</li>
-      <li>A strong portfolio piece answers four questions in under two minutes.</li>
-      <li>One strong piece is better than ten weak ones.</li>
-      <li>A scored receipt is a portfolio piece with evaluation built in.</li>
-    </ul>
-  </div>
+    <p class="answer-capsule">In most cases, yes. A résumé is a list of claims an employer has to take on faith, while a portfolio lets them see your work and judge it directly. With skills-based hiring now standard, that shift toward evidence matters more than ever. The catch is that a portfolio only wins when the work is good, relevant to the role, and seen by the right people.</p>
 
-  <section>
-    <h2>Why does the resume fail for students?</h2>
-    <p>A resume is a list of claims. "Proficient in Python." "Led a team project." "Strong communication skills." Every student writes the same lines. Recruiters cannot verify any of it in 6 seconds. The result is that resumes blend together and most students never get an interview.</p>
-    <p><a href="https://www.linkedin.com/business/talent/blog/talent-acquisition/skills-based-hiring" target="_blank" rel="noopener">LinkedIn's 2024 report</a> confirms the shift: 73% of recruiters now prioritize skills-based signals. The resume is becoming a formality. The signal is what matters.</p>
-  </section>
+    <div class="tldr">
+      <ul>
+        <li>A résumé asserts; a portfolio demonstrates. Employers increasingly want to judge the work, not trust a summary of it.</li>
+        <li><a href="https://www.testgorilla.com/skills-based-hiring/state-of-skills-based-hiring-2025/" target="_blank" rel="noopener">85% of employers used skills-based hiring in 2025</a>, and résumé reliance is declining (TestGorilla).</li>
+        <li>A portfolio only helps if the work is strong, relevant, and evaluated. Volume of unrelated projects does not move the needle.</li>
+        <li>It is not portfolio versus résumé. Use the résumé to pass screening, and the portfolio to win the decision.</li>
+        <li>The portfolio piece that works hardest is one scored against a professional bar, so its quality is established, not assumed.</li>
+      </ul>
+    </div>
 
-  <section>
-    <h2>What makes a portfolio piece strong?</h2>
-    <p>A strong portfolio piece answers four questions in under two minutes: What was the problem? What did you do? What was the output? What did you learn? If a recruiter can answer those four questions without scrolling, you have a strong piece.</p>
-    <p>The mistake most students make is showing too much process and too little result. Recruiters do not need your brainstorm board. They need to see the output and understand why it matters.</p>
-  </section>
-  <p>See also: <a href="/learn/how-to-get-a-marketing-internship-at-tesla-with-no-experience">related guide</a> and <a href="/learn/how-do-you-prove-you-can-do-the-job-before-you-have-the-job">companion article</a>.</p>
+    <section>
+      <h2>Why is the résumé losing ground?</h2>
+      <p>A résumé was always a compromise. An employer cannot watch you work before they hire you, so for decades the résumé stood in as a compressed summary of claims they had to mostly believe. That worked when degrees and titles were reliable proxies for ability. It works less well now, because the proxies have weakened and because the tools to evaluate skill directly finally exist. TestGorilla's survey found skills-based hiring reached <a href="https://www.testgorilla.com/skills-based-hiring/state-of-skills-based-hiring-2025/" target="_blank" rel="noopener">85% of employers in 2025</a> while résumé use fell, which is the market saying out loud that it would rather see the work than read about it.</p>
+    </section>
 
-  <section>
-    <h2>How do you build your first portfolio piece?</h2>
-    <p>Start with one zero task that maps to your target role. Complete it against the rubric. Submit for scoring. The scored submission becomes your first portfolio piece: it has the prompt, the output, and the evaluation built in.</p>
-    <p>See <a href="/how-it-works">how zero works</a> or browse <a href="/receipts">live receipts</a>.</p>
-  </section>
+    <section>
+      <h2>What makes a portfolio actually work?</h2>
+      <p>This is where most advice oversells the portfolio, so be precise. A portfolio is only better than a résumé if it does something a résumé cannot: prove quality. A folder of side projects nobody evaluated proves you were busy, not that you are good. The version that changes a hiring decision has three properties. The work is real, the kind the job actually involves. It is relevant, matched to the specific role rather than a scattershot of everything you have ever made. And ideally it has been evaluated against a professional standard, so a recruiter is not left guessing whether it is any good. Strip away any of those and a clean, honest résumé can outperform a weak portfolio.</p>
+      <p>For a student in particular, the evaluation is the missing piece. You can build a real, relevant project on your own, but you usually cannot tell a recruiter whether it meets a professional bar, and neither can they, quickly. A score from someone qualified to give it closes that gap and turns your work from something you made into something that has been vetted.</p>
+    </section>
 
-  <section class="author-bio">
-    <p><strong>Atul Khola</strong> is Head of Experience at zero. He has led design and product at CRED, cult.fit, topper, and media.net. He lectures at IITs, NIDs, and NIFTs on product design and career strategy.</p>
-  </section>
+    <section>
+      <h2>So should you build a portfolio or a résumé?</h2>
+      <p>Both, with different jobs. Treat the résumé as the key that gets you through the first door. Many application systems and recruiters still expect one, and automated screening often reads it before a human does, so a clean, keyword-honest résumé is table stakes. Then treat the portfolio as the thing that actually wins the room once you are in it. The résumé buys you the few seconds of attention; the evaluated work earns the decision. Framing it as one versus the other is the mistake. They sit at different stages of the same funnel.</p>
+    </section>
 
-  <section class="faq-block">
-    <h2>Frequently asked questions</h2>
-    <div class="faq-item"><div class="faq-q">What is a portfolio in the context of job hunting?</div><div class="faq-a">A collection of work samples that show what you can produce. For designers it is mockups and case studies. For engineers it is repos and demos. For marketers it is campaigns and metrics.</div></div>
-    <div class="faq-item"><div class="faq-q">Why do portfolios beat resumes for entry-level hiring?</div><div class="faq-a">A resume tells a recruiter you might be capable. A portfolio shows them you are. In a stack of 400 applications, the portfolio forces a second look. The resume does not.</div></div>
-    <div class="faq-item"><div class="faq-q">What goes in a student portfolio?</div><div class="faq-a">One strong piece is better than ten weak ones. Pick a project that maps to your target role. Document the problem, your process, the output, and one lesson. That is a portfolio piece.</div></div>
-    <div class="faq-item"><div class="faq-q">How is a receipt different from a portfolio piece?</div><div class="faq-a">A portfolio piece shows what you made. A receipt shows what you made and how it scores against professionals. The score and feedback are the parts a recruiter trusts most.</div></div>
-    <div class="faq-item"><div class="faq-q">Do I need a website to have a portfolio?</div><div class="faq-a">No. A Notion doc, a Figma file, a GitHub repo, or a zero receipt link all work. The format matters less than the content. The recruiter needs to evaluate your work in under two minutes.</div></div>
-    <div class="faq-item"><div class="faq-q">What if I only have class projects?</div><div class="faq-a">Class projects are valid if you treat them like real work. Redesign the brief as if it came from a company. Add constraints. Add metrics. Show how you would ship it. That turns a class project into a portfolio piece.</div></div>
-  </section>
+    <section>
+      <h2>How do you build a portfolio that gets you hired?</h2>
+      <p>Start from the role, not from your hobbies. Pick the job you want, do two or three real tasks from it, and get each one evaluated so you know it holds up. Show your reasoning, because in tech roles how you think is often what is being judged. Then put the work where decision-makers can find it rather than burying it in a personal site nobody visits. zero is built to produce exactly this kind of portfolio: you take on company-shaped tasks, your work is scored against the bar professionals are held to, and the scored result becomes a receipt recruiters can evaluate, free for students because recruiters pay for the access. A portfolio of evaluated, recruiter-visible work is the strongest version of the thing this whole question is reaching for.</p>
+    </section>
 
-  <section class="last-updated">Last updated: 2026-05-17</section>
+    <section class="faq">
+      <h2>FAQ</h2>
+      <div class="faq-item"><div class="faq-q">Is a portfolio better than a résumé?</div><div class="faq-a">For showing you can do the work, yes. A résumé lists claims taken on faith; a portfolio lets an employer judge real work directly. The caveat is that a portfolio only helps if the work is good, relevant to the role, and seen by the right people. A weak or unevaluated portfolio is not better than a clean résumé.</div></div>
+      <div class="faq-item"><div class="faq-q">Do I still need a résumé in 2026?</div><div class="faq-a">Usually yes. Many application systems and recruiters still expect a résumé, and automated screening often runs on it. The smarter framing is not portfolio versus résumé, but using the résumé to pass the first filter and the portfolio to win the decision.</div></div>
+      <div class="faq-item"><div class="faq-q">What makes a portfolio strong?</div><div class="faq-a">Real work in the target role, evaluated against a professional standard, with your reasoning visible. Quality and relevance beat quantity. One strong, scored piece that matches the job does more than ten unrelated projects.</div></div>
+      <div class="faq-item"><div class="faq-q">Do you need a degree if you have a portfolio?</div><div class="faq-a">Less than you used to. With 85% of employers now using skills-based hiring, demonstrated work increasingly outweighs the credential, especially in design, product, marketing, and data. A degree can still help, but evidence of skill is the signal trending up.</div></div>
+    </section>
 
-  <section class="related-reads">
-    <h2>Related cornerstones</h2>
-    <ul>
-      <li><a href="/learn/what-do-recruiters-look-at-when-a-student-has-no-work-experience">What Do Recruiters Look At When A Student Has No Work Experience</a></li>
-      <li><a href="/learn/how-do-you-prove-you-can-do-the-job-before-you-have-the-job">How Do You Prove You Can Do The Job Before You Have The Job</a></li>
-      <li><a href="/learn/is-pathrise-worth-it">Is Pathrise Worth It</a></li>
-    
-    </ul>
-  </section>
+    <section class="related">
+      <h2>Related reads</h2>
+      <ul>
+        <li><a href="/learn/how-do-you-prove-you-can-do-the-job-before-you-have-the-job">How do you prove you can do the job before you have the job?</a></li>
+        <li><a href="/learn/what-do-recruiters-look-at-when-a-student-has-no-work-experience">What do recruiters look at when a student has no work experience?</a></li>
+        <li><a href="/learn/how-to-break-into-tech-without-a-cs-degree">How to break into tech without a CS degree</a></li>
+        <li><a href="/learn/how-does-performance-based-hiring-work-for-students">How does performance-based hiring work for students?</a></li>
+      </ul>
+    </section>
+
+    <section class="byline">By <a href="https://www.linkedin.com/in/atulkhola/" target="_blank" rel="noopener">Atul Khola</a>, Head of Experience at zero. Previously led design and product at CRED, cult.fit, and Toppr.</section>
+  </article>
 </BaseLayout>
+
