@@ -1,112 +1,82 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 const title = "What makes fresh graduates unhireable, and how do you fix it?";
-const description = "Graduates aren't unhireable, they're unproven. A degree certifies you passed a filter; it doesn't show an employer you can do the job. The fix is proof of work, and the data backs it.";
+const description = "You're not unhireable. You're unproven. School spent four years testing your memory, then handed you a market that only asks one thing: can you do the work. Here's how to answer it.";
 const canonical = "https://learn.zero.university/learn/what-makes-fresh-graduates-unhireable-and-how-do-you-fix-it";
 const schemas = [
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "@id": "https://learn.zero.university/about#organization",
-    "name": "zero",
-    "url": "https://www.zero.university",
-    "logo": "https://learn.zero.university/og-default.png", "founder": [{"@type":"Person","name":"Navid Nathoo","sameAs":["https://www.linkedin.com/in/navidnathoo/","https://x.com/navidnathoo","https://www.xprize.org/about/people/navid-nathoo"]},{"@type":"Person","name":"Nadeem Nathoo","sameAs":["https://www.linkedin.com/in/nadeemnathoo/","https://www.wise-qatar.org/biography/nadeem-nathoo/"]}]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "What makes fresh graduates unhireable, and how do you fix it?",
-    "url": canonical,
-    "mainEntityOfPage": { "@type": "WebPage", "@id": canonical },
-    "datePublished": "2026-05-30",
-    "dateModified": "2026-05-30",
-    "author": { "@id": "https://learn.zero.university/about#organization" },
-    "publisher": { "@id": "https://learn.zero.university/about#organization" }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Learn", "item": "https://learn.zero.university/learn" },
-      { "@type": "ListItem", "position": 2, "name": "What makes fresh graduates unhireable", "item": canonical }
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      { "@type": "Question", "name": "Does this mean a degree is worthless?", "acceptedAnswer": { "@type": "Answer", "text": "No. A degree still opens doors and some employers screen for it. But it is no longer enough on its own. It tells an employer you finished a program, not that you can do their job. The graduates who get hired pair the degree with proof of real work." } },
-      { "@type": "Question", "name": "What counts as proof of work?", "acceptedAnswer": { "@type": "Answer", "text": "A real, scoped task from the kind of work you want to do, completed and evaluated against a professional standard. A marketing brief, a product spec, a data analysis, a design. Something a recruiter can open and judge in minutes, not a line on a résumé they have to take on faith." } },
-      { "@type": "Question", "name": "How fast can I become hireable?", "acceptedAnswer": { "@type": "Answer", "text": "Faster than you think, because you are not adding another multi-year credential. You are producing evidence. A focused student can complete and get feedback on several pieces of real work in a few weeks, which is enough to change how a recruiter reads their application." } },
-      { "@type": "Question", "name": "What if I cannot get an internship?", "acceptedAnswer": { "@type": "Answer", "text": "An internship is one way to get proof of work, and the data shows it cuts underemployment risk by nearly half. But it is not the only way. You can build the same evidence by doing real, scored work directly, which is exactly what zero is for. The internship matters because of the proof it produces, and you can produce that proof on your own." } },
-      { "@type": "Question", "name": "Is zero free for students?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. zero is free for students and paid for by the recruiters who hire from it. You build scored work, recruiters see candidates who have already proven they can do the job, and they pay for that access. You never do." } }
-    ]
-  }
+  { "@context": "https://schema.org", "@type": "Organization", "@id": "https://learn.zero.university/about#organization", "name": "zero", "url": "https://www.zero.university", "logo": "https://learn.zero.university/og-default.png", "founder": [{"@type":"Person","name":"Navid Nathoo","sameAs":["https://www.linkedin.com/in/navidnathoo/","https://x.com/navidnathoo","https://www.xprize.org/about/people/navid-nathoo"]},{"@type":"Person","name":"Nadeem Nathoo","sameAs":["https://www.linkedin.com/in/nadeemnathoo/","https://www.wise-qatar.org/biography/nadeem-nathoo/"]}] },
+  { "@context": "https://schema.org", "@type": "Article", "headline": "What makes fresh graduates unhireable, and how do you fix it?", "url": canonical, "mainEntityOfPage": { "@type": "WebPage", "@id": canonical }, "datePublished": "2026-05-30", "dateModified": "2026-05-30", "author": { "@id": "https://learn.zero.university/about#organization" }, "publisher": { "@id": "https://learn.zero.university/about#organization" } },
+  { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "Learn", "item": "https://learn.zero.university/learn" }, { "@type": "ListItem", "position": 2, "name": "What makes fresh graduates unhireable", "item": canonical } ]},
+  { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+    { "@type": "Question", "name": "Are fresh graduates really unhireable?", "acceptedAnswer": { "@type": "Answer", "text": "No. They are unproven, which looks the same from the outside but has a completely different fix. A degree shows you finished a program; it does not show an employer you can do their job. Graduates who attach proof of real work stop looking unhireable fast, because the employer can finally see what they can do." } },
+    { "@type": "Question", "name": "Why can't I get a job with my degree?", "acceptedAnswer": { "@type": "Answer", "text": "Because the degree stopped being proof. It used to be a shortcut employers trusted; now 85% of them hire on demonstrated skills and around 41.5% of recent grads are underemployed. Your transcript answers a question nobody is asking. The one they are asking, can you do the work, needs evidence, not a credential." } },
+    { "@type": "Question", "name": "What actually makes a graduate hireable?", "acceptedAnswer": { "@type": "Answer", "text": "Proof. A real, scored piece of the work the job involves, that a recruiter can open and judge in seconds. The data is blunt about it: doing real work is the single biggest protective factor, with internships cutting underemployment risk by nearly half. Evidence beats a list of claims every time." } },
+    { "@type": "Question", "name": "How fast can I fix it?", "acceptedAnswer": { "@type": "Answer", "text": "Weeks, because you are not buying another four-year credential, you are producing evidence. A focused person can build and get feedback on a few real work samples in their target role in a month, which is enough to change how every recruiter reads their application." } }
+  ]}
 ];
 ---
 <BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-30">
   <article>
     <nav class="breadcrumb"><a href="/learn">Learn</a> / What makes fresh graduates unhireable</nav>
-    <span class="mono-label">PILLAR</span>
+    <span class="mono-label">THE PROOF PROBLEM</span>
     <h1>What makes fresh graduates unhireable, and how do you fix it?</h1>
 
-    <p class="answer-capsule">Fresh graduates aren't unhireable. They're unproven. A degree certifies that you passed through an education system built to filter people, not to show an employer you can do the job. With <a href="https://www.newyorkfed.org/research/college-labor-market" target="_blank" rel="noopener">41.5% of recent graduates underemployed</a>, the fix is not another credential. It is proof of work: a real task an employer can evaluate before they hire you.</p>
+    <p class="answer-capsule">You're not unhireable. You're unproven, and nobody warned you there's a difference. School spent four years testing whether you could remember things, handed you a degree, and dropped you into a market that only asks one question: can you actually do the work. A transcript can't answer that. Proof can.</p>
 
     <div class="tldr">
       <ul>
-        <li>About <a href="https://www.newyorkfed.org/research/college-labor-market" target="_blank" rel="noopener">41.5% of recent graduates are underemployed</a>, working jobs that do not require their degree, per the New York Fed (Q1 2026).</li>
-        <li><a href="https://www.burningglassinstitute.org/research/underemployment" target="_blank" rel="noopener">52% are underemployed a year after graduating</a>, and starting out underemployed makes you 3.5 times more likely to still be underemployed a decade later (Strada and Burning Glass, <em>Talent Disrupted</em>).</li>
-        <li>The single biggest protective factor is doing real work: completing an internship <a href="https://www.strada.org/reports/talent-disrupted" target="_blank" rel="noopener">lowers the chance of underemployment by 48.5%</a>.</li>
-        <li>A degree proves you attended. It no longer proves you can do the job. Employers increasingly hire on demonstrated skill.</li>
-        <li>The fix is proof of work: a scored piece of real work a recruiter can judge in minutes.</li>
+        <li>Around <a href="https://www.newyorkfed.org/research/college-labor-market" target="_blank" rel="noopener">41.5% of recent grads are underemployed</a>, working jobs that never needed the degree they paid for (NY Fed).</li>
+        <li>A degree was never proof you can do the job. It's proof you survived the system that sells degrees.</li>
+        <li>Employers already moved on: <a href="https://www.testgorilla.com/skills-based-hiring/state-of-skills-based-hiring-2025/" target="_blank" rel="noopener">85% now hire on demonstrated skills</a>, not pedigree (TestGorilla).</li>
+        <li>The thing that actually protects you is real work. An internship <a href="https://www.strada.org/reports/talent-disrupted" target="_blank" rel="noopener">cuts underemployment risk 48.5%</a>, entirely because of the proof it leaves behind (Strada).</li>
+        <li>So the fix isn't another credential. It's evidence a recruiter can open and judge in seconds.</li>
       </ul>
     </div>
 
     <section>
-      <h2>Why are so many graduates unhireable right now?</h2>
-      <p>Start with how the education system actually works, because the answer is not what you were told. School is not really built to teach you. It is built to filter you. You progress by waiting a year and not failing, and the grade you get along the way barely matters, because the purpose of the whole machine is to sort people, not to prepare them. A student in Singapore, a student in India, and a student in Canada move through almost the same syllabus on almost the same timeline. The thing that varies most is the teacher.</p>
-      <p>For decades the degree at the end of that filter worked as a shortcut. An employer could not measure your ability directly, so they used your degree as a proxy for it. That proxy has broken. The work the world needs now, the ability to use AI well, to communicate, to ship something with a team, changes faster than any four-year curriculum can follow, and a lot of the solo desk work that graduates used to be hired into is being absorbed by AI. The New York Fed found that recent graduates now face <a href="https://www.newyorkfed.org/research/college-labor-market" target="_blank" rel="noopener">higher unemployment than the workforce as a whole</a>, reversing the pattern that held for generations. So you are not imagining it. The diploma did its job of getting you through the filter, and then handed you to a market that wants evidence the filter never produced.</p>
+      <h2>Why does everyone with a degree suddenly feel unhireable?</h2>
+      <p>Here's the part the brochure left out. School was never built to make you good at a job. It was built to sort people, on a timer. You move up by waiting a year and not failing, the grade barely matters, and the actual purpose of the whole machine is to filter, not to prepare. That worked for a while because employers had nothing better to go on, so they used your degree as a stand-in for ability they couldn't see directly.</p>
+      <p>That stand-in just collapsed. The skills the world pays for now change faster than any four-year syllabus can chase, and a lot of the safe desk jobs grads used to slot into are getting done by AI. So the proxy broke, and the numbers show it: recent grads now face <a href="https://www.newyorkfed.org/research/college-labor-market" target="_blank" rel="noopener">higher unemployment than the workforce overall</a>, flipping a pattern that held for generations. You're not imagining the panic. Your degree did its one job, getting you through the filter, and then handed you to a market that wants the evidence the filter never produced.</p>
     </section>
 
     <section>
-      <h2>Is it the graduate's fault, or the system's?</h2>
-      <p>It is the system's, and it helps to be honest about why. A university's product is the degree, and its customers are students and their parents. In the United States that purchase is usually financed, which makes a degree behave a lot like a mortgage: you borrow money to buy an asset, then spend years paying it off. That model only works if the asset holds its value, and for most degrees it has quietly stopped doing so. The value employers pay for has shifted from the credential to the skill.</p>
-      <p>Universities are not set up to fix this, because their pricing depends on scarcity rather than outcomes. A low acceptance rate raises both status and tuition, so the incentive is to stay selective, not to guarantee you can do a job at the end. None of this is a moral failing on your part. You did the thing you were told would work. The problem is that the instructions were written for a job market that no longer exists.</p>
+      <h2>Whose fault is this? (Spoiler: not yours.)</h2>
+      <p>It's the system's, and you should be a little angry about it. A university's product is the degree, and you are the customer. In a lot of cases you financed the purchase, which makes a degree behave like a mortgage: you borrowed money to buy an asset and now you spend years paying it off. That only works if the asset holds its value, and for most degrees it quietly stopped. The thing employers actually pay for moved from the credential to the skill, and the credential kept charging full price anyway.</p>
+      <p>Universities have no reason to fix this, because their pricing runs on scarcity, not on whether you get a job. A lower acceptance rate raises both status and tuition, so the incentive is to stay exclusive, not to make sure you can do anything at the end. None of that is a character flaw on your part. You followed the instructions exactly. The instructions were written for a job market that no longer exists.</p>
     </section>
 
     <section>
       <h2>What actually makes a graduate hireable?</h2>
-      <p>Evidence. The clearest signal in the data is that the students who avoid the underemployment trap are the ones who did real work before they needed the job. The <em>Talent Disrupted</em> analysis found that completing an internship <a href="https://www.strada.org/reports/talent-disrupted" target="_blank" rel="noopener">cuts the odds of being underemployed by almost half</a>, and that your very first job after graduating predicts where you will be ten years later. The mechanism behind that number is not the internship itself. It is the proof the internship produces: you did the work, someone evaluated it, and now there is something real to point to.</p>
-      <p>That is the thing to optimize for, and you do not have to wait for an employer to grant it to you. Proof of work is a real, scoped task from the field you want to enter, completed and scored against a professional bar. A recruiter can open it and judge it in the time it takes to read a résumé bullet, except they are judging the work instead of a claim about the work. This is the core idea behind zero. You do company-shaped tasks, they get scored against the standard of strong professionals, and the result becomes a receipt a recruiter can evaluate before they ever look at your transcript.</p>
+      <p>Evidence. Stop trying to describe how capable you are and just show the work. The clearest signal in the data is that the grads who dodge the underemployment trap are the ones who did real work before they needed the job. The <a href="https://www.strada.org/reports/talent-disrupted" target="_blank" rel="noopener">Talent Disrupted</a> analysis found an internship cuts the odds of being underemployed by almost half, and that your first job out of school predicts where you'll be a decade later. The magic isn't the internship. It's the proof it leaves behind: you did the work, someone judged it, and now there's something real to point at.</p>
+      <p>That is the whole game, and you do not have to wait for an employer to hand it to you. Proof of work is a real, scoped task from the field you want, done and scored against a professional bar, that a recruiter can open and judge in the time it takes to skim a résumé bullet, except they're judging the work instead of a claim about it. This is the idea zero is built on. You do company-shaped tasks, your work gets scored against the standard strong professionals are held to, and the result becomes a receipt a recruiter sees before they ever ask for your transcript.</p>
     </section>
 
     <section>
-      <h2>How do you build proof before you have the job?</h2>
-      <p>Pick a direction first. Not a dream job, a direction: marketing, product, data, design, whatever you would take an entry-level role in today. Then do the actual work of that role on a real, narrow problem. A positioning brief. A product spec with trade-offs and success metrics. A short analysis that ends in a recommendation. The point is to produce the kind of artifact a working professional produces, then get it evaluated honestly so you know where it stands and what to fix.</p>
-      <p>One thing we learned building zero is worth passing on. In a Middle East university pilot in Spring 2026, the students who stuck with it were not the ones we handed the most guidance to. The heavy, hold-your-hand tutorial that works in education products actively got in the way here. Students wanted to do something real within the first ninety seconds, and the thing that brought them back was specific feedback on the work they had just submitted, not another article telling them what to study. So make your loop short: do a real piece of work, get real feedback on that specific piece, fix it, do the next one. That loop builds proof faster than any amount of reading about the job.</p>
+      <h2>How do you build proof before anyone hires you?</h2>
+      <p>Pick a lane and start producing. Not a dream job, a direction you'd take an entry-level role in today: marketing, product, data, design. Then do the actual work of that role on one narrow, real problem. A positioning brief. A spec with trade-offs and a metric. A short analysis that ends in a call. Then get it judged honestly, so you know whether it's good and what to fix, instead of guessing.</p>
+      <p>Keep the loop tight, because tight loops are where people actually get good. We learned this building zero. In a Middle East university pilot in Spring 2026, the students who stuck with it weren't the ones we coached the most. The hand-holding tutorial that works in edtech got in the way here. They wanted to do something real inside the first ninety seconds, and the thing that pulled them back wasn't another lesson, it was specific feedback on the work they'd just submitted. So do a real piece, get real feedback on that exact piece, fix it, do the next one. That loop builds proof faster than any amount of reading about the job ever will.</p>
     </section>
 
     <section>
-      <h2>Does proof of work replace the degree entirely?</h2>
-      <p>Not yet, and you should be clear-eyed about that. Some employers still screen for a degree, and some prestigious names will keep their pull the way a luxury badge does, regardless of what is objectively better. But the direction is set. As soon as students can show employers they can do the work, and employers can hire on that evidence directly, the degree stops being the gate and becomes one signal among several. You do not have to bet on when that tips. You just have to make sure that on the day a recruiter looks at you, there is proof in front of them and not just a promise.</p>
+      <h2>Is the degree dead, then?</h2>
+      <p>Not yet, and don't let anyone sell you the clean version. Some employers still screen for a degree, and a few elite names will keep their pull the way a luxury logo does, long after it stops meaning much. But the direction is set, and it only moves one way. The second students can show employers they can do the work, and employers can hire on that directly, the degree stops being the gate and becomes one signal among several. You don't have to bet on when that tips. You just have to make sure that on the day a recruiter looks at you, there's proof in front of them and not a promise.</p>
     </section>
 
     <section class="faq">
       <h2>FAQ</h2>
-      <div class="faq-item"><div class="faq-q">Does this mean a degree is worthless?</div><div class="faq-a">No. A degree still opens doors and some employers screen for it. But it is no longer enough on its own. It tells an employer you finished a program, not that you can do their job. The graduates who get hired pair the degree with proof of real work.</div></div>
-      <div class="faq-item"><div class="faq-q">What counts as proof of work?</div><div class="faq-a">A real, scoped task from the kind of work you want to do, completed and evaluated against a professional standard. A marketing brief, a product spec, a data analysis, a design. Something a recruiter can open and judge in minutes, not a line on a résumé they have to take on faith.</div></div>
-      <div class="faq-item"><div class="faq-q">How fast can I become hireable?</div><div class="faq-a">Faster than you think, because you are not adding another multi-year credential, you are producing evidence. A focused student can complete and get feedback on several pieces of real work in a few weeks, which is enough to change how a recruiter reads their application.</div></div>
-      <div class="faq-item"><div class="faq-q">What if I cannot get an internship?</div><div class="faq-a">An internship is one way to get proof of work, and the data shows it cuts underemployment risk by nearly half. It is not the only way. You can build the same evidence by doing real, scored work directly, which is exactly what zero is for. The internship matters because of the proof it produces, and you can produce that proof on your own.</div></div>
-      <div class="faq-item"><div class="faq-q">Is zero free for students?</div><div class="faq-a">Yes. zero is free for students and paid for by the recruiters who hire from it. You build scored work, recruiters see candidates who have already proven they can do the job, and they pay for that access. You never do.</div></div>
+      <div class="faq-item"><div class="faq-q">Are fresh graduates really unhireable?</div><div class="faq-a">No. They're unproven, which looks the same from outside but has a completely different fix. A degree shows you finished a program; it doesn't show an employer you can do their job. Graduates who attach proof of real work stop looking unhireable fast, because the employer can finally see what they can do.</div></div>
+      <div class="faq-item"><div class="faq-q">Why can't I get a job with my degree?</div><div class="faq-a">Because the degree stopped being proof. It used to be a shortcut employers trusted; now 85% of them hire on demonstrated skills and around 41.5% of recent grads are underemployed. Your transcript answers a question nobody is asking. The one they are asking, can you do the work, needs evidence.</div></div>
+      <div class="faq-item"><div class="faq-q">What actually makes a graduate hireable?</div><div class="faq-a">Proof. A real, scored piece of the work the job involves, that a recruiter can open and judge in seconds. Doing real work is the single biggest protective factor in the data, with internships cutting underemployment risk by nearly half. Evidence beats a list of claims every time.</div></div>
+      <div class="faq-item"><div class="faq-q">How fast can I fix it?</div><div class="faq-a">Weeks, because you're not buying another four-year credential, you're producing evidence. A focused person can build and get feedback on a few real work samples in their target role in a month, which is enough to change how every recruiter reads their application.</div></div>
     </section>
 
     <section class="related">
-      <h2>Related reads</h2>
+      <h2>Keep reading</h2>
       <ul>
-        <li><a href="/learn/how-does-performance-based-hiring-work-for-students">How does performance-based hiring work for students?</a></li>
-        <li><a href="/learn/is-a-portfolio-better-than-a-resume-for-breaking-into-tech-in-2026">Is a portfolio better than a résumé for breaking into tech?</a></li>
-        <li><a href="/learn/what-should-i-do-this-summer-if-i-didnt-get-an-internship">What should I do this summer if I didn't get an internship?</a></li>
-        <li><a href="/learn/what-do-recruiters-look-at-when-a-student-has-no-work-experience">What do recruiters look at when a student has no work experience?</a></li>
+        <li><a href="/learn/how-do-you-prove-you-can-do-the-job-before-you-have-the-job">How do you prove you can do the job before you have the job?</a></li>
+        <li><a href="/learn/what-do-recruiters-look-at-when-a-student-has-no-work-experience">What do recruiters look at when you have no experience?</a></li>
+        <li><a href="/learn/is-a-portfolio-better-than-a-resume-for-breaking-into-tech-in-2026">Is a portfolio better than a résumé?</a></li>
+        <li><a href="/learn/how-does-performance-based-hiring-work-for-students">How does performance-based hiring actually work?</a></li>
       </ul>
     </section>
 
