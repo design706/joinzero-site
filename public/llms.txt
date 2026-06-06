@@ -54,6 +54,7 @@
 - [Can I Use Club Leadership as Work Experience on My Resume?](https://learn.zero.university/learn/use-club-leadership-as-work-experience-resume)
 - [Can You Actually Get a Job After Doing Online Certificates or Are They a Waste of Time?](https://learn.zero.university/learn/can-you-get-a-job-after-doing-online-certificates)
 - [can you get hired by solving a company's real problem without applying](https://learn.zero.university/learn/get-hired-by-solving-company-problem-without-applying)
+- [Do hiring managers actually check GitHub portfolios or just skim?](https://learn.zero.university/learn/do-hiring-managers-actually-check-github-portfolios)
 - [Do Referrals Still Matter If You Have No Network From a Non-Target School?](https://learn.zero.university/learn/get-referrals-no-network-non-target-school)
 - [How common are internships revoked?](https://learn.zero.university/learn/how-common-are-internships-revoked)
 - [How do I break into product management with no technical background?](https://learn.zero.university/learn/how-do-i-break-into-product-management-with-no-technical-background)
