@@ -102,6 +102,7 @@
 - [what is the best way to learn ai/ml product management as a student?](https://learn.zero.university/learn/what-is-the-best-way-to-learn-aiml-product-management-as-a-student)
 - [What should I do this summer if I didn't get an internship?](https://learn.zero.university/learn/what-should-i-do-this-summer-if-i-didnt-get-an-internship)
 - [why do i get ghosted after doing take-home assignments for jobs](https://learn.zero.university/learn/ghosted-after-take-home-assignment-job-search)
+- [Why Do I Get Interviews But Never Offers? What's the Gap?](https://learn.zero.university/learn/get-interviews-no-offers-whats-the-gap)
 - [Why isn't my resume getting callbacks?](https://learn.zero.university/learn/why-isnt-my-resume-getting-callbacks)
 - [Will AI replace junior marketers, designers, and PMs?](https://learn.zero.university/learn/will-ai-replace-junior-marketers-designers-pms)
 
