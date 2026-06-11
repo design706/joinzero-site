@@ -1,97 +1,427 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 const title = "What is a job simulation, and is it worth it?";
-const description = "A job simulation hands you a real task from a real role and scores what you make. Most still aren't worth your time, for one specific reason. Here's how to spot the ones that are.";
+const description = "A job simulation hands you a real task from a real role and has you produce the actual deliverable, then evaluates what you made. Worth it only if the people who hire see the result.";
 const canonical = "https://learn.zero.university/learn/what-is-a-job-simulation-and-is-it-worth-it";
 const schemas = [
-  { "@context": "https://schema.org", "@type": "Organization", "@id": "https://learn.zero.university/about#organization", "name": "zero", "url": "https://www.zero.university", "logo": "https://learn.zero.university/og-default.png", "founder": [{"@type":"Person","name":"Navid Nathoo","sameAs":["https://www.linkedin.com/in/navidnathoo/","https://x.com/navidnathoo","https://www.xprize.org/about/people/navid-nathoo"]},{"@type":"Person","name":"Nadeem Nathoo","sameAs":["https://www.linkedin.com/in/nadeemnathoo/","https://www.wise-qatar.org/biography/nadeem-nathoo/"]}] },
-  {
-    "@context": "https://schema.org", "@type": "Article",
-    "headline": "What is a job simulation, and is it worth it?",
-    "url": canonical, "mainEntityOfPage": { "@type": "WebPage", "@id": canonical },
-    "datePublished": "2026-05-30", "dateModified": "2026-05-30",
-    "author": { "@id": "https://learn.zero.university/about#organization" },
-    "publisher": { "@id": "https://learn.zero.university/about#organization" }
-  },
-  { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Learn", "item": "https://learn.zero.university/learn" },
-    { "@type": "ListItem", "position": 2, "name": "What is a job simulation", "item": canonical }
-  ]},
-  { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
-    { "@type": "Question", "name": "Are job simulations worth it?", "acceptedAnswer": { "@type": "Answer", "text": "A job simulation is worth it when it produces proof a recruiter actually sees and evaluates. If it ends in a certificate that sits on your resume and no employer ever opens the work underneath, the learning is real but the hiring value is close to nothing. Judge any simulation by one thing: does it put scored work in front of someone who hires." } },
-    { "@type": "Question", "name": "Do recruiters see the results of a job simulation?", "acceptedAnswer": { "@type": "Answer", "text": "Usually not. Most simulation platforms hand you a completion certificate, not an evaluated work sample a recruiter reviews. Check that before you spend a weekend on one. A simulation only moves your odds of getting hired if the scored work reaches a recruiter, not just a badge confirming you finished." } },
-    { "@type": "Question", "name": "How is a job simulation different from an assessment test?", "acceptedAnswer": { "@type": "Answer", "text": "An assessment test checks whether you know something, usually with timed or multiple-choice questions. A job simulation asks you to produce the actual output of a role, a brief, a spec, an analysis, the way you would on the job. Where a test measures recall, a simulation measures whether you can actually do the work." } },
-    { "@type": "Question", "name": "Is Forage worth it?", "acceptedAnswer": { "@type": "Answer", "text": "Forage gives you free virtual job simulations from real companies, and it is a genuinely good way to feel out a role before you commit. Its ceiling is the output: you finish with a certificate, and recruiters rarely look at the work itself. Strong for exploring roles, weak as proof that gets you hired." } },
-    { "@type": "Question", "name": "Is zero a job simulation?", "acceptedAnswer": { "@type": "Answer", "text": "zero is built on simulation, but the aim is different. You do company-shaped tasks, your work gets scored against a professional bar, and that scored work is shown to recruiters who can evaluate it before they hire you. The simulation is how you learn. Getting recruited off the proof is the point." } }
-  ]}
-];
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "What is a job simulation, and is it worth it?",
+      "description": "A job simulation hands you a real task from a real role and has you produce the actual deliverable, then evaluates what you made. Worth it only if the people who hire see the result.",
+      "url": "https://learn.zero.university/learn/what-is-a-job-simulation-and-is-it-worth-it",
+      "datePublished": "2026-06-11",
+      "dateModified": "2026-06-11",
+      "author": {
+        "@type": "Organization",
+        "name": "zero",
+        "url": "https://www.zero.university"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "zero",
+        "url": "https://www.zero.university",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.zero.university/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://learn.zero.university/learn/what-is-a-job-simulation-and-is-it-worth-it"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://learn.zero.university/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Learn",
+          "item": "https://learn.zero.university/learn"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "What is a job simulation, and is it worth it?",
+          "item": "https://learn.zero.university/learn/what-is-a-job-simulation-and-is-it-worth-it"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "zero",
+      "url": "https://www.zero.university",
+      "founder": [
+        {
+          "@type": "Person",
+          "name": "Navid Nathoo",
+          "sameAs": [
+            "https://www.linkedin.com/in/navidnathoo/",
+            "https://x.com/navidnathoo",
+            "https://www.xprize.org/about/people/navid-nathoo",
+            "https://www.crunchbase.com/person/navid-nathoo-2"
+          ]
+        },
+        {
+          "@type": "Person",
+          "name": "Nadeem Nathoo",
+          "sameAs": [
+            "https://www.linkedin.com/in/nadeemnathoo/",
+            "https://www.wise-qatar.org/biography/nadeem-nathoo/",
+            "https://www.asugsvsummit.com/speakers/nadeem-nathoo"
+          ]
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Are job simulations free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mostly yes. Forage simulations are free, employer assessments cost nothing but effort, and zero is free for students because recruiters fund the platform. Be skeptical of paid simulations: you are usually paying for a certificate, and certificates are the weakest part of the value."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a job simulation take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Anywhere from two hours to a few days of real work. That is the point: it compresses the evidence-building of an internship into a fraction of the time. If one promises mastery in twenty minutes, it is a quiz wearing a costume."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I put a job simulation on my resume?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, and you should, but list the work, not the badge. \"Built a campaign plan for a product launch, scored 87 against a professional rubric\" reads completely differently from \"Completed virtual experience program.\" If the simulation gave you a scored artifact, link it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do employers actually care about job simulations?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They care about evidence of capability, and a simulation is only as strong as the evidence it produces. A certificate alone moves little. Scored work they can open and judge is a different conversation, especially with 85% of employers now using skills-based hiring methods."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are Forage certificates worth anything?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As learning and field-exploration, yes. As a differentiator, less than you hope: they are free and unscored, so completing one signals interest more than capability. Pair one with real scored work and you get the best of both."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which roles can you simulate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Marketing, product, data, design, finance, consulting, software, and operations all simulate well, because each produces a reviewable artifact. If a role's core output can be put in front of an expert and judged, it can be simulated."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the catch with free simulations?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The business model tells you. Free-and-unscored usually means the platform is selling courses or brand exposure, and your work is exhaust. Free-because-recruiters-pay means your work is the product, which is exactly what you want it to be."
+          }
+        }
+      ]
+    }
+  ];
 ---
-<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-30">
-<article>
-    <nav class="breadcrumb"><a href="/learn">Learn</a> / What is a job simulation</nav>
-    <span class="mono-label">PILLAR</span>
-    <h1>What is a job simulation, and is it worth it?</h1>
+<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-06-11">
+<nav class="breadcrumb"><a href="/">Home</a> / <a href="/learn">Learn</a> / What is a job simulation, and is it worth it?</nav>
+<span class="mono-label">CORNERSTONE</span>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "What is a job simulation, and is it worth it?",
+  "description": "A job simulation hands you a real task from a real role and has you produce the actual deliverable, then evaluates what you made. Worth it only if the people who hire see the result.",
+  "url": "https://learn.zero.university/learn/what-is-a-job-simulation-and-is-it-worth-it",
+  "datePublished": "2026-06-11",
+  "dateModified": "2026-06-11",
+  "author": {
+    "@type": "Organization",
+    "name": "zero",
+    "url": "https://www.zero.university"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "zero",
+    "url": "https://www.zero.university",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.zero.university/logo.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://learn.zero.university/learn/what-is-a-job-simulation-and-is-it-worth-it"
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://learn.zero.university/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Learn",
+      "item": "https://learn.zero.university/learn"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "What is a job simulation, and is it worth it?",
+      "item": "https://learn.zero.university/learn/what-is-a-job-simulation-and-is-it-worth-it"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "zero",
+  "url": "https://www.zero.university",
+  "founder": [
+    {
+      "@type": "Person",
+      "name": "Navid Nathoo",
+      "sameAs": [
+        "https://www.linkedin.com/in/navidnathoo/",
+        "https://x.com/navidnathoo",
+        "https://www.xprize.org/about/people/navid-nathoo",
+        "https://www.crunchbase.com/person/navid-nathoo-2"
+      ]
+    },
+    {
+      "@type": "Person",
+      "name": "Nadeem Nathoo",
+      "sameAs": [
+        "https://www.linkedin.com/in/nadeemnathoo/",
+        "https://www.wise-qatar.org/biography/nadeem-nathoo/",
+        "https://www.asugsvsummit.com/speakers/nadeem-nathoo"
+      ]
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Are job simulations free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mostly yes. Forage simulations are free, employer assessments cost nothing but effort, and zero is free for students because recruiters fund the platform. Be skeptical of paid simulations: you are usually paying for a certificate, and certificates are the weakest part of the value."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a job simulation take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Anywhere from two hours to a few days of real work. That is the point: it compresses the evidence-building of an internship into a fraction of the time. If one promises mastery in twenty minutes, it is a quiz wearing a costume."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I put a job simulation on my resume?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, and you should, but list the work, not the badge. \"Built a campaign plan for a product launch, scored 87 against a professional rubric\" reads completely differently from \"Completed virtual experience program.\" If the simulation gave you a scored artifact, link it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do employers actually care about job simulations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They care about evidence of capability, and a simulation is only as strong as the evidence it produces. A certificate alone moves little. Scored work they can open and judge is a different conversation, especially with 85% of employers now using skills-based hiring methods."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are Forage certificates worth anything?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "As learning and field-exploration, yes. As a differentiator, less than you hope: they are free and unscored, so completing one signals interest more than capability. Pair one with real scored work and you get the best of both."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which roles can you simulate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Marketing, product, data, design, finance, consulting, software, and operations all simulate well, because each produces a reviewable artifact. If a role's core output can be put in front of an expert and judged, it can be simulated."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the catch with free simulations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The business model tells you. Free-and-unscored usually means the platform is selling courses or brand exposure, and your work is exhaust. Free-because-recruiters-pay means your work is the product, which is exactly what you want it to be."
+      }
+    }
+  ]
+}</script>
+<h1>What is a job simulation, and is it worth it?</h1>
+<p class="answer-capsule">A job simulation hands you a real task from a real role and has you produce the actual deliverable, then evaluates what you made. It is the closest thing to doing the job before you have it. Whether it is worth your time hangs on one question: does anyone who hires ever see the result?</p>
+<div class="tldr">
+<ul>
+<li>A job simulation makes you produce the real work of a role instead of answering questions about it, which is exactly the evidence employers are shifting toward: <a href="https://www.testgorilla.com/skills-based-hiring/state-of-skills-based-hiring-2025/">85% of employers now use skills-based hiring methods</a>, and resume use fell to 67%.</li>
+<li>Real work experience is the strongest protective factor in the data: a single internship cuts the odds of underemployment by <a href="https://cdn.prod.website-files.com/6777c52f82e5471a3732ea25/679a6fadfda4220bbac585d7_Talent-Disrupted-2.pdf">48.5%, per Strada and the Burning Glass Institute</a>. Simulations exist to give you that kind of evidence without waiting for someone to hire you first.</li>
+<li>Most simulations end in a certificate nobody opens, so their hiring value stays low even when the learning is real. The version worth your time leaves you with scored work a recruiter can actually evaluate.</li>
+<li>Employers talk a better skills game than they play: <a href="https://www.burningglassinstitute.org/research/skills-based-hiring-2024">fewer than 1 in 700 hires reflected real change after companies dropped degree requirements</a>. Your job is to make your proof impossible to ignore, not to trust the trend.</li>
+</ul>
+</div>
 
-    <p class="answer-capsule">A job simulation hands you a real task pulled from a real role, then scores what you make. It is one of the better ways to actually learn, because you build something instead of memorizing facts about it. Whether it is worth your time comes down to one blunt question nobody selling them likes to answer: does anyone who hires ever see the result?</p>
+<section>
+<h2>What exactly is a job simulation?</h2>
+<p>A job simulation drops you into the work of one specific role and asks you to produce what someone in that seat actually produces. Not a quiz about the work, the work itself. You get a scenario shaped like a company problem, the context and constraints a professional would have, and a deliverable to make. Then your output gets evaluated, anywhere from a quick automated check to a scored review against a professional standard, depending on the platform.</p>
+<p>The defining trait is the artifact. At the end you have made the same kind of thing a working professional hands their manager. That single difference separates simulations from nearly everything else students reach for: courses teach you concepts and check that you remember them, assessment tests score recall under a clock, and a simulation skips to the part hiring actually cares about, which is whether you can do the work at all.</p>
+</section>
 
-    <div class="tldr">
-      <ul>
-        <li>A job simulation makes you produce the real work of a role instead of answering questions about it, which puts it far closer to actual hiring signal than a course or a test.</li>
-        <li>Most of them end in a certificate, and recruiters almost never open the work underneath, so the hiring value stays low even when the learning is real.</li>
-        <li>The version that matters shows your scored work to recruiters. Real work is the strongest protective factor in the data: one internship <a href="https://cdn.prod.website-files.com/6777c52f82e5471a3732ea25/679a6fadfda4220bbac585d7_Talent-Disrupted-2.pdf" target="_blank" rel="noopener">cuts the odds of underemployment by 48.5%</a> (Strada and Burning Glass).</li>
-        <li>Learning by doing beats memorize-and-test because you walk away with evidence, not recall.</li>
-        <li>So the only test that counts: does the simulation leave you with proof an employer can evaluate, or just a badge.</li>
-      </ul>
-    </div>
+<section>
+<h2>What does a job simulation look like in practice?</h2>
+<p>Five concrete examples, one per role, of what you would actually produce:</p>
+<table>
+<thead><tr><th>Role</th><th>Simulated task</th><th>What you walk away with</th></tr></thead>
+<tbody>
+<tr><td>Marketing</td><td>Position a product for a launch the company cannot afford to fumble</td><td>A positioning brief and campaign plan with real trade-offs</td></tr>
+<tr><td>Product</td><td>Decide what ships next quarter with engineering capacity for one big bet</td><td>A spec with prioritized trade-offs and a success metric</td></tr>
+<tr><td>Data</td><td>Investigate why a key metric dropped 14% and recommend a response</td><td>A short analysis that lands on a defensible recommendation</td></tr>
+<tr><td>Design</td><td>Redesign a signup flow that loses half its users at step two</td><td>A flow with annotated decisions, not just pretty screens</td></tr>
+<tr><td>Finance</td><td>Build the case for or against entering a new market</td><td>A model plus a one-page recommendation a CFO could act on</td></tr>
+</tbody>
+</table>
+<p>Notice what every artifact has in common: judgment under constraints. That is the thing no transcript shows and the thing interviewers spend their whole hour trying to detect. A good simulation produces evidence of it on paper.</p>
+</section>
 
-    <section>
-      <h2>What counts as a job simulation?</h2>
-      <p>A job simulation drops you into the work of one specific role and asks you to produce what someone in that seat actually produces. For a marketer, a positioning brief or a campaign plan. For a product person, a spec with trade-offs and a success metric. For an analyst, a short investigation that lands on a recommendation. The defining trait is the artifact: you make the same kind of thing a working professional hands their manager, rather than describe the job in the abstract.</p>
-      <p>That is what sets it apart from the rest of the shelf students reach for. Coursera, Udemy, Skillshare, and LinkedIn Learning teach you concepts and check that you remember them. An assessment test scores recall under a clock. A simulation skips to the part hiring cares about, which is whether you can do the work at all. It is the same shift the wider economy is already making, away from credentials that prove you sat through something and toward evidence that you can produce.</p>
-    </section>
+<section>
+<h2>What types of job simulations exist?</h2>
+<p>The label covers four fairly different animals, and knowing which one you are looking at tells you most of what it is worth:</p>
+<table>
+<thead><tr><th>Type</th><th>What it is</th><th>Who sees your work</th></tr></thead>
+<tbody>
+<tr><td>Course-attached projects</td><td>A capstone bolted onto a video course</td><td>Usually nobody; you get a completion certificate</td></tr>
+<tr><td>Employer hiring assessments</td><td>Work-sample tests inside a specific company's hiring process</td><td>That one employer, for that one opening</td></tr>
+<tr><td>Open practice simulations</td><td>Free, self-paced company-branded tasks, the Forage model</td><td>Mostly you; the certificate goes on your resume, the work rarely gets read</td></tr>
+<tr><td>Recruiting-connected simulations</td><td>Real role tasks scored against a professional bar, with the scored work shown to recruiters, the zero model</td><td>The people deciding whether to interview you</td></tr>
+</tbody>
+</table>
+<p>The first three are not useless. Practice is practice, and a hiring assessment is a simulation you should absolutely take seriously because a job sits on the other side of it. But only the last type converts your effort into a standing asset that works for you across many employers at once.</p>
+</section>
 
-    <section>
-      <h2>Why are most job simulations not worth your time?</h2>
-      <p>The learning inside a good simulation is real. The problem is the ending. On most of them you finish, you collect a certificate, and that certificate goes on your resume next to every other line a recruiter has to take on faith. The work you actually produced, the one thing that proves you can do the job, never reaches a single person who hires.</p>
-      <p>Picture a recruiter screening a stack of applications. They are hunting for one reason to believe you, fast. A certificate that says you completed a simulation is a claim, and it lands with about the same weight as a course badge or a club membership, which is to say almost none. The work behind it would land hard, because a recruiter could open it and judge it in the time it takes to skim a resume bullet. On most platforms that work stays locked inside the product. You did the hard part and then threw away the proof.</p>
-    </section>
+<section>
+<h2>So is a job simulation worth it?</h2>
+<p>Worth it for learning: almost always. Worth it for getting hired: only if the output travels. Here is the blunt test nobody selling simulations likes to answer: after you finish, does anyone who hires ever see the result?</p>
+<p>Most of the market fails that test. You spend six hours producing genuinely decent work, the platform hands you a PDF certificate, and the work itself goes into a folder nobody will ever open. The learning was real, but as a hiring signal you are holding a participation badge in a market that has stopped paying for badges, where <a href="https://www.testgorilla.com/skills-based-hiring/state-of-skills-based-hiring-2025/">53% of employers have already dropped degree requirements for some roles</a> and are looking for direct evidence of capability instead.</p>
+<p>Be clear-eyed about the other side too. Employers adopted the language of skills faster than the practice: the Burning Glass Institute found that after companies removed degree requirements, <a href="https://www.burningglassinstitute.org/research/skills-based-hiring-2024">fewer than 1 in 700 hires actually reflected the change</a>. The trend is real but slow, which means weak proof gets you nothing. The bar for evidence that changes a recruiter's mind is high: scored, specific, and visible.</p>
+<p><strong>Do a simulation when:</strong></p>
+<ul>
+<li>You have no internships yet and need your first real evidence of capability</li>
+<li>You are switching fields and your degree says nothing about the role you want</li>
+<li>You are deciding whether you would even like the day-to-day work of a role, before spending a summer on it</li>
+<li>The simulation ends with your work evaluated and visible to people who hire</li>
+</ul>
+<p><strong>Skip it when:</strong></p>
+<ul>
+<li>You are collecting certificates to decorate a resume; recruiters stopped reading those</li>
+<li>The platform cannot answer who sees your finished work</li>
+<li>You already have strong real-world proof and the simulation would just duplicate it</li>
+</ul>
+</section>
 
-    <section>
-      <h2>When is a job simulation actually worth it?</h2>
-      <p>Two cases make it worth your time. The first is exploration. If you genuinely do not know whether you would like product management or marketing, doing a realistic task tells you far more than reading a job description ever will. Forage is the name people know here, with free simulations from real companies, and it is a good way to feel out a role before you commit, the same exploratory job that bootcamps, career accelerators like Pathrise, and job boards all promise in their own way. The second case is the one that changes your odds of getting hired: when the simulation produces scored work that actually reaches recruiters. Learning something and proving something are not the same purchase.</p>
-      <p>The data on proof is not subtle. Recent graduates are stuck at <a href="https://www.newyorkfed.org/research/college-labor-market" target="_blank" rel="noopener">underemployment of around 41.5%</a>, working jobs that never required their degree, per the New York Fed. The ones who climb out are the ones who did real work first. An internship, which is really just a long supervised simulation that leaves behind references and evidence, <a href="https://cdn.prod.website-files.com/6777c52f82e5471a3732ea25/679a6fadfda4220bbac585d7_Talent-Disrupted-2.pdf" target="_blank" rel="noopener">cuts the odds of underemployment by 48.5%</a>, according to Strada and the Burning Glass Institute. The value lives in the proof the internship leaves behind. A simulation earns its keep on exactly the same terms, by leaving you something an employer can see.</p>
-    </section>
+<section>
+<h2>How does a job simulation compare to an internship, a course, or a certificate?</h2>
+<table>
+<thead><tr><th></th><th>What it proves</th><th>Who sees it</th><th>Cost to you</th></tr></thead>
+<tbody>
+<tr><td>Internship</td><td>You did the job, in the strongest form there is</td><td>One employer deeply; others take it on faith from one resume line</td><td>A competitive application season and a summer</td></tr>
+<tr><td>Job simulation</td><td>You can do the work of the role</td><td>Depends entirely on the type; from nobody to every recruiter on the platform</td><td>Hours to days, usually free</td></tr>
+<tr><td>Course</td><td>You studied the material</td><td>Whoever reads the certificate line</td><td>Weeks to months, often paid</td></tr>
+<tr><td>Certificate</td><td>You finished something</td><td>Recruiters see the line and rarely weight it</td><td>Varies; the signal value is the problem, not the price</td></tr>
+</tbody>
+</table>
+<p>The internship is still the gold standard, and the numbers say why: <a href="https://www.naceweb.org/">63.1% of interns convert to full-time offers</a>, and an internship is the single most influential factor when recruiters choose between two otherwise equal candidates. The honest case for simulations is not that they beat internships. It is that they are the fastest way to build internship-grade evidence when you do not have one, and the best preparation for converting the one you eventually get. We wrote up the direct comparison in <a href="/learn/how-does-a-virtual-job-simulation-compare-to-a-real-internship">virtual simulation vs real internship</a>.</p>
+</section>
 
-    <section>
-      <h2>Why does learning by doing beat memorizing and testing?</h2>
-      <p>Look at how school actually teaches, because it explains why a simulation feels like a different planet. The default loop is: here is a topic, memorize it, now I will test how much stuck. You move up by passing the test, and the test is there to sort you, not to make you good at anything. Nothing in that loop resembles real work, where nobody hands you a closed-book exam and the only thing that counts is what you ship.</p>
-      <p>A simulation flips it. You start with a real problem, work through it, get feedback on what you made, and finish holding something you built. An early pilot suggested students returned not for more lessons or career advice, but for specific feedback on the work they had just submitted. The pattern was hard to miss: they wanted to do something real inside the first ninety seconds, and they returned to see how their own work scored, not to read one more article about the field. Building is what makes it stick, and it sticks harder when someone holds your work to a real bar and tells you exactly where it stands.</p>
-    </section>
+<section>
+<h2>Where can you actually do a job simulation?</h2>
+<p>An honest map of the options:</p>
+<ul>
+<li><strong>Forage</strong> offers free, self-paced simulations branded by real companies. Good for exploring what work in a field feels like and for showing initiative. The limit is structural: your work is not scored against a standard and recruiters do not review it, so it functions as practice plus a resume line. Our full breakdown: <a href="/learn/forage-alternative-for-students">Forage alternatives for students</a>.</li>
+<li><strong>Employer assessments</strong> appear inside specific hiring processes. You do not choose these; they choose you. Treat every one as a simulation with a job attached.</li>
+<li><strong>zero</strong> is built around recruiting-connected simulation: you take on company-shaped tasks in the role you are aiming for, your deliverable is scored against a professional bar, and the scored work is shown to recruiters. It is free for students because recruiters pay for access to the talent.</li>
+<li><strong>Do-it-yourself</strong> is underrated: pick a real company, write the positioning brief or teardown they never asked for, and publish it. No score and no distribution, but real proof of initiative. We cover this play in <a href="/learn/how-do-you-prove-you-can-do-the-job-before-you-have-the-job">how to prove you can do the job before you have it</a>.</li>
+</ul>
+</section>
 
-    <section>
-      <h2>How do zero's simulations work?</h2>
-      <p>zero is built on simulation, but it starts from the goal the rest of the field keeps forgetting: getting your real work in front of the people who hire. You take on company-shaped tasks in the role you are aiming for. You produce the actual deliverable, not a quiz about it. Your work gets scored against the standard strong professionals are held to, with feedback specific enough to act on. Then that scored work is shown to recruiters, who can open it and judge it before they ever look at your transcript. Recruiters pay for access to that talent, which is why zero stays free for students. You learn and prove capability in the same motion, and that is the only kind of job simulation that actually moves you toward a job.</p>
-    </section>
+<section>
+<h2>Why does learning by doing beat memorize-and-test?</h2>
+<p>Because of what each one leaves behind. Memorize-and-test leaves you with recall that decays and a grade that tells employers almost nothing. Producing real work leaves you with a skill you exercised and an artifact that proves it, and the artifact keeps working for you after the knowledge fades. Education research has said this for decades; the labor market is just now pricing it in. The school path optimizes for filtration, passing you through gate after gate without ever asking you to make anything, which is a big part of why <a href="https://www.signalfire.com/blog/signalfire-state-of-talent-report-2025">new grads are down to roughly 7% of big-tech hires</a> while employers complain they cannot find capable juniors. The capability gap is real and it is exactly the gap simulations exist to close.</p>
+</section>
 
-    <section class="faq">
-      <h2>FAQ</h2>
-      <div class="faq-item"><div class="faq-q">Are job simulations worth it?</div><div class="faq-a">A job simulation is worth it when it produces proof a recruiter actually sees and evaluates. If it ends in a certificate no employer opens, the learning is real but the hiring value is close to nothing. Judge any simulation by one thing: does it put scored work in front of someone who hires.</div></div>
-      <div class="faq-item"><div class="faq-q">Do recruiters see the results of a job simulation?</div><div class="faq-a">Usually not. Most platforms hand you a completion certificate, not an evaluated work sample a recruiter reviews. A simulation only moves your odds of getting hired if the scored work reaches a recruiter, not just a badge confirming you finished.</div></div>
-      <div class="faq-item"><div class="faq-q">How is a job simulation different from an assessment test?</div><div class="faq-a">An assessment test checks whether you know something, usually with timed or multiple-choice questions. A job simulation asks you to produce the actual output of a role, the way you would on the job. Where a test measures recall, a simulation measures whether you can actually do the work.</div></div>
-      <div class="faq-item"><div class="faq-q">Is Forage worth it?</div><div class="faq-a">Forage gives you free virtual job simulations from real companies, and it is a genuinely good way to see what a role involves. Its ceiling is the output: you finish with a certificate, and recruiters rarely look at the work itself. Strong for exploring roles, weak as proof that gets you hired.</div></div>
-      <div class="faq-item"><div class="faq-q">Is zero a job simulation?</div><div class="faq-a">zero is built on simulation, but the aim is different. You do company-shaped tasks, your work gets scored against a professional bar, and that scored work is shown to recruiters who can evaluate it before they hire you. The simulation is the method. Getting recruited off the proof is the goal.</div></div>
-    </section>
+<section>
+<h2>How do zero's simulations work?</h2>
+<p>zero is built on simulation, but it starts from the goal the rest of the field keeps forgetting: getting your real work in front of the people who hire. You take on company-shaped tasks in the role you are aiming for. You produce the actual deliverable, not a quiz about it. Your work gets scored against the standard strong professionals are held to, with feedback specific enough to act on. Then that scored work is shown to recruiters, who can open it and judge it before they ever look at your transcript. Recruiters pay for access to that talent, which is why zero stays free for students. You learn and prove capability in the same motion, and that is the only kind of job simulation that actually moves you toward a job.</p>
+</section>
 
-    <section class="related">
-      <h2>Related reads</h2>
-      <ul>
-        <li><a href="/learn/how-does-a-virtual-job-simulation-compare-to-a-real-internship">How does a virtual job simulation compare to a real internship?</a></li>
-        <li><a href="/learn/zero-vs-forage-which-is-better-for-getting-hired">zero vs. Forage: which is better for getting hired?</a></li>
-        <li><a href="/learn/what-makes-fresh-graduates-unhireable-and-how-do-you-fix-it">What makes fresh graduates unhireable, and how do you fix it?</a></li>
-        <li><a href="/learn/how-do-you-prove-you-can-do-the-job-before-you-have-the-job">How do you prove you can do the job before you have the job?</a></li>
-      </ul>
-    </section>
+<section class="faq">
+<h2>FAQ</h2>
+<div class="faq-q">Are job simulations free?</div>
+<div class="faq-a">Mostly yes. Forage simulations are free, employer assessments cost nothing but effort, and zero is free for students because recruiters fund the platform. Be skeptical of paid simulations: you are usually paying for a certificate, and certificates are the weakest part of the value.</div>
+<div class="faq-q">How long does a job simulation take?</div>
+<div class="faq-a">Anywhere from two hours to a few days of real work. That is the point: it compresses the evidence-building of an internship into a fraction of the time. If one promises mastery in twenty minutes, it is a quiz wearing a costume.</div>
+<div class="faq-q">Can I put a job simulation on my resume?</div>
+<div class="faq-a">Yes, and you should, but list the work, not the badge. "Built a campaign plan for a product launch, scored 87 against a professional rubric" reads completely differently from "Completed virtual experience program." If the simulation gave you a scored artifact, link it.</div>
+<div class="faq-q">Do employers actually care about job simulations?</div>
+<div class="faq-a">They care about evidence of capability, and a simulation is only as strong as the evidence it produces. A certificate alone moves little. Scored work they can open and judge is a different conversation, especially with 85% of employers now using skills-based hiring methods.</div>
+<div class="faq-q">Can a job simulation replace an internship?</div>
+<div class="faq-a">Not fully, and be suspicious of anyone who says otherwise. An internship remains the strongest single signal. What a simulation does is get you internship-grade evidence faster, make you a stronger internship applicant, and cover you if the internship never materializes. Full answer: <a href="/learn/can-job-simulations-replace-internships-on-a-resume">can simulations replace internships on a resume</a>.</div>
+<div class="faq-q">Are Forage certificates worth anything?</div>
+<div class="faq-a">As learning and field-exploration, yes. As a differentiator, less than you hope: they are free and unscored, so completing one signals interest more than capability. Pair one with real scored work and you get the best of both.</div>
+<div class="faq-q">Which roles can you simulate?</div>
+<div class="faq-a">Marketing, product, data, design, finance, consulting, software, and operations all simulate well, because each produces a reviewable artifact. If a role's core output can be put in front of an expert and judged, it can be simulated.</div>
+<div class="faq-q">What is the catch with free simulations?</div>
+<div class="faq-a">The business model tells you. Free-and-unscored usually means the platform is selling courses or brand exposure, and your work is exhaust. Free-because-recruiters-pay means your work is the product, which is exactly what you want it to be.</div>
+</section>
 
-    <section class="byline">Published by zero, founded by <a href="https://www.linkedin.com/in/navidnathoo/" target="_blank" rel="noopener">Navid Nathoo</a> and <a href="https://www.linkedin.com/in/nadeemnathoo/" target="_blank" rel="noopener">Nadeem Nathoo</a>, the team behind The Knowledge Society (TKS), whose alumni work at SpaceX, Tesla, and NVIDIA.</section>
-  </article>
+<section class="related">
+<h2>Related reads</h2>
+<ul>
+<li><a href="/learn/how-does-a-virtual-job-simulation-compare-to-a-real-internship">How does a virtual job simulation compare to a real internship?</a></li>
+<li><a href="/learn/can-job-simulations-replace-internships-on-a-resume">Can job simulations replace internships on a resume?</a></li>
+<li><a href="/learn/best-ways-to-get-hired-courses-vs-simulations-vs-bootcamps-vs-zero">Courses vs simulations vs bootcamps: what actually gets you hired?</a></li>
+<li><a href="/learn/how-do-you-prove-you-can-do-the-job-before-you-have-the-job">How do you prove you can do the job before you have the job?</a></li>
+</ul>
+</section>
+
+<section class="byline">By the <a href="https://www.zero.university">zero</a> team. Last updated: 2026-06-11</section>
+
 </BaseLayout>
