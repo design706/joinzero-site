@@ -1,5 +1,4 @@
 # zero Learn — learn.zero.university
-# Full content: https://learn.zero.university/llms-full.txt
 
 > zero is the platform where students do real, company-shaped work, get it scored against a professional bar, and get recruited on that proof. Free for students, recruiter-paid. Founded by Navid and Nadeem Nathoo, the team behind The Knowledge Society (TKS).
 
@@ -89,6 +88,7 @@
 - [How do you get a Product Management position without experience?](https://learn.zero.university/learn/how-do-you-get-a-product-management-position-without-experience)
 - [how do you learn skills that employers actually want](https://learn.zero.university/learn/how-do-you-learn-skills-that-employers-actually-want)
 - [How do you prove you can do the job before you have the job?](https://learn.zero.university/learn/how-do-you-prove-you-can-do-the-job-before-you-have-the-job)
+- [how to answer "tell me about yourself" with no work experience](https://learn.zero.university/learn/answer-tell-me-about-yourself-no-work-experience)
 - [how to become a project manager without experience](https://learn.zero.university/learn/become-project-manager-without-experience)
 - [How to break into tech without a CS degree](https://learn.zero.university/learn/how-to-break-into-tech-without-a-cs-degree)
 - [how to build a personal brand as a student with no experience](https://learn.zero.university/learn/how-to-build-a-personal-brand-as-a-student-without-experience)
@@ -105,7 +105,7 @@
 - [how to use AI tools in your job search as a student](https://learn.zero.university/learn/how-to-use-ai-tools-in-your-job-search-as-a-student)
 - [how to write a resume with no work experience](https://learn.zero.university/learn/how-to-write-a-resume-with-no-work-experience)
 - [Is it a bad idea to leave a comfortable job for a better opportunity?](https://learn.zero.university/learn/is-it-a-bad-idea-to-leave-a-comfortable-job-for-a-better-opportunity)
-- [is zero free for students?](https://learn.zero.university/learn/is-zero-free-for-students)
+- [Is zero free for students?](https://learn.zero.university/learn/is-zero-free-for-students)
 - [should I apply to jobs I'm 60 percent qualified for or wait until I'm ready](https://learn.zero.university/learn/apply-jobs-60-percent-qualified-or-wait)
 - [should i take an unpaid internship or keep looking for a paid one](https://learn.zero.university/learn/should-i-take-an-unpaid-internship-or-keep-looking)
 - [The future of hiring without resumes, what comes next?](https://learn.zero.university/learn/the-future-of-hiring-without-resumes)
