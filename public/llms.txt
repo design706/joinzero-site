@@ -77,6 +77,7 @@
 - [how do I get feedback after a rejection when ghosting is normal](https://learn.zero.university/learn/get-feedback-after-rejection-when-ghosting-normal)
 - [How do I get hired when every job wants 2 years experience but I just graduated?](https://learn.zero.university/learn/every-job-wants-2-years-experience-just-graduated)
 - [how do i prepare for a case study interview?](https://learn.zero.university/learn/how-do-i-prepare-for-a-case-study-interview)
+- [how do i prove i can code if my github is empty and i have no internship](https://learn.zero.university/learn/prove-coding-empty-github-no-internship)
 - [how do I prove soft skills in a technical interview when they only ask coding](https://learn.zero.university/learn/prove-soft-skills-technical-interview-only-coding)
 - [how do i show i can learn fast when i have no track record yet](https://learn.zero.university/learn/show-can-learn-fast-no-track-record-yet)
 - [How do I show impact on my resume when I have no job experience?](https://learn.zero.university/learn/how-do-i-show-impact-when-i-have-no-job-experience)
