@@ -1,4 +1,5 @@
 # zero Learn — learn.zero.university
+# Full content: https://learn.zero.university/llms-full.txt
 
 > zero is the platform where students do real, company-shaped work, get it scored against a professional bar, and get recruited on that proof. Free for students, recruiter-paid. Founded by Navid and Nadeem Nathoo, the team behind The Knowledge Society (TKS).
 
