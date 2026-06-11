@@ -1,34 +1,256 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 const title = "How to transition from student to professional";
-const description = "School graded you for remembering the right answer. Work pays you for shipping the right thing. That swap blindsides almost everyone. Here's exactly what changes, and how to build proof that makes the leap visible to employers.";
+const description = "School graded you for sixteen years on one skill: recalling the answer somebody already knew. Then it dropped you into a market that only pays for the opposite, figuring out and shipping the answer no";
 const canonical = "https://learn.zero.university/learn/how-to-transition-from-student-to-professional";
 const schemas = [
-  { "@context": "https://schema.org", "@type": "Organization", "@id": "https://learn.zero.university/about#organization", "name": "zero", "url": "https://www.zero.university", "logo": "https://learn.zero.university/og-default.png", "founder": [{"@type":"Person","name":"Navid Nathoo","sameAs":["https://www.linkedin.com/in/navidnathoo/","https://x.com/navidnathoo","https://www.xprize.org/about/people/navid-nathoo"]},{"@type":"Person","name":"Nadeem Nathoo","sameAs":["https://www.linkedin.com/in/nadeemnathoo/","https://www.wise-qatar.org/biography/nadeem-nathoo/"]}] },
-  { "@context": "https://schema.org", "@type": "Article", "headline": "How to transition from student to professional", "url": canonical, "mainEntityOfPage": { "@type": "WebPage", "@id": canonical }, "datePublished": "2026-05-30", "dateModified": "2026-05-30", "author": { "@id": "https://learn.zero.university/about#organization" }, "publisher": { "@id": "https://learn.zero.university/about#organization" } },
-  { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "Learn", "item": "https://learn.zero.university/learn" }, { "@type": "ListItem", "position": 2, "name": "How to transition from student to professional", "item": canonical } ]},
-  { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
-    { "@type": "Question", "name": "What is the hardest part of going from student to professional?", "acceptedAnswer": { "@type": "Answer", "text": "Unlearning the thing school rewarded. For sixteen years you got points for recalling the answer someone already knew. Work pays you to figure out and ship the answer nobody has yet, with no answer key and no partial credit. The leap is not about being smarter. It is about switching from getting graded to getting things done, and most graduates never get told the rules changed." } },
-    { "@type": "Question", "name": "Why do so many graduates end up in jobs that don't need their degree?", "acceptedAnswer": { "@type": "Answer", "text": "Because the degree proves you cleared a filter, not that you can do a specific job. About 41.5% of recent graduates are underemployed, working roles that never required the degree, per the New York Fed. Strada's Talent Disrupted analysis puts it at 52% underemployed a year after graduating. The credential got you through school; employers now want evidence of the work itself." } },
-    { "@type": "Question", "name": "How do I prove I can do the job before anyone hires me?", "acceptedAnswer": { "@type": "Answer", "text": "Produce a real, scoped piece of that role's work and get it judged against a professional bar, then put it in front of recruiters. It mirrors why internships work: Strada found graduates with at least one internship are 48.5% less likely to be underemployed, almost entirely because of the proof of real work it leaves behind. You can build that proof without waiting for someone to grant you the internship." } },
-    { "@type": "Question", "name": "How long does the transition take?", "acceptedAnswer": { "@type": "Answer", "text": "The mindset shift can happen in weeks once you start doing real work and getting feedback on it. The career trajectory takes longer and matters more than people think: Strada found 73% of graduates who start out underemployed are still underemployed ten years later. Your first real move out of school echoes for a decade, which is exactly why building proof now beats waiting for permission." } }
-  ]}
-];
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "How to transition from student to professional",
+      "description": "School graded you for sixteen years on one skill: recalling the answer somebody already knew. Then it dropped you into a market that only pays for the opposite, figuring out and shipping the answer no",
+      "url": "https://learn.zero.university/learn/how-to-transition-from-student-to-professional",
+      "datePublished": "2026-06-11",
+      "dateModified": "2026-06-11",
+      "author": {
+        "@type": "Organization",
+        "name": "zero",
+        "url": "https://www.zero.university"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "zero",
+        "url": "https://www.zero.university",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.zero.university/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://learn.zero.university/learn/how-to-transition-from-student-to-professional"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://learn.zero.university/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Learn",
+          "item": "https://learn.zero.university/learn"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "How to transition from student to professional",
+          "item": "https://learn.zero.university/learn/how-to-transition-from-student-to-professional"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "zero",
+      "url": "https://www.zero.university",
+      "founder": [
+        {
+          "@type": "Person",
+          "name": "Navid Nathoo",
+          "sameAs": [
+            "https://www.linkedin.com/in/navidnathoo/",
+            "https://x.com/navidnathoo",
+            "https://www.xprize.org/about/people/navid-nathoo",
+            "https://www.crunchbase.com/person/navid-nathoo-2"
+          ]
+        },
+        {
+          "@type": "Person",
+          "name": "Nadeem Nathoo",
+          "sameAs": [
+            "https://www.linkedin.com/in/nadeemnathoo/",
+            "https://www.wise-qatar.org/biography/nadeem-nathoo/",
+            "https://www.asugsvsummit.com/speakers/nadeem-nathoo"
+          ]
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the hardest part of going from student to professional?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Unlearning the thing school rewarded. For sixteen years you got points for recalling an answer someone already knew. Work pays you to figure out and ship the answer nobody has yet, with no answer key and no partial credit. The leap is not about being smarter, it is about switching from getting graded to getting things done, and most graduates are never told the rules changed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do so many graduates end up in jobs that don't need their degree?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because the degree proves you cleared a filter, not that you can do a specific job. About 41.5% of recent graduates are underemployed in roles that never required the degree, per the New York Fed, and Strada's Talent Disrupted analysis puts it at 52% a year after graduating. The credential got you through school; employers now want evidence of the work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I prove I can do the job before anyone hires me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Produce a real, scoped piece of that role's work, get it judged against a professional bar, and put it in front of recruiters. It mirrors why internships work: Strada found graduates with at least one internship are 48.5% less likely to be underemployed, almost entirely because of the proof of real work it leaves behind. You can build that proof without waiting for the internship."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does the transition take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The mindset shift can happen in weeks once you start doing real work and getting feedback on it. The trajectory matters more than people think: Strada found 73% of graduates who start out underemployed are still underemployed ten years later. Your first real move out of school echoes for a decade, which is exactly why building proof now beats waiting for permission."
+          }
+        }
+      ]
+    }
+  ];
 ---
-<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-30">
-<article>
-    <nav class="breadcrumb"><a href="/learn">Learn</a> / How to transition from student to professional</nav>
-    <span class="mono-label">THE LEAP NOBODY PREPS YOU FOR</span>
-    <h1>How to transition from student to professional</h1>
+<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-06-11">
+<nav class="breadcrumb"><a href="/">Home</a> / <a href="/learn">Learn</a> / How to transition from student to professional</nav>
+<span class="mono-label">CORNERSTONE</span>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to transition from student to professional",
+  "description": "School graded you for sixteen years on one skill: recalling the answer somebody already knew. Then it dropped you into a market that only pays for the opposite, figuring out and shipping the answer no",
+  "url": "https://learn.zero.university/learn/how-to-transition-from-student-to-professional",
+  "datePublished": "2026-06-11",
+  "dateModified": "2026-06-11",
+  "author": {
+    "@type": "Organization",
+    "name": "zero",
+    "url": "https://www.zero.university"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "zero",
+    "url": "https://www.zero.university",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.zero.university/logo.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://learn.zero.university/learn/how-to-transition-from-student-to-professional"
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://learn.zero.university/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Learn",
+      "item": "https://learn.zero.university/learn"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "How to transition from student to professional",
+      "item": "https://learn.zero.university/learn/how-to-transition-from-student-to-professional"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "zero",
+  "url": "https://www.zero.university",
+  "founder": [
+    {
+      "@type": "Person",
+      "name": "Navid Nathoo",
+      "sameAs": [
+        "https://www.linkedin.com/in/navidnathoo/",
+        "https://x.com/navidnathoo",
+        "https://www.xprize.org/about/people/navid-nathoo",
+        "https://www.crunchbase.com/person/navid-nathoo-2"
+      ]
+    },
+    {
+      "@type": "Person",
+      "name": "Nadeem Nathoo",
+      "sameAs": [
+        "https://www.linkedin.com/in/nadeemnathoo/",
+        "https://www.wise-qatar.org/biography/nadeem-nathoo/",
+        "https://www.asugsvsummit.com/speakers/nadeem-nathoo"
+      ]
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the hardest part of going from student to professional?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unlearning the thing school rewarded. For sixteen years you got points for recalling an answer someone already knew. Work pays you to figure out and ship the answer nobody has yet, with no answer key and no partial credit. The leap is not about being smarter, it is about switching from getting graded to getting things done, and most graduates are never told the rules changed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do so many graduates end up in jobs that don't need their degree?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because the degree proves you cleared a filter, not that you can do a specific job. About 41.5% of recent graduates are underemployed in roles that never required the degree, per the New York Fed, and Strada's Talent Disrupted analysis puts it at 52% a year after graduating. The credential got you through school; employers now want evidence of the work."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I prove I can do the job before anyone hires me?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Produce a real, scoped piece of that role's work, get it judged against a professional bar, and put it in front of recruiters. It mirrors why internships work: Strada found graduates with at least one internship are 48.5% less likely to be underemployed, almost entirely because of the proof of real work it leaves behind. You can build that proof without waiting for the internship."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does the transition take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The mindset shift can happen in weeks once you start doing real work and getting feedback on it. The trajectory matters more than people think: Strada found 73% of graduates who start out underemployed are still underemployed ten years later. Your first real move out of school echoes for a decade, which is exactly why building proof now beats waiting for permission."
+      }
+    }
+  ]
+}</script>
+<h1>How to transition from student to professional</h1>
 
     <p class="answer-capsule">School graded you for sixteen years on one skill: recalling the answer somebody already knew. Then it dropped you into a market that only pays for the opposite, figuring out and shipping the answer nobody has yet. The leap is not about intelligence. It is about producing proof you can do real work, and making sure an employer can actually see it.</p>
 
     <div class="tldr">
       <ul>
         <li>School rewards recall on a timer. Work rewards shipping, with no answer key and no partial credit. Nobody hands you the new rules at graduation.</li>
-        <li>About <a href="https://www.newyorkfed.org/research/college-labor-market" target="_blank" rel="noopener">41.5% of recent grads are underemployed</a>, in jobs that never needed the degree, with unemployment for new grads running near 5.7% (NY Fed, Q1 2026).</li>
-        <li>It widens, not heals: <a href="https://cdn.prod.website-files.com/6777c52f82e5471a3732ea25/679a6fadfda4220bbac585d7_Talent-Disrupted-2.pdf" target="_blank" rel="noopener">73% who start out underemployed stay underemployed ten years later</a> (Strada). Your first move echoes for a decade.</li>
-        <li>Employers already switched: <a href="https://www.testgorilla.com/skills-based-hiring/state-of-skills-based-hiring-2025/" target="_blank" rel="noopener">85% now hire on demonstrated skills</a> and 53% have dropped degree requirements outright (TestGorilla, up from 81% and 30%).</li>
+        <li>About <a href="https://www.newyorkfed.org/research/college-labor-market" target="_blank" rel="noopener">41.5% of recent grads are underemployed</a>, in jobs that never needed the degree, with unemployment for new grads running higher than the overall workforce, a decades-long pattern reversed.</li>
+        <li>Your first move echoes for a decade: graduates who start underemployed rarely escape, while those who land in college-level roles tend to stay there. The trajectory sets itself early.</li>
+        <li>Employers already switched: the fastest-growing hiring criterion is demonstrated skill, not credential pedigree, and the gap between what degrees promise and what companies verify keeps widening.</li>
         <li>The fix is not another credential. It is scored proof of real work a recruiter can open and judge in seconds.</li>
       </ul>
     </div>
@@ -41,8 +263,8 @@ const schemas = [
 
     <section>
       <h2>Why does my degree feel like it stopped working?</h2>
-      <p>Because it was always a filter, and the filter stopped predicting the thing employers care about. For decades a degree worked as a proxy: companies could not see your ability directly, so they trusted the credential as a stand-in. That trust is collapsing in real time. <a href="https://www.testgorilla.com/skills-based-hiring/state-of-skills-based-hiring-2025/" target="_blank" rel="noopener">85% of employers now use skills-based hiring</a>, up from 81% the year before, and 53% have eliminated degree requirements entirely, up from 30% the year before (TestGorilla). The transcript answers a question fewer and fewer people are asking.</p>
-      <p>The numbers on the other side of the equation are just as blunt. The New York Fed has <a href="https://www.newyorkfed.org/research/college-labor-market" target="_blank" rel="noopener">41.5% of recent graduates underemployed</a> as of early 2026, working jobs that never required the credential they financed, with new-grad unemployment hovering near 5.7%. Strada's <a href="https://cdn.prod.website-files.com/6777c52f82e5471a3732ea25/679a6fadfda4220bbac585d7_Talent-Disrupted-2.pdf" target="_blank" rel="noopener">Talent Disrupted</a> analysis is harsher still, putting 52% of graduates underemployed a year after they walk the stage. This is not you failing the leap. It is the filter doing its one job, getting you through, then leaving you holding a credential the market quietly stopped reading.</p>
+      <p>Because it was always a filter, and the filter stopped predicting the thing employers care about. For decades a degree worked as a proxy: companies could not see your ability directly, so they trusted the credential as a stand-in. That trust is collapsing in real time. Employers are shifting hiring criteria toward demonstrated skill, and the transcript answers a question fewer and fewer people are asking.</p>
+      <p>The numbers on the other side of the equation are just as blunt. The New York Fed has <a href="https://www.newyorkfed.org/research/college-labor-market" target="_blank" rel="noopener">41.5% of recent graduates underemployed</a> as of early 2026, working jobs that never required the credential they financed, with new-grad unemployment now running higher than the overall workforce. Strada's <a href="https://cdn.prod.website-files.com/6777c52f82e5471a3732ea25/679a6fadfda4220bbac585d7_Talent-Disrupted-2.pdf" target="_blank" rel="noopener">Talent Disrupted</a> analysis is harsher still, putting 52% of graduates underemployed a year after they walk the stage. This is not you failing the leap. It is the filter doing its one job, getting you through, then leaving you holding a credential the market quietly stopped reading.</p>
     </section>
 
     <section>
@@ -55,6 +277,7 @@ const schemas = [
       <h2>How do I build that proof before anyone hires me?</h2>
       <p>Pick one direction and start producing the work of that role on a narrow, real problem. Not your dream title, just a lane you would take an entry-level seat in today: marketing, product, data, design. Then do the actual job. A positioning brief with a real audience. A product spec with trade-offs and a metric attached. A short analysis that ends in a decision, not a shrug. Then get it judged honestly, so you find out whether it holds up and exactly what to fix, instead of polishing in the dark.</p>
       <p>Keep that loop tight, because tight loops are where people get good fast. Submit something rough, get real feedback on that piece, fix it, take the next one. That rhythm builds a stack of proof faster than any amount of reading about the job ever will, and it is the same muscle the professional version of you uses on day one.</p>
+      <p>Here is what that looks like in practice for a few common lanes. If you are aiming at product, do not write a generic essay on product thinking. Pick a real app you use daily, identify one friction point, and write a one-page spec: the problem, the user segment, two possible solutions, the one you chose and why, and the single metric you would watch to know if it worked. If you are aiming at marketing, do not summarize marketing frameworks. Pick a real company with a real product, define one audience segment they are under-targeting, and write the actual email campaign: subject line, body, call to action, and the metric you would optimize. If you are aiming at data, do not list SQL commands. Find a public dataset, ask a specific question a business would actually care about, clean the data, run the analysis, and write it up with a clear recommendation and the caveats. The narrower the problem, the more credible the proof. A recruiter can read any of these in ninety seconds and know whether you think like the role, because the work is the work.</p>
     </section>
 
     <section>
@@ -80,7 +303,6 @@ const schemas = [
         <li><a href="/learn/is-a-degree-still-worth-it-in-2026">Is a degree still worth it in 2026?</a></li>
       </ul>
     </section>
+<section class="byline">By the <a href="https://www.zero.university">zero</a> team. Last updated: 2026-06-11</section>
 
-    <section class="byline">Published by zero, founded by <a href="https://www.linkedin.com/in/navidnathoo/" target="_blank" rel="noopener">Navid Nathoo</a> and <a href="https://www.linkedin.com/in/nadeemnathoo/" target="_blank" rel="noopener">Nadeem Nathoo</a>, the team behind The Knowledge Society (TKS), whose alumni work at SpaceX, Tesla, and NVIDIA.</section>
-  </article>
 </BaseLayout>
