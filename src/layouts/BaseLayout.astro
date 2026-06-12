@@ -2,6 +2,7 @@
 const { title, description, canonical, schemas = [], lastUpdated } = Astro.props;
 const canonicalHref = canonical && !canonical.endsWith("/") ? canonical + "/" : canonical;
 const ogImage = "https://learn.zero.university/og-default.png";
+const isHub = Astro.url.pathname === "/learn" || Astro.url.pathname === "/learn/" || Astro.url.pathname === "/";
 ---
 <!doctype html>
 <html lang="en">
@@ -32,9 +33,9 @@ const ogImage = "https://learn.zero.university/og-default.png";
   ))}
 </head>
 <body>
-  <header>
-    <div class="container">
-      <a href="/" class="wordmark">zero <span class="mono-label" style="margin:0;color:var(--fg-3);">LEARN</span></a>
+  <header class="site">
+    <div class="wrap">
+      <a href="/" class="wordmark">zero <span class="mono">learn</span></a>
       <nav>
         <a href="/learn">Library</a>
         <a href="/learn/zero-vs-forage-which-is-better-for-getting-hired">Compare</a>
@@ -42,17 +43,38 @@ const ogImage = "https://learn.zero.university/og-default.png";
       </nav>
     </div>
   </header>
-  <main class="container">
-    <article class="sheet">
+  {isHub ? (
+    <main class="hub">
       <slot />
-      {lastUpdated && (
-        <div class="last-updated">Last updated: {lastUpdated}.</div>
-      )}
-    </article>
-  </main>
+    </main>
+  ) : (
+    <main class="article">
+      <article>
+        <slot />
+        {lastUpdated && <div class="last-updated">Last updated: {lastUpdated}.</div>}
+      </article>
+    </main>
+  )}
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <div class="seq">
+        <span class="t">proof beats pedigree</span><span class="dot"></span>
+        <span class="t">get hired with zero experience</span><span class="dot"></span>
+        <span class="t">evidence beats claims</span><span class="dot"></span>
+        <span class="t">the work is the resume</span><span class="dot"></span>
+      </div>
+      <div class="seq">
+        <span class="t">proof beats pedigree</span><span class="dot"></span>
+        <span class="t">get hired with zero experience</span><span class="dot"></span>
+        <span class="t">evidence beats claims</span><span class="dot"></span>
+        <span class="t">the work is the resume</span><span class="dot"></span>
+      </div>
+    </div>
+  </div>
   <footer class="editorial">
     <div class="inner">
       <p class="cta">Proof beats pedigree.<br /><em>Build yours.</em></p>
+      <p class="sub">Real company-shaped work, scored against a professional bar, shown to the people who hire. Free for students, always.</p>
       <nav>
         <a href="https://www.zero.university">zero.university</a>
         <a href="/learn">The library</a>
@@ -67,22 +89,35 @@ const ogImage = "https://learn.zero.university/og-default.png";
   </footer>
   <script is:inline>
   (function(){
-    var mainEl = document.querySelector("article.sheet") || document.body;
-    // tag reveal targets (h1, capsule, tldr, sections, tables) without touching page source
-    var targets = mainEl.querySelectorAll("h1, .answer-capsule, .tldr, article.sheet > section, section, table");
-    var seen = 0;
-    targets.forEach(function(el){ if(!el.hasAttribute("data-rv") && seen < 60){ el.setAttribute("data-rv",""); seen++; } });
+    var art = document.querySelector("main.article article");
+    // highlight the first word of the H1 (hero treatment)
+    var h1 = document.querySelector("h1");
+    if (h1 && !h1.querySelector(".hl")) {
+      var w = h1.firstChild;
+      if (w && w.nodeType === 3) {
+        var parts = w.textContent.split(" ");
+        if (parts.length > 1) {
+          var first = parts.shift();
+          var span = document.createElement("span");
+          span.className = "hl"; span.textContent = first;
+          h1.insertBefore(span, w);
+          w.textContent = " " + parts.join(" ");
+        }
+      }
+    }
+    // staggered reveals
+    var targets = document.querySelectorAll("h1, .answer-capsule, .tldr, article > section, .lib-hero > *, .lib-cat, .byline");
+    var n = 0;
+    targets.forEach(function(el){ if (n < 80) { el.setAttribute("data-rv",""); el.style.transitionDelay = Math.min((n % 3) * 90, 200) + "ms"; n++; } });
     if ("IntersectionObserver" in window) {
-      var io = new IntersectionObserver(function(entries){
-        entries.forEach(function(e){
-          if (e.isIntersecting) { e.target.classList.add("rv-in"); io.unobserve(e.target); }
-        });
-      }, { rootMargin: "0px 0px -8% 0px", threshold: 0.05 });
+      var io = new IntersectionObserver(function(es){
+        es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add("rv-in"); io.unobserve(e.target); } });
+      }, { rootMargin: "0px 0px -6% 0px", threshold: 0.04 });
       document.querySelectorAll("[data-rv]").forEach(function(el){ io.observe(el); });
     } else {
       document.querySelectorAll("[data-rv]").forEach(function(el){ el.classList.add("rv-in"); });
     }
-    // FAQ accordion (q toggles its sibling a)
+    // FAQ accordion
     document.querySelectorAll(".faq-q").forEach(function(q){
       q.addEventListener("click", function(){
         q.classList.toggle("open");
@@ -90,14 +125,13 @@ const ogImage = "https://learn.zero.university/og-default.png";
         if (a && a.classList.contains("faq-a")) a.classList.toggle("open");
       });
     });
-    // read-time into the byline
+    // read time -> byline
     var byline = document.querySelector(".byline");
-    if (byline) {
-      var words = (mainEl.textContent || "").trim().split(/\s+/).length;
-      var mins = Math.max(3, Math.round(words / 220));
-      var span = document.createElement("span");
-      span.textContent = mins + " min read";
-      byline.insertBefore(span, byline.firstChild);
+    if (byline && art) {
+      var words = (art.textContent || "").trim().split(/\s+/).length;
+      var span2 = document.createElement("span");
+      span2.textContent = Math.max(3, Math.round(words / 220)) + " min read";
+      byline.insertBefore(span2, byline.firstChild);
     }
   })();
   </script>
