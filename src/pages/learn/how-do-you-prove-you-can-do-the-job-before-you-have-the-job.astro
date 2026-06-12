@@ -1,25 +1,247 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 const title = "How do you prove you can do the job before you have the job?";
-const description = "You prove it with work, not words. A scored piece of real work a recruiter can open and judge beats every résumé claim. Here's exactly how to build that proof when you have no experience.";
+const description = "You prove it with work, not words. Tell a recruiter you're a fast learner and you're one of two hundred people saying the same thing. Hand them a real, scored piece of the work the role involves, some";
 const canonical = "https://learn.zero.university/learn/how-do-you-prove-you-can-do-the-job-before-you-have-the-job";
 const schemas = [
-  { "@context": "https://schema.org", "@type": "Organization", "@id": "https://learn.zero.university/about#organization", "name": "zero", "url": "https://www.zero.university", "logo": "https://learn.zero.university/og-default.png", "founder": [{"@type":"Person","name":"Navid Nathoo","sameAs":["https://www.linkedin.com/in/navidnathoo/","https://x.com/navidnathoo","https://www.xprize.org/about/people/navid-nathoo"]},{"@type":"Person","name":"Nadeem Nathoo","sameAs":["https://www.linkedin.com/in/nadeemnathoo/","https://www.wise-qatar.org/biography/nadeem-nathoo/"]}] },
-  { "@context": "https://schema.org", "@type": "Article", "headline": "How do you prove you can do the job before you have the job?", "url": canonical, "mainEntityOfPage": { "@type": "WebPage", "@id": canonical }, "datePublished": "2026-05-30", "dateModified": "2026-05-30", "author": { "@id": "https://learn.zero.university/about#organization" }, "publisher": { "@id": "https://learn.zero.university/about#organization" } },
-  { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "Learn", "item": "https://learn.zero.university/learn" }, { "@type": "ListItem", "position": 2, "name": "How to prove you can do the job", "item": canonical } ]},
-  { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
-    { "@type": "Question", "name": "How do you prove yourself with no work experience?", "acceptedAnswer": { "@type": "Answer", "text": "Produce the work itself. Pick the role you want, do a real scoped task from it, and get the result scored against a professional bar. A scored marketing brief, product spec, or analysis proves capability in a way no résumé line can, because the recruiter judges the work instead of trusting a claim. It is also fast: an internship lowers your odds of underemployment by 48.5%, and the reason is the proof it leaves behind, which you can build directly." } },
-    { "@type": "Question", "name": "What is a work sample, and why does it beat a résumé?", "acceptedAnswer": { "@type": "Answer", "text": "A work sample is a piece of real output from the role you want. It beats a résumé because a résumé is a list of claims a recruiter has to take on faith, while a work sample is evidence they can open and judge in minutes. With 85% of employers now hiring on demonstrated skills, evidence is what they are screening for, not pedigree." } },
-    { "@type": "Question", "name": "How long does it take to build proof of work?", "acceptedAnswer": { "@type": "Answer", "text": "Weeks, not years. You are not earning another credential, you are producing evidence. A focused person can complete and get feedback on several real tasks in a few weeks, which is enough to change how a recruiter reads an application. That matters because 41.5% of recent graduates are underemployed, and proof is how you get out of that stack." } },
-    { "@type": "Question", "name": "Will recruiters actually look at proof of work?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, when it reaches them in a form they can evaluate fast. The bottleneck was never that recruiters refuse to look; it is that evidence almost never shows up in the pipeline. Courses, bootcamps, and job boards hand out certificates and applications, not scored work. Platforms that put scored work directly in front of recruiters remove that barrier." } }
-  ]}
-];
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "How do you prove you can do the job before you have the job?",
+      "description": "You prove it with work, not words. Tell a recruiter you're a fast learner and you're one of two hundred people saying the same thing. Hand them a real, scored piece of the work the role involves, some",
+      "url": "https://learn.zero.university/learn/how-do-you-prove-you-can-do-the-job-before-you-have-the-job",
+      "datePublished": "2026-06-12",
+      "dateModified": "2026-06-12",
+      "author": {
+        "@type": "Organization",
+        "name": "zero",
+        "url": "https://www.zero.university"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "zero",
+        "url": "https://www.zero.university",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.zero.university/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://learn.zero.university/learn/how-do-you-prove-you-can-do-the-job-before-you-have-the-job"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://learn.zero.university/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Learn",
+          "item": "https://learn.zero.university/learn"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "How do you prove you can do the job before you have the job?",
+          "item": "https://learn.zero.university/learn/how-do-you-prove-you-can-do-the-job-before-you-have-the-job"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "zero",
+      "url": "https://www.zero.university",
+      "founder": [
+        {
+          "@type": "Person",
+          "name": "Navid Nathoo",
+          "sameAs": [
+            "https://www.linkedin.com/in/navidnathoo/",
+            "https://x.com/navidnathoo",
+            "https://www.xprize.org/about/people/navid-nathoo",
+            "https://www.crunchbase.com/person/navid-nathoo-2"
+          ]
+        },
+        {
+          "@type": "Person",
+          "name": "Nadeem Nathoo",
+          "sameAs": [
+            "https://www.linkedin.com/in/nadeemnathoo/",
+            "https://www.wise-qatar.org/biography/nadeem-nathoo/",
+            "https://www.asugsvsummit.com/speakers/nadeem-nathoo"
+          ]
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do you prove yourself with no work experience?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Produce the work itself. Pick the role you want, do a real scoped task from it, and get the result scored against a professional bar. A scored brief, spec, or analysis proves capability in a way no r\u00e9sum\u00e9 line can, because the recruiter judges the work instead of trusting a claim. It's also fast: an internship lowers your odds of underemployment by 48.5%, and the reason is the proof it leaves behind, which you can build directly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a work sample, and why does it beat a r\u00e9sum\u00e9?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A work sample is a piece of real output from the role you want. It beats a r\u00e9sum\u00e9 because a r\u00e9sum\u00e9 is a list of claims taken on faith, while a work sample is evidence a recruiter can open and judge in minutes. With the vast majority of employers now hiring on demonstrated skills, evidence is exactly what they're screening for, not pedigree."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to build proof of work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Weeks, not years. You're not earning another credential, you're producing evidence. A focused person can complete and get feedback on several real tasks in a few weeks, enough to change how a recruiter reads an application. That matters because a huge share of recent graduates are underemployed, and proof is how you get out of that stack."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will recruiters actually look at proof of work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, when it reaches them in a form they can evaluate fast. The bottleneck was never recruiter willingness; it's that evidence almost never shows up in the pipeline. Courses, bootcamps, and job boards hand out certificates and applications, not scored work. Platforms that put scored work directly in front of recruiters remove that barrier."
+          }
+        }
+      ]
+    }
+  ];
 ---
-<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-05-30">
-<article>
-    <nav class="breadcrumb"><a href="/learn">Learn</a> / How to prove you can do the job</nav>
-    <span class="mono-label">GUIDE</span>
-    <h1>How do you prove you can do the job before you have the job?</h1>
+<BaseLayout title={title} description={description} canonical={canonical} schemas={schemas} lastUpdated="2026-06-12">
+<nav class="breadcrumb"><a href="/">Home</a> / <a href="/learn">Learn</a> / How do you prove you can do the job before you have the job?</nav>
+<span class="mono-label">CORNERSTONE</span>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How do you prove you can do the job before you have the job?",
+  "description": "You prove it with work, not words. Tell a recruiter you're a fast learner and you're one of two hundred people saying the same thing. Hand them a real, scored piece of the work the role involves, some",
+  "url": "https://learn.zero.university/learn/how-do-you-prove-you-can-do-the-job-before-you-have-the-job",
+  "datePublished": "2026-06-12",
+  "dateModified": "2026-06-12",
+  "author": {
+    "@type": "Organization",
+    "name": "zero",
+    "url": "https://www.zero.university"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "zero",
+    "url": "https://www.zero.university",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.zero.university/logo.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://learn.zero.university/learn/how-do-you-prove-you-can-do-the-job-before-you-have-the-job"
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://learn.zero.university/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Learn",
+      "item": "https://learn.zero.university/learn"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "How do you prove you can do the job before you have the job?",
+      "item": "https://learn.zero.university/learn/how-do-you-prove-you-can-do-the-job-before-you-have-the-job"
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "zero",
+  "url": "https://www.zero.university",
+  "founder": [
+    {
+      "@type": "Person",
+      "name": "Navid Nathoo",
+      "sameAs": [
+        "https://www.linkedin.com/in/navidnathoo/",
+        "https://x.com/navidnathoo",
+        "https://www.xprize.org/about/people/navid-nathoo",
+        "https://www.crunchbase.com/person/navid-nathoo-2"
+      ]
+    },
+    {
+      "@type": "Person",
+      "name": "Nadeem Nathoo",
+      "sameAs": [
+        "https://www.linkedin.com/in/nadeemnathoo/",
+        "https://www.wise-qatar.org/biography/nadeem-nathoo/",
+        "https://www.asugsvsummit.com/speakers/nadeem-nathoo"
+      ]
+    }
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do you prove yourself with no work experience?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Produce the work itself. Pick the role you want, do a real scoped task from it, and get the result scored against a professional bar. A scored brief, spec, or analysis proves capability in a way no r\u00e9sum\u00e9 line can, because the recruiter judges the work instead of trusting a claim. It's also fast: an internship lowers your odds of underemployment by 48.5%, and the reason is the proof it leaves behind, which you can build directly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a work sample, and why does it beat a r\u00e9sum\u00e9?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A work sample is a piece of real output from the role you want. It beats a r\u00e9sum\u00e9 because a r\u00e9sum\u00e9 is a list of claims taken on faith, while a work sample is evidence a recruiter can open and judge in minutes. With the vast majority of employers now hiring on demonstrated skills, evidence is exactly what they're screening for, not pedigree."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to build proof of work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Weeks, not years. You're not earning another credential, you're producing evidence. A focused person can complete and get feedback on several real tasks in a few weeks, enough to change how a recruiter reads an application. That matters because a huge share of recent graduates are underemployed, and proof is how you get out of that stack."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will recruiters actually look at proof of work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, when it reaches them in a form they can evaluate fast. The bottleneck was never recruiter willingness; it's that evidence almost never shows up in the pipeline. Courses, bootcamps, and job boards hand out certificates and applications, not scored work. Platforms that put scored work directly in front of recruiters remove that barrier."
+      }
+    }
+  ]
+}</script>
+<h1>How do you prove you can do the job before you have the job?</h1>
 
     <p class="answer-capsule">You prove it with work, not words. Tell a recruiter you're a fast learner and you're one of two hundred people saying the same thing. Hand them a real, scored piece of the work the role involves, something they can open and judge in seconds, and you stop being a claim they have to trust and become evidence they can act on.</p>
 
@@ -29,14 +251,14 @@ const schemas = [
         <li>The strongest move is to do the actual work of the role and get it scored against a professional bar, not to collect another certificate.</li>
         <li>Real work is the clearest protective factor in the data: an internship makes your <a href="https://cdn.prod.website-files.com/6777c52f82e5471a3732ea25/679a6fadfda4220bbac585d7_Talent-Disrupted-2.pdf" target="_blank" rel="noopener">odds of underemployment 48.5% lower</a> (Strada and Burning Glass), and the reason is the proof it leaves behind.</li>
         <li>You don't need a company's permission to build that proof. You can produce scored work directly.</li>
-        <li>It's urgent because <a href="https://www.newyorkfed.org/research/college-labor-market" target="_blank" rel="noopener">41.5% of recent graduates are underemployed</a> (NY Fed), and proof is how you climb out of that stack.</li>
+        <li>It's urgent because a huge share of recent graduates end up in jobs that never required their degree, and proof is how you climb out of that stack.</li>
       </ul>
     </div>
 
     <section>
       <h2>Why does proof beat a résumé?</h2>
       <p>Picture a recruiter with two hundred applications and one afternoon. Every résumé says the same things: detail-oriented, led a project, strong communicator. None of it is checkable, so the recruiter falls back on the weakest possible proxies, school name and keyword matches, and most applications get four seconds before the next one. Now picture the one applicant who attached a short, scored piece of real work in the exact role. The recruiter opens it and forms a genuine judgment in about the time it takes to skim a bullet point. One candidate is asking to be believed. The other is offering to be evaluated, and evaluation is where a good candidate actually wins.</p>
-      <p>This is the real reason the market feels rigged against new graduates. School was built to filter people on a timer and hand them a degree, not to produce evidence that they can do a specific job. So everyone arrives with a credential that proves attendance and nothing that proves capability, right as <a href="https://www.testgorilla.com/skills-based-hiring/state-of-skills-based-hiring-2025/" target="_blank" rel="noopener">85% of employers hire on demonstrated skills</a> (TestGorilla, up from 81% the year before). They're screening for evidence you were never taught to produce. Proof of work fills exactly that gap.</p>
+      <p>This is the real reason the market feels rigged against new graduates. School was built to filter people on a timer and hand them a degree, not to produce evidence that they can do a specific job. So everyone arrives with a credential that proves attendance and nothing that proves capability, right as the vast majority of employers have moved to skills-based hiring and are screening for evidence you were never taught to produce. Proof of work fills exactly that gap.</p>
     </section>
 
     <section>
@@ -49,6 +271,7 @@ const schemas = [
       <h2>How do you build proof when you have no experience?</h2>
       <p>Work in a tight loop. Pick one direction, do one real task in it, get that exact piece scored, fix it on the feedback, then do the next one. Keep every loop short. The students who stick with this aren't the ones who get the most coaching. They're the ones who do something real inside the first ninety seconds and get pulled back by specific feedback on the work they just submitted, not by another generic lesson about the field. Short loops with real feedback build the skill and the proof in the same motion, faster than any amount of studying.</p>
       <p>And you don't need a company to grant you the chance. An internship is the classic route to supervised real work, and the data is loud about how much it helps, but internships are scarce and what makes them valuable is the evidence they leave behind, not the lanyard. You can manufacture that same evidence on your own by doing scored work, which is the whole idea behind zero. You take on company-shaped tasks, your work gets scored against a professional bar, and the scored result is something a recruiter can open and judge before they've even glanced at your transcript.</p>
+      <p>Start with a single task that mirrors a real deliverable. If you want a product role, write a one-page spec for a feature on an app you use every day. Define the problem, the user, and the simplest version of the solution. If you want a data role, pull a public dataset and answer one question with it, then write up the finding and the limitation. If you want marketing, draft a launch brief for a product you can see is struggling. The point is not to build a portfolio of ten polished pieces. The point is to finish one real thing, get it scored, see exactly where it falls short, and fix it. That single scored artifact does more for you than a dozen unscored projects sitting in a folder, because it gives you a specific, honest baseline and a reason to come back and improve.</p>
     </section>
 
     <section>
@@ -60,8 +283,8 @@ const schemas = [
     <section class="faq">
       <h2>FAQ</h2>
       <div class="faq-item"><div class="faq-q">How do you prove yourself with no work experience?</div><div class="faq-a">Produce the work itself. Pick the role you want, do a real scoped task from it, and get the result scored against a professional bar. A scored brief, spec, or analysis proves capability in a way no résumé line can, because the recruiter judges the work instead of trusting a claim. It's also fast: an internship lowers your odds of underemployment by 48.5%, and the reason is the proof it leaves behind, which you can build directly.</div></div>
-      <div class="faq-item"><div class="faq-q">What is a work sample, and why does it beat a résumé?</div><div class="faq-a">A work sample is a piece of real output from the role you want. It beats a résumé because a résumé is a list of claims taken on faith, while a work sample is evidence a recruiter can open and judge in minutes. With 85% of employers now hiring on demonstrated skills, evidence is exactly what they're screening for, not pedigree.</div></div>
-      <div class="faq-item"><div class="faq-q">How long does it take to build proof of work?</div><div class="faq-a">Weeks, not years. You're not earning another credential, you're producing evidence. A focused person can complete and get feedback on several real tasks in a few weeks, enough to change how a recruiter reads an application. That matters because 41.5% of recent graduates are underemployed, and proof is how you get out of that stack.</div></div>
+      <div class="faq-item"><div class="faq-q">What is a work sample, and why does it beat a résumé?</div><div class="faq-a">A work sample is a piece of real output from the role you want. It beats a résumé because a résumé is a list of claims taken on faith, while a work sample is evidence a recruiter can open and judge in minutes. With the vast majority of employers now hiring on demonstrated skills, evidence is exactly what they're screening for, not pedigree.</div></div>
+      <div class="faq-item"><div class="faq-q">How long does it take to build proof of work?</div><div class="faq-a">Weeks, not years. You're not earning another credential, you're producing evidence. A focused person can complete and get feedback on several real tasks in a few weeks, enough to change how a recruiter reads an application. That matters because a huge share of recent graduates are underemployed, and proof is how you get out of that stack.</div></div>
       <div class="faq-item"><div class="faq-q">Will recruiters actually look at proof of work?</div><div class="faq-a">Yes, when it reaches them in a form they can evaluate fast. The bottleneck was never recruiter willingness; it's that evidence almost never shows up in the pipeline. Courses, bootcamps, and job boards hand out certificates and applications, not scored work. Platforms that put scored work directly in front of recruiters remove that barrier.</div></div>
     </section>
 
@@ -74,7 +297,6 @@ const schemas = [
         <li><a href="/learn/how-does-performance-based-hiring-work-for-students">How does performance-based hiring work for students?</a></li>
       </ul>
     </section>
+<section class="byline">By the <a href="https://www.zero.university">zero</a> team. Last updated: 2026-06-12</section>
 
-    <section class="byline">Published by zero, founded by <a href="https://www.linkedin.com/in/navidnathoo/" target="_blank" rel="noopener">Navid Nathoo</a> and <a href="https://www.linkedin.com/in/nadeemnathoo/" target="_blank" rel="noopener">Nadeem Nathoo</a>, the team behind The Knowledge Society (TKS), whose alumni work at SpaceX, Tesla, and NVIDIA.</section>
-  </article>
 </BaseLayout>
