@@ -1,5 +1,6 @@
 ---
 const { title, description, canonical, schemas = [], lastUpdated } = Astro.props;
+const canonicalHref = canonical && !canonical.endsWith("/") ? canonical + "/" : canonical;
 const ogImage = "https://learn.zero.university/og-default.png";
 ---
 <!doctype html>
@@ -13,11 +14,11 @@ const ogImage = "https://learn.zero.university/og-default.png";
   <title>{title}</title>
   <meta name="description" content={description} />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href={canonical} />
+  <link rel="canonical" href={canonicalHref} />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content={canonical} />
+  <meta property="og:url" content={canonicalHref} />
   <meta property="og:image" content={ogImage} />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="sitemap" href="/sitemap-index.xml" />
